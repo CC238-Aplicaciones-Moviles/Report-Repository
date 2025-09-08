@@ -31,7 +31,7 @@ Sarmiento Medina Loreley U202310005<br>
 
 |  URL del repositorio del reporte  |
 | :-----------------------------------: |
-| `` |
+| [https://github.com/CC238-Aplicaciones-Moviles/Report-Repository.git](https://github.com/CC238-Aplicaciones-Moviles/Report-Repository.git) |
 
 TB1:
 
@@ -39,7 +39,7 @@ TB1:
 
 - [Student Outcome](#student-outcome)
 
-- [Capítulo I](#capítulo-i)
+- [Capítulo I: Presentación](#capítulo-i-presentacion)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
