@@ -1,7 +1,7 @@
 ## Universidad Peruana de Ciencias Aplicadas
-
+<br>
 ![logo](Assets/upc_logo.png)
-
+<br>
 #### Nombre del curso: Aplicaciones para Dispositivos Móviles
 ##### Carrera: Ingeniería de Software
 ##### Nombre del profesor: Eduardo Martin Reyes Rodriguez
