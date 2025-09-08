@@ -88,11 +88,16 @@ TB1:
 - [Anexos](#anexos)
 
 ## Student Outcome
+El curso contribuye al cumplimiento del Student Outcome ABET:
+**ABET - EAC - Student Outcome 7 Criterio**: La capacidad de adquirir y aplicar nuevos conocimientos según sea
+necesario, utilizando estrategias deaprendizaje apropiadas.
+En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado los criterios especificos.
   
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---------------------|---------------------|--------------|
-|                     |                     |              |
-
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.|- **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>-Sandoval Paiva Valentino<br>**TB1**<br>-Sarmiento Medina, Loreley<br>**TB1**<br>                     |              |
+|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.|- **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>-Sandoval Paiva Valentino<br>**TB1**<br>-Sarmiento Medina, Loreley<br>**TB1**<br>                       |              |
+|
 
 
 
