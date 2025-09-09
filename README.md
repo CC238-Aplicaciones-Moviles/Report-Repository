@@ -199,7 +199,42 @@ Limitación funcional inicial: el módulo financiero se centrará en presupuesto
 
 #### 1.2.2. Lean UX Process  
 ##### 1.2.2.1. Lean UX Problem Statements  
-##### 1.2.2.2. Lean UX Assumptions  
+##### 1.2.2.2. Lean UX Assumptions
+
+**Business Assumptions (Suposiciones de Negocio)**
+
+- Creo que mis clientes tienen la necesidad de: Centralizar la gestión de proyectos en una sola plataforma, evitando el uso disperso de herramientas como Excel, correos y chats.
+- Estas necesidades se pueden resolver con: Una plataforma digital colaborativa que integre tableros Kanban, calendarios, asignación de tareas, métricas de desempeño y un módulo financiero básico.
+- Mis clientes iniciales son (o serán): Pequeñas y medianas empresas con equipos de desarrollo o áreas de proyectos que buscan mejorar la organización y el control de sus recursos.
+- El valor principal que los clientes quieren obtener de mi servicio es: Mayor eficiencia y visibilidad en la planificación y ejecución de proyectos.
+Beneficios adicionales que también pueden obtener: Mejor colaboración entre miembros, reducción de errores, control de presupuestos y reportes para decisiones estratégicas.
+- Adquiriré a la mayoría de mis clientes a través de: Estrategias de marketing digital (redes sociales, LinkedIn), demostraciones gratuitas de la plataforma y recomendaciones entre contactos en el sector empresarial.
+- Ganaré dinero mediante: Un modelo de licenciamiento, con una versión gratuita limitada y planes de pago según el tamaño de la empresa o número de miembros y sus necesidades.
+- Mi principal competencia en el mercado será: Algunas competencias serán las plataformas similares como Trello, Asana, o Jira.
+Los superaremos debido a: Un enfoque en la integración financiera simple, precios más accesibles para pymes y una interfaz intuitiva que no requiera mucha capacitación.
+- Mi mayor riesgo de producto es: Que las empresas perciban a TaskMaster como una herramienta redundante frente a soluciones ya conocidas.
+Lo resolveremos mediante: Diferenciación en la propuesta de valor (finanzas integradas + simplicidad) y versiones de prueba gratuitas para demostrar beneficios reales.
+- Otras suposiciones que, si resultan falsas, harán que nuestro proyecto fracase:
+  - Que las pymes estén dispuestas a pagar por una solución digital en lugar de continuar con herramientas gratuitas.
+  - Que los usuarios puedan adoptar rápidamente la plataforma sin necesidad de largos procesos de capacitación.
+
+**User Assumptions (Suposiciones de Usuario)**
+
+- ¿Quién es el usuario?: Nuestros usuarios serán líderes o gerentes de empresas como Product Owners, Scrum Masters o jefes de proyectos y los miembros de equipos de desarrollo o colaboradores en proyectos empresariales.
+- ¿Dónde encaja nuestro producto en su trabajo o vida?: Dentro del entorno laboral, como herramienta diaria de planificación, asignación y seguimiento de tareas.
+- ¿Qué problemas resuelve nuestro producto?: Nuestro producto resuelve los siguientes problemas.
+  -	La dispersión de información entre múltiples canales.
+  -	La falta de visibilidad sobre el progreso del proyecto.
+  -	Las dificultades para controlar recursos financieros y plazos.
+- ¿Cuándo y cómo se usa nuestro producto?: Se utiliza de forma continua durante la jornada laboral, principalmente desde computadoras o dispositivos móviles, para registrar avances, asignar tareas y revisar métricas de desempeño.
+- ¿Qué características son importantes?: Las características más importantes de nuestro producto son.
+  -	Seguimiento del progreso mediante tableros Kanban.
+  -	Asignación clara de tareas y roles.
+  -	Colaboración en tiempo real.
+  -	Reportes de progreso y métricas.
+  -	Módulo financiero básico (presupuestos y pagos).
+- ¿Cómo debería verse y comportarse nuestro producto?: Debe tener una interfaz moderna, intuitiva y fácil de aprender, con navegación clara, diseño adaptable (responsive) y elementos visuales que permitan identificar avances y pendientes de un vistazo.
+
 ##### 1.2.2.3. Lean UX Hypothesis Statements  
 ##### 1.2.2.4. Lean UX Canvas  
 ### 1.3. Segmentos Objetivo  
