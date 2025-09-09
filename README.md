@@ -235,11 +235,112 @@ Lo resolveremos mediante: Diferenciación en la propuesta de valor (finanzas int
   -	Módulo financiero básico (presupuestos y pagos).
 - ¿Cómo debería verse y comportarse nuestro producto?: Debe tener una interfaz moderna, intuitiva y fácil de aprender, con navegación clara, diseño adaptable (responsive) y elementos visuales que permitan identificar avances y pendientes de un vistazo.
 
-##### 1.2.2.3. Lean UX Hypothesis Statements  
-##### 1.2.2.4. Lean UX Canvas  
-### 1.3. Segmentos Objetivo  
+##### 1.2.2.3. Lean UX Hypothesis Statements
 
-## Capítulo II: Requirements Elicitation & Analysis  
+Hypothesis Statement 01:
+
+- Creemos que centralizar las tareas, cronogramas y comunicación en una sola plataforma para pymes aumentará la eficiencia de sus equipos de trabajo.
+- Sabremos que estamos en lo correcto cuando veamos que más del 70 % de los usuarios reporten menos uso de herramientas externas como Excel o chats dispersos.
+
+Hypothesis Statement 02:
+
+- Creemos que implementar tableros Kanban y calendarios interactivos para líderes de proyectos mejorará la visibilidad del progreso.
+- Sabremos que estamos en lo correcto cuando recibamos retroalimentación positiva en encuestas y un aumento en la frecuencia de consulta de estos módulos.
+
+Hypothesis Statement 03:
+
+- Creemos que ofrecer un módulo financiero básico (presupuestos y pagos) para gerentes facilitará el control de recursos.
+- Sabremos que estamos en lo correcto cuando observemos que al menos el 60 % de los clientes activos utilizan regularmente el módulo financiero.
+
+Hypothesis Statement 04:
+
+- Creemos que una interfaz intuitiva y fácil de usar acelerará la adopción de la plataforma.
+- Sabremos que estamos en lo correcto cuando nuevos usuarios completen su primera tarea en menos de 10 minutos de uso.
+
+Hypothesis Statement 05:
+
+- Creemos que ofrecer una versión de prueba gratuita aumentará la tasa de conversión a clientes de pago.
+- Sabremos que estamos en lo correcto cuando al menos el 30 % de los usuarios de prueba pasen a un plan de suscripción.
+
+Hypothesis Statement 06:
+
+- Creemos que integrar métricas de desempeño para líderes de proyectos mejorará la toma de decisiones estratégicas.
+- Sabremos que estamos en lo correcto cuando los usuarios reporten mayor confianza al presentar reportes a sus superiores.
+
+Hypothesis Statement 07:
+
+- Creemos que la posibilidad de asignar roles claros (jefe de proyecto, miembro) aumentará la organización interna.
+- Sabremos que estamos en lo correcto cuando disminuya el número de tareas duplicadas o sin responsable asignado.
+
+Hypothesis Statement 08:
+
+- Creemos que permitir el acceso desde dispositivos móviles incrementará la frecuencia de uso diario.
+- Sabremos que estamos en lo correcto cuando veamos que más del 50 % de las sesiones provienen de smartphones o tablets.
+
+Hypothesis Statement 09:
+
+- Creemos que un precio accesible y escalable atraerá a pequeñas y medianas empresas frente a competidores más costosos.
+- Sabremos que estamos en lo correcto cuando los clientes comparen TaskMaster favorablemente con Asana o Jira en entrevistas cualitativas.
+
+Hypothesis Statement 10:
+
+- Creemos que brindar reportes automáticos de avance reducirá la carga administrativa de los líderes.
+- Sabremos que estamos en lo correcto cuando los usuarios indiquen que ya no necesitan generar reportes manuales en Excel.
+
+Hypothesis Statement 11:
+
+- Creemos que el diseño visual atractivo y moderno motivará un uso más constante de la plataforma.
+- Sabremos que estamos en lo correcto cuando los usuarios activos se conecten al menos 3 veces por semana.
+
+Hypothesis Statement 12:
+
+- Creemos que los recordatorios automáticos de vencimientos ayudarán a reducir retrasos en los proyectos.
+- Sabremos que estamos en lo correcto cuando el porcentaje de tareas finalizadas en fecha aumente mes a mes.
+
+Hypothesis Statement 13:
+
+- Creemos que el soporte técnico rápido y accesible aumentará la satisfacción del cliente.
+- Sabremos que estamos en lo correcto cuando la calificación promedio de soporte sea superior a 4/5.
+
+Hypothesis Statement 14:
+
+- Creemos que la segmentación de proyectos por áreas o departamentos facilitará la organización en empresas con varios equipos.
+- Sabremos que estamos en lo correcto cuando las empresas medianas gestionen más de 2 proyectos simultáneamente en la plataforma.
+
+Hypothesis Statement 15:
+
+- Creemos que la seguridad en el manejo de datos financieros incrementará la confianza de los clientes.
+- Sabremos que estamos en lo correcto cuando no tengamos reportes de incidentes graves y los usuarios destaquen positivamente la seguridad en encuestas.
+
+##### 1.2.2.4. Lean UX Canvas  
+### 1.3. Segmentos Objetivo
+
+**Segmento Objetivo 1: Líder o Gerente de Empresa**
+
+Este segmento corresponde a profesionales que ocupan cargos de liderazgo dentro de organizaciones del sector tecnológico o empresarial, tales como gerentes de proyectos, jefes de innovación o líderes de área. Su rol principal consiste en tomar decisiones estratégicas, gestionar recursos y coordinar equipos en proyectos de desarrollo ágil.
+
+- **Características Demográficas:**
+
+En general, suelen encontrarse en el rango de edad de 30 a 50 años, cuentan con estudios universitarios o de posgrado, y residen principalmente en centros urbanos como Lima, Arequipa o Trujillo, donde se concentra la mayor cantidad de empresas con proyectos tecnológicos.
+
+- **Información Estadística de Sustento:**
+
+Según el Informe del INEI (2023), el 65 % de las empresas medianas y grandes del Perú se ubican en Lima Metropolitana, siendo estas las que mayormente adoptan metodologías de gestión de proyectos ágiles. Asimismo, un estudio de Everis y EY (2022) señala que más del 40 % de las empresas peruanas del sector financiero y tecnológico ya han implementado roles asociados a Scrum Master y Product Owner, lo que refleja la creciente relevancia de este segmento para proyectos de desarrollo ágil.
+
+
+**Segmento Objetivo 2: Equipo de Desarrollo de Proyectos**
+
+Este segmento está conformado por profesionales que se desempeñan como programadores, diseñadores, analistas de sistemas o testers. Su rol es implementar soluciones técnicas, colaborar en la construcción de software y adaptarse a metodologías ágiles bajo la guía de los líderes de proyecto.
+
+- **Características Demográficas:**
+
+En su mayoría, son profesionales jóvenes entre 22 y 35 años, muchos de ellos egresados recientes o estudiantes de los últimos ciclos de carreras de ingeniería de software, sistemas o afines. Están ubicados principalmente en Lima y en regiones con polos tecnológicos como Cusco, Arequipa y La Libertad. Se caracterizan por un alto nivel de adopción tecnológica y el uso frecuente de herramientas colaborativas.
+
+- **Información Estadística de Sustento:**
+
+De acuerdo con el Banco Interamericano de Desarrollo (BID, 2021), en el Perú se proyecta una demanda de más de 30,000 profesionales de tecnologías de la información hacia el 2025. Asimismo, la Encuesta Nacional de Innovación en la Industria (INEI, 2022) señala que un 37 % de las empresas que desarrollan proyectos de innovación tecnológica han incorporado equipos de desarrollo de software en su estructura, lo cual evidencia la importancia de este grupo como segmento objetivo.
+
+## Capítulo II: Requirements Elicitation & Analysis
 ### 2.1. Competidores  
 
 En esta sección se expone un análisis de los principales competidores de WorkHub, poniendo el foco en aquellos que operan bajo modelos de negocio digitales similares o que, aunque no coincida por completo, ofrecen productos o servicios que se solapan parcialmente con nuestra propuesta. Se consideran tanto los competidores directos, que actúan en el mismo segmento de mercado, como los indirectos, que abarcan ámbitos relacionados con la organización de tareas, la planificación de actividades y la gestión colaborativa de equipos.
