@@ -206,12 +206,332 @@ Limitación funcional inicial: el módulo financiero se centrará en presupuesto
 
 ## Capítulo II: Requirements Elicitation & Analysis  
 ### 2.1. Competidores  
+
+En esta sección se expone un análisis de los principales competidores de WorkHub, poniendo el foco en aquellos que operan bajo modelos de negocio digitales similares o que, aunque no coincida por completo, ofrecen productos o servicios que se solapan parcialmente con nuestra propuesta. Se consideran tanto los competidores directos, que actúan en el mismo segmento de mercado, como los indirectos, que abarcan ámbitos relacionados con la organización de tareas, la planificación de actividades y la gestión colaborativa de equipos.
+
+**1. Wrike**
+
+**Descripción:**
+
+Wrike es una plataforma de gestión de proyectos y trabajo colaborativo diseñada para equipos de distintos tamaños. Permite planificar, priorizar y dar seguimiento a tareas en tiempo real, con funcionalidades orientadas a mejorar la visibilidad del flujo de trabajo y la comunicación entre los miembros del equipo.
+
+**Características principales:**
+- Organización de proyectos mediante diagramas de Gantt, tableros Kanban, calendarios y listas.
+
+- Creación de tareas, subtareas y dependencias para una planificación detallada.
+
+- Colaboración centralizada con comentarios, menciones, archivos adjuntos y aprobaciones en línea.
+
+- Automatización de flujos de trabajo y recordatorios para reducir tareas repetitivas.
+
+- Reportes personalizables con métricas de desempeño y paneles de control en tiempo real.
+
+- Integraciones con más de 400 herramientas, incluyendo Slack, Salesforce, Microsoft Teams y Google Workspace.
+
+- Aplicación móvil con acceso a tareas, notificaciones y actualización de proyectos desde cualquier lugar.
+
+**2. Trello**
+
+**Descripción:**
+
+Trello es una herramienta de gestión de proyectos basada en tableros Kanban, diseñada para facilitar la organización visual de tareas y proyectos. Su interfaz intuitiva y flexible lo convierte en una opción popular para equipos que buscan simplicidad y colaboración en tiempo real.
+
+**Características principales:**
+
+- Tableros, listas y tarjetas para organizar proyectos y tareas de forma visual.
+
+- Personalización de tarjetas con etiquetas, fechas de vencimiento, checklists y archivos adjuntos.
+
+- Colaboración en equipo mediante comentarios, menciones y notificaciones.
+
+- Automatización de tareas con Butler (reglas, recordatorios y acciones automáticas).
+
+- Integraciones con herramientas como Slack, Google Drive, Jira, Dropbox y más.
+
+- Plantillas predefinidas para distintos tipos de proyectos y flujos de trabajo.
+
+- Aplicación móvil con acceso completo a tableros y colaboración en cualquier lugar.
+
+**3. ClickUp**
+
+**Descripción:**
+
+ClickUp es una plataforma de productividad y gestión de proyectos todo en uno que busca centralizar tareas, documentos, comunicación y seguimiento de objetivos en un solo lugar. Está pensada para equipos que necesitan una solución flexible y personalizable, adaptándose tanto a proyectos simples como a flujos de trabajo complejos.
+
+**Características principales:**
+
+- Organización de proyectos mediante listas, tableros Kanban, calendarios, cronogramas y diagramas de Gantt.
+
+-Gestión detallada de tareas con subtareas, prioridades, dependencias y asignaciones múltiples.
+
+- Colaboración en tiempo real con comentarios, menciones, chat integrado y documentos compartidos.
+
+- Paneles de control e informes personalizables para monitorear productividad y avances.
+
+- Funcionalidades de seguimiento de tiempo y estimaciones de esfuerzo.
+
+- Automatización de procesos para reducir tareas repetitivas.
+
+- Amplia integración con herramientas como Slack, GitHub, Zoom, Google Workspace, entre otras.
+
+- Aplicación móvil y de escritorio con sincronización completa para trabajar desde cualquier dispositivo.
+
 #### 2.1.1. Análisis competitivo  
+
+| **Categoría** | **Nombre de las Startups o Empresas** | **Nuestra Startup** | **Competidor 1** | **Competidor 2** | **Competidor 3** |
+|---------------|----------------------------------------|-------------|-----------|------------|-------------|
+| **Perfil** | Overview | **WorkHub**  ![WorkHub](Assets/TB1/LOGO1.png) | **Wrike** ![Wrike](Assets/TB1/wrike.png) | **Trello** ![Trello](Assets/TB1/trello.png) | **ClickUp** ![ClickUp](Assets/TB1/cu.png) |
+|  | Ventaja competitiva (valor para el cliente) | Interfaz intuitiva y sencilla, diseñada para ser usada antes, durante y después del ciclo de vida del desarrollo de software. | Análisis predictivos, automatización avanzada y colaboración en tiempo real para mejorar productividad y visibilidad de proyectos. | Interfaz visual e intuitiva, ideal para equipos pequeños y startups que buscan simplicidad. | Plataforma altamente personalizable, integra gestión de tareas, tiempo y recursos en un solo lugar. |
+| **Perfil de Marketing** | Mercado Objetivo | Startups de tecnología que buscan eficiencia y colaboración en equipos de desarrollo. | Empresas medianas y grandes con proyectos complejos que requieren integración avanzada. | Equipos pequeños y startups que necesitan gestión visual y simple de proyectos. | Startups, pymes y empresas que buscan una solución flexible y completa de gestión. |
+|  | Estrategias de Marketing | Marketing digital dirigido a comunidades tecnológicas, pruebas gratuitas y asociaciones estratégicas. | Posicionamiento como herramienta robusta y flexible, demostraciones personalizadas y enfoque en integraciones. | Estrategia enfocada en simplicidad y accesibilidad, resaltando su facilidad de uso e integraciones populares. | Estrategia como alternativa económica y todo-en-uno, con fuerte enfoque en personalización y escalabilidad. |
+| **Perfil del Producto** | Productos y servicios | Plataforma colaborativa en tiempo real, con edición simultánea de documentos y un espacio de trabajo unificado. | Herramientas de gestión de proyectos completas: planificación, ejecución, paneles de control, cronogramas de Gantt y flujos automatizados. | Tableros Kanban para gestión visual de proyectos, con listas, etiquetas y archivos adjuntos. | Gestión de tareas, seguimiento de tiempo, automatización de flujos y colaboración integrada. |
+|  | Precios y Costos | Planes escalables desde versión gratuita para startups en etapas iniciales. | Plan gratuito limitado + planes premium desde $9.80 por usuario/mes. | Plan gratuito limitado + planes premium desde $5 por usuario/mes. | Plan gratuito robusto + planes pagos desde $5 por usuario/mes. |
+|  | Canales de distribución (Web y/o Móvil) | SaaS en la nube accesible desde navegador, con integraciones como Slack y Google Workspace. | Distribución vía web oficial, apps móviles y con integraciones (Microsoft Teams, Salesforce). | Distribución vía web oficial y apps móviles (iOS, Android). | Distribución vía web, apps móviles y extensiones para navegador. |
+| **Análisis SWOT** | Fortalezas | Innovación en colaboración en tiempo real, enfoque en startups. | Funcionalidad robusta, integraciones empresariales, análisis predictivo. | Interfaz simple e intuitiva, accesibilidad amplia, múltiples integraciones. | Altamente personalizable, buena relación calidad-precio, integración fuerte. |
+|  | Debilidades | Base de usuarios inicial limitada. | Curva de aprendizaje pronunciada. | Pocas funciones avanzadas para proyectos complejos. | Puede ser abrumador por tantas funciones. |
+|  | Oportunidades | Expansión en mercados emergentes y nuevas tecnologías. | Nuevas funciones de IA y expansión global. | Nuevas integraciones y funciones para equipos grandes. | Crecimiento global, mejoras en automatización e inteligencia artificial. |
+|  | Amenazas | Competencia con herramientas más establecidas y necesidad de mantenerse actualizado. | Competencia de herramientas más accesibles y económicas. | Competencia con herramientas más completas al mismo costo. | Competencia con plataformas con base de usuarios fiel. |
+
+
 #### 2.1.2. Estrategias y tácticas frente a competidores  
+
+Nuestra estrategia se basará en potenciar nuestras fortalezas y capitalizar las debilidades de la competencia, mientras aprovechamos las oportunidades del mercado y mitigamos las amenazas identificadas.
+
+**Fortalezas propias y cómo las aprovecharemos:**
+
+- **Interfaz intuitiva y colaboración en tiempo real:** destacaremos estas características como diferenciadores frente a competidores más complejos como Wrike y ClickUp, posicionándonos como la opción más ágil y accesible para startups tecnológicas.
+
+- **Enfoque en startups:** dirigiremos nuestras campañas de marketing digital hacia comunidades tecnológicas, incubadoras y hubs de innovación, donde nuestro producto puede generar mayor impacto inicial.
+
+
+**Debilidades de la competencia y tácticas para aprovecharlas:**
+
+- La curva de aprendizaje de Wrike y la complejidad de ClickUp representan una barrera para nuevos usuarios; en contraste, resaltaremos nuestra simplicidad y eficiencia.
+
+- Trello, aunque intuitivo, tiene limitaciones en funciones avanzadas, lo que nos permite diferenciarnos con un sistema que combina facilidad de uso con integraciones relevantes.
+
+**Oportunidades del mercado y acciones concretas:**
+
+- Aprovecharemos el crecimiento de las startups tecnológicas y de los equipos distribuidos, ofreciendo planes escalables y accesibles, desde versiones gratuitas hasta opciones premium.
+
+- Incorporaremos integraciones con herramientas ampliamente utilizadas (Slack, Google Workspace, Microsoft Teams), fortaleciendo la conectividad con el ecosistema digital de nuestros clientes.
+
+- Implementaremos mejoras continuas basadas en retroalimentación, con especial foco en automatización de tareas y en el desarrollo de funcionalidades innovadoras que mantengan vigente nuestra propuesta.
+
+**Amenazas y medidas de mitigación:**
+
+- Frente a la fuerte competencia de plataformas consolidadas, mantendremos precios flexibles y competitivos que atraigan a equipos en crecimiento.
+
+- Para contrarrestar la lealtad de usuarios hacia otras herramientas, nos enfocaremos en ofrecer una experiencia de usuario excepcional y soporte cercano, creando una comunidad que impulse la fidelización.
+
+- Adoptaremos un enfoque proactivo de innovación para mantenernos al día con las tendencias del sector y responder rápidamente a cambios en las demandas del mercado.
+
+Con este enfoque integral, WorkHub podrá diferenciarse en el mercado, consolidar su presencia entre startups y escalar progresivamente hacia segmentos más amplios, garantizando relevancia y competitividad sostenida.
+
 ### 2.2. Entrevistas  
 #### 2.2.1. Diseño de entrevistas  
+
+**Segmentos encontrados:**
+
+- Líder o Gerente de Empresa (Product Owner y Scrum Master)
+
+- Equipo de Desarrollo de proyectos
+
+Antes de poder realizar las entrevistas, consideramos prudente poder concretar un análisis previo para poder realizar las entrevistas de una mejor manera. Es por ello, que para cada uno de nuestros segmentos proponemos estas preguntas para poder conocer un poco más sobre nuestro público objetivo.
+
+Preguntas :
+
+preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup **"TASKMASTER"**:
+
+**Segmento: Líder o Gerente de Empresa (Product Owner y Scrum Master)**
+
+**Principales:**
+
+1. **Introducción al Rol**: ¿Podría describir su rol en la empresa y las principales responsabilidades que tiene en el área e?
+
+2. **Contexto Empresarial**: ¿Cuál es el enfoque principal de su empresa en términos de productos o servicios de software?
+
+3. **Crecimiento y Desafíos**: ¿Cuáles son los mayores desafíos que enfrenta su empresa actualmente en términos de crecimiento y gestión de proyectos?
+
+4. **Experiencias Pasadas**: ¿Ha tenido alguna experiencia negativa con las herramientas actuales de gestión de proyectos que utiliza?
+
+5. **Necesidades Específicas**: ¿Qué características considera esenciales en una herramienta de gestión de proyectos para apoyar el crecimiento y la eficiencia de su equipo?
+
+6. **Colaboración y Comunicación**: ¿Cómo maneja actualmente la colaboración y la comunicación entre los diferentes equipos dentro de su empresa?
+
+7. **Evaluación de Soluciones Actuales**: ¿Siente que las herramientas actuales limitan su capacidad para innovar y liderar en su sector?
+
+8. **Visión Futura**: ¿Cómo imagina la evolución de sus procesos de gestión de proyectos en los próximos 5 años?
+
+9. **Interés en Nuevas Soluciones**: ¿Qué tan abierto estaría a explorar y adoptar una nueva herramienta de gestión de proyectos que ofrezca características avanzadas y personalizables?
+
+10. **Experiencia con Proveedores Externos**: ¿Cuál ha sido su experiencia al trabajar con proveedores externos de soluciones de software? ¿Qué busca en un socio estratégico?
+
+11. **Expectativas a Largo Plazo**: ¿Qué expectativas tendría para una colaboración a largo plazo con una empresa que ofrezca soluciones de gestión de proyectos?
+
+12. **Adaptabilidad y Personalización**: ¿Qué tan importante es para usted que una herramienta de gestión se adapte específicamente a las necesidades y procesos de su empresa?
+
+13. **Consideraciones de Seguridad**: ¿Qué preocupaciones o requisitos de seguridad tiene al implementar nuevas herramientas de software?
+
+14. **Disposición a Colaborar**: Si encuentra que una herramienta cumple con sus expectativas, ¿estaría dispuesto a colaborar con la empresa desarrolladora para ajustar la herramienta a las necesidades emergentes de su equipo?
+
+**Complementarias:**
+
+1. **Integración con Herramientas Existentes**: ¿Qué tan importante es para usted que la nueva herramienta de gestión de proyectos se integre sin problemas con las herramientas de software que ya utiliza su equipo?
+
+2. **Medición del Éxito del Proyecto**: ¿Cuáles son los indicadores clave que utiliza para medir el éxito de un proyecto? ¿Cómo una nueva herramienta podría ayudar a mejorar estos indicadores?
+
+3. **Gestión de Riesgos**: ¿Cómo maneja actualmente los riesgos en los proyectos de desarrollo de software? ¿Qué características le gustaría ver en una herramienta de gestión para facilitar este proceso?
+
+4. **Personalización de Flujos de Trabajo**: ¿Qué tan crucial es para usted la capacidad de personalizar los flujos de trabajo dentro de una herramienta de gestión de proyectos?
+
+5. **Soporte y Actualizaciones**: ¿Qué expectativas tiene respecto al soporte técnico y la frecuencia de actualizaciones de una herramienta de gestión de proyectos?
+
+**Segmento: Equipo de Desarrollo de proyectos**
+
+**Principales:**
+
+1. **Introducción al Rol**: ¿Podría compartirnos un poco sobre su rol en el equipo de desarrollo y las tareas diarias que realiza?
+
+2. **Contexto del Equipo**: ¿Cómo describiría la estructura de su equipo y el tipo de proyectos en los que trabajan habitualmente?
+
+3. **Desafíos en el Desarrollo**: ¿Cuáles son los principales desafíos que enfrenta su equipo en la gestión del flujo de trabajo y la colaboración?
+
+4. **Experiencias Pasadas**: ¿Han tenido alguna experiencia negativa con las herramientas actuales que utilizan para la gestión de proyectos?
+
+5. **Necesidades Específicas**: ¿Qué funcionalidades cree que le facilitarían a su equipo la colaboración y la gestión del trabajo diario?
+
+6. **Impacto en la Productividad**: ¿Cómo afecta la falta de herramientas adecuadas en la eficiencia y productividad del equipo?
+
+7. **Visibilidad y Supervisión**: ¿Qué tan importante es para su equipo tener visibilidad sobre el progreso de los proyectos y el trabajo de cada miembro?
+
+8. **Satisfacción con Soluciones Actuales**: ¿Sienten que las herramientas actuales limitan su capacidad de entregar proyectos de alta calidad en tiempo y forma?
+
+9. **Visión Futura**: ¿Cómo imagina que podrían mejorar los procesos de desarrollo con una herramienta que optimice la gestión y la colaboración?
+
+10. **Evaluación de Nuevas Soluciones**: ¿Qué factores considera cruciales al evaluar una nueva herramienta de gestión para su equipo?
+
+11. **Experiencia con Proveedores Externos**: ¿Han trabajado anteriormente con proveedores de herramientas de software? ¿Cómo fue esa experiencia?
+
+12. **Expectativas a Largo Plazo**: ¿Qué espera de una colaboración a largo plazo con un proveedor de soluciones de gestión de proyectos?
+
+13. **Personalización y Flexibilidad**: ¿Qué tan importante es para su equipo que una herramienta de gestión sea flexible y personalizable según sus necesidades?
+
+14. **Disposición a Adoptar Nuevas Herramientas**: Si una nueva herramienta satisface las necesidades del equipo, ¿estaría dispuesto a adoptarla y colaborar con la empresa desarrolladora para su mejora continua?
+
+**Complementarias:**
+
+1. **Interfaz de Usuario**: ¿Qué tan importante es para usted que la interfaz de la herramienta de gestión sea intuitiva y fácil de usar? ¿Cómo influiría esto en la adopción por parte del equipo?
+
+2. **Colaboración entre Equipos**: ¿Cómo podría una nueva herramienta de gestión mejorar la colaboración no solo dentro de su equipo, sino también con otros departamentos de la empresa?
+
+3. **Manejo de Prioridades**: ¿Cómo maneja actualmente su equipo las prioridades de tareas y proyectos? ¿Qué funcionalidades en una herramienta de gestión podrían facilitar este proceso?
+
+4. **Capacitación y Adaptación**: ¿Qué tan fácil o difícil le resulta a su equipo adaptarse a nuevas herramientas? ¿Qué tipo de soporte o capacitación considera necesario para una transición exitosa?
+
+5. **Retroalimentación Continua**: ¿Cómo se maneja actualmente la retroalimentación dentro del equipo? ¿Qué tan útil sería una herramienta que facilite la retroalimentación continua sobre el progreso y la calidad del trabajo?
+
 #### 2.2.2. Registro de entrevistas  
+
+
+**Segmento 1:** **Líder o Gerente de Empresa (Product Owner y Scrum Master)**
+
+| **ENTREVISTA 1** | |
+|------------------|----------------------------|
+| **Nombre entrevistado** |  Juan de la Cruz  |
+| **Edad** | 25 |
+| **Profesión** | Ingeniero de Software |
+| **Departamento** | Lima  |
+| **Inicio del video** | 0:00 |
+| **Fin del video** |  |
+| **Link del video** |  |
+| **Foto entrevista** | [ddd](Assets/TB1/entrevista1.png) |
+| **Resumen** | La entrevista con Juan de la Cruz, lidel del Grupo JPSP, reveló aspectos clave sobre la gestión de proyectos y el impacto de las herramientas que existen actualmente. El destacó que su principal responsabilidad es supervisar al equipo de desarrollo para cumplir con los plazos y estándares de calidad, mientras maneja el crecimiento rápido y los desafíos de integración tecnológica. Aunque también menciono que ha tenido experiencias mixtas con las herramientas actuales, principalmente debido a problemas de integración y personalización, considera esencial que las nuevas soluciones ofrezcan flexibilidad, integración fluida y capacidades avanzadas. La incorporación de tecnologías emergentes es vista como crucial para mejorar la eficiencia y la toma de decisiones. Además, se busca una solución que facilite la colaboración y la comunicación centralizada, y que esté dispuesta a adaptarse a las necesidades cambiantes del equipo. El entrevistado enfatiza la importancia de la seguridad y prioriza a los proveedores que brindan soporte confiable y pueden adaptar sus soluciones a los requisitos individuales. En el futuro, se espera una evolución hacia mayor automatización y herramientas que se adapten rápidamente a los cambios en los proyectos. |
+
+| **ENTREVISTA 2** | |
+|------------------|----------------------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** |  |
+| **Fin del video** |  |
+| **Link del video** |  |
+| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Resumen** |  |
+
+| **ENTREVISTA 3** | |
+|------------------|----------------------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** |  |
+| **Fin del video** |  |
+| **Link del video** |  |
+| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Resumen** |  |
+
+| **Duración total de las entrevistas** |  |
+| **Link general del video** |  |
+
+
+**Segmento 2: Equipo de Desarrollo de proyectos**
+
+| **ENTREVISTA 1** | |
+|------------------|----------------------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** |  |
+| **Fin del video** |  |
+| **Link del video** |  |
+| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Resumen** |  |
+
+| **ENTREVISTA 2** | |
+|------------------|----------------------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** |  |
+| **Fin del video** |  |
+| **Link del video** |  |
+| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Resumen** |  |
+
+| **ENTREVISTA 3** | |
+|------------------|----------------------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** |  |
+| **Fin del video** |  |
+| **Link del video** |  |
+| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Resumen** |  |
+
+| **Duración total de las entrevistas** |  |
+| **Link general del video** |  |
+
+
 #### 2.2.3. Análisis de entrevistas  
+
+**Análisis Segmento 1:** **Líder o Gerente de Empresa (Product Owner y Scrum Master)**
+
+Las entrevistas con líderes de empresas destacan una urgente necesidad de modernizar las herramientas de gestión de proyectos. Un 75% de los entrevistados enfatiza la importancia de integrar tecnologías emergentes, mientras que 85% considera que estas herramientas deben ser intuitivas y adaptables a diversos dispositivos.
+
+La mayoría de los líderes, aproximadamente 67%, ha tenido experiencias mixtas con las soluciones actuales, citando problemas de integración y personalización. La flexibilidad y una buena relación costo-beneficio son cruciales, con un 70% de los encuestados indicando que las nuevas soluciones deben adaptarse a las necesidades del equipo. Además, la seguridad de los datos es prioritaria para el 80%, quienes buscan proveedores confiables.
+
+Los líderes están enfocados en encontrar herramientas modernas que no solo mejoren la eficiencia y la colaboración, sino que también respondan a las cambiantes demandas de los proyectos. La integración de la IA y la personalización de las herramientas son vistas como esenciales para el éxito futuro en sus organizaciones.
+
+**Análisis Segmento 2: Equipo de Desarrollo de proyectos**
+
+Las entrevistas con integrantes de equipos de desarrollo de proyectos revelan desafíos significativos con las herramientas de gestión actuales. Un 78% menciona la falta de flexibilidad y adaptabilidad, lo que limita la colaboración y la eficiencia. Estas herramientas son a menudo percibidas como poco intuitivas y difíciles de personalizar. Los entrevistados coinciden en que es crucial contar con herramientas innovadoras con una interfaz de usuario mejorada y seguimiento constante del progreso. Un 70% sostiene que las soluciones ideales deben ser precisas y adaptables a distintos modelos de negocio. Fabricio destaca que la falta de herramientas innovadoras afecta la colaboración. Agustín señala que herramientas como GitHub son poco intuitivas y que la comunicación podría mejorar con mejores programas de gestión. Rodrigo menciona que la falta de seguimiento y flexibilidad ralentiza el trabajo y espera que futuras herramientas integren tecnologías emergentes. En resumen, los equipos de desarrollo buscan soluciones que mejoren la eficiencia y la colaboración, priorizando la adaptabilidad y la facilidad de uso.
+
 ### 2.3. Needfinding  
 #### 2.3.1. User Personas  
 #### 2.3.2. User Task Matrix  
