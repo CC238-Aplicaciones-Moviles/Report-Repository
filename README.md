@@ -445,7 +445,7 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Inicio del video** | 0:00 |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | [ddd](Assets/TB1/entrevista1.png) |
+| **Foto entrevista** | ![Texto alternativo](Assets/TB1/entrevista1.png) |
 | **Resumen** | La entrevista con Juan de la Cruz, lidel del Grupo JPSP, reveló aspectos clave sobre la gestión de proyectos y el impacto de las herramientas que existen actualmente. El destacó que su principal responsabilidad es supervisar al equipo de desarrollo para cumplir con los plazos y estándares de calidad, mientras maneja el crecimiento rápido y los desafíos de integración tecnológica. Aunque también menciono que ha tenido experiencias mixtas con las herramientas actuales, principalmente debido a problemas de integración y personalización, considera esencial que las nuevas soluciones ofrezcan flexibilidad, integración fluida y capacidades avanzadas. La incorporación de tecnologías emergentes es vista como crucial para mejorar la eficiencia y la toma de decisiones. Además, se busca una solución que facilite la colaboración y la comunicación centralizada, y que esté dispuesta a adaptarse a las necesidades cambiantes del equipo. El entrevistado enfatiza la importancia de la seguridad y prioriza a los proveedores que brindan soporte confiable y pueden adaptar sus soluciones a los requisitos individuales. En el futuro, se espera una evolución hacia mayor automatización y herramientas que se adapten rápidamente a los cambios en los proyectos. |
 
 | **ENTREVISTA 2** | |
@@ -457,7 +457,7 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Foto entrevista** | ![ddd](Assets/TB1/) |
 | **Resumen** |  |
 
 | **ENTREVISTA 3** | |
@@ -469,11 +469,13 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Foto entrevista** | ![ddd](Assets/TB1/) |
 | **Resumen** |  |
 
-| **Duración total de las entrevistas** |  |
-| **Link general del video** |  |
+| **Duración total de las entrevistas** |   |
+|---------------------------------------|---|
+| **Link general del video**            |   |
+
 
 
 **Segmento 2: Equipo de Desarrollo de proyectos**
@@ -487,7 +489,7 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Foto entrevista** | ![ddd](Assets/TB1/) |
 | **Resumen** |  |
 
 | **ENTREVISTA 2** | |
@@ -499,7 +501,7 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Foto entrevista** | ![ddd](Assets/TB1/) |
 | **Resumen** |  |
 
 | **ENTREVISTA 3** | |
@@ -511,11 +513,13 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | [ddd](Assets/TB1/) |
+| **Foto entrevista** | ![ddd](Assets/TB1/) |
 | **Resumen** |  |
 
-| **Duración total de las entrevistas** |  |
-| **Link general del video** |  |
+| **Duración total de las entrevistas** |   |
+|---------------------------------------|---|
+| **Link general del video**            |   |
+
 
 
 #### 2.2.3. Análisis de entrevistas  
