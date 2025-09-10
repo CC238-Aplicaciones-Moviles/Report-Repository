@@ -151,6 +151,13 @@ TaskMaster es una plataforma digital de gestión de proyectos colaborativos empr
 **Objetivo:**
 Brindar a las empresas una solución centralizada que facilite la planificación, ejecución y control de proyectos, mejorando la eficiencia, la colaboración entre equipos y la gestión de recursos.
 
+**Misión**
+Facilitar a las organizaciones la gestión de proyectos mediante una plataforma intuitiva y colaborativa que integre tanto la productividad del equipo como el control financiero, impulsando la eficiencia y la transparencia.
+
+**Visión**
+
+Convertirse en la herramienta de gestión de proyectos empresariales líder en Latinoamérica, reconocida por su capacidad de simplificar la colaboración y aportar valor estratégico en la toma de decisiones.
+
 #### 1.1.2. Perfiles de integrantes del equipo  
 || Miembros del equipo                             | Codigo Estudiante | Descripcion            |
 |------------------| ----------------------------------------------- | ----------------- | ---------------------- |
@@ -158,47 +165,107 @@ Brindar a las empresas una solución centralizada que facilite la planificación
 
 ### 1.2. Solution Profile 
 
-En muchas empresas, los proyectos se gestionan de manera desordenada utilizando múltiples herramientas desconectadas (Excel, correos, chats). Esto genera duplicidad de esfuerzos, falta de visibilidad del progreso y dificultades para controlar los recursos financieros asociado
+En muchas empresas, los proyectos se gestionan de manera desordenada utilizando múltiples herramientas desconectadas (Excel, correos, chats). Esto genera duplicidad de esfuerzos, falta de visibilidad del progreso y dificultades para controlar los recursos financieros asociado.
+
+- **La solución debe abordar principalmente:**
+
+  - Elaboración de la gestión de proyectos: unificar tareas, cronogramas y comunicación en un solo espacio.
+  - Colaboración en tiempo real: permitir que los miembros actualicen avances y reciban notificaciones inmediatas.
+  - Asignación de responsabilidades: con roles definidos (jefes de proyecto y miembros).
+  - Seguimiento del progreso: mediante tableros visuales y calendarios.
+
+
+- **Restricciones y Alcance**
+
+  - Restricciones técnicas: la plataforma debe ser accesible desde dispositivos móvile, con una interfaz intuitiva y adaptable.
+  - Alcance inicial: orientada a pequeñas y medianas empresas que requieren optimizar la gestión de proyectos sin recurrir a soluciones costosas y complejas.
+  - Limitación funcional inicial: el módulo financiero se centrará en presupuestos y pagos básicos, con posibilidad de ampliación en futuras versiones.
+
+
 #### 1.2.1. Antecedentes y problemática  
 
 En el entorno empresarial actual, las organizaciones suelen depender de múltiples herramientas dispersas —como hojas de cálculo, correos electrónicos, aplicaciones de mensajería y sistemas separados para finanzas o planificación— lo que genera una gestión de proyectos fragmentada. Esta dispersión provoca una pérdida considerable de tiempo, disminución de productividad y, en muchos casos, pérdida de ingresos. Un informe de Quickbase (2023) encontró que los sistemas fragmentados son responsables de graves impactos en la eficiencia organizacional y los resultados financieros. Además, Atlassian (2024) observa que el 56 % de los trabajadores del conocimiento sufren flujos de trabajo desconectados por variaciones en la forma de seguimiento del trabajo, lo que obstaculiza la visibilidad y la colaboración eficaz.
 
-La solución debe abordar principalmente:
+**1. What / ¿QUÉ?**
 
-Centralización de la gestión de proyectos: unificar tareas, cronogramas y comunicación en un solo espacio.
+¿Cuál es el problema?<br><br>
+Las empresas utilizan múltiples herramientas desconectadas como Excel, correos, mensajería instantánea para gestionar proyectos. Esto genera fragmentación, duplicidad de información, retrasos y pérdida de visibilidad sobre el progreso y los costos.
 
-Colaboración en tiempo real: permitir que los miembros actualicen avances y reciban notificaciones inmediatas.
+¿Cuál es la relación con la persona en cuestión?<br><br>
+Los líderes de proyecto enfrentan dificultad para coordinar tareas y controlar recursos, mientras que los colaboradores gastan tiempo buscando información y actualizando manualmente avances en distintas plataformas.
 
-Asignación clara de responsabilidades: con roles definidos (jefes de proyecto y miembros).
+**2. When / ¿CUÁNDO?**
 
-Seguimiento del progreso: mediante tableros visuales (Kanban) y calendarios interactivos.
+¿Cuándo sucede el problema?<br><br>
+De forma constante durante el ciclo de vida de los proyectos, especialmente en la planificación, el seguimiento de avances y el control financiero.
 
-Gestión financiera integrada: presupuestos, gastos y pagos dentro de la misma plataforma.
+¿Cuándo utiliza el cliente el producto?<br><br>
+El cliente (líder o miembro de equipo) utiliza TaskMaster diariamente, tanto en la asignación/ejecución de tareas como en la revisión de métricas y reportes.
 
-Métricas y reportes: indicadores de desempeño para la toma de decisiones estratégicas.
+**3. Where / ¿DÓNDE?**
 
-Objetivos
+¿Dónde está el cliente cuando usa el producto?<br><br>
+En entornos de oficina, en modalidad híbrida o trabajo remoto. El producto se usa principalmente desde computadoras y dispositivos móviles.
 
-Incrementar la eficiencia de los equipos de trabajo mediante la automatización de procesos de planificación y seguimiento.
+¿Dónde surge el problema?<br><br>
+En la dispersión digital: cuando la información está repartida en varias aplicaciones no integradas.
 
-Reducir errores y retrasos al centralizar la comunicación y la asignación de tareas.
+**4. Who / ¿QUIÉN?**
 
-Brindar a los líderes de proyecto control total sobre avances, recursos y finanzas.
+¿Quiénes se ven involucrados en el problema?<br>
 
-Facilitar la toma de decisiones basadas en información actualizada y en tiempo real.
+Jefes de proyecto → responsables de coordinar equipos y controlar resultados.
+Miembros de equipo → encargados de ejecutar tareas y reportar avances.
 
-Restricciones y Alcance
 
-Restricciones técnicas: la plataforma debe ser accesible desde dispositivos móviles y web, con una interfaz intuitiva y adaptable a diferentes tipos de empresas.
+¿Cuáles son las causas del problema?<br>
+  - Uso de demasiadas aplicaciones sin integración.
+  - Dependencia de procesos manuales.
+  - Falta de visibilidad centralizada en la gestión de proyectos.
 
-Restricciones de seguridad: manejo seguro de información sensible de proyectos y datos financieros con protocolos de encriptación.
+**5. Why / ¿POR QUÉ?**
+¿Por qué sucede el problema? 
 
-Alcance inicial: orientada a pequeñas y medianas empresas que requieren optimizar la gestión de proyectos sin recurrir a soluciones costosas y complejas.
+Porque las empresas suelen adoptar herramientas aisladas que resuelven problemas específicos (calendarios, chats, finanzas, gestión de tareas), pero no integran toda la operación en un mismo ecosistema.
 
-Limitación funcional inicial: el módulo financiero se centrará en presupuestos y pagos básicos, con posibilidad de ampliación en futuras versiones.
+Esto genera duplicidad, trabajo extra y decisiones basadas en información incompleta.
+
+**6. How / ¿CÓMO?**
+
+¿En qué condiciones los clientes usan nuestro producto? <br><br>
+En entornos de proyectos colaborativos, con equipos distribuidos, necesidad de comunicación rápida y presión por cumplir plazos y presupuestos.
+
+¿Cómo se diferencia el problema del estado normal (óptimo)? <br><br>
+En un estado óptimo, la gestión debería ser fluida, centralizada y con datos actualizados en tiempo real. Actualmente, existe fricción por la fragmentación de sistemas.
+
+**7. How Much / ¿CUÁNTO?**
+
+¿Cuántos problemas se dan en un día, una semana o un mes? <br><br>
+Según Quickbase (2023), el 70 % de los empleados pierde hasta 20 horas por semana debido a sistemas fragmentados. Esto equivale a medio tiempo laboral desperdiciado por cada trabajador.
+
+¿Cuánto dinero están implicando? <br><br>
+Atlassian (2024) reporta que las organizaciones con ecosistemas desconectados tienen un 37 % menos probabilidad de cumplir sus metas de ingresos. Además, Forrester (2024) encontró que el 76 % de las PMOs usan cinco o más herramientas por proyecto, generando pérdidas de hasta un 23 % del tiempo semanal en tareas redundantes.
+
 
 #### 1.2.2. Lean UX Process  
-##### 1.2.2.1. Lean UX Problem Statements  
+
+Según Pragma (2021), el proceso Lean UX es la mezcla de metodologías ágiles y temas de usabilidad, donde se prioriza la experiencia de usuario por la creación de un producto. Teniendo en cuenta ello, hemos elaborado nuestro Lean UX process basándonos en sus cuatro pilares principales: problem statements, assumptions, hypothesis y canvas.
+
+##### 1.2.2.1. Lean UX Problem Statements
+
+**Problem Statement #1 – Jefes de Proyecto**
+
+Nuestra plataforma busca brindar a los jefes de proyecto una herramienta centralizada que integre la asignación de tareas, el seguimiento de avances y la gestión financiera, garantizando mayor control y visibilidad en sus proyectos.Hemos identificado que los jefes de proyecto enfrentan dificultades para coordinar equipos cuando la información está dispersa en múltiples herramientas (hojas de cálculo, correos, chats y sistemas financieros independientes). Esta situación provoca retrasos, duplicación de esfuerzos, falta de transparencia en el uso de recursos y complicaciones en la toma de decisiones.
+
+Ante este desafío, surge la pregunta clave: ¿Cómo podemos garantizar que los jefes de proyecto tengan un espacio centralizado para coordinar equipos, supervisar avances y controlar finanzas de manera eficiente y en tiempo real?
+
+**Problem Statement #2 – Miembros de Equipo**
+
+Nuestra plataforma busca ofrecer a los miembros de equipo un espacio único y sencillo donde puedan visualizar sus tareas, plazos y prioridades, colaborando de forma más ágil y organizada.
+Hemos identificado que los colaboradores suelen perder tiempo al cambiar entre diferentes canales de comunicación y hojas de cálculo, lo que genera confusión en responsabilidades, olvidos de plazos y baja productividad. Esta dispersión afecta el rendimiento individual y colectivo, además de impactar negativamente en la satisfacción y el clima laboral.
+
+Ante este desafío, surge la pregunta clave: ¿Cómo podemos brindar a los miembros de equipo una herramienta unificada que simplifique la organización de tareas, reduzca la confusión y fomente la colaboración efectiva en los proyectos?
+
 ##### 1.2.2.2. Lean UX Assumptions
 
 **Business Assumptions (Suposiciones de Negocio)**
