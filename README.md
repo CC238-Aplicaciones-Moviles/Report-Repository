@@ -685,15 +685,17 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 
 | **ENTREVISTA 1** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
-| **Foto entrevista** | ![ddd](Assets/TB1/) |
-| **Resumen** |  |
+| **Nombre entrevistado** | Eric Espinoza Perez |
+| **Edad** | 24 |
+| **Profesión** | Ingeniero de Sistemas |
+| **Departamento** | Lima |
+| **Inicio del video** |  0:01|
+| **Fin del video** | 7:12 |
+| **Link del video** | https://www.youtube.com/watch?v=chsyvcs7MOw |
+| **Foto entrevista** | ![ddd](Assets/TB1/eric_1.png) |
+| **Resumen** | El entrevistado, de 24 años y parte de un equipo de desarrollo de proyectos multidisciplinario en psicología, señaló que su rol se centra en analizar necesidades, coordinar entregables y apoyar la organización del flujo de trabajo. Su equipo trabaja en proyectos digitales con participación de desarrolladores, diseñadores y administradores, pero enfrenta dificultades en la gestión debido a la dispersión de información entre múltiples canales (correos, chats, hojas de cálculo), lo que provoca retrasos, duplicidad de esfuerzos y una menor eficiencia en la colaboración. Además, mencionó experiencias negativas con herramientas poco intuitivas y rígidas, que limitan la capacidad de cumplir plazos con calidad.
+
+En cuanto a necesidades, destacó la importancia de contar con una plataforma centralizada que integre tableros visuales, calendarios compartidos, notificaciones claras.|
 
 | **ENTREVISTA 2** | |
 |------------------|----------------------------|
