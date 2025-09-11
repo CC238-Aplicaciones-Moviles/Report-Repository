@@ -746,11 +746,11 @@ A continuación, se presentan las User Personas que representan a nuestros dos s
 
 **Semento 1: Líderes de projecto:**
 
-![ddd](Assets/TB1/Diego Ramírez Tejeda.png)
+![ddd](Assets/TB1/DiegoRamírezTejeda.png)
 
 **Semento 2: Equipo de Desarrollo de Proyectos:**
 
-![ddd](Assets/TB1/Suno Quispe Huaman (1).png)
+![ddd](Assets/TB1/SunoQuispeHuaman.png)
 
 #### 2.3.2. User Task Matrix  
 #### 2.3.3. User Journey Mapping  
