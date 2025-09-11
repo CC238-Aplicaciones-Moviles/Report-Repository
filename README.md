@@ -743,7 +743,14 @@ Las entrevistas con integrantes de equipos de desarrollo de proyectos revelan de
 #### 2.3.1. User Personas  
 #### 2.3.2. User Task Matrix  
 #### 2.3.3. User Journey Mapping  
-#### 2.3.4. Empathy Mapping  
+#### 2.3.4. Empathy Mapping
+El Empathy Map nos permite identificar las emociones, pensamientos y acciones de nuestros usuarios, para comprender mejor sus necesidades y motivaciones. Con este propósito, se elaboraron los siguientes cuadros para los segmentos objetivo definidos:
+**Semento 1: Líderes de projecto:**
+![ddd](Assets/TB1/EmpathymapSegmento1.png)
+<br>
+**Semento 2: Equipo de Desarrollo de Proyectos:**
+![ddd](Assets/TB1/EmpathymapSegmento2.png)
+<br>
 #### 2.3.5. As-is Scenario Mapping  
 ### 2.4. Ubiquitous Language  
 
