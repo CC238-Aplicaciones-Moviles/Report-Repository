@@ -765,8 +765,35 @@ El Empathy Map nos permite identificar las emociones, pensamientos y acciones de
 
 <br>
 <br>
+
 #### 2.3.5. As-is Scenario Mapping  
+
 ### 2.4. Ubiquitous Language  
+
+En el nuestro proyecto, es fundamental contar con un lenguaje común que nos permita comunicarnos de manera clara y sin ambigüedades. Por ello, hemos definido un Ubiquitous Language, compuesto por términos clave que utilizaremos para describir tareas, roles y procesos. De esta forma, aseguramos que todos los involucrados compartan la misma comprensión y podamos trabajar de manera más organizada y eficiente.
+
+| Término (Inglés)        | Traducción (Español)   | Definición                                                                 |
+|--------------------------|------------------------|----------------------------------------------------------------------------|
+| Project                 | Proyecto               | Conjunto de actividades planificadas con un objetivo específico, un tiempo definido y recursos asignados. |
+| Task                    | Tarea                  | Actividad puntual asignada a un miembro del equipo, con fecha de inicio y vencimiento. |
+| Kanban Board            | Tablero Kanban         | Herramienta visual que organiza las tareas en columnas según su estado (pendiente, en progreso, completada). |
+| Milestone               | Hito                   | Evento clave dentro del proyecto que marca un avance importante o un entregable crítico. |
+| Budget                  | Presupuesto            | Estimación financiera destinada a la ejecución de un proyecto, que incluye gastos, pagos y recursos. |
+| Expense                 | Gasto                  | Registro de salida de dinero asociada a un proyecto. |
+| Team Member             | Miembro de equipo      | Profesional responsable de ejecutar tareas asignadas dentro del proyecto. |
+| Project Leader          | Líder de proyecto      | Persona encargada de coordinar al equipo, supervisar el progreso y garantizar el cumplimiento de plazos y recursos. |
+| Collaboration           | Colaboración           | Interacción en tiempo real entre los miembros del equipo para avanzar en el desarrollo del proyecto. |
+| Progress Tracking       | Seguimiento del progreso | Monitoreo continuo de tareas, métricas y resultados para evaluar el avance del proyecto. |
+| Notification            | Notificación           | Mensaje automático que informa a los usuarios sobre actualizaciones, vencimientos o cambios relevantes en el proyecto. |
+| Report                  | Reporte                | Documento o visualización que muestra el estado de un proyecto, métricas de desempeño y cumplimiento de objetivos. |
+| Role                    | Rol                    | Función asignada dentro del proyecto (ejemplo: líder, miembro, supervisor). |
+| Deadline                | Fecha límite           | Día y hora máxima en la que debe completarse una tarea o entregable. |
+| Workspace               | Espacio de trabajo     | Área digital dentro de la plataforma donde un equipo gestiona sus proyectos y tareas. |
+| Sprint                  | Iteración / Sprint     | Periodo corto de trabajo (1-4 semanas) en el que se completan entregables definidos dentro de metodologías ágiles. |
+| Backlog                 | Lista de pendientes    | Conjunto priorizado de tareas, historias de usuario o requerimientos que deben desarrollarse en el proyecto. |
+| User Story              | Historia de usuario    | Descripción breve y clara de una funcionalidad desde la perspectiva del usuario final. |
+| Deliverable             | Entregable             | Resultado tangible o intangible que debe ser completado y entregado en el marco de un proyecto. |
+| Dependency              | Dependencia            | Relación entre tareas o actividades en la que una no puede comenzar o finalizar hasta que otra se haya completado. |
 
 ## Capítulo III: Requirements Specification  
 ### 3.1. To-Be Scenario Mapping  
