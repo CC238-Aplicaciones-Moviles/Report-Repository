@@ -878,6 +878,15 @@ A continuación, se presentan las User Personas que representan a nuestros dos s
 
 
 #### 2.3.3. User Journey Mapping  
+
+**Semento 1: Líderes de projecto:**
+
+![ddd](Assets/TB1/userjourneymap1.jpg)
+
+**Semento 2: Equipo de Desarrollo de Proyectos:**
+
+![ddd](Assets/TB1/userjourneymap2.jpg)
+
 #### 2.3.4. Empathy Mapping
 El Empathy Map nos permite identificar las emociones, pensamientos y acciones de nuestros usuarios, para comprender mejor sus necesidades y motivaciones. Con este propósito, se elaboraron los siguientes cuadros para los segmentos objetivo definidos:
 
