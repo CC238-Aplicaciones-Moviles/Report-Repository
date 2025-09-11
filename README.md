@@ -740,7 +740,18 @@ Los líderes están enfocados en encontrar herramientas modernas que no solo mej
 Las entrevistas con integrantes de equipos de desarrollo de proyectos revelan desafíos significativos con las herramientas de gestión actuales. Un 78% menciona la falta de flexibilidad y adaptabilidad, lo que limita la colaboración y la eficiencia. Estas herramientas son a menudo percibidas como poco intuitivas y difíciles de personalizar. Los entrevistados coinciden en que es crucial contar con herramientas innovadoras con una interfaz de usuario mejorada y seguimiento constante del progreso. Un 70% sostiene que las soluciones ideales deben ser precisas y adaptables a distintos modelos de negocio. Fabricio destaca que la falta de herramientas innovadoras afecta la colaboración. Agustín señala que herramientas como GitHub son poco intuitivas y que la comunicación podría mejorar con mejores programas de gestión. Rodrigo menciona que la falta de seguimiento y flexibilidad ralentiza el trabajo y espera que futuras herramientas integren tecnologías emergentes. En resumen, los equipos de desarrollo buscan soluciones que mejoren la eficiencia y la colaboración, priorizando la adaptabilidad y la facilidad de uso.
 
 ### 2.3. Needfinding  
-#### 2.3.1. User Personas  
+#### 2.3.1. User Personas
+
+A continuación, se presentan las User Personas que representan a nuestros dos segmentos principales.
+
+**Semento 1: Líderes de projecto:**
+
+![ddd](Assets/TB1/Diego Ramírez Tejeda.png)
+
+**Semento 2: Equipo de Desarrollo de Proyectos:**
+
+![ddd](Assets/TB1/Suno Quispe Huaman (1).png)
+
 #### 2.3.2. User Task Matrix  
 #### 2.3.3. User Journey Mapping  
 #### 2.3.4. Empathy Mapping
