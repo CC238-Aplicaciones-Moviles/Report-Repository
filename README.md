@@ -140,10 +140,15 @@ crecimiento profesional continuo tras su graduación.
 ## Capítulo I: Presentación  
 ### 1.1. Startup Profile  
 
-Muchas empresas, los proyectos se gestionan de manera desordenada utilizando múltiples herramientas desconectadas (Excel, correos, chats). Esto genera duplicidad de esfuerzos, falta de visibilidad del progreso y dificultades para controlar los recursos financieros, motivo por el cual entrará nuestra startup "TaskMaster" en acción
+En muchas empresas, los proyectos se gestionan de manera desordenada utilizando múltiples herramientas desconectadas como Excel, correos y chats. Esto genera duplicidad de esfuerzos, falta de visibilidad del progreso y dificultades para controlar los recursos financieros. Frente a esta realidad, nace nuestra startup, una organización que busca transformar la forma en que los equipos trabajan y colaboran, brindándoles soluciones tecnológicas que simplifiquen la gestión de proyectos.
+
+Nuestra propuesta surge también de la necesidad de que la gestión empresarial sea más accesible y flexible, especialmente en un entorno donde los profesionales están cada vez más conectados desde sus dispositivos móviles. Por ello, creemos firmemente que la gestión de proyectos debe poder realizarse desde la palma de la mano, sin depender únicamente de un escritorio u oficina.
+
 #### 1.1.1. Descripción de la Startup  
 
-TaskMaster es una plataforma digital de gestión de proyectos colaborativos empresariales diseñada para optimizar la organización, asignación y supervisión de tareas en equipos de trabajo. Integra herramientas visuales como tableros Kanban, calendarios y métricas de desempeño, además de un módulo financiero que permite controlar presupuestos, gastos y pagos en tiempo real.
+Nuestra empresa se dedica al desarrollo de soluciones digitales que transformen la manera en que los equipos gestionan sus proyectos y recursos. Nos enfocamos en pequeñas y medianas empresas que necesitan herramientas accesibles y efectivas, evitando la complejidad y los altos costos de otras alternativas.
+
+Por ello, desarrollamos TaskMaster, una plataforma digital de gestión de proyectos colaborativos empresariales diseñada para optimizar la organización, asignación y supervisión de tareas en equipos de trabajo. Integra herramientas visuales como tableros Kanban, calendarios y métricas de desempeño, además de un módulo financiero que permite controlar presupuestos, gastos y pagos en tiempo real.
 
 **Objetivo:**
 Brindar a las empresas una solución centralizada que facilite la planificación, ejecución y control de proyectos, mejorando la eficiencia, la colaboración entre equipos y la gestión de recursos.
@@ -152,13 +157,16 @@ Brindar a las empresas una solución centralizada que facilite la planificación
 Facilitar a las organizaciones la gestión de proyectos mediante una plataforma intuitiva y colaborativa que integre tanto la productividad del equipo como el control financiero, impulsando la eficiencia y la transparencia.
 
 **Visión**
-
-Convertirse en la herramienta de gestión de proyectos empresariales líder en Latinoamérica, reconocida por su capacidad de simplificar la colaboración y aportar valor estratégico en la toma de decisiones.
+Convertirnos en la organización líder en Latinoamérica en el desarrollo de soluciones móviles de gestión de proyectos empresariales, reconocida por su capacidad de simplificar la colaboración y aportar valor estratégico en la toma de decisiones.
 
 #### 1.1.2. Perfiles de integrantes del equipo  
 || Miembros del equipo                             | Codigo Estudiante | Descripcion            |
 |------------------| ----------------------------------------------- | ----------------- | ---------------------- |
 | IMAGEN |Eric Marlon Olivera Barzola | U202315032| 
+|      |        |       |
+|      |        |       |
+|      |        |       |
+|      |        |       |
 
 ### 1.2. Solution Profile 
 
