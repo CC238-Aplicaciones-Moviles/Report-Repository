@@ -943,8 +943,17 @@ En el nuestro proyecto, es fundamental contar con un lenguaje común que nos per
 | Dependency              | Dependencia            | Relación entre tareas o actividades en la que una no puede comenzar o finalizar hasta que otra se haya completado. |
 
 ### 2.4. Requirements specification
+En esta sección se definen los requisitos del producto digital a partir del análisis de la información obtenida. Se incluyen diferentes herramientas como User Stories, Impact Map y Product Backlog, que permiten organizar y priorizar las necesidades de los usuarios y del negocio.
 
 #### 2.4.1. User Stories
+
+| Story ID | User | Priority | Epic | Title | Description | Acceptance Criteria |
+|----------|------|----------|------|-------|-------------|---------------------|
+|          |      |          |      |       |             |                     |
+|          |      |          |      |       |             |                     |
+|          |      |          |      |       |             |                     |
+|          |      |          |      |       |             |                     |
+
 
 #### 2.4.2. Impact Mapping
 
