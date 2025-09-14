@@ -384,7 +384,10 @@ Hypothesis Statement 15:
 - Creemos que la seguridad en el manejo de datos financieros incrementará la confianza de los clientes.
 - Sabremos que estamos en lo correcto cuando no tengamos reportes de incidentes graves y los usuarios destaquen positivamente la seguridad en encuestas.
 
-##### 1.2.2.4. Lean UX Canvas  
+##### 1.2.2.4. Lean UX Canvas
+
+<img src="./Assets/TB1/LeanUXCanvas.png" alt="Lean UX Canvas">
+
 ### 1.3. Segmentos Objetivo
 
 **Segmento Objetivo 1: Líder o Gerente de Empresa**
