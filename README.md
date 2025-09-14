@@ -702,15 +702,15 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 
 | **ENTREVISTA 2** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
+| **Nombre entrevistado** | Jhon Chuchon |
+| **Edad** | 22 |
+| **Profesión** | Ingeniero de Software |
+| **Departamento** | Lima |
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | ![ddd](Assets/TB1/) |
-| **Resumen** |  |
+| **Foto entrevista** | ![ddd](Assets/TB1/Entrevista5.png) |
+| **Resumen** | El entrevistado forma parte de un equipo de desarrollo de proyectos, donde apoya en la programación de módulos y pruebas de nuevas funcionalidades. Su equipo está conformado por programadores juniors y seniors, diseñadores UX, QA testers y analistas de requerimientos, trabajando bajo metodologías ágiles. Entre los principales desafíos mencionó la comunicación, ya que al trabajar de forma remota no siempre están conectados al mismo tiempo, así como los cambios repentinos de prioridades que generan desorden al pausar tareas en curso. Sobre herramientas anteriores como Trello, Slack, Excel y Drive, señaló que fueron un dolor de cabeza porque la información estaba dispersa y en ocasiones se duplicaban tareas por falta de claridad. Considera que sería de gran ayuda contar con una plataforma unificada que les permita ahorrar tiempo, ser más eficientes, automatizar procesos con alertas, y que además sea fácil de aprender, rápida, ligera e integrable con aplicaciones externas. |
 
 | **ENTREVISTA 3** | |
 |------------------|----------------------------|
