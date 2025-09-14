@@ -160,10 +160,10 @@ Facilitar a las organizaciones la gestión de proyectos mediante una plataforma 
 Convertirnos en la organización líder en Latinoamérica en el desarrollo de soluciones móviles de gestión de proyectos empresariales, reconocida por su capacidad de simplificar la colaboración y aportar valor estratégico en la toma de decisiones.
 
 #### 1.1.2. Perfiles de integrantes del equipo  
-|                             | Miembros del equipo        | Codigo Estudiante |          Descripcion            |
+|                             | Miembros del equipo        | Código de Estudiante |          Descripción            |
 |------------------| ----------------------------------------------- | ----------------- | ---------------------- |
-|![Imagen1](Assets/TB1/)      |Eric Marlon Olivera Barzola | U202315032|     |
-|![Imagen2](Assets/TB1/)      |                            |       |         |
+|![Imagen1](Assets/TB1/)      |Eric Marlon Olivera Barzola | U202315032 |     |
+|![Imagen2](Assets/TB1/)      |Omar Luquillas Asto         | U20211G641 | Soy estudiante de la carrera de Ingeniería de Software. Elegí esta carrera porque me apasiona la tecnología, el desarrollo de software y la programación. Tengo conocimientos en lenguajes de programación como C++, Python y Java. Me considero una persona investigadora, ya que me gusta aprender cosas nuevas y siempre estoy en busca de soluciones creativas e innovadoras que generen un impacto positivo en la vida de las personas. Además, valoro el trabajo en equipo, soy responsable y me comprometo a cumplir con mis tareas de manera eficiente. |
 |![Imagen3](Assets/TB1/)      |                            |       |         |
 |![Imagen4](Assets/TB1/)      |                            |       |         |
 |![Imagen5](Assets/TB1/)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
