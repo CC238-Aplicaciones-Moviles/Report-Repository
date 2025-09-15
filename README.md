@@ -967,9 +967,10 @@ En esta sección se explica el enfoque utilizado para la toma de decisiones estr
 
 En esta sección contamos cómo llevamos a cabo la dinámica de EventStorming para tener una primera mirada al dominio. La sesión duró entre 1 y 2 horas, lo que nos ayudó a mantener el foco y aprovechar el tiempo sin que se vuelva pesado. Durante este espacio pudimos identificar los eventos más importantes, quiénes participan y qué acciones los detonan, logrando un mapa general que luego podremos detallar con más calma.
 
-También mostraremos las actividades que realizamos en la sesión, los flujos principales que tendremos, algunos posibles pain points y un acercamiento a la definicion de nuestros bounded context. De esta forma, tendremos mas claro como se realizara el trabajo y tenemos un punto de partida para seguir avanzando.
+Durante la sesion se inicio una lluvia de ideas, estas ideas fueron escritas con pos-it naranjas, los cuales identificamos como eventos que pasaran en nuestra aplciacion:
 
-![EventStorming](Assets/TB1/)
+![EventStorming](Assets/TB1/EventStorming)
+
 ##### 2.5.1.1. Candidate Context Discovery
 
 ##### 2.5.1.2. Domain Message Flows Modeling
