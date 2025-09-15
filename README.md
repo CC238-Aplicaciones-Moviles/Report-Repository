@@ -980,16 +980,31 @@ En esta sección se presentan los flujos principales del negocio, que servirán 
 
 Estos fueron los flujos que se definieron:
 
-**Creación de Proyecto**
+##**Creación de Proyecto**
 ![EventStorming](Assets/TB1/FlujoCreacionDeProyecto.PNG)
-**Creación de tareas**
+##**Creación de tareas**
 ![EventStorming](Assets/TB1/FlujoCreacionDeTareas.PNG)
-**Modificación de Tarea**
+##**Modificación de Tarea**
 ![EventStorming](Assets/TB1/FlujoModificacionDeTarea.PNG)
-**Cumplimiento de Tarea**
+3#**Cumplimiento de Tarea**
 ![EventStorming](Assets/TB1/FlujoCumplimientoDeTarea.PNG)
-**Incumplimiento de Tarea**
+##**Incumplimiento de Tarea**
 ![EventStorming](Assets/TB1/FlujoIncumplimientoDeTarea.PNG)
+
+Una vez definidos y colocados los procesos principales en el tablero de Event Storming, se procedió a identificar e insertar los pain points o puntos de dolor.
+Estos representan las fricciones, dudas y frustraciones que experimentan los usuarios y participantes dentro del flujo.
+
+##**Creación de Proyecto**
+
+![ddd](Assets/TB1/creacionProyectoPainPoint.jpg)
+
+##**Creación de tareas**
+
+![ddd](Assets/TB1/creacionTareaPainPoint.jpg)
+
+##**Modificación de Tarea**
+
+![ddd](Assets/TB1/modificacionTareaPainPoint.jpg)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
