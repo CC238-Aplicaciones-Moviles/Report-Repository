@@ -969,9 +969,27 @@ En esta sección contamos cómo llevamos a cabo la dinámica de EventStorming pa
 
 Durante la sesion se inicio una lluvia de ideas, estas ideas fueron escritas con pos-it naranjas, los cuales identificamos como eventos que pasaran en nuestra aplciacion:
 
-![EventStorming](Assets/TB1/EventStorming)
+![EventStorming](Assets/TB1/EventStorming.PNG)
 
 ##### 2.5.1.1. Candidate Context Discovery
+Tras concluir la sesión de Event Storming, el equipo llevó a cabo un análisis de los eventos obtenidos para continuar con los Candidate Context. Este trabajo consistió en agrupar los eventos clave del negocio que indiquen cambios de estado entre diferentes partes del proceso de negocio según sus relaciones y dependencias, identificando patrones que marcan el inicio o fin de procesos clave en la aplicación.
+
+En esta sección se presentan los flujos principales del negocio, que servirán como base para identificar los pivotal events y, a partir de ellos, delimitar los Bounded Contexts que estructurarán el dominio de manera más clara.
+
+![EventStorming](Assets/TB1/Paso2EventStorming.PNG)
+
+Estos fueron los flujos que se definieron:
+
+**Creación de Proyecto**
+![EventStorming](Assets/TB1/FlujoCreacionDeProyecto.PNG)
+**Creación de tareas**
+![EventStorming](Assets/TB1/FlujoCreacionDeTareas.PNG)
+**Modificación de Tarea**
+![EventStorming](Assets/TB1/FlujoModificacionDeTarea.PNG)
+**Cumplimiento de Tarea**
+![EventStorming](Assets/TB1/FlujoCumplimientoDeTarea.PNG)
+**Incumplimiento de Tarea**
+![EventStorming](Assets/TB1/FlujoIncumplimientoDeTarea.PNG)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
