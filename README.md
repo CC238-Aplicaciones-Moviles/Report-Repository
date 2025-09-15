@@ -961,8 +961,15 @@ En esta sección se definen los requisitos del producto digital a partir del an�
 
 ### 2.5. Strategic-Level Domain-Driven Design
 
+En esta sección se explica el enfoque utilizado para la toma de decisiones estratégicas en el desarrollo del sistema mediante Domain-Driven Design (DDD). El propósito fue identificar límites naturales del dominio y organizar la solución en Bounded Contexts. Para ello se aplicaron herramientas como Event Storming, que facilitó la exploración de eventos y flujos clave, y el Bounded Context Canvas, que permitió definir objetivos, responsabilidades y relaciones de cada contexto. Este proceso aseguró una visión clara y alineada entre negocio y tecnología.
+
 #### 2.5.1. EventStorming
 
+En esta sección contamos cómo llevamos a cabo la dinámica de EventStorming para tener una primera mirada al dominio. La sesión duró entre 1 y 2 horas, lo que nos ayudó a mantener el foco y aprovechar el tiempo sin que se vuelva pesado. Durante este espacio pudimos identificar los eventos más importantes, quiénes participan y qué acciones los detonan, logrando un mapa general que luego podremos detallar con más calma.
+
+También mostraremos las actividades que realizamos en la sesión, los flujos principales que tendremos, algunos posibles pain points y un acercamiento a la definicion de nuestros bounded context. De esta forma, tendremos mas claro como se realizara el trabajo y tenemos un punto de partida para seguir avanzando.
+
+![EventStorming](Assets/TB1/)
 ##### 2.5.1.1. Candidate Context Discovery
 
 ##### 2.5.1.2. Domain Message Flows Modeling
