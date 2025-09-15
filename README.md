@@ -1006,6 +1006,9 @@ Estos representan las fricciones, dudas y frustraciones que experimentan los usu
 
 ![ddd](Assets/TB1/modificacionTareaPainPoint.jpg)
 
+
+
+
 ##### 2.5.1.2. Domain Message Flows Modeling
 
 ##### 2.5.1.3. Bounded Context Canvases
