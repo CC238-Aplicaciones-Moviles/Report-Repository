@@ -702,15 +702,15 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 
 | **ENTREVISTA 2** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
+| **Nombre entrevistado** | Jhon Chuchon |
+| **Edad** | 22 |
+| **Profesión** | Ingeniero de Software |
+| **Departamento** | Lima |
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | ![ddd](Assets/TB1/) |
-| **Resumen** |  |
+| **Foto entrevista** | ![ddd](Assets/TB1/Entrevista5.png) |
+| **Resumen** | El entrevistado forma parte de un equipo de desarrollo de proyectos, donde apoya en la programación de módulos y pruebas de nuevas funcionalidades. Su equipo está conformado por programadores juniors y seniors, diseñadores UX, QA testers y analistas de requerimientos, trabajando bajo metodologías ágiles. Entre los principales desafíos mencionó la comunicación, ya que al trabajar de forma remota no siempre están conectados al mismo tiempo, así como los cambios repentinos de prioridades que generan desorden al pausar tareas en curso. Sobre herramientas anteriores como Trello, Slack, Excel y Drive, señaló que fueron un dolor de cabeza porque la información estaba dispersa y en ocasiones se duplicaban tareas por falta de claridad. Considera que sería de gran ayuda contar con una plataforma unificada que les permita ahorrar tiempo, ser más eficientes, automatizar procesos con alertas, y que además sea fácil de aprender, rápida, ligera e integrable con aplicaciones externas. |
 
 | **ENTREVISTA 3** | |
 |------------------|----------------------------|
@@ -928,7 +928,7 @@ En el nuestro proyecto, es fundamental contar con un lenguaje común que nos per
 | Budget                  | Presupuesto            | Estimación financiera destinada a la ejecución de un proyecto, que incluye gastos, pagos y recursos. |
 | Expense                 | Gasto                  | Registro de salida de dinero asociada a un proyecto. |
 | Team Member             | Miembro de equipo      | Profesional responsable de ejecutar tareas asignadas dentro del proyecto. |
-| Project Leader          | Líder de proyecto      | Persona encargada de coordinar al equipo, supervisar el progreso y garantizar el cumplimiento de plazos y recursos. |
+| Team Leader          | Líder de proyecto      | Persona encargada de coordinar al equipo, supervisar el progreso y garantizar el cumplimiento de plazos y recursos. |
 | Collaboration           | Colaboración           | Interacción en tiempo real entre los miembros del equipo para avanzar en el desarrollo del proyecto. |
 | Progress Tracking       | Seguimiento del progreso | Monitoreo continuo de tareas, métricas y resultados para evaluar el avance del proyecto. |
 | Notification            | Notificación           | Mensaje automático que informa a los usuarios sobre actualizaciones, vencimientos o cambios relevantes en el proyecto. |
@@ -961,9 +961,66 @@ En esta sección se definen los requisitos del producto digital a partir del an�
 
 ### 2.5. Strategic-Level Domain-Driven Design
 
+En esta sección se explica el enfoque utilizado para la toma de decisiones estratégicas en el desarrollo del sistema mediante Domain-Driven Design (DDD). El propósito fue identificar límites naturales del dominio y organizar la solución en Bounded Contexts. Para ello se aplicaron herramientas como Event Storming, que facilitó la exploración de eventos y flujos clave, y el Bounded Context Canvas, que permitió definir objetivos, responsabilidades y relaciones de cada contexto. Este proceso aseguró una visión clara y alineada entre negocio y tecnología.
+
 #### 2.5.1. EventStorming
 
+En esta sección contamos cómo llevamos a cabo la dinámica de EventStorming para tener una primera mirada al dominio. La sesión duró entre 1 y 2 horas, lo que nos ayudó a mantener el foco y aprovechar el tiempo sin que se vuelva pesado. Durante este espacio pudimos identificar los eventos más importantes, quiénes participan y qué acciones los detonan, logrando un mapa general que luego podremos detallar con más calma.
+
+Durante la sesion se inicio una lluvia de ideas, estas ideas fueron escritas con pos-it naranjas, los cuales identificamos como eventos que pasaran en nuestra aplciacion:
+
+![EventStorming](Assets/TB1/EventStorming.PNG)
+
 ##### 2.5.1.1. Candidate Context Discovery
+Tras concluir la sesión de Event Storming, el equipo llevó a cabo un análisis de los eventos obtenidos para continuar con los Candidate Context. Este trabajo consistió en agrupar los eventos clave del negocio que indiquen cambios de estado entre diferentes partes del proceso de negocio según sus relaciones y dependencias, identificando patrones que marcan el inicio o fin de procesos clave en la aplicación.
+
+En esta sección se presentan los flujos principales del negocio, que servirán como base para identificar los pivotal events y, a partir de ellos, delimitar los Bounded Contexts que estructurarán el dominio de manera más clara.
+
+![EventStorming](Assets/TB1/Paso2EventStorming.PNG)
+
+Estos fueron los flujos que se definieron:
+
+##*Creación de Proyecto*
+![EventStorming](Assets/TB1/FlujoCreacionDeProyecto.PNG)
+##*Creación de tareas*
+![EventStorming](Assets/TB1/FlujoCreacionDeTareas.PNG)
+##*Modificación de Tarea*
+![EventStorming](Assets/TB1/FlujoModificacionDeTarea.PNG)
+3#*Cumplimiento de Tarea*
+![EventStorming](Assets/TB1/FlujoCumplimientoDeTarea.PNG)
+##*Incumplimiento de Tarea
+![EventStorming](Assets/TB1/FlujoIncumplimientoDeTarea.PNG)
+
+Una vez definidos y colocados los procesos principales en el tablero de Event Storming, se procedió a identificar e insertar los pain points o puntos de dolor.
+Estos representan las fricciones, dudas y frustraciones que experimentan los usuarios y participantes dentro del flujo.
+
+##*Creación de Proyecto*
+
+![ddd](Assets/TB1/creacionProyectoPainPoint.jpg)
+
+##*Creación de tareas*
+
+![ddd](Assets/TB1/creacionTareaPainPoint.jpg)
+
+##*Modificación de Tarea*
+
+![ddd](Assets/TB1/modificacionTareaPainPoint.jpg)
+
+Una vez mapeados los distintos eventos de dominio, se procedió a destacar aquellos que representan hitos clave en el flujo de negocio. Estos eventos pivotales marcan el inicio o cierre de situaciones críticas, y permiten al equipo comprender cuáles son los puntos más sensibles del sistema. Su identificación resultó esencial, ya que en torno a ellos suelen girar múltiples interacciones e intereses de distintos actores.
+
+![ddd](Assets/TB1/PivotalPoints.jpg)
+
+Posteriormente, se identificaron los comandos que dan origen a los eventos, así como los actores responsables de dispararlos. Los actores pueden ser usuarios, sistemas externos o dispositivos que inician acciones dentro del flujo. Este ejercicio permitió clarificar quién inicia los cambios y cómo estos se reflejan en la dinámica del sistema, garantizando una alineación con los objetivos de negocio.
+
+![ddd](Assets/TB1/commands.jpg)
+
+En esta etapa se reconocieron las políticas, entendidas como reacciones automáticas o manuales a determinados eventos de dominio. Asimismo, se definieron los invariantes de negocio, es decir, las reglas que deben cumplirse obligatoriamente para que un comando pueda ser procesado. Este análisis permitió visibilizar tanto las restricciones que aseguran la coherencia del sistema como las acciones derivadas de los eventos, generando mayor claridad en las condiciones de operación.
+
+![ddd](Assets/TB1/policy.jpg)
+
+Se identificaron los modelos de lectura necesarios para apoyar la toma de decisiones dentro del sistema. Estos modelos representan el estado de la información consolidada en un momento dado y sirven como insumos para validar invariantes, generar reportes o alimentar interfaces de usuario. Su definición fue clave para asegurar que los distintos actores dispongan de la información adecuada y actualizada en cada punto del proceso.
+
+![ddd](Assets/TB1/view.jpg)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
