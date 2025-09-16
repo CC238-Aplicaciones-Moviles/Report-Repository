@@ -923,16 +923,22 @@ En el nuestro proyecto, es fundamental contar con un lenguaje común que nos per
 |--------------------------|------------------------|----------------------------------------------------------------------------|
 | Project                 | Proyecto               | Conjunto de actividades planificadas con un objetivo específico, un tiempo definido y recursos asignados. |
 | Task                    | Tarea                  | Actividad puntual asignada a un miembro del equipo, con fecha de inicio y vencimiento. |
+| Task Board              | Tablero de tareas      | Vista visual tipo Trello que organiza y gestiona las tareas asignadas según su estado (pendiente, en progreso, completada). |
 | Kanban Board            | Tablero Kanban         | Herramienta visual que organiza las tareas en columnas según su estado (pendiente, en progreso, completada). |
 | Milestone               | Hito                   | Evento clave dentro del proyecto que marca un avance importante o un entregable crítico. |
 | Budget                  | Presupuesto            | Estimación financiera destinada a la ejecución de un proyecto, que incluye gastos, pagos y recursos. |
 | Expense                 | Gasto                  | Registro de salida de dinero asociada a un proyecto. |
 | Team Member             | Miembro de equipo      | Profesional responsable de ejecutar tareas asignadas dentro del proyecto. |
-| Team Leader          | Líder de proyecto      | Persona encargada de coordinar al equipo, supervisar el progreso y garantizar el cumplimiento de plazos y recursos. |
+| Team Leader             | Líder de proyecto      | Persona encargada de coordinar al equipo, supervisar el progreso y garantizar el cumplimiento de plazos y recursos. |
 | Collaboration           | Colaboración           | Interacción en tiempo real entre los miembros del equipo para avanzar en el desarrollo del proyecto. |
 | Progress Tracking       | Seguimiento del progreso | Monitoreo continuo de tareas, métricas y resultados para evaluar el avance del proyecto. |
 | Notification            | Notificación           | Mensaje automático que informa a los usuarios sobre actualizaciones, vencimientos o cambios relevantes en el proyecto. |
 | Report                  | Reporte                | Documento o visualización que muestra el estado de un proyecto, métricas de desempeño y cumplimiento de objetivos. |
+| Project Dashboard       | Tablero del proyecto   | Vista de métricas y estadísticas globales del proyecto, accesible por el Team Leader. |
+| Member Dashboard        | Tablero del miembro    | Vista de métricas y estadísticas individuales de los miembros, accesible por el Team Leader. |
+| Progress Report         | Reporte de avance      | Documento solicitado por un Team Member que muestra su propio progreso en las tareas asignadas. |
+| User List               | Lista de usuarios      | Vista que muestra todos los usuarios que forman parte de un proyecto, incluyendo su rol y estado de participación. |
+| Personal Calendar       | Calendario personal    | Vista individual del calendario de un miembro, con sus tareas, fechas límite y hitos asignados. |
 | Role                    | Rol                    | Función asignada dentro del proyecto (ejemplo: líder, miembro, supervisor). |
 | Deadline                | Fecha límite           | Día y hora máxima en la que debe completarse una tarea o entregable. |
 | Workspace               | Espacio de trabajo     | Área digital dentro de la plataforma donde un equipo gestiona sus proyectos y tareas. |
@@ -941,6 +947,8 @@ En el nuestro proyecto, es fundamental contar con un lenguaje común que nos per
 | User Story              | Historia de usuario    | Descripción breve y clara de una funcionalidad desde la perspectiva del usuario final. |
 | Deliverable             | Entregable             | Resultado tangible o intangible que debe ser completado y entregado en el marco de un proyecto. |
 | Dependency              | Dependencia            | Relación entre tareas o actividades en la que una no puede comenzar o finalizar hasta que otra se haya completado. |
+| Project Board           | Tablero de proyectos   | Vista que muestra todos los proyectos en los que participa un usuario, con información resumida como nombre, estado, fecha límite y rol asignado. |
+
 
 ### 2.4. Requirements specification
 En esta sección se definen los requisitos del producto digital a partir del análisis de la información obtenida. Se incluyen diferentes herramientas como User Stories, Impact Map y Product Backlog, que permiten organizar y priorizar las necesidades de los usuarios y del negocio.
