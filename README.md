@@ -980,34 +980,47 @@ En esta sección se presentan los flujos principales del negocio, que servirán 
 
 Estos fueron los flujos que se definieron:
 
-##**Creación de Proyecto**
+##*Creación de Proyecto*
 ![EventStorming](Assets/TB1/FlujoCreacionDeProyecto.PNG)
-##**Creación de tareas**
+##*Creación de tareas*
 ![EventStorming](Assets/TB1/FlujoCreacionDeTareas.PNG)
-##**Modificación de Tarea**
+##*Modificación de Tarea*
 ![EventStorming](Assets/TB1/FlujoModificacionDeTarea.PNG)
-3#**Cumplimiento de Tarea**
+3#*Cumplimiento de Tarea*
 ![EventStorming](Assets/TB1/FlujoCumplimientoDeTarea.PNG)
-##**Incumplimiento de Tarea**
+##*Incumplimiento de Tarea
 ![EventStorming](Assets/TB1/FlujoIncumplimientoDeTarea.PNG)
 
 Una vez definidos y colocados los procesos principales en el tablero de Event Storming, se procedió a identificar e insertar los pain points o puntos de dolor.
 Estos representan las fricciones, dudas y frustraciones que experimentan los usuarios y participantes dentro del flujo.
 
-##**Creación de Proyecto**
+##*Creación de Proyecto*
 
 ![ddd](Assets/TB1/creacionProyectoPainPoint.jpg)
 
-##**Creación de tareas**
+##*Creación de tareas*
 
 ![ddd](Assets/TB1/creacionTareaPainPoint.jpg)
 
-##**Modificación de Tarea**
+##*Modificación de Tarea*
 
 ![ddd](Assets/TB1/modificacionTareaPainPoint.jpg)
 
+Una vez mapeados los distintos eventos de dominio, se procedió a destacar aquellos que representan hitos clave en el flujo de negocio. Estos eventos pivotales marcan el inicio o cierre de situaciones críticas, y permiten al equipo comprender cuáles son los puntos más sensibles del sistema. Su identificación resultó esencial, ya que en torno a ellos suelen girar múltiples interacciones e intereses de distintos actores.
 
+![ddd](Assets/TB1/PivotalPoints.jpg)
 
+Posteriormente, se identificaron los comandos que dan origen a los eventos, así como los actores responsables de dispararlos. Los actores pueden ser usuarios, sistemas externos o dispositivos que inician acciones dentro del flujo. Este ejercicio permitió clarificar quién inicia los cambios y cómo estos se reflejan en la dinámica del sistema, garantizando una alineación con los objetivos de negocio.
+
+![ddd](Assets/TB1/commands.jpg)
+
+En esta etapa se reconocieron las políticas, entendidas como reacciones automáticas o manuales a determinados eventos de dominio. Asimismo, se definieron los invariantes de negocio, es decir, las reglas que deben cumplirse obligatoriamente para que un comando pueda ser procesado. Este análisis permitió visibilizar tanto las restricciones que aseguran la coherencia del sistema como las acciones derivadas de los eventos, generando mayor claridad en las condiciones de operación.
+
+![ddd](Assets/TB1/policy.jpg)
+
+Se identificaron los modelos de lectura necesarios para apoyar la toma de decisiones dentro del sistema. Estos modelos representan el estado de la información consolidada en un momento dado y sirven como insumos para validar invariantes, generar reportes o alimentar interfaces de usuario. Su definición fue clave para asegurar que los distintos actores dispongan de la información adecuada y actualizada en cada punto del proceso.
+
+![ddd](Assets/TB1/view.jpg)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
