@@ -977,27 +977,15 @@ En esta sección contamos cómo llevamos a cabo la dinámica de EventStorming pa
 
 Durante la sesion se inicio una lluvia de ideas, estas ideas fueron escritas con pos-it naranjas, los cuales identificamos como eventos que pasaran en nuestra aplciacion:
 
-![EventStorming](Assets/TB1/EventStorming.PNG)
+![EventStorming](Assets/TB1/paso1.jpg)
 
 ##### 2.5.1.1. Candidate Context Discovery
 Tras concluir la sesión de Event Storming, el equipo llevó a cabo un análisis de los eventos obtenidos para continuar con los Candidate Context. Este trabajo consistió en agrupar los eventos clave del negocio que indiquen cambios de estado entre diferentes partes del proceso de negocio según sus relaciones y dependencias, identificando patrones que marcan el inicio o fin de procesos clave en la aplicación.
 
 En esta sección se presentan los flujos principales del negocio, que servirán como base para identificar los pivotal events y, a partir de ellos, delimitar los Bounded Contexts que estructurarán el dominio de manera más clara.
 
-![EventStorming](Assets/TB1/Paso2EventStorming.PNG)
-
-Estos fueron los flujos que se definieron:
-
-##*Creación de Proyecto*
-![EventStorming](Assets/TB1/FlujoCreacionDeProyecto.PNG)
-##*Creación de tareas*
-![EventStorming](Assets/TB1/FlujoCreacionDeTareas.PNG)
-##*Modificación de Tarea*
-![EventStorming](Assets/TB1/FlujoModificacionDeTarea.PNG)
-3#*Cumplimiento de Tarea*
-![EventStorming](Assets/TB1/FlujoCumplimientoDeTarea.PNG)
-##*Incumplimiento de Tarea
-![EventStorming](Assets/TB1/FlujoIncumplimientoDeTarea.PNG)
+![EventStorming](Assets/TB1/paso2-1.jpg)
+![EventStorming](Assets/TB1/paso2-2.jpg)
 
 Una vez definidos y colocados los procesos principales en el tablero de Event Storming, se procedió a identificar e insertar los pain points o puntos de dolor.
 Estos representan las fricciones, dudas y frustraciones que experimentan los usuarios y participantes dentro del flujo.
@@ -1030,7 +1018,66 @@ Se identificaron los modelos de lectura necesarios para apoyar la toma de decisi
 
 ![ddd](Assets/TB1/view.jpg)
 
+
+
+Después de identificar los agregados en la sesión de Event Storming, analizamos cómo se relacionan entre ellos y también con los sistemas externos. A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos y separamos los que apenas interactuaban, marcando así límites de consistencia más claros. 
+
+![ddd](Assets/TB1/boundediam.jpg)
+
+![ddd](Assets/TB1/boundedgestiondeproyectosytareas.jpg)
+
+![ddd](Assets/TB1/boundedvisualizacion.jpg)
+
+![ddd](Assets/TB1/boundednotificaciones.jpg)
+
+![ddd](Assets/TB1/boundedanalitica.jpg)
+
+
 ##### 2.5.1.2. Domain Message Flows Modeling
+
+
+Como paso siguiente, se trabajó en la interconexión de los bounded contexts identificados previamente, enfocándonos en reconocer los eventos que sirven como enlace y permiten la comunicación entre los distintos contextos.
+
+Gestión de proyectos y tareas y Notificaciones:
+Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, se genera una notificación automática para los usuarios involucrados, asegurando visibilidad inmediata de los cambios.
+
+![ddd](Assets/TB1/gestion-notificaciones.jpg)
+
+Analítica y Reportes y Notificaciones:
+Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
+
+![ddd](Assets/TB1/analitica-notificaciones.jpg)
+
+Gestión de proyectos y tareas y Analítica y Reportes:
+Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
+
+![ddd](Assets/TB1/gestion-analitica.jpg)
+
+Gestión de proyectos y tareas y Visualización y Seguimiento:
+Al asignar tareas y actualizar su estado, la información se refleja en herramientas de visualización como tableros o calendarios, facilitando el monitoreo del progreso en tiempo real.
+
+![ddd](Assets/TB1/gestion-visualizacion.jpg)
+
+Analítica y Reportes y Visualización y Seguimiento:
+Las métricas obtenidas de proyectos y miembros se proyectan en dashboards y reportes visuales, ofreciendo una vista consolidada del avance y de las áreas que requieren atención.
+
+![ddd](Assets/TB1/analitica-visualizacion.jpg)
+
+IAM y Gestión de proyectos y tareas:
+Cuando un usuario se registra e inicia sesión correctamente, obtiene acceso para crear proyectos, asignar tareas y participar en la gestión de actividades dentro del sistema.
+
+![ddd](Assets/TB1/iam-gestion.jpg)
+
+Gestión de proyectos y tareas y Visualización y Seguimiento:
+Cada vez que se asigna un miembro, se crea una tarea o se actualiza su estado, esta información se refleja en tableros y calendarios, lo que permite a los usuarios dar seguimiento en tiempo real al progreso del proyecto.
+
+![ddd](Assets/TB1/gestion-visualizacion.jpg)
+
+Visualización y Seguimiento y Analítica y Reportes:
+Los cambios en las tareas (como su finalización o vencimiento) alimentan la capa de analítica, donde se recalculan y generan estadísticas actualizadas sobre el rendimiento de los proyectos y de los miembros del equipo.
+
+![ddd](Assets/TB1/visualizacion-analitica.jpg)
+
 
 ##### 2.5.1.3. Bounded Context Canvases
 
