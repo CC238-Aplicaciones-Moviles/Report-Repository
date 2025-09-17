@@ -984,41 +984,30 @@ Tras concluir la sesión de Event Storming, el equipo llevó a cabo un análisis
 
 En esta sección se presentan los flujos principales del negocio, que servirán como base para identificar los pivotal events y, a partir de ellos, delimitar los Bounded Contexts que estructurarán el dominio de manera más clara.
 
-![EventStorming](Assets/TB1/paso2-1.jpg)
-![EventStorming](Assets/TB1/paso2-2.jpg)
+![EventStorming](Assets/TB1/segundopaso-1.jpg)
+![EventStorming](Assets/TB1/segundopaso-2.jpg)
 
 Una vez definidos y colocados los procesos principales en el tablero de Event Storming, se procedió a identificar e insertar los pain points o puntos de dolor.
 Estos representan las fricciones, dudas y frustraciones que experimentan los usuarios y participantes dentro del flujo.
 
-##*Creación de Proyecto*
-
-![ddd](Assets/TB1/creacionProyectoPainPoint.jpg)
-
-##*Creación de tareas*
-
-![ddd](Assets/TB1/creacionTareaPainPoint.jpg)
-
-##*Modificación de Tarea*
-
-![ddd](Assets/TB1/modificacionTareaPainPoint.jpg)
+![EventStorming](Assets/TB1/paso2-1.jpg)
+![EventStorming](Assets/TB1/paso2-2.jpg)
 
 Una vez mapeados los distintos eventos de dominio, se procedió a destacar aquellos que representan hitos clave en el flujo de negocio. Estos eventos pivotales marcan el inicio o cierre de situaciones críticas, y permiten al equipo comprender cuáles son los puntos más sensibles del sistema. Su identificación resultó esencial, ya que en torno a ellos suelen girar múltiples interacciones e intereses de distintos actores.
 
-![ddd](Assets/TB1/PivotalPoints.jpg)
+![ddd](Assets/TB1/EventStorming-EventStorming_Paso3_PaintPointyPivotalPoints.jpg)
 
 Posteriormente, se identificaron los comandos que dan origen a los eventos, así como los actores responsables de dispararlos. Los actores pueden ser usuarios, sistemas externos o dispositivos que inician acciones dentro del flujo. Este ejercicio permitió clarificar quién inicia los cambios y cómo estos se reflejan en la dinámica del sistema, garantizando una alineación con los objetivos de negocio.
 
-![ddd](Assets/TB1/commands.jpg)
+![ddd](Assets/TB1/EventStorming-EventStorming_Paso4_ComandosyUsuarios.jpg)
 
 En esta etapa se reconocieron las políticas, entendidas como reacciones automáticas o manuales a determinados eventos de dominio. Asimismo, se definieron los invariantes de negocio, es decir, las reglas que deben cumplirse obligatoriamente para que un comando pueda ser procesado. Este análisis permitió visibilizar tanto las restricciones que aseguran la coherencia del sistema como las acciones derivadas de los eventos, generando mayor claridad en las condiciones de operación.
 
-![ddd](Assets/TB1/policy.jpg)
+![ddd](Assets/TB1/EventStorming-EventStorming_Paso5_Policy.jpg)
 
 Se identificaron los modelos de lectura necesarios para apoyar la toma de decisiones dentro del sistema. Estos modelos representan el estado de la información consolidada en un momento dado y sirven como insumos para validar invariantes, generar reportes o alimentar interfaces de usuario. Su definición fue clave para asegurar que los distintos actores dispongan de la información adecuada y actualizada en cada punto del proceso.
 
-![ddd](Assets/TB1/view.jpg)
-
-
+![ddd](Assets/TB1/EventStorming-EventStorming_Paso6_View.jpg)
 
 Después de identificar los agregados en la sesión de Event Storming, analizamos cómo se relacionan entre ellos y también con los sistemas externos. A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos y separamos los que apenas interactuaban, marcando así límites de consistencia más claros. 
 
@@ -1032,9 +1021,7 @@ Después de identificar los agregados en la sesión de Event Storming, analizamo
 
 ![ddd](Assets/TB1/boundedanalitica.jpg)
 
-
 ##### 2.5.1.2. Domain Message Flows Modeling
-
 
 Como paso siguiente, se trabajó en la interconexión de los bounded contexts identificados previamente, enfocándonos en reconocer los eventos que sirven como enlace y permiten la comunicación entre los distintos contextos.
 
