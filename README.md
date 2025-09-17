@@ -1041,42 +1041,42 @@ Como paso siguiente, se trabajó en la interconexión de los bounded contexts id
 Gestión de proyectos y tareas y Notificaciones:
 Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, se genera una notificación automática para los usuarios involucrados, asegurando visibilidad inmediata de los cambios.
 
-![ddd](Assets/TB1/gestion-notificaciones.png)
+![ddd](Assets/TB1/gestion-notificaciones.PNG)
 
 Analítica y Reportes y Notificaciones:
 Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
 
-![ddd](Assets/TB1/analitica-notificaciones.png)
+![ddd](Assets/TB1/analitica-notificaciones.PNG)
 
 Gestión de proyectos y tareas y Analítica y Reportes:
 Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
 
-![ddd](Assets/TB1/gestion-analitica.png)
+![ddd](Assets/TB1/gestion-analitica.PNG)
 
 Gestión de proyectos y tareas y Visualización y Seguimiento:
 Al asignar tareas y actualizar su estado, la información se refleja en herramientas de visualización como tableros o calendarios, facilitando el monitoreo del progreso en tiempo real.
 
-![ddd](Assets/TB1/gestion-visualizacion.png)
+![ddd](Assets/TB1/gestion-visualizacion.PNG)
 
 Analítica y Reportes y Visualización y Seguimiento:
 Las métricas obtenidas de proyectos y miembros se proyectan en dashboards y reportes visuales, ofreciendo una vista consolidada del avance y de las áreas que requieren atención.
 
-![ddd](Assets/TB1/analitica-visualizacion.png)
+![ddd](Assets/TB1/analitica-visualizacion.PNG)
 
 IAM y Gestión de proyectos y tareas:
 Cuando un usuario se registra e inicia sesión correctamente, obtiene acceso para crear proyectos, asignar tareas y participar en la gestión de actividades dentro del sistema.
 
-![ddd](Assets/TB1/iam-gestion.png)
+![ddd](Assets/TB1/iam-gestion.PNG)
 
 Gestión de proyectos y tareas y Visualización y Seguimiento:
 Cada vez que se asigna un miembro, se crea una tarea o se actualiza su estado, esta información se refleja en tableros y calendarios, lo que permite a los usuarios dar seguimiento en tiempo real al progreso del proyecto.
 
-![ddd](Assets/TB1/gestion-visualizacion.png)
+![ddd](Assets/TB1/gestion-visualizacion.PNG)
 
 Visualización y Seguimiento y Analítica y Reportes:
 Los cambios en las tareas (como su finalización o vencimiento) alimentan la capa de analítica, donde se recalculan y generan estadísticas actualizadas sobre el rendimiento de los proyectos y de los miembros del equipo.
 
-![ddd](Assets/TB1/visualizacion-analitica.png)
+![ddd](Assets/TB1/visualizacion-analitica.PNG)
 
 
 ##### 2.5.1.3. Bounded Context Canvases
