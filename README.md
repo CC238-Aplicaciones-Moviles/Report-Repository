@@ -1074,6 +1074,46 @@ Se identificaron los modelos de lectura necesarios para apoyar la toma de decisi
 
 #### 2.5.2. Context Mapping
 
+El Context Mapping es un proceso clave dentro de la metodología Domain-Driven Design (DDD), utilizado para mapear y visualizar las interacciones y relaciones estructurales entre los diferentes bounded contexts en un sistema. Un bounded context es una delimitación clara en la que un modelo específico tiene validez y significado, y dentro de esa área, las reglas de negocio y los datos son gestionados de forma coherente.
+
+En el caso de **TaskMaster**, nuestra aplicación de gestión de proyectos, el Context Mapping nos permite entender cómo las distintas áreas funcionales del sistema se interconectan. A través de esta visualización, podemos identificar dependencias entre los diferentes dominios, lo que facilita la toma de decisiones sobre la arquitectura y las integraciones de nuestra plataforma. Además, permite entender de manera más clara las responsabilidades de cada contexto y cómo interactúan entre sí.
+
+Se identificaron los siguientes bounded context en el sistema: 
+
+1. IAM (Gestión de Identidad y Acceso)
+
+- Este contexto se encarga de la autenticación y autorización de los usuarios, garantizando que solo las personas autorizadas puedan acceder a las funcionalidades de TaskMaster.
+
+2. Gestión de Proyectos y Tareas
+
+- Se encarga de la creación y gestión de proyectos y tareas, asignando responsables, plazos y prioridades, y permitiendo la distribución organizada del trabajo entre los miembros del equipo.
+
+3. Visualización y Seguimiento
+
+- Permite la visualización de tareas y proyectos a través de diferentes interfaces, como tableros, calendarios, y métricas, para facilitar el seguimiento en tiempo real del progreso y cumplimiento de las fechas de entrega.
+
+4. Analítica y Reportes
+
+- Genera reportes de desempeño y productividad del equipo, utilizando datos de proyectos y tareas, para facilitar la toma de decisiones basadas en datos.
+
+5. Notificaciones
+
+- Maneja el envío de notificaciones a los usuarios, incluyendo tareas asignadas, actualizaciones, y recordatorios sobre fechas límite, asegurando que los miembros del equipo estén informados en tiempo real.
+
+| **Destino (Downstream)**          | **Origen (Upstream)**             | **Tipo de Relación**     | **Comentario**                                                                                                                                                                                               |
+| --------------------------------- | --------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Visualización y Seguimiento**   | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | El contexto de Gestión de Proyectos y Tareas es proveedor de datos de tareas y proyectos, que son consumidos por el contexto de Visualización y Seguimiento.                                                 |
+| **Analítica y Reportes**          | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | Los datos de proyectos y tareas generados en el contexto de Gestión de Proyectos se consumen en Analítica y Reportes para generar informes de desempeño.                                                     |
+| **Notificaciones**                | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | Las actualizaciones de tareas y proyectos en el contexto de Gestión de Proyectos y Tareas generan notificaciones que son enviadas a los usuarios por el contexto de Notificaciones.                          |
+| **Notificaciones**                | **Visualización y Seguimiento**   | **Customer/Supplier**    | El contexto de Visualización y Seguimiento puede generar notificaciones para informar a los usuarios sobre el progreso de tareas y cambios en el estado de los proyectos.                                    |
+| **Gestión de Proyectos y Tareas** | **IAM**                           | **Partnership**          | Ambos contextos colaboran estrechamente. IAM gestiona el acceso de los usuarios, mientras que Gestión de Proyectos y Tareas asegura que las tareas y proyectos sean asignados solo a usuarios autorizados.   |
+| **Analítica y Reportes**          | **Notificaciones**                | **Partnership**          | El contexto de Notificaciones puede usar los reportes generados en Analítica y Reportes para crear alertas o notificaciones sobre el desempeño del equipo.                                                   |
+| **IAM**                           | **Todos los Contextos**           | **Shared Kernel**        | La información sobre usuarios, roles y autenticación se comparte entre todos los contextos para garantizar el acceso controlado a las funcionalidades del sistema.                                           |
+| **Integraciones Técnicas**        | **Gestión de Proyectos y Tareas** | **Anticorruption Layer** | Si TaskMaster se integra con sistemas externos (por ejemplo, CRM o herramientas de gestión de proyectos), el Anticorruption Layer garantiza que los datos externos no alteren el modelo interno del sistema. |
+
+![ddd](Assets/TB1/ContextM.png)
+
+
 #### 2.5.3. Software Architecture
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
