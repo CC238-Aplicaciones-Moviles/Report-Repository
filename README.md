@@ -1341,8 +1341,8 @@ A continuacion, se mostraran los distintos aggregates, value object, entities qu
 | **Money**            | `amount: Decimal(12,2)`, `currency: String`                                   | — |
 | **TaskStatusCounts** | `total, notStarted, inProgress, done, overdue`                                | `total >= notStarted + inProgress + done`. |
 | **PriorityBreakdown**| `byPriority: Map<String /*priorityCode*/, TaskStatusCounts>`                  | Totales por prioridad y estado. |
-| **DurationAverages** | `byKey: Map<String /*status|priority*/, Decimal(10,2) /*hours*/>`             | Promedios de `(completedAt - assignedAt)` redondeados a 2 decimales. |
-| **MemberCost**       | `hourlyRate: Money`, `spentHours: Decimal(10,2)`, `total: Money`              | `total = rate × hours`. |
+| **DurationAverages** | `byKey: Map<String /statusorpriority/, float /hours/>`                          | Promedios de `(completedAt - assignedAt)` redondeados a 2 decimales. |
+| **MemberCost**       | `hourlyRate: Money`, `spentHours: Float`, `total: Money`              | `total = rate × hours`. |
 | **BudgetUsage**      | `approved: Money`, `used: Money`, `variance: Money`                           | `variance = approved - used`. |
 | **ReportData**       | DTO inmutable con KPIs/series para UI (conteos, prioridad, vencidas, promedios, costos, best/worst, budget, etc.) | Serializable y de solo lectura. |
 
