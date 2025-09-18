@@ -106,6 +106,51 @@ del informe, realizados por los miembros del equipo
       - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
       - [2.5.3.3. Software Architecture Deployment Level Diagrams](#2533-software-architecture-deployment-level-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+    - [2.6.1. Bounded Context:Gestión de Proyectos y Tareas](#261-bounded-context:-gestión-de-proyectos-y-tareas)
+      - [2.6.1.1. Domain Layer](#2611-domain-layer)
+      - [2.6.1.2. Interface Layer](#2612-interface-layer)
+      - [2.6.1.3. Application Layer](#2613-application-layer)
+      - [2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2613-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2613-bounded-context-software-architecture-code-level-diagrams)
+         -[2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
+         -[2.6.1.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
+    - [2.6.2. Bounded Context:Analítica y Reportes](#261-bounded-context:-analítica-y-reportes)
+      - [2.6.2.1. Domain Layer](#2611-domain-layer)
+      - [2.6.2.2. Interface Layer](#2612-interface-layer)
+      - [2.6.2.3. Application Layer](#2613-application-layer)
+      - [2.6.2.4. Infrastructure Layer](#2613-infrastructure-layer)
+      - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2613-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2613-bounded-context-software-architecture-code-level-diagrams)
+         -[2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
+         -[2.6.2.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
+    - [2.6.3. Bounded Context:Visualización y Seguimiento](#261-bounded-context:-visualización-y-seguimiento)
+      - [2.6.3.1. Domain Layer](#2611-domain-layer)
+      - [2.6.3.2. Interface Layer](#2612-interface-layer)
+      - [2.6.3.3. Application Layer](#2613-application-layer)
+      - [2.6.3.4. Infrastructure Layer](#2613-infrastructure-layer)
+      - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#2613-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2613-bounded-context-software-architecture-code-level-diagrams)
+         -[2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
+         -[2.6.3.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
+   - [2.6.4. Bounded Context:Registro y Autenticación de Usuario](#261-bounded-context:-registro-y-autenticación-de-usuario)
+      - [2.6.4.1. Domain Layer](#2611-domain-layer)
+      - [2.6.4.2. Interface Layer](#2612-interface-layer)
+      - [2.6.4.3. Application Layer](#2613-application-layer)
+      - [2.6.4.4. Infrastructure Layer](#2613-infrastructure-layer)
+      - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#2613-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2613-bounded-context-software-architecture-code-level-diagrams)
+         -[2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
+         -[2.6.4.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
+   - [2.6.5. Bounded Context:Notificaciones](#261-bounded-context:-notificaciones)
+      - [2.6.5.1. Domain Layer](#2611-domain-layer)
+      - [2.6.5.2. Interface Layer](#2612-interface-layer)
+      - [2.6.5.3. Application Layer](#2613-application-layer)
+      - [2.6.5.4. Infrastructure Layer](#2613-infrastructure-layer)
+      - [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](#2613-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2613-bounded-context-software-architecture-code-level-diagrams)
+         -[2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
+         -[2.6.5.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -1011,7 +1056,8 @@ Se identificaron los modelos de lectura necesarios para apoyar la toma de decisi
 
 Después de identificar los agregados en la sesión de Event Storming, analizamos cómo se relacionan entre ellos y también con los sistemas externos. A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos y separamos los que apenas interactuaban, marcando así límites de consistencia más claros. 
 
-![ddd](Assets/TB1/boundediam.jpg)
+
+![ddd](Assets/TB1/BoundedRegistroDeUsuario.PNG)
 
 ![ddd](Assets/TB1/boundedgestiondeproyectosytareas.jpg)
 
@@ -1053,7 +1099,7 @@ Las métricas obtenidas de proyectos y miembros se proyectan en dashboards y rep
 IAM y Gestión de proyectos y tareas:
 Cuando un usuario se registra e inicia sesión correctamente, obtiene acceso para crear proyectos, asignar tareas y participar en la gestión de actividades dentro del sistema.
 
-![ddd](Assets/TB1/iam-gestion.PNG)
+![ddd](Assets/TB1/FlowMessageRegistroXGestionProyecto.PNG)
 
 Gestión de proyectos y tareas y Visualización y Seguimiento:
 Cada vez que se asigna un miembro, se crea una tarea o se actualiza su estado, esta información se refleja en tableros y calendarios, lo que permite a los usuarios dar seguimiento en tiempo real al progreso del proyecto.
@@ -1068,6 +1114,49 @@ Los cambios en las tareas (como su finalización o vencimiento) alimentan la cap
 
 ##### 2.5.1.3. Bounded Context Canvases
 
+Con el fin de estructurar el dominio del sistema y delimitar responsabilidades claras, se diseñaron los Bounded Context Canvases que representan las principales áreas funcionales de la solución. Cada bounded context define su propósito, los mensajes que intercambia con otros contextos, el lenguaje ubicuo que emplea y las decisiones de negocio que gobiernan su comportamiento.
+
+La separación en bounded contexts permite reducir la complejidad, facilitar la escalabilidad y mantener la coherencia del modelo, garantizando que cada parte del sistema responda a objetivos específicos sin generar dependencias innecesarias.
+
+En este proyecto, los bounded contexts identificados fueron los siguientes:
+
+-Registro y Autenticación de Usuario (IAM): encargado de la validación de identidades y la asignación de roles.
+
+-Gestión de Proyectos y Tareas: núcleo operativo que organiza proyectos, tareas y asignaciones.
+
+-Notificaciones: responsable de generar y distribuir avisos en tiempo real ante eventos relevantes.
+
+-Visualización y Seguimiento: orientado a mostrar el estado de las tareas y proyectos en tableros y calendarios.
+
+A-nalítica y Reportes: especializado en el procesamiento de datos y generación de métricas e informes.
+
+Cada uno de estos bounded contexts se detalla a continuación a través de su canvas, explicando su descripción, clasificación estratégica, roles, comunicaciones entrantes y salientes, lenguaje ubicuo y decisiones de negocio clave.
+
+### *Gestión de Proyectos y Tareas*
+Es el núcleo operativo del sistema, ya que gestiona la creación, organización y asignación de proyectos y tareas. Permite a los Team Leaders definir plazos, prioridades y responsables, mientras que los Team Members pueden marcar tareas como completadas. Además, emite eventos clave como “tarea creada” o “tarea vencida”, que sirven como insumo para los bounded contexts de Visualización y Seguimiento, Analítica y Reportes y Notificaciones.
+
+![ddd](Assets/TB1/BoundedCanvasGestionProyectosTareas.PNG)
+
+### *Analítica y Reportes*
+Este bounded context se encarga de recopilar y procesar los datos generados en los proyectos y tareas para transformarlos en métricas y reportes. Su propósito principal es ofrecer a los Team Leaders una visión global del estado de los proyectos y a los Team Members un seguimiento de su propio rendimiento. Este contexto asegura la confiabilidad de la información, recalculando estadísticas automáticamente al recibir eventos de tareas completadas o vencidas, y enviando resultados hacia Notificaciones para mantener informados a los usuarios.
+
+![ddd](Assets/TB1/BoundedCanvasAnaliticayReportes.PNG)
+
+### *Visualización y Seguimiento*
+Su objetivo es ofrecer a los miembros del equipo una vista clara del estado de las tareas y proyectos mediante tableros y calendarios sincronizados. Este bounded context recibe eventos de Gestión de Proyectos y Tareas (como tareas vencidas o completadas) y los organiza en interfaces visuales para facilitar el monitoreo. Además, se comunica con Analítica y Reportes para mostrar estadísticas y con Notificaciones para resaltar cambios críticos en el estado de las tareas.
+
+![ddd](Assets/TB1/BoundedCanvasVisualizacionSeguimiento.PNG)
+
+### *Registro y Autenticación de Usuario*
+Este bounded context asegura la autenticación y gestión de identidades. Permite el registro, inicio de sesión, validación de credenciales y asignación de roles a los usuarios. Su propósito es garantizar que solo usuarios válidos interactúen con el sistema y que cada acción pueda asociarse a un rol definido (Team Leader o Team Member). Se conecta con Gestión de Proyectos y Tareas, ya que solo un usuario autenticado puede crear o unirse a un proyecto.
+
+![ddd](Assets/TB1/BoundedCanvasRegistroUsuario.PNG)
+
+### *Notificaciones*
+Este bounded context actúa como un canal de comunicación entre el sistema y los usuarios. Recibe eventos de cambios importantes (como una tarea eliminada, un cambio de fecha límite o la asignación de un miembro) y los transforma en notificaciones enviadas en tiempo real. Su propósito es garantizar la transparencia y la trazabilidad de las acciones realizadas en los proyectos y tareas. Se conecta directamente con Gestión de Proyectos y Tareas y Visualización y Seguimiento, asegurando que los usuarios siempre estén informados.
+
+![ddd](Assets/TB1/BoundedCanvasNotificaciones.PNG)
+
 #### 2.5.2. Context Mapping
 
 #### 2.5.3. Software Architecture
@@ -1080,7 +1169,95 @@ Los cambios en las tareas (como su finalización o vencimiento) alimentan la cap
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
+#### 2.6.1. Bounded Context:Gestión de Proyectos y Tareas
 
+##### 2.6.1.1. Domain Layer
+
+##### 2.6.1.2. Interface Layer
+
+##### 2.6.1.3. Application Layer
+
+##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+
+##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+
+#### 2.6.2. Bounded Context:Analítica y Reportes
+
+##### 2.6.1.1. Domain Layer
+
+##### 2.6.1.2. Interface Layer
+
+##### 2.6.1.3. Application Layer
+
+##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+
+##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+
+####  2.6.3. Bounded Context:Visualización y Seguimiento
+
+##### 2.6.1.1. Domain Layer
+
+##### 2.6.1.2. Interface Layer
+
+##### 2.6.1.3. Application Layer
+
+##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+
+##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+
+#### 2.6.4. Bounded Context:Registro y Autenticación de Usuario
+
+##### 2.6.1.1. Domain Layer
+
+##### 2.6.1.2. Interface Layer
+
+##### 2.6.1.3. Application Layer
+
+##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+
+##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+
+#### 2.6.5. Bounded Context:Notificaciones
+
+##### 2.6.1.1. Domain Layer
+
+##### 2.6.1.2. Interface Layer
+
+##### 2.6.1.3. Application Layer
+
+##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+
+##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.1.6.2. Bounded Context Database Design Diagrams
 
 
 
