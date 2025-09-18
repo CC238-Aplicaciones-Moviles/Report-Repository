@@ -1177,7 +1177,7 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 ##### 2.6.1.3. Application Layer
 
-##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+##### 2.6.1.4. Infrastructure Layer
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
@@ -1190,12 +1190,214 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 #### 2.6.2. Bounded Context:Analítica y Reportes
 
 ##### 2.6.1.1. Domain Layer
+Este bounded context consume datos de:
+- **Gestión de proyectos y tareas**: `projectId`, `fechas de inicio/fin`, `presupuesto`, `lista de Miembros de equipo`, `lista de Tareas del proyecto (estado, prioridad, overdue, assignedAt, completedAt)`.
+- **Registro y autenticación**: `Miembros de equipo con costo por hora`.
+
+Con esa información calcula y expone:
+- **Estadísticas por Proyecto** (Project Dashboard, visible para el Team Leader).
+- **Estadísticas por Miembro** (Member Dashboard, visible para el Team Leader).
+- **Progress Report** (reporte personal del Team Member).
+
+Además genera Reportes de tipo `PROJECT`, `MEMBER` y `PROGRESS`.
+
+A continuacion, se mostraran los distintos aggregates, value object, entities que se encontraran relacionados a este bounded context
+
+---
+
+## Aggregates (domain/model/aggregates)
+
+### Aggregate: **ProjectAnalytics**
+**Descripción:** Consolida métricas del Project para el Project Dashboard y sirve de base para ProjectReport.
+
+**Atributos**
+
+| Atributo              | Tipo                    | Visibilidad | Descripción |
+|-----------------------|-------------------------|-------------|-------------|
+| `projectId`           | Long                    | Private     | Identificador del proyecto. |
+| `period`              | `DateRange`             | Private     | Ventana temporal del cálculo. |
+| `taskCounts`          | `TaskStatusCounts`      | Private     | Totales: `notStarted`, `inProgress`, `done`, `overdue`, `total`. |
+| `priorityBreakdown`   | `PriorityBreakdown`     | Private     | Totales por `priorityCode` y por estado. |
+| `avgByStatus`         | `DurationAverages`      | Private     | Promedio de horas `(completedAt - assignedAt)` por estado. |
+| `avgByPriority`       | `DurationAverages`      | Private     | Promedio de horas por prioridad. |
+| `budget`              | `BudgetUsage`           | Private     | Presupuesto aprobado, usado y varianza. |
+| `members`             | List\<`MemberSummary`\> | Private     | Resumen por miembro (conteos, costos, velocidad). |
+| `bestMember`          | `LeaderboardEntry`      | Private     | Miembro con mejor ranking según criterio. |
+| `worstMember`         | `LeaderboardEntry`      | Private     | Miembro con peor ranking según criterio. |
+
+**Métodos**
+
+| Método                                   | Retorno      | Descripción |
+|------------------------------------------|--------------|-------------|
+| `addTasks(tasks: List<Task>)`     | `void`       | Agrega/actualiza tareas y recalcula métricas globales. |
+| `addMembers(members: List<MemberSummary>)`| `void`       | Agrega/actualiza resúmenes de miembros (costos, velocidad). |
+| `updateBudget(approved: Money, usedDelta: Money)` | `void` | Actualiza el uso de presupuesto y su varianza. |
+| `calculatePriorityStats()`               | `void`       | Reconstruye `priorityBreakdown` con las tareas actuales. |
+| `calculateAverages()`                    | `void`       | Reconstruye `avgByStatus` y `avgByPriority`. |
+| `rankMembers(criteria: String, filters?: Map)` | `void`  | Calcula `bestMember` y `worstMember` (permite filtros por prioridad/estado). |
+| `buildProjectReportData()`               | `ReportData` | Crea los datos listos para el reporte de proyecto. |
+| `getBestMember()`                        | `LeaderboardEntry` | Devuelve el mejor miembro actual. |
+| `getWorstMember()`                       | `LeaderboardEntry` | Devuelve el peor miembro actual. |
+| `reset()`                                | `void`       | Limpia métricas recalculables (mantiene identidad y presupuesto). |
+
+----------
+### Aggregate: **MemberAnalytics**
+**Descripción:** Métricas del Team Member dentro de un Project. Base para Member Dashboard y Progress Report.
+
+**Atributos**
+
+| Atributo            | Tipo                 | Visibilidad | Descripción |
+|---------------------|----------------------|-------------|-------------|
+| `projectId`         | Long                 | Private     | Identificador del proyecto. |
+| `memberId`          | Long                 | Private     | Identificador del miembro. |
+| `period`            | `DateRange`          | Private     | Ventana temporal del cálculo. |
+| `taskCounts`        | `TaskStatusCounts`   | Private     | Conteos por estado del miembro. |
+| `priorityBreakdown` | `PriorityBreakdown`  | Private     | Totales del miembro por prioridad/estado. |
+| `avgByStatus`       | `DurationAverages`   | Private     | Promedios por estado. |
+| `avgByPriority`     | `DurationAverages`   | Private     | Promedios por prioridad. |
+| `hourlyRate`        | `Money`              | Private     | Tarifa por hora del miembro. |
+| `spentHours`        | `Float `             | Private     | Suma de horas (cada tarea redondeada a 2 decimales). |
+| `accumulatedCost`   | `MemberCost`         | Private     | Costo acumulado (`hourlyRate × spentHours`). |
+
+**Métodos**
+
+| Método                                      | Retorno       | Descripción |
+|---------------------------------------------|---------------|-------------|
+| `addTasks(tasks: List<Task>)`        | `void`        | Agrega/actualiza tareas del miembro y refresca conteos/vencidas. |
+| `setHourlyRate(rate: Money)`                 | `void`        | Define o actualiza la tarifa por hora. |
+| `calculateSpentHours()`                      | `BigDecimal`  | Recalcula `spentHours` desde las tareas (con redondeo a 2 decimales). |
+| `calculateCost()`                            | `MemberCost`  | Recalcula `accumulatedCost` = tarifa × horas. |
+| `calculateAverages()`                        | `void`        | Reconstruye `avgByStatus` y `avgByPriority`. |
+| `calculateVelocity()`                        | `BigDecimal`  | Devuelve la velocidad (tareas hechas por periodo o tiempo medio por tarea). |
+| `buildMemberReportData(kind: String)`        | `ReportData`  | Crea los datos para Member/Progress Report. |
+| `reset()`                                    | `void`        | Limpia métricas recalculables (mantiene identidad y tarifa). |
+
+---
+
+### Aggregate: **Report**
+**Descripción:** Reporte de tipo: `PROJECT`, `MEMBER`, `PROGRESS`.
+
+**Atributos**
+
+| Atributo      | Tipo            | Visibilidad | Descripción |
+|---------------|-----------------|-------------|-------------|
+| `reportId`    | `Long`            | Private     | Identificador del reporte. |
+| `kind`        | `String`          | Private     | Tipo de reporte: `"PROJECT"`, `"MEMBER"` o `"PROGRESS"`. |
+| `generatedAt` | `LocalDateTime`   | Private     | Fecha y hora de generación. |
+| `period`      | `DateRange`     | Private     | Ventana temporal cubierta por el reporte. |
+| `payload`     | `ReportData`    | Private     | KPIs y series listos para consumo en UI. |
+
+**Métodos**
+
+| Método                                       | Retorno  | Descripción |
+|----------------------------------------------|----------|-------------|
+| `fromProject(analytics: ProjectAnalytics)`    | `Report` | Construye un reporte de tipo PROJECT. |
+| `fromMember(analytics: MemberAnalytics, kind: String)` | `Report` | Construye un reporte de tipo MEMBER o PROGRESS. |
+| `publish()`                                   | `void`   | Marca el reporte como inmutable. |
+| `getPayload()`                                | `ReportData` | Devuelve el contenido del reporte. |
+
+
+---
+
+
+### Entity: **Task**  *(entrada mínima para este BC)*
+
+| Campo          | Tipo          | Descripción |
+|----------------|---------------|-------------|
+| `taskId`       | Long          | Identificador de la tarea. |
+| `memberId`     | Long          | Identificador del asignado. |
+| `statusCode`   | String        | Código de estado del upstream (ej.: `"TODO"`, `"IN_PROGRESS"`, `"DONE"`). |
+| `priorityCode` | String        | Código de prioridad del upstream (ej.: `"LOW"`, `"MEDIUM"`, `"HIGH"`). |
+| `overdue`      | Boolean       | Indicador de vencimiento. |
+| `assignedAt`   | LocalDateTime | Fecha y hora de asignación. |
+| `completedAt`  | LocalDateTime?| Fecha y hora de completado (si corresponde). |
+
+### Entity: **MemberSummary**
+
+| Campo                 | Tipo                 | Descripción |
+|----------------------|----------------------|-------------|
+| `memberId`           | Long                 | Identificador del miembro. |
+| `taskCounts`         | `TaskStatusCounts`   | Conteos por estado. |
+| `priorityBreakdown`  | `PriorityBreakdown`  | Totales por prioridad/estado. |
+| `avgCompletionHours` | `Float`               | Horas promedio por tarea. |
+| `spentHours`         | `Float`              | Horas totales del miembro. |
+| `hourlyRate`         | `Money`              | Tarifa por hora. |
+| `cost`               | `MemberCost`         | Costo acumulado. |
+
+### Entity: **LeaderboardEntry**
+
+| Campo      | Tipo    | Descripción |
+|------------|---------|-------------|
+| `memberId` | Long    | Identificador del miembro rankeado. |
+| `score`    | Decimal | Puntuación según los criterios configurados. |
+| `reason`   | String  | Explicación breve (ej.: “más tareas hechas y menos vencidas”). |
+
+---
+
+
+| Value Object         | Campos clave / Estructura                                                     | Reglas / Notas |
+|----------------------|-------------------------------------------------------------------------------|----------------|
+| **DateRange**        | `start: LocalDate`, `end: LocalDate`                                          | `start <= end`. |
+| **Money**            | `amount: Decimal(12,2)`, `currency: String`                                   | — |
+| **TaskStatusCounts** | `total, notStarted, inProgress, done, overdue`                                | `total >= notStarted + inProgress + done`. |
+| **PriorityBreakdown**| `byPriority: Map<String /*priorityCode*/, TaskStatusCounts>`                  | Totales por prioridad y estado. |
+| **DurationAverages** | `byKey: Map<String /*status|priority*/, Decimal(10,2) /*hours*/>`             | Promedios de `(completedAt - assignedAt)` redondeados a 2 decimales. |
+| **MemberCost**       | `hourlyRate: Money`, `spentHours: Decimal(10,2)`, `total: Money`              | `total = rate × hours`. |
+| **BudgetUsage**      | `approved: Money`, `used: Money`, `variance: Money`                           | `variance = approved - used`. |
+| **ReportData**       | DTO inmutable con KPIs/series para UI (conteos, prioridad, vencidas, promedios, costos, best/worst, budget, etc.) | Serializable y de solo lectura. |
+
+---
+
+| Service                    | Responsabilidad                                                                     | Operaciones principales  |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| **TaskAggregationService**| Normaliza tareas del upstream a `Task` y agrupa por proyecto/miembro.                               | `List<Task> aggregateTasks(rawTasks)` |
+| **CountingService**       | Calcula conteos por estado y total de vencidas.                                                              | `TaskStatusCounts calculateTaskCounts(List<Task>)` |
+| **PriorityCountingService**| Obtiene totales por prioridad y estado.                                                                     | `PriorityBreakdown calculatePriorityBreakdown(List<Task>)` |
+| **TimeStatsService**      | Calcula promedios `(completedAt - assignedAt)` por estado y prioridad (redondeo 2 decimales).               | `DurationAverages calculateAveragesByStatus(List<Task>)` · `DurationAverages calculateAveragesByPriority(List<Task>)` |
+| **CostCalculationService**| Calcula horas y coste por miembro (`rate × hours` con redondeo).                                            | `BigDecimal calculateSpentHours(List<Task>)` · `MemberCost calculateMemberCost(Money rate, BigDecimal hours)` |
+| **ProjectAnalyticsService**| Construye/actualiza `ProjectAnalytics` (conteos, promedios, presupuesto, ranking).                          | `ProjectAnalytics calculateProjectAnalytics(Long projectId, List<Task>, List<MemberSummary>, Money approvedBudget, Money usedDelta)` |
+| **MemberAnalyticsService**| Construye/actualiza `MemberAnalytics` (conteos, promedios, coste, velocidad).                                | `MemberAnalytics calculateMemberAnalytics(Long projectId, Long memberId, List<Task>, Money hourlyRate)` |
+| **RankingService**        | Determina mejor/peor miembro (por defecto: número de tareas hechas; soporta filtros).                        | `LeaderboardEntry[] computeRanking(List<MemberSummary>, String criteria, Map filters)` |
+| **ReportBuilder**         | Genera `ReportData` y crea `Report` (PROJECT/MEMBER/PROGRESS) listo para publicar.                           | `Report buildProjectReport(ProjectAnalytics, DateRange)` · `Report buildMemberReport(MemberAnalytics, DateRange, String kind)` |
+| **BudgetService**         | Calcula `BudgetUsage` a partir del presupuesto aprobado y costos por miembro.                                | `BudgetUsage calculateBudgetUsage(Money approved, List<MemberCost> memberCosts)` |
+
+---
+
+## Comandos (domain/commands)
+
+| Command Name               | ¿Qué hace?                                | Datos mínimos requeridos |
+|---------------------------|-----------------------------------------------------------------------|--------------------------|
+| **GenerateProjectAnalytics** | Construye o actualiza las estadísticas agregadas del proyecto.     | `projectId`, `period(start,end)` |
+| **GenerateMemberAnalytics**  | Construye o actualiza las estadísticas del miembro en el proyecto. | `projectId`, `memberId`, `period` |
+| **GenerateProjectReport**    | Crea el de reporte tipo PROJECT.                           | `projectId`, `period` |
+| **GenerateMemberReport**     | Crea el de reporte tipo MEMBER (TL) o PROGRESS (TM).       | `projectId`, `memberId`, `period`, `kind` |
+| **RecalculateRanking**       | Recalcula el ranking (mejor/peor) con criterios y filtros.          | `projectId`, `period`, `criteria`, `filters?` |
+| **UpdateProjectBudget**      | Actualiza el uso/varianza del presupuesto del proyecto.             | `projectId`, `approved`, `usedDelta` |
+| **SetMemberHourlyRate**      | Define o actualiza la tarifa por hora del miembro para analítica.   | `projectId`, `memberId`, `hourlyRate` |
+
+---
+
+## Calculos que se realizaran: 
+- **Conteos por estado**: se derivan de `statusCode` en `Task`.  
+- **Vencidas**: se utiliza `overdue` tal como llega del upstream.  
+- **Promedios de tiempo**: solo para tareas **done**; `durationHours = hours(completedAt - assignedAt)`; promedios por **estado** y **prioridad** con **redondeo a 2 decimales**.  
+- **Costo por miembro**:  
+  - `spentHours = Σ round2(durationHours)` por cada tarea del miembro.  
+  - `accumulatedCost.total = hourlyRate.amount × spentHours`.  
+- **Costo del proyecto**: `budget.used = Σ member.cost.total`; `budget.variance = budget.approved - budget.used`.  
+- **Velocidad**: configurable: (a) tareas hechas por periodo **o** (b) tiempo medio por tarea; `calculateVelocity()` retorna el valor elegido.  
+- **Ranking (best/worst)**: por defecto **mayor/menor número de tareas hechas**; admite filtros por `priorityCode`/`statusCode` o un **score** ponderado (penalizando `overdue` y tiempos altos).  
+- **Inmutabilidad de Reportes**: después de `publish()`, un `Report` no cambia.  
+- **Idempotencia**: evitar doble conteo utilizando `taskId` como clave al agregar tareas.  
+
+
+
 
 ##### 2.6.1.2. Interface Layer
 
 ##### 2.6.1.3. Application Layer
 
-##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+##### 2.6.1.4. Infrastructure Layer
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
@@ -1213,7 +1415,7 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 ##### 2.6.1.3. Application Layer
 
-##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+##### 2.6.1.4. Infrastructure Layer
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
@@ -1231,7 +1433,7 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 ##### 2.6.1.3. Application Layer
 
-##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+##### 2.6.1.4. Infrastructure Layer
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
@@ -1249,7 +1451,7 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 ##### 2.6.1.3. Application Layer
 
-##### 2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
+##### 2.6.1.4. Infrastructure Layer
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
