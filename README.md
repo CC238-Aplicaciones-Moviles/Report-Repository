@@ -1382,13 +1382,12 @@ A continuacion, se mostraran los distintos aggregates, value object, entities qu
 - **Vencidas**: se utiliza `overdue` tal como llega del upstream.  
 - **Promedios de tiempo**: solo para tareas **done**; `durationHours = hours(completedAt - assignedAt)`; promedios por **estado** y **prioridad** con **redondeo a 2 decimales**.  
 - **Costo por miembro**:  
-  - `spentHours = Σ round2(durationHours)` por cada tarea del miembro.  
+  - `spentHours = suma( round2(durationHours))` por cada tarea del miembro.  
   - `accumulatedCost.total = hourlyRate.amount × spentHours`.  
-- **Costo del proyecto**: `budget.used = Σ member.cost.total`; `budget.variance = budget.approved - budget.used`.  
+- **Costo del proyecto**: `budget.used = suma( member.cost.total)`; `budget.variance = budget.approved - budget.used`.  
 - **Velocidad**: configurable: (a) tareas hechas por periodo **o** (b) tiempo medio por tarea; `calculateVelocity()` retorna el valor elegido.  
 - **Ranking (best/worst)**: por defecto **mayor/menor número de tareas hechas**; admite filtros por `priorityCode`/`statusCode` o un **score** ponderado (penalizando `overdue` y tiempos altos).  
 - **Inmutabilidad de Reportes**: después de `publish()`, un `Report` no cambia.  
-- **Idempotencia**: evitar doble conteo utilizando `taskId` como clave al agregar tareas.  
 
 
 
