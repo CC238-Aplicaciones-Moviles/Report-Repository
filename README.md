@@ -2259,9 +2259,6 @@ Implementación de acceso a datos para reportes de `Report`.
 
 ##### 2.6.1.1. Domain Layer
 
-
-### 4.2.1.1. Domain Layer
-
 La capa de dominio constituye el núcleo de la aplicación, donde se definen las reglas y modelos que permiten ofrecer a los miembros del equipo una visión clara y organizada del estado de los proyectos y tareas.  
 En este contexto, el agregado **VisualizationAggregate** actúa como la raíz que integra tanto los tableros de tareas como las vistas de calendario, garantizando que la información se muestre de forma coherente y en tiempo real.
 
@@ -2373,9 +2370,157 @@ En este contexto, el agregado **VisualizationAggregate** actúa como la raíz qu
 
 ##### 2.6.1.2. Interface Layer
 
+La capa de interfaz es la encargada de manejar la comunicación entre el usuario y el sistema, así como entre sistemas externos que envían o reciben eventos. Aquí se definen los controladores y consumidores responsables de recibir solicitudes, procesarlas y delegarlas a la capa de dominio.
+
+**Objetivo:** Facilitar la interacción de los usuarios y sistemas externos con las funcionalidades de visualización y seguimiento, asegurando que las operaciones sobre tableros y calendarios se gestionen de forma clara y eficiente.
+
+---
+
+* **Controller: VisualizationController**  
+**Descripción:** Expone endpoints REST para acceder y actualizar las vistas de tableros y calendarios de tareas.
+
+|Método|Ruta|Descripción|
+|:-|:-|:-|
+|getBoard(Long boardId)|GET `/boards/{boardId}`|Obtiene el estado actual de un tablero.|
+|getCalendar(Long calendarId)|GET `/calendars/{calendarId}`|Obtiene la vista del calendario asociado a un proyecto.|
+|updateTaskStatus(Long taskId, TaskStatus status)|PUT `/tasks/{taskId}/status`|Actualiza el estado de una tarea en tablero y calendario.|
+|refreshViews()|POST `/views/refresh`|Fuerza la sincronización entre tablero y calendario.|
+
+---
+
+* **Controller: TaskTrackingController**  
+**Descripción:** Controlador orientado al seguimiento de tareas específicas. Permite consultar y visualizar su progreso.
+
+|Método|Ruta|Descripción|
+|:-|:-|:-|
+|getTaskProgress(Long taskId)|GET `/tasks/{taskId}/progress`|Devuelve el progreso detallado de una tarea.|
+|getOverdueTasks()|GET `/tasks/overdue`|Lista todas las tareas vencidas en el sistema.|
+|getTeamOverview(Long projectId)|GET `/projects/{projectId}/overview`|Muestra el estado general del equipo en el proyecto.|
+
+---
+
+* **Consumer: TaskEventConsumer**  
+**Descripción:** Clase encargada de recibir eventos de actualización de tareas provenientes del bounded context de Gestión de Proyectos y Tareas.
+
+|Evento|Acción|
+|:-|:-|
+|TaskCreated|Agrega la tarea al tablero y al calendario.|
+|TaskUpdated|Actualiza la información de la tarea en las vistas.|
+|TaskCompleted|Marca la tarea como completada en tablero y calendario.|
+|TaskOverdue|Resalta la tarea vencida y notifica cambios críticos.|
+
+---
+
+* **Consumer: NotificationConsumer**  
+**Descripción:** Recibe eventos de Analítica y Reportes o de Notificaciones para reflejar cambios visuales en la interfaz de seguimiento.  
+
+|Evento|Acción|
+|:-|:-|
+|StatisticsUpdatedEvent|Refresca la vista con estadísticas resumidas.|
+
 ##### 2.6.1.3. Application Layer
 
+La capa de aplicación se encarga de coordinar los flujos de procesos del negocio relacionados con la visualización y el seguimiento.
+**Objetivo:** Gestionar la lógica de orquestación de procesos, ejecutando comandos y reaccionando a eventos que afectan la visualización de tableros y calendarios, para mantener la información siempre actualizada y consistente.
+
+---
+
+* **Command Handler: UpdateTaskStatusHandler**  
+**Descripción:** Maneja el comando para actualizar el estado de una tarea. Se asegura de que los cambios se reflejen tanto en el tablero como en el calendario.  
+
+|Comando|Acción|
+|:-|:-|
+|UpdateTaskStatusCommand|Valida el cambio de estado de la tarea, lo aplica en el dominio y notifica la actualización a los consumidores visuales.|
+
+---
+
+* **Command Handler: RefreshBoardViewHandler**  
+**Descripción:** Ejecuta la acción de refrescar las vistas de un tablero o calendario cuando se solicita manualmente.  
+
+|Comando|Acción|
+|:-|:-|
+|RefreshBoardViewCommand|Solicita al dominio regenerar las vistas de tablero y calendario para reflejar datos actuales.|
+
+---
+
+* **Event Handler: TaskCreatedEventHandler**  
+**Descripción:** Reacciona a la creación de una tarea proveniente del bounded context de Gestión de Proyectos y Tareas.  
+
+|Evento|Acción|
+|:-|:-|
+|TaskCreatedEvent|Inicia la sincronización para agregar la tarea en las vistas de tablero y calendario.|
+
+---
+
+* **Event Handler: TaskCompletedEventHandler**  
+**Descripción:** Gestiona el evento que indica que una tarea ha sido completada.  
+
+|Evento|Acción|
+|:-|:-|
+|TaskCompletedEvent|Actualiza el tablero y calendario para marcar la tarea como completada y recalcula los indicadores visuales.|
+
+---
+
+* **Event Handler: TaskOverdueEventHandler**  
+**Descripción:** Procesa el evento de tarea vencida y resalta el cambio en las vistas visuales.  
+
+|Evento|Acción|
+|:-|:-|
+|TaskOverdueEvent|Marca la tarea como atrasada en el tablero, actualiza el calendario y emite notificaciones visuales.|
+
+
+
 ##### 2.6.1.4. Infrastructure Layer
+**Objetivo:** Implementar los mecanismos técnicos de persistencia y comunicación externa que aseguren la consistencia y disponibilidad de la información visualizada en tableros y calendarios.
+
+---
+
+* **Repository: TaskViewRepositoryImpl**  
+**Descripción:** Implementación concreta del repositorio definido en la capa de dominio. Se encarga de almacenar y recuperar el estado visual de las tareas para tableros y calendarios.  
+
+|Método|Acción|
+|:-|:-|
+|save(TaskView taskView)|Guarda el estado actualizado de una vista de tarea en la base de datos.|
+|findByProjectId(Long projectId)|Recupera todas las vistas de tareas asociadas a un proyecto específico.|
+|updateStatus(Long taskId, String status)|Actualiza el estado de una tarea y lo refleja en la persistencia.|
+|deleteByTaskId(Long taskId)|Elimina la vista de una tarea del repositorio.|
+
+---
+
+* **Repository: BoardViewRepositoryImpl**  
+**Descripción:** Administra la persistencia de configuraciones y estados de los tableros de visualización.  
+
+|Método|Acción|
+|:-|:-|
+|save(BoardView boardView)|Guarda la configuración actual de un tablero.|
+|findByUserId(Long userId)|Recupera el tablero asociado a un usuario.|
+|refresh(Long boardId)|Actualiza y sincroniza los datos del tablero desde la base de datos.|
+
+---
+
+* **MessageBroker Adapter: EventConsumer**  
+**Descripción:** Clase que escucha los eventos provenientes de otros bounded contexts (como Gestión de Proyectos y Tareas) y los adapta para ser procesados por los Event Handlers en la Application Layer.  
+
+|Evento recibido|Acción|
+|:-|:-|
+|TaskCreatedEvent|Convierte el mensaje recibido en un evento de dominio interno y lo pasa al Event Handler correspondiente.|
+|TaskCompletedEvent|Adapta el evento para actualizar las vistas locales de las tareas.|
+|TaskOverdueEvent|Procesa el mensaje y lo reenvía para resaltar tareas vencidas.|
+
+---
+
+* **Database Adapter: TaskViewEntity**  
+**Descripción:** Clase de mapeo (ORM) que traduce los objetos de dominio como `TaskView` a entidades de persistencia en la base de datos relacional.  
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|id|Long|Identificador único de la vista de tarea.|
+|taskId|Long|Identificador de la tarea original.|
+|status|String|Estado actual de la tarea (pendiente, en progreso, completada, vencida).|
+|lastUpdated|Date|Fecha y hora de la última sincronización.|
+
+
+
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
