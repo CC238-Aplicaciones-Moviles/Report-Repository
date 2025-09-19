@@ -107,7 +107,7 @@ del informe, realizados por los miembros del equipo
       - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
       - [2.5.3.3. Software Architecture Deployment Level Diagrams](#2533-software-architecture-deployment-level-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-    - [2.6.1. Bounded Context: Gestión de Proyectos y Tareas](#261-bounded-context-gestión-de-proyectos-y-tareas)
+    - [2.6.1. Bounded Context: Registro y Autenticación de Usuario](#261-bounded-context-registro-y-autenticación-de-usuario)
       - [2.6.1.1. Domain Layer](#2611-domain-layer)
       - [2.6.1.2. Interface Layer](#2612-interface-layer)
       - [2.6.1.3. Application Layer](#2613-application-layer)
@@ -134,7 +134,7 @@ del informe, realizados por los miembros del equipo
       - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
           - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
           - [2.6.3.6.2. Bounded Context Database Design Diagrams](#26362-bounded-context-database-design-diagrams)
-    - [2.6.4. Bounded Context: Registro y Autenticación de Usuario](#264-bounded-context-registro-y-autenticación-de-usuario)
+    - [2.6.4. Bounded Context:  Gestión de Proyectos y Tareas](#264-bounded-context-gestión-de-proyectos-y-tareas)
       - [2.6.4.1. Domain Layer](#2641-domain-layer)
       - [2.6.4.2. Interface Layer](#2642-interface-layer)
       - [2.6.4.3. Application Layer](#2643-application-layer)
@@ -1331,9 +1331,9 @@ El diagrama de despliegue representa cómo los principales componentes del siste
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
-#### 2.6.1. Bounded Context: IRegistro y autentificacion de usuario
+#### 2.6.1. Bounded Context: Registro y autentificacion de usuario
 
-##### 4.2.1.1. Domain Layer
+##### 2.6.1.1. Domain Layer
 
 La Domain Layer es el núcleo que orquesta y gestiona las reglas de negocio relacionadas con la autenticación y autorización de usuarios en la plataforma TaskMaster. En este contexto, las entidades como User, Role, y EmailAddress, junto con los servicios y métodos de validación, permiten gestionar la identidad de los usuarios, sus roles, y la verificación de credenciales.
 
@@ -1447,7 +1447,7 @@ El UserRepository es una abstracción para la persistencia de los usuarios en la
 
 **En la Domain Layer de TaskMaster**, hemos definido los roles como TEAM_MEMBER y TEAM_LEADER dentro de un modelo de Domain-Driven Design (DDD). Estas entidades y objetos de valor representan las reglas de negocio fundamentales del sistema de autenticación y autorización. La clase User se asocia con los roles, y se valida el acceso y las credenciales a través de servicios como AuthenticationService y repositorios como UserRepository.
 
-### 4.2.1.2. Interface Layer: Registro y autentificacion de usuario
+### 2.6.1.2. Interface Layer
 
 La Interface Layer es la capa que expone los endpoints de la aplicación, permitiendo la interacción entre los usuarios y el sistema. Los controladores son responsables de recibir las peticiones, validarlas y coordinar con los servicios correspondientes para ejecutar las acciones solicitadas. En esta capa, no se implementan reglas de negocio, sino que se coordina la comunicación entre las solicitudes de los usuarios y la lógica del dominio.
 
@@ -1508,7 +1508,7 @@ El `UsersController` maneja los endpoints relacionados con la gestión de usuari
 
 En esta capa, los controladores son los encargados de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados, y devolver una respuesta adecuada. Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o los servicios, actuando como una interfaz entre los usuarios y la lógica del negocio. Los controladores presentados permiten gestionar la autenticación de usuarios, la gestión de roles, y la administración de usuarios dentro del sistema TaskMaster.
 
-### 4.2.1.3. Application Layer: Registro y autentificacion de usuario
+### 2.6.1.3. Application Layer
 
 La **Application Layer** es responsable de coordinar la lógica de negocio que se ejecuta en respuesta a los comandos y consultas. Aquí, los **Command Handlers** manejan la creación, actualización y eliminación de datos, mientras que los **Query Handlers** gestionan las consultas para obtener información del sistema. Además, esta capa garantiza que todas las verificaciones y reglas de negocio se implementen antes de que la información se procese o se persista.
 
@@ -1606,6 +1606,16 @@ El `RoleQueryServiceImpl` maneja las consultas relacionadas con los roles, permi
 
 - **Obtener todos los usuarios (GetAllUsersQuery):**  
   Devuelve una lista con todos los usuarios registrados en el sistema.
+
+##### 2.6.1.4. Infrastructure Layer
+
+##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.1.6.2. Bounded Context Database Design Diagrams
 
 
 #### 2.6.2. Bounded Context: Notificaciones
@@ -2144,7 +2154,7 @@ Implementación de acceso a datos para reportes de `Report`.
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
 
-#### 2.6.4. Bounded Context:Registro y Autenticación de Usuario
+#### 2.6.4. Bounded Context: Gestión de Proyectos y Tareas
 
 ##### 2.6.1.1. Domain Layer
 
