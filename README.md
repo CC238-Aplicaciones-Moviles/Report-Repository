@@ -178,7 +178,7 @@ profesional de cada estudiante una vez finalizada su carrera. El propósito es q
 objetivos reflejen de manera clara y medible cómo cada integrante planea alcanzar un 
 crecimiento profesional continuo tras su graduación. 
 
-<h3>Eric Marlon Olivera Barzola
+*Eric Marlon Olivera Barzola*
 
   Objetivo 1: Publicar una aplicación móvil propia en la Play Store dentro del primer año.
   Objetivo 2: Obtener una certificación en desarrollo móvil (Android o iOS) en un plazo máximo de 18 meses.
@@ -187,6 +187,13 @@ crecimiento profesional continuo tras su graduación.
   - Esto falta completareqweqweqwe
   - dasdasdas
 
+*Alvaro Leandro Bejarano Martíenez*
+
+Objetivo 1:
+Obtener una certificación internacional en inteligencia artificial aplicada a desarrollo de software en los primeros 12 meses posteriores a mi graduación, con el fin de fortalecer mi perfil profesional y postular a posiciones bien remuneradas en empresas tecnológicas.
+
+Objetivo 2:
+Participar en al menos un curso especializado en bases de datos avanzadas en el extranjero dentro de los primeros dos años después de egresar, para ampliar mi experiencia académica y aplicar dichos conocimientos en proyectos de investigación y desarrollo innovadores.
 
 ## Capítulo I: Presentación  
 ### 1.1. Startup Profile  
