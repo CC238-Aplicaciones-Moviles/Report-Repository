@@ -106,7 +106,7 @@ del informe, realizados por los miembros del equipo
       - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
       - [2.5.3.3. Software Architecture Deployment Level Diagrams](#2533-software-architecture-deployment-level-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-    - [2.6.1. Bounded Context:Gestión de Proyectos y Tareas](#261-bounded-context-gestión-de-proyectos-y-tareas)
+    - [2.6.1. Bounded Context: Gestión de Proyectos y Tareas](#261-bounded-context-gestión-de-proyectos-y-tareas)
       - [2.6.1.1. Domain Layer](#2611-domain-layer)
       - [2.6.1.2. Interface Layer](#2612-interface-layer)
       - [2.6.1.3. Application Layer](#2613-application-layer)
@@ -115,7 +115,7 @@ del informe, realizados por los miembros del equipo
       - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2613-bounded-context-software-architecture-code-level-diagrams)
            -[2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
            -[2.6.1.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
-    - [2.6.2. Bounded Context:Analítica y Reportes](#262-bounded-context-analítica-y-reportes)
+    - [2.6.2. Bounded Context: Analítica y Reportes](#262-bounded-context-analítica-y-reportes)
       - [2.6.2.1. Domain Layer](#2621-domain-layer)
       - [2.6.2.2. Interface Layer](#2622-interface-layer)
       - [2.6.2.3. Application Layer](#2623-application-layer)
@@ -124,7 +124,7 @@ del informe, realizados por los miembros del equipo
       - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
            -[2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
            -[2.6.2.6.2. Bounded Context Database Design Diagrams](#26262-bounded-context-database-design-diagrams)
-    - [2.6.3. Bounded Context:Visualización y Seguimiento](#263-bounded-context-visualización-y-seguimiento)
+    - [2.6.3. Bounded Context: Visualización y Seguimiento](#263-bounded-context-visualización-y-seguimiento)
       - [2.6.3.1. Domain Layer](#2631-domain-layer)
       - [2.6.3.2. Interface Layer](#2632-interface-layer)
       - [2.6.3.3. Application Layer](#2633-application-layer)
@@ -133,7 +133,7 @@ del informe, realizados por los miembros del equipo
       - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
            -[2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
            -[2.6.3.6.2. Bounded Context Database Design Diagrams](#26362-bounded-context-database-design-diagrams)
-   - [2.6.4. Bounded Context:Registro y Autenticación de Usuario](#264-bounded-context-registro-y-autenticación-de-usuario)
+    - [2.6.4. Bounded Context: Registro y Autenticación de Usuario](#264-bounded-context-registro-y-autenticación-de-usuario)
       - [2.6.4.1. Domain Layer](#2641-domain-layer)
       - [2.6.4.2. Interface Layer](#2642-interface-layer)
       - [2.6.4.3. Application Layer](#2643-application-layer)
@@ -142,7 +142,7 @@ del informe, realizados por los miembros del equipo
       - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
            -[2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
            -[2.6.4.6.2. Bounded Context Database Design Diagrams](#26462-bounded-context-database-design-diagrams)
-   - [2.6.5. Bounded Context:Notificaciones](#265-bounded-context-notificaciones)
+    - [2.6.5. Bounded Context: Notificaciones](#265-bounded-context-notificaciones)
       - [2.6.5.1. Domain Layer](#2651-domain-layer)
       - [2.6.5.2. Interface Layer](#2652-interface-layer)
       - [2.6.5.3. Application Layer](#2653-application-layer)
@@ -1162,6 +1162,10 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 #### 2.5.3. Software Architecture
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+
+En el nivel de contexto se representa de manera general cómo el sistema TaskMaster se relaciona con los usuarios y con otros sistemas externos. En este diagrama se puede observar que los principales actores son el líder de equipo y el integrante de equipo, quienes interactúan con la plataforma a través de la aplicación móvil y la landing page. Además, el sistema mantiene comunicación con servicios externos como Gmail para el envío de notificaciones y Google Calendar para la gestión de plazos y eventos. Este nivel nos ayuda a entender la interacción global del software sin entrar en detalles técnicos complejos.
+
+![ddd](Assets/TB1/ContextDiagram.PNG)
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
 
