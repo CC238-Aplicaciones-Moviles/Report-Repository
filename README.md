@@ -2850,9 +2850,10 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 
 # Bibliografía
 -Chandrasekaran, P. (2024, 9 agosto). Remote EventStorming in Practice. Domain-driven Design: A Practitioner’s Guide. 
-(https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/)[https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/]
+[https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/](https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/)
+
 -Ddd-Crew. (s. f.). GitHub - ddd-crew/bounded-context-canvas: A structured approach to designing and documenting each of your bounded contexts. GitHub. 
-(https://github.com/ddd-crew/bounded-context-canvas)[https://github.com/ddd-crew/bounded-context-canvas]
+[https://github.com/ddd-crew/bounded-context-canvas](https://github.com/ddd-crew/bounded-context-canvas)
 
 # Anexos
 
