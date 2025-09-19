@@ -178,14 +178,21 @@ profesional de cada estudiante una vez finalizada su carrera. El propósito es q
 objetivos reflejen de manera clara y medible cómo cada integrante planea alcanzar un 
 crecimiento profesional continuo tras su graduación. 
 
-*Eric Marlon Olivera Barzola*
+<h3> Eric Marlon Olivera Barzola
 
-  Objetivo 1: Publicar una aplicación móvil propia en la Play Store dentro del primer año.
-  Objetivo 2: Obtener una certificación en desarrollo móvil (Android o iOS) en un plazo máximo de 18 meses.
-  
-  
-  - Esto falta completareqweqweqwe
-  - dasdasdas
+- **Objetivo 1: Publicar una aplicación móvil propia en la Play Store**
+  - **Específico:** Desarrollar y publicar una aplicación móvil propia en la Google Play Store.  
+  - **Medible:** La app estará disponible públicamente en la tienda con al menos una versión funcional y descargable.  
+  - **Alcanzable:** Contar con los recursos de aprendizaje, guías y tiempo necesario para desarrollarla en un año.  
+  - **Relevante:** Publicar una app incrementará la experiencia práctica en desarrollo móvil y dará visibilidad a las habilidades adquiridas.  
+  - **Tiempo:** Cumplirlo en un plazo máximo de 12 meses desde hoy.  
+
+- **Objetivo 2: Obtener una certificación en desarrollo móvil**
+  - **Específico:** Obtener una certificación oficial en desarrollo móvil (Android o iOS).  
+  - **Medible:** Conseguir el documento o credencial oficial que acredite la certificación.  
+  - **Alcanzable:** Existen certificaciones reconocidas que pueden prepararse con estudio constante y práctica en proyectos.  
+  - **Relevante:** La certificación mejorará el perfil profesional y aumentará las oportunidades en el mercado laboral tecnológico.  
+  - **Tiempo:** Completarlo en un plazo máximo de 18 meses.  
 
 
 
