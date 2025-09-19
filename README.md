@@ -201,7 +201,40 @@ crecimiento profesional continuo tras su graduación.
   - **Medible:** Construir un prototipo funcional con al menos 3 modelos predictivos validados con datasets reales.  
   - **Alcanzable:** Participar en un programa de especialización en IA y destinar 12 horas semanales a investigación y desarrollo.  
   - **Relevante:** Permitirá integrar el análisis de datos con inteligencia artificial para la toma de decisiones estratégicas.  
-  - **Tiempo:** Completar el prototipo en un plazo máximo de 2 años después de la graduación.  
+  - **Tiempo:** Completar el prototipo en un plazo máximo de 2 años después de la graduación.
+
+<h3> Valentino Sandoval Paiva
+
+- **Objetivo 1: Convertirme en ingeniero de software especializado en automoción y Fórmula 1**
+  - **Específico:** Obtener una certificación en desarrollo de software aplicado a la industria automotriz, especialmente en el análisis de datos de telemetría y sistemas de control en tiempo real utilizados en vehículos de alto rendimiento (Fórmula 1, McLaren, etc.).
+  - **Medible:** Completar un curso especializado, desarrollar un proyecto de software que simule un sistema de telemetría de un vehículo de carrera, y obtener al menos 2 recomendaciones de expertos en el sector.
+  - **Alcanzable:** Dedicar 10 horas semanales a estudiar materiales y realizar prácticas en el desarrollo de sistemas de telemetría y control de vehículos, completando un proyecto personal en un plazo de 12 meses.
+  - **Relevante:** Este objetivo fortalecerá mi perfil profesional en un campo altamente demandado por las principales marcas de autos de lujo y las competiciones de la Fórmula 1, ayudándome a ingresar en este sector competitivo.
+  - **Tiempo:** Completar la certificación y el proyecto en los próximos 18 meses después de la graduación.
+
+- **Objetivo 2: Desarrollar sistemas de análisis de datos en tiempo real para vehículos de alto rendimiento**
+  - **Específico:** Diseñar y construir una plataforma de software para procesar y analizar en tiempo real los datos de rendimiento de vehículos, con aplicaciones en la telemetría y simulación de escenarios de carrera, como se usa en la Fórmula 1.
+  - **Medible:** Crear una plataforma funcional capaz de procesar datos de telemetría en tiempo real y generar reportes de rendimiento con al menos 3 métricas clave, como velocidad, temperatura de los frenos y consumo de combustible.
+  - **Alcanzable:** Participar en un bootcamp de programación avanzada en sistemas de análisis de datos y dedicar 12 horas semanales a la investigación y desarrollo de la plataforma de software.
+  - **Relevante:** El desarrollo de sistemas para la Fórmula 1 y vehículos de alto rendimiento es esencial para mejorar la eficiencia y el rendimiento de los autos, un área clave de innovación dentro de la ingeniería automotriz.
+  - **Tiempo:** Tener la plataforma funcional y validada en un plazo de 24 meses después de la graduación.
+
+<h3> Omar Luquillas Asto
+
+- **Objetivo 1: Aprender desarrollo de aplicaciones móviles híbridas**
+  - **Específico:** Construir apps móviles usando frameworks híbridos como Flutter o React Native.
+  - **Medible:** Publicar al menos 2 apps funcionales en Google Play o App Store, con funcionalidades como login, CRUD y notificaciones.
+  - **Alcanzable:** Dedicar 8-10 horas semanales a cursos y práctica, desarrollando proyectos propios.
+  - **Relevante:** Permite combinar conocimientos de web y móvil, aumentando oportunidades laborales.
+  - **Tiempo:** Lograrlo en un plazo de 12-18 meses.
+
+- **Objetivo 2: Mejorar competencias en ciberseguridad**
+  - **Específico:** Aprender a proteger aplicaciones web y móviles frente a ataques comunes (XSS, SQL Injection, CSRF).
+  - **Medible:** Completar un curso certificado de seguridad informática y aplicar medidas de seguridad en al menos 2 proyectos propios.
+  - **Alcanzable:** Dedicar 6 horas semanales a teoría y práctica de ciberseguridad.
+  - **Relevante:** La seguridad es esencial para cualquier desarrollador y mejora la calidad profesional de los proyectos.
+  - **Tiempo:** Alcanzar este objetivo en 10-12 meses.
+
 
 ## Capítulo I: Presentación  
 ### 1.1. Startup Profile  
