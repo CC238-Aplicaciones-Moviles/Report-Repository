@@ -733,7 +733,7 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 
 **Segmento 2: Equipo de Desarrollo de proyectos**
 
-| **ENTREVISTA 1** | |
+| **ENTREVISTA 1** |  |
 |------------------|----------------------------|
 | **Nombre entrevistado** | Eric Espinoza Perez |
 | **Edad** | 24 |
@@ -759,14 +759,14 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 
 | **ENTREVISTA 3** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
+| **Nombre entrevistado** | Andres Santos Espinoza |
+| **Edad** | 20 |
+| **Profesión** | Ingeniero de Software |
+| **Departamento** | Lima |
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | ![ddd](Assets/TB1/) |
+| **Foto entrevista** | ![ddd](Assets/TB1/andresentrevista.jpg) |
 | **Resumen** |  |
 
 | **Duración total de las entrevistas** |   |
