@@ -201,7 +201,40 @@ crecimiento profesional continuo tras su graduación.
   - **Medible:** Construir un prototipo funcional con al menos 3 modelos predictivos validados con datasets reales.  
   - **Alcanzable:** Participar en un programa de especialización en IA y destinar 12 horas semanales a investigación y desarrollo.  
   - **Relevante:** Permitirá integrar el análisis de datos con inteligencia artificial para la toma de decisiones estratégicas.  
-  - **Tiempo:** Completar el prototipo en un plazo máximo de 2 años después de la graduación.  
+  - **Tiempo:** Completar el prototipo en un plazo máximo de 2 años después de la graduación.
+
+<h3> Valentino Sandoval Paiva
+
+- **Objetivo 1: Convertirme en ingeniero de software especializado en automoción y Fórmula 1**
+  - **Específico:** Obtener una certificación en desarrollo de software aplicado a la industria automotriz, especialmente en el análisis de datos de telemetría y sistemas de control en tiempo real utilizados en vehículos de alto rendimiento (Fórmula 1, McLaren, etc.).
+  - **Medible:** Completar un curso especializado, desarrollar un proyecto de software que simule un sistema de telemetría de un vehículo de carrera, y obtener al menos 2 recomendaciones de expertos en el sector.
+  - **Alcanzable:** Dedicar 10 horas semanales a estudiar materiales y realizar prácticas en el desarrollo de sistemas de telemetría y control de vehículos, completando un proyecto personal en un plazo de 12 meses.
+  - **Relevante:** Este objetivo fortalecerá mi perfil profesional en un campo altamente demandado por las principales marcas de autos de lujo y las competiciones de la Fórmula 1, ayudándome a ingresar en este sector competitivo.
+  - **Tiempo:** Completar la certificación y el proyecto en los próximos 18 meses después de la graduación.
+
+- **Objetivo 2: Desarrollar sistemas de análisis de datos en tiempo real para vehículos de alto rendimiento**
+  - **Específico:** Diseñar y construir una plataforma de software para procesar y analizar en tiempo real los datos de rendimiento de vehículos, con aplicaciones en la telemetría y simulación de escenarios de carrera, como se usa en la Fórmula 1.
+  - **Medible:** Crear una plataforma funcional capaz de procesar datos de telemetría en tiempo real y generar reportes de rendimiento con al menos 3 métricas clave, como velocidad, temperatura de los frenos y consumo de combustible.
+  - **Alcanzable:** Participar en un bootcamp de programación avanzada en sistemas de análisis de datos y dedicar 12 horas semanales a la investigación y desarrollo de la plataforma de software.
+  - **Relevante:** El desarrollo de sistemas para la Fórmula 1 y vehículos de alto rendimiento es esencial para mejorar la eficiencia y el rendimiento de los autos, un área clave de innovación dentro de la ingeniería automotriz.
+  - **Tiempo:** Tener la plataforma funcional y validada en un plazo de 24 meses después de la graduación.
+
+<h3> Omar Luquillas Asto
+
+- **Objetivo 1: Aprender desarrollo de aplicaciones móviles híbridas**
+  - **Específico:** Construir apps móviles usando frameworks híbridos como Flutter o React Native.
+  - **Medible:** Publicar al menos 2 apps funcionales en Google Play o App Store, con funcionalidades como login, CRUD y notificaciones.
+  - **Alcanzable:** Dedicar 8-10 horas semanales a cursos y práctica, desarrollando proyectos propios.
+  - **Relevante:** Permite combinar conocimientos de web y móvil, aumentando oportunidades laborales.
+  - **Tiempo:** Lograrlo en un plazo de 12-18 meses.
+
+- **Objetivo 2: Mejorar competencias en ciberseguridad**
+  - **Específico:** Aprender a proteger aplicaciones web y móviles frente a ataques comunes (XSS, SQL Injection, CSRF).
+  - **Medible:** Completar un curso certificado de seguridad informática y aplicar medidas de seguridad en al menos 2 proyectos propios.
+  - **Alcanzable:** Dedicar 6 horas semanales a teoría y práctica de ciberseguridad.
+  - **Relevante:** La seguridad es esencial para cualquier desarrollador y mejora la calidad profesional de los proyectos.
+  - **Tiempo:** Alcanzar este objetivo en 10-12 meses.
+
 
 ## Capítulo I: Presentación  
 ### 1.1. Startup Profile  
@@ -1188,7 +1221,7 @@ Después de identificar los agregados en la sesión de Event Storming, analizamo
 
 ![ddd](Assets/TB1/boundednotificaciones.jpg)
 
-![ddd](Assets/TB1/boundedanalitica.jpg)
+![ddd](Assets/TB1/boundedca.jpg)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
@@ -1202,7 +1235,7 @@ Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, s
 Analítica y Reportes y Notificaciones:
 Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
 
-![Analítica](Assets/TB1/analitica-notificaciones.PNG)
+![Analítica](Assets/TB1/ca-notificaciones.PNG)
 
 Gestión de proyectos y tareas y Analítica y Reportes:
 Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
@@ -1232,7 +1265,7 @@ Cada vez que se asigna un miembro, se crea una tarea o se actualiza su estado, e
 Visualización y Seguimiento y Analítica y Reportes:
 Los cambios en las tareas (como su finalización o vencimiento) alimentan la capa de analítica, donde se recalculan y generan estadísticas actualizadas sobre el rendimiento de los proyectos y de los miembros del equipo.
 
-![ddd](Assets/TB1/visualizacion-analitica.PNG)
+![ddd](Assets/TB1/visualizacion-ca.PNG)
 
 
 ##### 2.5.1.3. Bounded Context Canvases
@@ -1251,7 +1284,7 @@ En este proyecto, los bounded contexts identificados fueron los siguientes:
 
 -Visualización y Seguimiento: orientado a mostrar el estado de las tareas y proyectos en tableros y calendarios.
 
-A-nalítica y Reportes: especializado en el procesamiento de datos y generación de métricas e informes.
+-Analítica y Reportes: especializado en el procesamiento de datos y generación de métricas e informes.
 
 Cada uno de estos bounded contexts se detalla a continuación a través de su canvas, explicando su descripción, clasificación estratégica, roles, comunicaciones entrantes y salientes, lenguaje ubicuo y decisiones de negocio clave.
 
@@ -1263,7 +1296,7 @@ Es el núcleo operativo del sistema, ya que gestiona la creación, organización
 ### *Analítica y Reportes*
 Este bounded context se encarga de recopilar y procesar los datos generados en los proyectos y tareas para transformarlos en métricas y reportes. Su propósito principal es ofrecer a los Team Leaders una visión global del estado de los proyectos y a los Team Members un seguimiento de su propio rendimiento. Este contexto asegura la confiabilidad de la información, recalculando estadísticas automáticamente al recibir eventos de tareas completadas o vencidas, y enviando resultados hacia Notificaciones para mantener informados a los usuarios.
 
-![ddd](Assets/TB1/BoundedCanvasAnaliticayReportes.PNG)
+![ddd](Assets/TB1/BoundedCanvascayReportes.PNG)
 
 ### *Visualización y Seguimiento*
 Su objetivo es ofrecer a los miembros del equipo una vista clara del estado de las tareas y proyectos mediante tableros y calendarios sincronizados. Este bounded context recibe eventos de Gestión de Proyectos y Tareas (como tareas vencidas o completadas) y los organiza en interfaces visuales para facilitar el monitoreo. Además, se comunica con Analítica y Reportes para mostrar estadísticas y con Notificaciones para resaltar cambios críticos en el estado de las tareas.
@@ -2071,6 +2104,7 @@ A continuacion se mostraran como se interconectan los componentes a mayor detall
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 ![ddd](Assets/TB1/Diagrama-Clases-AYR.png)
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+![ddd](Assets/TB1/DiagramClassAYR.PNG)
 
 ####  2.6.3. Bounded Context:Visualización y Seguimiento
 
@@ -2810,3 +2844,15 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 ###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 ###### 2.6.5.6.2. Bounded Context Database Design Diagrams
+
+
+# Conclusiones
+
+# Bibliografía
+-Chandrasekaran, P. (2024, 9 agosto). Remote EventStorming in Practice. Domain-driven Design: A Practitioner’s Guide. 
+(https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/)[https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/]
+-Ddd-Crew. (s. f.). GitHub - ddd-crew/bounded-context-canvas: A structured approach to designing and documenting each of your bounded contexts. GitHub. 
+(https://github.com/ddd-crew/bounded-context-canvas)[https://github.com/ddd-crew/bounded-context-canvas]
+
+# Anexos
+
