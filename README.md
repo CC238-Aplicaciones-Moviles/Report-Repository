@@ -41,9 +41,10 @@ Septiembre de 2025
 |---------|------------|-------|------------------------------|
 | TB1     | 08/09/2025 | Bejarano Martínez Alvaro Leandro      |   **Completar**|
 | TB1     | 08/09/2025 |Luquillas Asto Omar| |
-| TB1     | 08/09/2025 |     Olivera Barzola Eric Marlon    |   |
+| TB1     | 08/09/2025 |     Olivera Barzola Eric Marlon    |  Desarrollo de los ítems: 1.1.1 Descripción de la Startup, 1.1.2 Perfiles de integrantes del equipo, 1.2.1 Nombre del producto |
 | TB1     | 08/09/2025 |Sandoval Paiva Valentino||
 | TB1     | 08/09/2025 |Sarmiento Medina Loreley||
+| TB1     | 17/09/2025 |     Olivera Barzola Eric Marlon    |  Desarrollo de User Stories, Impact Map, Product Backlog |
 ## Project Report Collaboration Insights
 
 |  URL del repositorio del reporte  |
