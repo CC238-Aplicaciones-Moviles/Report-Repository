@@ -1528,7 +1528,7 @@ En esta capa no hay reglas de negocio: los controladores reciben las peticiones,
 | `POST` | `/api/v1/projects/{projectId}/ranking/recalculate` | `recalculateRanking()` — Recalcula el ranking (best/worst) con criterio y filtros opcionales. |
 | `GET` | `/api/v1/projects/{projectId}/ranking` | `getProjectRanking()` — Devuelve ranking, `bestMember` y `worstMember`. |
 | `PATCH` | `/api/v1/projects/{projectId}/budget` | `updateProjectBudget()` — Actualiza presupuesto aprobado/usado. |
-| `POST` | `/api/v1/projects/{projectId}/reports` | `generateProjectReport()` — Crea un reporte de reporte **PROJECT** y lo publica. |
+| `POST` | `/api/v1/projects/{projectId}/reports` | `generateProjectReport()` — Crea un reporte **PROJECT** y lo publica. |
 | `GET` | `/api/v1/projects/{projectId}/reports/latest` | `getLatestProjectReport()` — Obtiene el último reporte **PROJECT** (opcionalmente filtrado por rango). |
 | `GET` | `/api/v1/reports/{reportId}` | `getReportById()` — Recupera un reporte por su identificador. |
 
@@ -1561,7 +1561,7 @@ Gestiona endpoints de Miembro dentro de un proyecto: generar/consultar estadíst
 | `POST` | `/api/v1/projects/{projectId}/members/{memberId}/analytics/generate` | `generateMemberAnalytics()` — Calcula/actualiza métricas del miembro para un rango. |
 | `GET` | `/api/v1/projects/{projectId}/members/{memberId}/analytics` | `getMemberAnalytics()` — Retorna métricas del miembro (`MemberAnalyticsDTO`). |
 | `PATCH` | `/api/v1/projects/{projectId}/members/{memberId}/hourly-rate` | `setMemberHourlyRate()` — Define/actualiza la tarifa por hora del miembro. |
-| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/reports` | `generateMemberReport()` — Crea reporte de reporte **MEMBER** y lo publica. |
+| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/reports` | `generateMemberReport()` — Crea reporte **MEMBER** y lo publica. |
 | `GET` | `/api/v1/projects/{projectId}/members/{memberId}/reports/latest?kind=MEMBER|PROGRESS` | `getLatestMemberReport()` — Obtiene el último reporte del miembro. `kind` debe ser `MEMBER` o `PROGRESS`. |
 
 ### Dependencias
@@ -1660,7 +1660,7 @@ Genera y administra reportes.
 |---|---|
 | `handle(GenerateProjectReportCommand)` | Crea un **PROJECT Report** a partir de `ProjectAnalytics`, lo marca como publicado y lo almacena. |
 | `handle(GenerateMemberReportCommand)` | Crea un **MEMBER** o **PROGRESS Report** a partir de `MemberAnalytics`, lo publica y lo almacena. |
-| `handle(DeleteReportCommand)` | Elimina un reporte de reporte cuando la política de retención lo permite. |
+| `handle(DeleteReportCommand)` | Elimina un reporte cuando la política de retención lo permite. |
 
 ---
 
@@ -1678,6 +1678,43 @@ Reacciona a eventos del BC de Gestión de Proyectos y Tareas para mantener las a
 | `handle(MemberHourlyRateChangedEvent)` | Actualiza la tarifa del miembro y recalcula su costo. |
 
 ---
+ 
+### Servicio (QueryHandler): ProjectAnalyticsQueryServiceImpl
+Atiende consultas de métricas del Proyecto ya calculadas .
+| Método                             | Descripción                                                              |
+| ---------------------------------- | ------------------------------------------------------------------------ |
+| `handle(GetProjectAnalyticsQuery)` | Retorna `ProjectAnalytics` del proyecto y periodo indicados (si existe). |
+| `handle(GetProjectRankingQuery)`   | Devuelve `bestMember`, `worstMember` y el ranking actual del proyecto.   |
+
+*Dependencias:*
+-`ProjectAnalyticsRepository`
+
+---
+
+### Servicio (QueryHandler): MemberAnalyticsQueryServiceImpl
+
+Atiende consultas de métricas del Team Member dentro de un proyecto.
+| Método                            | Descripción                                                                 |
+| --------------------------------- | --------------------------------------------------------------------------- |
+| `handle(GetMemberAnalyticsQuery)` | Retorna `MemberAnalytics` para `projectId` y `memberId` en el periodo dado. |
+
+*Dependencias:*
+-`MemberAnalyticsRepository`
+
+---
+### Servicio (QueryHandler): ReportQueryServiceImpl
+
+Atiende consultas de reportes
+| Método                                 | Descripción                                                           |
+| -------------------------------------- | --------------------------------------------------------------------- |
+| `handle(GetReportByIdQuery)`           | Retorna un `Report` por su `reportId`.                                |
+| `handle(GetLatestProjectReportQuery)`  | Retorna el último `Report` tipo **PROJECT** del periodo.              |
+| `handle(GetLatestMemberReportQuery)`   | Retorna el último `Report` tipo **MEMBER** del miembro en el periodo. |
+| `handle(GetLatestProgressReportQuery)` | Retorna el último `Report` tipo **PROGRESS** del miembro.             |
+
+*Dependencias:*
+-`ReportRepository`
+
 
 #### 2.6.1.4. Infrastructure Layer: Analítica y Reportes
 
@@ -1715,10 +1752,10 @@ Implementación de acceso a datos para reportes de `Report`.
 | Método | Tipo de retorno | Visibilidad | Descripción |
 |---|---|---|---|
 | `findById(Long reportId)` | `Optional<Report>` | Public | Recupera un reporte por su identificador. |
-| `save(Report report)` | `Report` | Public | Almacena un reporte de reporte publicado. |
+| `save(Report report)` | `Report` | Public | Almacena un  reporte publicado. |
 | `findLatestProjectReport(Long projectId, DateRange period)` | `Optional<Report>` | Public | Devuelve el último **PROJECT Report** dentro del periodo. |
 | `findLatestMemberReport(Long projectId, Long memberId, String kind, DateRange period)` | `Optional<Report>` | Public | Devuelve el último **MEMBER/PROGRESS Report** del miembro dentro del periodo. |
-| `existsById(Long reportId)` | `Boolean` | Public | Verifica si un reporte de reporte existe por su ID. |
+| `existsById(Long reportId)` | `Boolean` | Public | Verifica si un reporte existe por su ID. |
 
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
