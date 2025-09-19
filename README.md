@@ -1202,7 +1202,7 @@ Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, s
 Analítica y Reportes y Notificaciones:
 Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
 
-![ddd](Assets/TB1/analitica-notificaciones.PNG)
+![Analítica](Assets/TB1/analitica-notificaciones.PNG)
 
 Gestión de proyectos y tareas y Analítica y Reportes:
 Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
