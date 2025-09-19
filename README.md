@@ -1007,6 +1007,10 @@ En esta sección se definen los requisitos del producto digital a partir del an�
 | SS2      | Team Member | High     | EP09 | Integración con Google Calendar              | Como miembro del equipo, quiero que TaskMaster sincronice mis tareas con Google Calendar para no olvidar mis plazos.                                                                                                        | **Escenario**: El usuario conecta su cuenta de Google Calendar. Las tareas con fechas establecidas se sincronizan automáticamente en su calendario.                                        |
 
 #### 2.4.2. Impact Mapping
+Segmento Team leader
+![Impact](Assets/TB1/Impact%20map%201.png)
+Segmento Team member
+![Impact](Assets/TB1/Impact%20map%202.png)
 
 #### 2.4.3. Product Backlog
 
