@@ -1732,17 +1732,7 @@ Ventana de tiempo usada para los cálculos.
 
 ---
 
-## 4. Value Object: Money
-Dinero con su moneda.
-
-| Atributo   | Tipo          | Descripción |
-|------------|---------------|-------------|
-| `amount`   | Decimal(12,2) | Monto. |
-| `currency` | String        | Moneda (ej.: `"USD"`). |
-
----
-
-## 5. Value Object: TaskStats
+## 4. Value Object: TaskStats
 Conteo rápido de cómo van las tareas.
 
 | Atributo     | Tipo | Descripción |
@@ -1758,7 +1748,7 @@ Conteo rápido de cómo van las tareas.
 
 ---
 
-## 6. Value Object: AverageMetric
+## 5. Value Object: AverageMetric
 Promedio de horas para un estado o prioridad.
 
 | Atributo    | Tipo   | Descripción |
@@ -1769,7 +1759,7 @@ Promedio de horas para un estado o prioridad.
 
 ---
 
-## 7. Value Object: BudgetUsage
+## 6. Value Object: BudgetUsage
 Cómo va el presupuesto del proyecto.
 
 | Atributo   | Tipo    | Descripción |
@@ -1780,7 +1770,7 @@ Cómo va el presupuesto del proyecto.
 
 ---
 
-## 8. Repository: ProjectAnalyticsRepository
+## 7. Repository: ProjectAnalyticsRepository
 Persistencia de `ProjectAnalytics`.
 
 **Métodos**
@@ -1789,7 +1779,7 @@ Persistencia de `ProjectAnalytics`.
 
 ---
 
-## 9. Repository: MemberAnalyticsRepository
+## 8. Repository: MemberAnalyticsRepository
 Persistencia de `MemberAnalytics`.
 
 **Métodos**
