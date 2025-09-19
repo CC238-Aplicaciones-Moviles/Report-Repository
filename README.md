@@ -133,7 +133,12 @@ objetivos reflejen de manera clara y medible cómo cada integrante planea alcanz
 crecimiento profesional continuo tras su graduación. 
 
 <h3>Eric Marlon Olivera Barzola
-  - Esto falta completar
+
+  Objetivo 1: Publicar una aplicación móvil propia en la Play Store dentro del primer año.
+  Objetivo 2: Obtener una certificación en desarrollo móvil (Android o iOS) en un plazo máximo de 18 meses.
+  
+  
+  - Esto falta completareqweqweqwe
   - dasdasdas
 
 
