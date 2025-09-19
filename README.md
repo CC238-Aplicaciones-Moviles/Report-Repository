@@ -2127,7 +2127,7 @@ Implementación de acceso a datos para reportes de `Report`.
 | `existsById(int reportId)` | `Boolean` | Public | Verifica si un reporte existe por su ID. |
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
-![ddd](Assets/TB1/C4-Component-AnaliticaYReportes.png)
+![ddd](Assets/TB1/C4-componentesv1-AYR.png)
 
 
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
