@@ -715,15 +715,15 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 
 | **ENTREVISTA 3** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
+| **Nombre entrevistado** | Alejandro David Bejarano Medina |
+| **Edad** | 55 |
+| **Profesión** | Ingeniero Electrico  |
+| **Departamento** | Lima |
 | **Inicio del video** |  |
 | **Fin del video** |  |
 | **Link del video** |  |
-| **Foto entrevista** | ![ddd](Assets/TB1/) |
-| **Resumen** |  |
+| **Foto entrevista** | ![ddd](Assets/TB1/alejandrobejarano) |
+| **Resumen** | El entrevistado, líder de empresa orientada principalmente a las ventas y servicios, destacó que actualmente enfrentan limitaciones al gestionar sus procesos de forma manual con herramientas básicas como Office, lo que retrasa la eficiencia y dificulta la innovación. Entre los principales desafíos mencionó la competencia en un mercado en crecimiento y la necesidad de optimizar la gestión de proyectos y servicios. Considera esencial contar con un sistema integral que abarque tanto la parte administrativa como todo el ciclo de servicios, con características avanzadas, personalizables y seguras, que restrinjan accesos indebidos. Además, valora la integración con herramientas existentes, la colaboración fluida entre equipos y el cumplimiento de plazos de entrega por parte de socios estratégicos. Ve la adopción de una nueva herramienta como clave para un cambio total en los próximos años, permitiendo un mejor control en tiempo real de actividades, inversiones y logística, lo cual impactaría directamente en la competitividad y crecimiento de la empresa. |
 
 | **Duración total de las entrevistas** |   |
 |---------------------------------------|---|
@@ -767,7 +767,7 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Fin del video** |  |
 | **Link del video** |  |
 | **Foto entrevista** | ![ddd](Assets/TB1/andresentrevista.jpg) |
-| **Resumen** |  |
+| **Resumen** |El entrevistado, miembro de un equipo multidisciplinario de desarrollo de proyectos digitales, desempeña tareas de programación, pruebas, análisis y coordinación del flujo de trabajo. Señaló que los principales desafíos son la comunicación remota y los cambios repentinos de prioridades, lo que genera desorden y retrasos. Su experiencia con herramientas como Trello, Slack, Excel y Drive fue negativa por la dispersión de información y duplicidad de tareas. Considera clave contar con una plataforma unificada, intuitiva, ligera y flexible, que integre tableros visuales, calendarios, notificaciones claras y automatización con alertas. Resaltó que la falta de herramientas adecuadas disminuye la productividad y limita la calidad de las entregas, mientras que una solución optimizada mejoraría la eficiencia, la visibilidad del progreso y la colaboración entre áreas, siempre que sea fácil de adoptar y permita personalización y soporte continuo.  |
 
 | **Duración total de las entrevistas** |   |
 |---------------------------------------|---|
@@ -1169,25 +1169,25 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
-#### 2.6.1. Bounded Context:Gestión de Proyectos y Tareas
+#### 2.6.2. Bounded Context: Notificaciones
 
-##### 2.6.1.1. Domain Layer
+##### 2.6.2.1. Domain Layer
 
-##### 2.6.1.2. Interface Layer
+##### 2.6.2.2. Interface Layer
 
-##### 2.6.1.3. Application Layer
+##### 2.6.2.3. Application Layer
 
-##### 2.6.1.4. Infrastructure Layer
+##### 2.6.2.4. Infrastructure Layer
 
-##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+##### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
-###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+###### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+###### 2.6.2.6.2. Bounded Context Database Design Diagrams
 
-#### 2.6.2. Bounded Context:Analítica y Reportes
+#### 2.6.1. Bounded Context:Analítica y Reportes
 
 #### 2.6.1.1. Domain Layer
 Este bounded context consume datos de:
@@ -1212,7 +1212,7 @@ Reúne la información para entender el estado global del **Proyecto**: producci
 
 | Atributo            | Tipo                      | Visibilidad | Descripción |
 |---------------------|---------------------------|-------------|-------------|
-| `projectId`         | Long                      | Private     | Proyecto al que pertenecen las métricas. |
+| `projectId`         | Int                       | Private     | Proyecto al que pertenecen las métricas. |
 | `period`            | `DateRange`               | Private     | Rango de fechas considerado. |
 | `taskCounts`        | `TaskStatusCounts`        | Private     | Conteos por estado (incluye `overdue` y `total`). |
 | `priorityTotals`    | List<`PriorityTotal`>     | Private     | Tareas agrupadas por prioridad con sus estados. |
@@ -1251,8 +1251,8 @@ Mide el desempeño de un Team Member en el proyecto: qué hizo, qué le falta, t
 
 | Atributo            | Tipo                  | Visibilidad | Descripción |
 |---------------------|-----------------------|-------------|-------------|
-| `projectId`         | Long                  | Private     | Proyecto al que pertenece. |
-| `memberId`          | Long                  | Private     | Miembro evaluado. |
+| `projectId`         | Int                  | Private     | Proyecto al que pertenece. |
+| `memberId`          | Int                  | Private     | Miembro evaluado. |
 | `period`            | `DateRange`           | Private     | Rango de fechas considerado. |
 | `taskCounts`        | `TaskStatusCounts`    | Private     | Conteos por estado del miembro. |
 | `priorityTotals`    | List<`PriorityTotal`> | Private     | Tareas del miembro por prioridad y estado. |
@@ -1288,7 +1288,7 @@ Guarda una foto del estado para historial y consulta: puede ser del Proyecto de 
 
 | Atributo      | Tipo          | Visibilidad | Descripción |
 |---------------|---------------|-------------|-------------|
-| `reportId`    | Long          | Private     | Identificador del reporte. |
+| `reportId`    | Int          | Private     | Identificador del reporte. |
 | `kind`        | String        | Private     | `PROJECT`, `MEMBER` o `PROGRESS`. |
 | `generatedAt` | LocalDateTime | Private     | Momento de generación. |
 | `period`      | `DateRange`   | Private     | Rango de fechas cubierto. |
@@ -1314,7 +1314,7 @@ Tarea tal como llega del otro BC, con lo necesario para calcular métricas.
 
 | Campo          | Tipo          | Descripción |
 |----------------|---------------|-------------|
-| `taskId`       | Long          | ID de la tarea. |
+| `taskId`       | Int          | ID de la tarea. |
 | `memberId`     | Long          | ID del asignado. |
 | `statusCode`   | String        | Código de estado externo. |
 | `priorityCode` | String        | Código de prioridad externo. |
@@ -1329,7 +1329,7 @@ Tarjeta resumen para comparar desempeño y costo de un miembro.
 
 | Campo                 | Tipo                 | Descripción |
 |----------------------|----------------------|-------------|
-| `memberId`           | Long                 | ID del miembro. |
+| `memberId`           | Int                 | ID del miembro. |
 | `taskCounts`         | `TaskStatusCounts`   | Conteos por estado. |
 | `priorityTotals`     | List<`PriorityTotal`>| Totales por prioridad/estado. |
 | `avgCompletionHours` | Float                | Horas promedio por tarea. |
@@ -1344,7 +1344,7 @@ Registro simple para ordenar miembros y explicar posiciones.
 
 | Campo      | Tipo    | Descripción |
 |------------|---------|-------------|
-| `memberId` | Long    | Miembro evaluado. |
+| `memberId` | Int    | Miembro evaluado. |
 | `score`    | Decimal | Puntuación usada para ordenar. |
 | `reason`   | String  | Motivo corto del puesto. |
 
@@ -1802,23 +1802,104 @@ Implementación de acceso a datos para reportes de `Report`.
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
 
-#### 2.6.5. Bounded Context:Notificaciones
+#### 2.6.5. Bounded Context: Notificaciones
 
-##### 2.6.1.1. Domain Layer
+##### 2.6.5.1. Domain Layer
 
-##### 2.6.1.2. Interface Layer
+En el Domain Layer del contexto de Notificaciones, los agregados principales son Notification y User.
+Estos representan los elementos clave para la gestión de mensajes dentro de la plataforma, asegurando que los usuarios sean alertados, informados o recordados sobre eventos relevantes.
 
-##### 2.6.1.3. Application Layer
+Las notificaciones (Notification) encapsulan la información necesaria para ser entregadas (tipo, contenido, estado de lectura, timestamp), mientras que las preferencias del usuario (User) permiten personalizar la forma en que estas se reciben.
+La lógica de negocio central se concentra en el NotificationService, responsable de validar y enviar notificaciones de acuerdo con las reglas y preferencias configuradas.
 
-##### 2.6.1.4. Infrastructure Layer
+Justificación:
+Separar la creación, validación y entrega de notificaciones permite un manejo modular y reutilizable, garantizando coherencia y consistencia en la experiencia del usuario. El uso de un servicio de dominio asegura que todas las notificaciones respeten las reglas definidas y se envíen conforme a la configuración de cada usuario. 
 
-##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+Aggregate: Notification
 
-##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+| Atributo            | Tipo                      | Visibilidad | Descripción |
+|---------------------|---------------------------|-------------|-------------|
+| `notificationId`    | Int                      | Private     | Identificador único de la notificación. |
+| `userId`            | Long                      | Private     | ID del usuario destinatario. |
+| `title`        | String        | Private     | Título de la notificación. |
+| `message`    | String     | Private     | Contenido principal del mensaje. |
+| `type`       | NotificationType   | Private     | Tipo de notificación (INFO, TASK, REMINDER, ALERT). |
+| `timestamp`     | LocalDateTime | Private     | Fecha y hora en que fue creada. |
 
-###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+Métodos
 
-###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+| Atributo            | Tipo                      | Visibilidad | Descripción |
+|---------------------|---------------------------|-------------|-------------|
+| `send()`    | void                      | Public     | Inicia el envío de la notificación según el canal configurado. |
+| `isRead()`            | Boolean                      | Public     | Verifica si la notificación fue leída. |
+
+Value Object: NotificationType
+
+| Atributo        | Tipo               | Descripción |
+|-----------------|--------------------|-------------|
+| `INFO`  | String             | Notificación informativa general. |
+| `TASK`  | String             | Relacionado con tareas asignadas o completadas. |
+| `REMINDER`  | String             | Recordatorio de eventos o plazos próximos. |
+| `ALERT`        | String | Mensaje de advertencia o situación importante. |
+
+##### 2.6.5.2. Interface Layer
+
+La Interface Layer expone los endpoints REST (JSON) que permiten a la interfaz web y otros módulos enviar, consultar y actualizar notificaciones.
+En esta capa no hay reglas de negocio: los controladores reciben las peticiones, validan datos de entrada y delegan a la Application Layer.
+
+Controlador: NotificationController
+
+| Método        | Ruta               | Descripción |
+|-----------------|--------------------|-------------|
+| `POST`  | `/api/v1/users/{userId}/notifications`             | `sendNotification()` Envía una nueva notificación al usuario. |
+| `GET`  | `/api/v1/users/{userId}/notifications`             | `getUserNotifications()` Lista todas las notificaciones del usuario (opcionalmente filtradas por estado o rango de fechas). |
+| `GET`  | `//api/v1/notifications/{notificationId}`             | `getNotificationById()` Recupera una notificación por su identificador. |
+| `DELETE`  | `/api/v1/notifications/{notificationId}`             | `deleteNotification()` Elimina una notificación existente. |
+
+
+##### 2.6.5.3. Application Layer
+
+La Application Layer coordina la lógica que se ejecuta frente a comandos (enviar, leer, eliminar) y consultas (obtener notificaciones, preferencias).
+Los CommandHandlers procesan solicitudes explícitas, mientras que los EventHandlers reaccionan a eventos de otros bounded contexts (por ejemplo, creación de tareas o asignaciones de grupo).
+
+Servicio (CommandHandler): NotificationCommandServiceImpl
+
+| Método          |  Descripción |
+|-----------------|---------------|
+| `handle(SendNotificationCommand)`          | Crea y envía una notificación según el tipo y las preferencias del usuario. |
+| `handle(DeleteNotificationCommand)`           | Elimina una notificación del repositorio. |
+
+Servicio (QueryHandler): NotificationQueryServiceImpl
+
+| Método          |  Descripción |
+|-----------------|---------------|
+| `handle(GetUserNotificationsQuery)`          | Retorna todas las notificaciones de un usuario. |
+| `handle(GetNotificationByIdQuery)`           | Recupera una notificación específica. |
+
+EventHandlers
+
+TaskAssignedEventHandler — Envía una notificación al usuario asignado a una tarea.
+
+GroupJoinedEventHandler — Notifica al coordinador cuando un nuevo miembro se une a un grupo.
+
+##### 2.6.5.4. Infrastructure Layer
+
+La Infrastructure Layer contiene las implementaciones concretas para persistir notificaciones y preferencias, así como adaptadores de envío a servicios externos (correo, push, etc.).
+
+| Método        | Retorno               | Descripción |
+|-----------------|--------------------|-------------|
+| `findByUserId(userId: Int)`  | `List<Notification>`             | Recupera todas las notificaciones de un usuario. |
+| `findById(notificationId: Int)`  | `List<Notification>`             | Busca una notificación por su identificador. |
+| `save(notification: Notification)`  | void            | Persiste una nueva notificación. |
+| `delete(notificationId: Int)`  | void           | Elimina una notificación. |
+
+##### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+###### 2.6.5.6.2. Bounded Context Database Design Diagrams
 
 
 
