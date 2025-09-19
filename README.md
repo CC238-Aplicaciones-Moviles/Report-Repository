@@ -704,9 +704,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 25 |
 | **Profesión** | Ingeniero de Software |
 | **Departamento** | Lima  |
-| **Inicio del video** | 0:00 |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 0:08 |
+| **Fin del video** | 8:30 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![Texto alternativo](Assets/TB1/entrevista1.png) |
 | **Resumen** | La entrevista con Juan de la Cruz, lidel del Grupo JPSP, reveló aspectos clave sobre la gestión de proyectos y el impacto de las herramientas que existen actualmente. El destacó que su principal responsabilidad es supervisar al equipo de desarrollo para cumplir con los plazos y estándares de calidad, mientras maneja el crecimiento rápido y los desafíos de integración tecnológica. Aunque también menciono que ha tenido experiencias mixtas con las herramientas actuales, principalmente debido a problemas de integración y personalización, considera esencial que las nuevas soluciones ofrezcan flexibilidad, integración fluida y capacidades avanzadas. La incorporación de tecnologías emergentes es vista como crucial para mejorar la eficiencia y la toma de decisiones. Además, se busca una solución que facilite la colaboración y la comunicación centralizada, y que esté dispuesta a adaptarse a las necesidades cambiantes del equipo. El entrevistado enfatiza la importancia de la seguridad y prioriza a los proveedores que brindan soporte confiable y pueden adaptar sus soluciones a los requisitos individuales. En el futuro, se espera una evolución hacia mayor automatización y herramientas que se adapten rápidamente a los cambios en los proyectos. |
 
@@ -716,9 +716,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 54 |
 | **Profesión** | Ingeniero de Sistemas  |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 8:31 |
+| **Fin del video** | 23:14 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ImagenEntrevista](Assets/TB1/Imagen_Entrevista2.PNG) |
 | **Resumen** | Durante la entrevista, Carlos, gerente de desarrollo de aplicaciones y servicios en Atentus, explicó que trabaja principalmente de forma remota, coordinando equipos con empleados en distintas partes del mundo. Para la gestión utiliza metodologías ágiles como Agile y Scrum, junto con herramientas como Jira para organizar sprints y el product backlog. Destacó que una de sus principales necesidades es que las herramientas de gestión puedan integrarse con sistemas ya existentes, ya que ninguna empresa empieza desde cero y resulta esencial migrar progresivamente sin afectar la operatividad. También recalcó la importancia de que estas herramientas sean capaces de adaptarse a los horarios y dinámicas de trabajo de un equipo global, pues la coordinación en contextos remotos es clave. Finalmente, resaltó que, en un mercado altamente competitivo, es necesario innovar constantemente, y afirmó estar abierto a probar nuevas soluciones siempre que aporten valor y se ajusten a las necesidades reales de la empresa. |
 
@@ -728,15 +728,15 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 55 |
 | **Profesión** | Ingeniero Electrico  |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 23:15 |
+| **Fin del video** | 30:57 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/alejandrobejarano) |
 | **Resumen** | El entrevistado, líder de empresa orientada principalmente a las ventas y servicios, destacó que actualmente enfrentan limitaciones al gestionar sus procesos de forma manual con herramientas básicas como Office, lo que retrasa la eficiencia y dificulta la innovación. Entre los principales desafíos mencionó la competencia en un mercado en crecimiento y la necesidad de optimizar la gestión de proyectos y servicios. Considera esencial contar con un sistema integral que abarque tanto la parte administrativa como todo el ciclo de servicios, con características avanzadas, personalizables y seguras, que restrinjan accesos indebidos. Además, valora la integración con herramientas existentes, la colaboración fluida entre equipos y el cumplimiento de plazos de entrega por parte de socios estratégicos. Ve la adopción de una nueva herramienta como clave para un cambio total en los próximos años, permitiendo un mejor control en tiempo real de actividades, inversiones y logística, lo cual impactaría directamente en la competitividad y crecimiento de la empresa. |
 
-| **Duración total de las entrevistas** |   |
+| **Duración total de las entrevistas** | 30:57  |
 |---------------------------------------|---|
-| **Link general del video**            |   |
+| **Link general del video**            | https://goo.su/SUO1  |
 
 
 
@@ -748,9 +748,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 24 |
 | **Profesión** | Ingeniero de Sistemas |
 | **Departamento** | Lima |
-| **Inicio del video** |  0:01|
-| **Fin del video** | 7:12 |
-| **Link del video** | https://www.youtube.com/watch?v=chsyvcs7MOw |
+| **Inicio del video** |  31:00|
+| **Fin del video** | 38:17 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/eric_1.png) |
 | **Resumen** | El entrevistado, de 24 años y parte de un equipo de desarrollo de proyectos multidisciplinario en psicología, señaló que su rol se centra en analizar necesidades, coordinar entregables y apoyar la organización del flujo de trabajo. Su equipo trabaja en proyectos digitales con participación de desarrolladores, diseñadores y administradores, pero enfrenta dificultades en la gestión debido a la dispersión de información entre múltiples canales (correos, chats, hojas de cálculo), lo que provoca retrasos, duplicidad de esfuerzos y una menor eficiencia en la colaboración. Además, mencionó experiencias negativas con herramientas poco intuitivas y rígidas, que limitan la capacidad de cumplir plazos con calidad. En cuanto a necesidades, destacó la importancia de contar con una plataforma centralizada que integre tableros visuales, calendarios compartidos, notificaciones claras. |
 
@@ -760,9 +760,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 22 |
 | **Profesión** | Ingeniero de Software |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 38:18 |
+| **Fin del video** | 48:47  |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/Entrevista5.png) |
 | **Resumen** | El entrevistado forma parte de un equipo de desarrollo de proyectos, donde apoya en la programación de módulos y pruebas de nuevas funcionalidades. Su equipo está conformado por programadores juniors y seniors, diseñadores UX, QA testers y analistas de requerimientos, trabajando bajo metodologías ágiles. Entre los principales desafíos mencionó la comunicación, ya que al trabajar de forma remota no siempre están conectados al mismo tiempo, así como los cambios repentinos de prioridades que generan desorden al pausar tareas en curso. Sobre herramientas anteriores como Trello, Slack, Excel y Drive, señaló que fueron un dolor de cabeza porque la información estaba dispersa y en ocasiones se duplicaban tareas por falta de claridad. Considera que sería de gran ayuda contar con una plataforma unificada que les permita ahorrar tiempo, ser más eficientes, automatizar procesos con alertas, y que además sea fácil de aprender, rápida, ligera e integrable con aplicaciones externas. |
 
@@ -772,15 +772,15 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 20 |
 | **Profesión** | Ingeniero de Software |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 48:48 |
+| **Fin del video** | 55:22 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/andresentrevista.jpg) |
 | **Resumen** |El entrevistado, miembro de un equipo multidisciplinario de desarrollo de proyectos digitales, desempeña tareas de programación, pruebas, análisis y coordinación del flujo de trabajo. Señaló que los principales desafíos son la comunicación remota y los cambios repentinos de prioridades, lo que genera desorden y retrasos. Su experiencia con herramientas como Trello, Slack, Excel y Drive fue negativa por la dispersión de información y duplicidad de tareas. Considera clave contar con una plataforma unificada, intuitiva, ligera y flexible, que integre tableros visuales, calendarios, notificaciones claras y automatización con alertas. Resaltó que la falta de herramientas adecuadas disminuye la productividad y limita la calidad de las entregas, mientras que una solución optimizada mejoraría la eficiencia, la visibilidad del progreso y la colaboración entre áreas, siempre que sea fácil de adoptar y permita personalización y soporte continuo.  |
 
-| **Duración total de las entrevistas** |   |
+| **Duración total de las entrevistas** | 55:22  |
 |---------------------------------------|---|
-| **Link general del video**            |   |
+| **Link general del video**            | https://goo.su/SUO1  |
 
 
 
@@ -1349,7 +1349,7 @@ La capa de dominio tiene como objetivo representar las entidades y servicios fun
 
 | **Atributo** | **Tipo**  | **Descripción**                                       |
 | ------------ | --------- | ----------------------------------------------------- |
-| `id`         | Long      | Identificador único del usuario (autogenerado).       |
+| `id`         | Int      | Identificador único del usuario (autogenerado).       |
 | `username`   | String    | Nombre de usuario único para identificar al usuario.  |
 | `password`   | String    | Contraseña de acceso del usuario.                     |
 | `roles`      | Set<Role> | Conjunto de roles asignados al usuario. (TEAM_MEMBER, TEAM_LEADER).              |
@@ -1414,7 +1414,7 @@ La entidad Role representa los roles de un usuario dentro del sistema y define l
 
 | Atributo | Tipo       | Descripción                                              |
 |----------|------------|----------------------------------------------------------|
-| id       | Long       | Identificador único del rol.                             |
+| id       | int       | Identificador único del rol.                             |
 | name     | String     | Nombre del rol, definido como un valor de enumeración (TEAM_MEMBER, TEAM_LEADER). |
 
 **Métodos:**
@@ -1609,13 +1609,117 @@ El `RoleQueryServiceImpl` maneja las consultas relacionadas con los roles, permi
 
 ##### 2.6.1.4. Infrastructure Layer
 
+La capa de infraestructura gestiona la comunicación con sistemas externos, incluyendo la base de datos relacional. En este contexto, los repositorios se encargan de la persistencia de los datos del dominio, asegurando que la lógica de negocio en capas superiores no se acople a la tecnología de almacenamiento.
+
+Esta capa alberga los componentes de repositorio, que son los responsables de mantener la persistencia de las entidades `User` y `Role` y de gestionar la relación entre ellas.
+
+
+**Repositorio: UserRepository**
+
+**Descripción**: Repositorio que maneja las operaciones de persistencia relacionadas con los usuarios en la base de datos.
+| Método | Descripción |
+| :--- | :--- |
+| `save(User user)` | Guarda un nuevo usuario o actualiza uno existente en la base de datos. |
+| `findByUsername(String username)` | Busca un usuario por su nombre de usuario. Devuelve un `Optional<User>` para manejar la posible ausencia del usuario. |
+| `existsByUsername(String username)` | Verifica si un usuario con el nombre de usuario especificado ya existe en la base de datos. Devuelve un `boolean`. |
+| `findById(Long id)` | Busca un usuario por su ID. Devuelve un `Optional<User>`. |
+| `findAll()` | Devuelve una lista de todos los usuarios almacenados en la base de datos. |
+
+**Dependencias**:
+* **`User`**: Clase que representa la entidad del usuario en el sistema.
+
+**Repositorio: RoleRepository**
+
+**Descripción**: Repositorio que maneja las operaciones de persistencia relacionadas con los roles.
+| Método | Descripción |
+| :--- | :--- |
+| `save(Role role)` | Guarda un nuevo rol o actualiza uno existente en la base de datos. |
+| `findByName(String name)` | Busca un rol por su nombre (ej. "Team Leader"). Devuelve un `Optional<Role>`. |
+| `findById(Long id)` | Busca un rol por su ID. Devuelve un `Optional<Role>`. |
+| `findAll()` | Devuelve una lista de todos los roles almacenados en la base de datos. |
+
+**Dependencias**:
+* **`Role`**: Clase que representa un rol en el sistema.
+
+**Repositorio: UserRoleRepository**
+
+**Descripción**: Repositorio que gestiona la relación de asignación de roles entre usuarios y roles en la tabla de unión `User_Roles`.
+| Método | Descripción |
+| :--- | :--- |
+| `assignRoleToUser(Long userId, Long roleId)` | Asigna un rol a un usuario, creando un nuevo registro en la tabla de unión. |
+| `findRolesByUserId(Long userId)` | Devuelve una lista de todos los roles asignados a un usuario específico. |
+| `findByUserIdAndRoleId(Long userId, Long roleId)` | Verifica si un usuario ya tiene un rol específico. |
+
+**Dependencias**:
+* **`User`**: Clase que representa la entidad del usuario.
+* **`Role`**: Clase que representa la entidad del rol.
+* **`UserRole`**: Clase que representa la relación entre un usuario y un rol.
+
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+El diagrama de clases para la Capa de Dominio en el contexto delimitado de "Registro y autentificación de usuario" es el componente central que representa la estructura y la lógica de negocio del sistema. Este diagrama se centra en las entidades, objetos de valor e interfaces, así como en sus relaciones, con un alto nivel de detalle. El propósito principal es modelar con precisión las reglas de autenticación y autorización para asegurar la coherencia y la integridad de los datos, siguiendo los principios de Domain-Driven Design (DDD).
+
+**1. Capa de Dominio (Domain Layer)**
+
+Esta es el **corazón** del sistema y el lugar donde residen las **reglas de negocio**. Su propósito principal es modelar el negocio de manera precisa, encapsulando la lógica y el comportamiento de las entidades principales. En esta capa, las clases no tienen conocimiento de cómo se guardan o se presentan los datos; solo se preocupan por el negocio.
+
+* **Agregados (Aggregates)**: Son clústeres de objetos que se tratan como una única unidad transaccional. En tu diagrama, **`User`** es el agregado principal, el cual asegura la integridad de los datos relacionados, como la información del usuario y sus roles.
+* **Entidades (Entities)**: Objetos con una **identidad única y persistente** a lo largo del tiempo. **`Role`** es una entidad, ya que tiene un `id` y su propia existencia dentro del sistema.
+* **Objetos de Valor (Value Objects)**: Objetos inmutables que no tienen una identidad única; se definen por sus atributos. **`EmailAddress`** y **`Roles`** (la enumeración) son ejemplos de objetos de valor, que describen una característica o cualidad de una entidad.
+
+---
+
+**2. Capa de Aplicación (Application Layer)**
+
+Esta capa actúa como un **orquestador**. Recibe comandos y consultas de la capa de interfaz y coordina la ejecución de la lógica del negocio. Es el "intermediario" que traduce las peticiones de los usuarios en acciones del dominio, asegurando que las reglas de negocio se apliquen correctamente.
+
+* **Servicios de Comando y Consulta**: Las implementaciones de `UserCommandService` y `UserQueryService` son responsables de las transacciones (escribir datos) y las consultas (leer datos), respectivamente. Estos servicios usan los repositorios para interactuar con el dominio.
+* **Servicios Externos (Outbounded Services)**: Se utilizan para manejar operaciones técnicas que no forman parte de la lógica de negocio principal, como la encriptación de contraseñas (`HashingService`) o la generación de tokens (`TokenService`). Esta separación mantiene el dominio limpio de preocupaciones técnicas.
+
+---
+
+**3. Capa de Infraestructura (Infrastructure Layer)**
+
+Esta capa se encarga de los detalles técnicos y de la **persistencia**. Proporciona las herramientas necesarias para que la capa de aplicación pueda ejecutar sus tareas.
+
+* **Implementación de Repositorios**: Aquí se encuentran las clases concretas (`UserRepositoryImpl`, `RoleRepositoryImpl`) que implementan las interfaces de repositorio del dominio. Estas clases contienen la lógica para interactuar con la base de datos (por ejemplo, a través de SQL o una ORM), guardando y recuperando las entidades del dominio.
+
+---
+
+**4. Capa de Interfaces (Interfaces Layer)**
+
+Esta es la **capa de presentación** y el **punto de entrada** de la aplicación. Se encarga de la comunicación con el mundo exterior. Su única responsabilidad es recibir las solicitudes y convertirlas en un formato que la capa de aplicación pueda entender.
+
+* **Controladores**: Clases como `UsersController` y `AuthenticationController` son los **controladores REST** que exponen los _endpoints_ de la API. Reciben las peticiones HTTP y delegan la lógica a la capa de aplicación.
+* **Recursos (Resources)**: Son objetos de transferencia de datos (DTOs) que representan la información de entrada y salida de la API. Por ejemplo, `SignInResource` contiene los datos necesarios para iniciar sesión.
+* **Assemblers**: Son utilidades que convierten las entidades del dominio en objetos `Resource` y viceversa. Esto **desacopla** la API del modelo de dominio, lo que permite modificar el formato de la API sin afectar la lógica de negocio.
+
+![ddd](Assets/TB1/IAM.png)
+
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+
+El diagrama de base de datos para el **Bounded Context Registro y autentificacion de usuario** detalla el esquema relacional simplificado que soporta el registro y la asignación de roles de los usuarios. Este diseño se centra en la identidad y el acceso, encapsulando la lógica de negocio necesaria para estos procesos.
+
+**Descripción del Diagrama**
+
+* **Tabla `Users`**: Esta es la entidad principal que representa a un usuario en el sistema. Contiene el identificador único `id` (PK), el `username` (VARCHAR), el `password` hasheado (VARCHAR), un campo `proofing_apoderado` y metadatos de auditoría como `created_at` y `updated_at`. Para garantizar la unicidad y el manejo de la identidad, el `username` debe ser único. El campo `password` almacena la contraseña de forma segura (hasheada).
+
+* **Tabla `Roles`**: Esta tabla define los roles predefinidos en la aplicación, como "Team Leader" y "Team Member". Contiene un `id` (PK) para identificar cada rol y un `name` (VARCHAR) que describe el rol.
+
+* **Tabla de Unión `User_Roles`**: Esta tabla implementa la relación **muchos-a-muchos** entre `Users` y `Roles`. Permite que un usuario tenga múltiples roles y que un rol sea asignado a múltiples usuarios. La tabla incluye dos claves foráneas (`user_id` y `role_id`) que referencian las tablas `Users` y `Roles`, respectivamente. La combinación de estas dos claves forma una **clave primaria compuesta**, asegurando que un usuario no pueda tener el mismo rol asignado más de una vez.
+
+**Relaciones Clave**
+
+La conexión entre las tablas `Users` y `Roles` se visualiza a través de la tabla `User_Roles`. Las flechas del diagrama (crow's foot notation) ilustran esta cardinalidad:
+
+* Una fila en la tabla `Users` puede estar asociada a muchas filas en la tabla `User_Roles`.
+* Una fila en la tabla `Roles` puede estar asociada a muchas filas en la tabla `User_Roles`.
+
+![ddd](Assets/TB1/boundedIAM.jpg)
 
 
 #### 2.6.2. Bounded Context: Notificaciones
