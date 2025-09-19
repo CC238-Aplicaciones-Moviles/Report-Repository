@@ -1189,7 +1189,7 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 #### 2.6.2. Bounded Context:Analítica y Reportes
 
-##### 2.6.1.1. Domain Layer
+#### 2.6.1.1. Domain Layer
 Este bounded context consume datos de:
 - **Gestión de proyectos y tareas**: `projectId`, `fechas de inicio/fin`, `presupuesto`, `lista de Miembros de equipo`, `lista de Tareas del proyecto (estado, prioridad, overdue, assignedAt, completedAt)`.
 - **Registro y autenticación**: `Miembros de equipo con costo por hora`.
@@ -1199,204 +1199,527 @@ Con esa información calcula y expone:
 - **Estadísticas por Miembro** (Member Dashboard, visible para el Team Leader).
 - **Progress Report** (reporte personal del Team Member).
 
-Además genera Reportes de tipo `PROJECT`, `MEMBER` y `PROGRESS`.
+Además genera **Reportes** de tipo `PROJECT`, `MEMBER` y `PROGRESS`.
 
-A continuacion, se mostraran los distintos aggregates, value object, entities que se encontraran relacionados a este bounded context
+A continuación se listan los **aggregates**, **entities**, **value objects**, **services** y **repositories**.
 
 ---
 
-## Aggregates (domain/model/aggregates)
-
-### Aggregate: **ProjectAnalytics**
-**Descripción:** Consolida métricas del Project para el Project Dashboard y sirve de base para ProjectReport.
+## 1. Aggregate: ProjectAnalytics
+Reúne la información para entender el estado global del **Proyecto**: producción de tareas, tiempos promedio, uso de presupuesto y comparación de miembros.
 
 **Atributos**
 
-| Atributo              | Tipo                    | Visibilidad | Descripción |
-|-----------------------|-------------------------|-------------|-------------|
-| `projectId`           | Long                    | Private     | Identificador del proyecto. |
-| `period`              | `DateRange`             | Private     | Ventana temporal del cálculo. |
-| `taskCounts`          | `TaskStatusCounts`      | Private     | Totales: `notStarted`, `inProgress`, `done`, `overdue`, `total`. |
-| `priorityBreakdown`   | `PriorityBreakdown`     | Private     | Totales por `priorityCode` y por estado. |
-| `avgByStatus`         | `DurationAverages`      | Private     | Promedio de horas `(completedAt - assignedAt)` por estado. |
-| `avgByPriority`       | `DurationAverages`      | Private     | Promedio de horas por prioridad. |
-| `budget`              | `BudgetUsage`           | Private     | Presupuesto aprobado, usado y varianza. |
-| `members`             | List\<`MemberSummary`\> | Private     | Resumen por miembro (conteos, costos, velocidad). |
-| `bestMember`          | `LeaderboardEntry`      | Private     | Miembro con mejor ranking según criterio. |
-| `worstMember`         | `LeaderboardEntry`      | Private     | Miembro con peor ranking según criterio. |
+| Atributo            | Tipo                      | Visibilidad | Descripción |
+|---------------------|---------------------------|-------------|-------------|
+| `projectId`         | Long                      | Private     | Proyecto al que pertenecen las métricas. |
+| `period`            | `DateRange`               | Private     | Rango de fechas considerado. |
+| `taskCounts`        | `TaskStatusCounts`        | Private     | Conteos por estado (incluye `overdue` y `total`). |
+| `priorityTotals`    | List<`PriorityTotal`>     | Private     | Tareas agrupadas por prioridad con sus estados. |
+| `avgByStatus`       | List<`AverageByStatus`>   | Private     | Horas promedio por estado. |
+| `avgByPriority`     | List<`AverageByPriority`> | Private     | Horas promedio por prioridad. |
+| `budget`            | `BudgetUsage`             | Private     | Aprobado, usado y diferencia. |
+| `members`           | List<`MemberSummary`>     | Private     | Resumen por miembro (producción y costo). |
+| `bestMember`        | `LeaderboardEntry`        | Private     | Miembro destacado según criterio. |
+| `worstMember`       | `LeaderboardEntry`        | Private     | Miembro con menor desempeño. |
 
 **Métodos**
 
 | Método                                   | Retorno      | Descripción |
 |------------------------------------------|--------------|-------------|
-| `addTasks(tasks: List<Task>)`     | `void`       | Agrega/actualiza tareas y recalcula métricas globales. |
-| `addMembers(members: List<MemberSummary>)`| `void`       | Agrega/actualiza resúmenes de miembros (costos, velocidad). |
-| `updateBudget(approved: Money, usedDelta: Money)` | `void` | Actualiza el uso de presupuesto y su varianza. |
-| `calculatePriorityStats()`               | `void`       | Reconstruye `priorityBreakdown` con las tareas actuales. |
-| `calculateAverages()`                    | `void`       | Reconstruye `avgByStatus` y `avgByPriority`. |
-| `rankMembers(criteria: String, filters?: Map)` | `void`  | Calcula `bestMember` y `worstMember` (permite filtros por prioridad/estado). |
-| `buildProjectReportData()`               | `ReportData` | Crea los datos listos para el reporte de proyecto. |
-| `getBestMember()`                        | `LeaderboardEntry` | Devuelve el mejor miembro actual. |
-| `getWorstMember()`                       | `LeaderboardEntry` | Devuelve el peor miembro actual. |
-| `reset()`                                | `void`       | Limpia métricas recalculables (mantiene identidad y presupuesto). |
+| `addTasks(List<Task> tasks)`             | `void`       | Integra tareas del periodo y actualiza conteos y promedios. |
+| `addMembers(List<MemberSummary> members)`| `void`       | Sincroniza datos de miembros (horas, costos, conteos). |
+| `updateBudget(Money approved, Money usedDelta)` | `void` | Ajusta el presupuesto aprobado y el usado. |
+| `calculatePriorityStats()`               | `void`       | Recalcula `priorityTotals` con las tareas actuales. |
+| `calculateAverages()`                    | `void`       | Recalcula `avgByStatus` y `avgByPriority`. |
+| `rankMembers(String criteria, String priorityCode, String statusCode)` | `void` | Determina `bestMember` y `worstMember` con criterio y filtros simples. |
+| `buildProjectReportData()`               | `ReportData` | Prepara los datos del **Project Report**. |
+| `getBestMember()`                        | `LeaderboardEntry` | Devuelve el miembro mejor posicionado. |
+| `getWorstMember()`                       | `LeaderboardEntry` | Devuelve el miembro peor posicionado. |
+| `reset()`                                | `void`       | Limpia métricas derivadas para recalcular. |
 
-----------
-### Aggregate: **MemberAnalytics**
-**Descripción:** Métricas del Team Member dentro de un Project. Base para Member Dashboard y Progress Report.
-
-**Atributos**
-
-| Atributo            | Tipo                 | Visibilidad | Descripción |
-|---------------------|----------------------|-------------|-------------|
-| `projectId`         | Long                 | Private     | Identificador del proyecto. |
-| `memberId`          | Long                 | Private     | Identificador del miembro. |
-| `period`            | `DateRange`          | Private     | Ventana temporal del cálculo. |
-| `taskCounts`        | `TaskStatusCounts`   | Private     | Conteos por estado del miembro. |
-| `priorityBreakdown` | `PriorityBreakdown`  | Private     | Totales del miembro por prioridad/estado. |
-| `avgByStatus`       | `DurationAverages`   | Private     | Promedios por estado. |
-| `avgByPriority`     | `DurationAverages`   | Private     | Promedios por prioridad. |
-| `hourlyRate`        | `Money`              | Private     | Tarifa por hora del miembro. |
-| `spentHours`        | `Float `             | Private     | Suma de horas (cada tarea redondeada a 2 decimales). |
-| `accumulatedCost`   | `MemberCost`         | Private     | Costo acumulado (`hourlyRate × spentHours`). |
-
-**Métodos**
-
-| Método                                      | Retorno       | Descripción |
-|---------------------------------------------|---------------|-------------|
-| `addTasks(tasks: List<Task>)`        | `void`        | Agrega/actualiza tareas del miembro y refresca conteos/vencidas. |
-| `setHourlyRate(rate: Money)`                 | `void`        | Define o actualiza la tarifa por hora. |
-| `calculateSpentHours()`                      | `BigDecimal`  | Recalcula `spentHours` desde las tareas (con redondeo a 2 decimales). |
-| `calculateCost()`                            | `MemberCost`  | Recalcula `accumulatedCost` = tarifa × horas. |
-| `calculateAverages()`                        | `void`        | Reconstruye `avgByStatus` y `avgByPriority`. |
-| `calculateVelocity()`                        | `BigDecimal`  | Devuelve la velocidad (tareas hechas por periodo o tiempo medio por tarea). |
-| `buildMemberReportData(kind: String)`        | `ReportData`  | Crea los datos para Member/Progress Report. |
-| `reset()`                                    | `void`        | Limpia métricas recalculables (mantiene identidad y tarifa). |
+**Reglas clave**
+- Los conteos deben cuadrar con la suma de tareas por estado.
+- El presupuesto usado no debe superar el presupuesto aprobado.
 
 ---
 
-### Aggregate: **Report**
-**Descripción:** Reporte de tipo: `PROJECT`, `MEMBER`, `PROGRESS`.
+## 2. Aggregate: MemberAnalytics
+Mide el desempeño de un Team Member en el proyecto: qué hizo, qué le falta, tiempos promedio y costo según su tarifa.
 
 **Atributos**
 
-| Atributo      | Tipo            | Visibilidad | Descripción |
-|---------------|-----------------|-------------|-------------|
-| `reportId`    | `Long`            | Private     | Identificador del reporte. |
-| `kind`        | `String`          | Private     | Tipo de reporte: `"PROJECT"`, `"MEMBER"` o `"PROGRESS"`. |
-| `generatedAt` | `LocalDateTime`   | Private     | Fecha y hora de generación. |
-| `period`      | `DateRange`     | Private     | Ventana temporal cubierta por el reporte. |
-| `payload`     | `ReportData`    | Private     | KPIs y series listos para consumo en UI. |
+| Atributo            | Tipo                  | Visibilidad | Descripción |
+|---------------------|-----------------------|-------------|-------------|
+| `projectId`         | Long                  | Private     | Proyecto al que pertenece. |
+| `memberId`          | Long                  | Private     | Miembro evaluado. |
+| `period`            | `DateRange`           | Private     | Rango de fechas considerado. |
+| `taskCounts`        | `TaskStatusCounts`    | Private     | Conteos por estado del miembro. |
+| `priorityTotals`    | List<`PriorityTotal`> | Private     | Tareas del miembro por prioridad y estado. |
+| `avgByStatus`       | List<`AverageByStatus`>   | Private | Horas promedio por estado. |
+| `avgByPriority`     | List<`AverageByPriority`> | Private | Horas promedio por prioridad. |
+| `hourlyRate`        | `Money`               | Private     | Tarifa por hora. |
+| `spentHours`        | Float                 | Private     | Horas invertidas (redondeadas por tarea a 2 decimales). |
+| `accumulatedCost`   | `MemberCost`          | Private     | Costo total del miembro. |
 
 **Métodos**
 
-| Método                                       | Retorno  | Descripción |
-|----------------------------------------------|----------|-------------|
-| `fromProject(analytics: ProjectAnalytics)`    | `Report` | Construye un reporte de tipo PROJECT. |
-| `fromMember(analytics: MemberAnalytics, kind: String)` | `Report` | Construye un reporte de tipo MEMBER o PROGRESS. |
-| `publish()`                                   | `void`   | Marca el reporte como inmutable. |
-| `getPayload()`                                | `ReportData` | Devuelve el contenido del reporte. |
+| Método                               | Retorno       | Descripción |
+|--------------------------------------|---------------|-------------|
+| `addTasks(List<Task> tasks)`         | `void`        | Integra tareas del miembro y actualiza métricas. |
+| `setHourlyRate(Money rate)`          | `void`        | Define o ajusta la tarifa por hora. |
+| `calculateSpentHours()`              | `BigDecimal`  | Recalcula horas invertidas. |
+| `calculateCost()`                    | `MemberCost`  | Recalcula el costo total del miembro. |
+| `calculateAverages()`                | `void`        | Recalcula promedios por estado y prioridad. |
+| `calculateVelocity()`                | `BigDecimal`  | Devuelve la velocidad (hechas/periodo o tiempo medio). |
+| `buildMemberReportData(String kind)` | `ReportData`  | Prepara datos para **Member** o **Progress Report**. |
+| `reset()`                            | `void`        | Limpia métricas derivadas para recalcular. |
 
+**Reglas clave**
+- El costo total debe ser coherente con `tarifa × horas`.
+- Las horas invertidas no pueden ser negativas.
 
 ---
 
+## 3. Aggregate: Report
+Guarda una foto del estado para historial y consulta: puede ser del Proyecto de un Miembro o un Progress Report
 
-### Entity: **Task**  *(entrada mínima para este BC)*
+**Atributos**
+
+| Atributo      | Tipo          | Visibilidad | Descripción |
+|---------------|---------------|-------------|-------------|
+| `reportId`    | Long          | Private     | Identificador del reporte. |
+| `kind`        | String        | Private     | `PROJECT`, `MEMBER` o `PROGRESS`. |
+| `generatedAt` | LocalDateTime | Private     | Momento de generación. |
+| `period`      | `DateRange`   | Private     | Rango de fechas cubierto. |
+| `payload`     | `ReportData`  | Private     | Datos listos para la UI. |
+
+**Métodos**
+
+| Método                                            | Retorno  | Descripción |
+|---------------------------------------------------|----------|-------------|
+| `fromProject(ProjectAnalytics analytics)`         | `Report` | Crea un reporte **PROJECT**. |
+| `fromMember(MemberAnalytics analytics, String kind)` | `Report` | Crea un **MEMBER** o **PROGRESS**. |
+| `publish()`                                       | `void`   | Marca el reporte como definitivo. |
+| `getPayload()`                                    | `ReportData` | Devuelve el contenido. |
+
+**Reglas clave**
+- Una vez publicado, el reporte no se modifica.
+- El contenido del reporte debe corresponder al tipo indicado.
+
+---
+
+## 4. Entity: Task
+Tarea tal como llega del otro BC, con lo necesario para calcular métricas.
 
 | Campo          | Tipo          | Descripción |
 |----------------|---------------|-------------|
-| `taskId`       | Long          | Identificador de la tarea. |
-| `memberId`     | Long          | Identificador del asignado. |
-| `statusCode`   | String        | Código de estado del upstream (ej.: `"TODO"`, `"IN_PROGRESS"`, `"DONE"`). |
-| `priorityCode` | String        | Código de prioridad del upstream (ej.: `"LOW"`, `"MEDIUM"`, `"HIGH"`). |
-| `overdue`      | Boolean       | Indicador de vencimiento. |
-| `assignedAt`   | LocalDateTime | Fecha y hora de asignación. |
-| `completedAt`  | LocalDateTime?| Fecha y hora de completado (si corresponde). |
+| `taskId`       | Long          | ID de la tarea. |
+| `memberId`     | Long          | ID del asignado. |
+| `statusCode`   | String        | Código de estado externo. |
+| `priorityCode` | String        | Código de prioridad externo. |
+| `overdue`      | Boolean       | Si está vencida. |
+| `assignedAt`   | LocalDateTime | Fecha/hora de asignación. |
+| `completedAt`  | LocalDateTime?| Fecha/hora de finalización. |
 
-### Entity: **MemberSummary**
+---
+
+## 5. Entity: MemberSummary
+Tarjeta resumen para comparar desempeño y costo de un miembro.
 
 | Campo                 | Tipo                 | Descripción |
 |----------------------|----------------------|-------------|
-| `memberId`           | Long                 | Identificador del miembro. |
+| `memberId`           | Long                 | ID del miembro. |
 | `taskCounts`         | `TaskStatusCounts`   | Conteos por estado. |
-| `priorityBreakdown`  | `PriorityBreakdown`  | Totales por prioridad/estado. |
-| `avgCompletionHours` | `Float`               | Horas promedio por tarea. |
-| `spentHours`         | `Float`              | Horas totales del miembro. |
+| `priorityTotals`     | List<`PriorityTotal`>| Totales por prioridad/estado. |
+| `avgCompletionHours` | Float                | Horas promedio por tarea. |
+| `spentHours`         | Float                | Horas acumuladas. |
 | `hourlyRate`         | `Money`              | Tarifa por hora. |
-| `cost`               | `MemberCost`         | Costo acumulado. |
+| `cost`               | `MemberCost`         | Costo total. |
 
-### Entity: **LeaderboardEntry**
+---
+
+## 6. Entity: LeaderboardEntry
+Registro simple para ordenar miembros y explicar posiciones.
 
 | Campo      | Tipo    | Descripción |
 |------------|---------|-------------|
-| `memberId` | Long    | Identificador del miembro rankeado. |
-| `score`    | Decimal | Puntuación según los criterios configurados. |
-| `reason`   | String  | Explicación breve (ej.: “más tareas hechas y menos vencidas”). |
+| `memberId` | Long    | Miembro evaluado. |
+| `score`    | Decimal | Puntuación usada para ordenar. |
+| `reason`   | String  | Motivo corto del puesto. |
 
 ---
 
+## 7. Value Object: DateRange
+Ventana de tiempo usada para los cálculos.
 
-| Value Object         | Campos clave / Estructura                                                     | Reglas / Notas |
-|----------------------|-------------------------------------------------------------------------------|----------------|
-| **DateRange**        | `start: LocalDate`, `end: LocalDate`                                          | `start <= end`. |
-| **Money**            | `amount: Decimal(12,2)`, `currency: String`                                   | — |
-| **TaskStatusCounts** | `total, notStarted, inProgress, done, overdue`                                | `total >= notStarted + inProgress + done`. |
-| **PriorityBreakdown**| `byPriority: Map<String /*priorityCode*/, TaskStatusCounts>`                  | Totales por prioridad y estado. |
-| **DurationAverages** | `byKey: Map<String /statusorpriority/, float /hours/>`                          | Promedios de `(completedAt - assignedAt)` redondeados a 2 decimales. |
-| **MemberCost**       | `hourlyRate: Money`, `spentHours: Float`, `total: Money`              | `total = rate × hours`. |
-| **BudgetUsage**      | `approved: Money`, `used: Money`, `variance: Money`                           | `variance = approved - used`. |
-| **ReportData**       | DTO inmutable con KPIs/series para UI (conteos, prioridad, vencidas, promedios, costos, best/worst, budget, etc.) | Serializable y de solo lectura. |
+| Atributo | Tipo      | Descripción |
+|----------|-----------|-------------|
+| `start`  | LocalDate | Inicio del rango (incluido). |
+| `end`    | LocalDate | Fin del rango (incluido). |
 
----
-
-| Service                    | Responsabilidad                                                                     | Operaciones principales  |
-|---------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| **TaskAggregationService**| Normaliza tareas del upstream a `Task` y agrupa por proyecto/miembro.                               | `List<Task> aggregateTasks(rawTasks)` |
-| **CountingService**       | Calcula conteos por estado y total de vencidas.                                                              | `TaskStatusCounts calculateTaskCounts(List<Task>)` |
-| **PriorityCountingService**| Obtiene totales por prioridad y estado.                                                                     | `PriorityBreakdown calculatePriorityBreakdown(List<Task>)` |
-| **TimeStatsService**      | Calcula promedios `(completedAt - assignedAt)` por estado y prioridad (redondeo 2 decimales).               | `DurationAverages calculateAveragesByStatus(List<Task>)` · `DurationAverages calculateAveragesByPriority(List<Task>)` |
-| **CostCalculationService**| Calcula horas y coste por miembro (`rate × hours` con redondeo).                                            | `BigDecimal calculateSpentHours(List<Task>)` · `MemberCost calculateMemberCost(Money rate, BigDecimal hours)` |
-| **ProjectAnalyticsService**| Construye/actualiza `ProjectAnalytics` (conteos, promedios, presupuesto, ranking).                          | `ProjectAnalytics calculateProjectAnalytics(Long projectId, List<Task>, List<MemberSummary>, Money approvedBudget, Money usedDelta)` |
-| **MemberAnalyticsService**| Construye/actualiza `MemberAnalytics` (conteos, promedios, coste, velocidad).                                | `MemberAnalytics calculateMemberAnalytics(Long projectId, Long memberId, List<Task>, Money hourlyRate)` |
-| **RankingService**        | Determina mejor/peor miembro (por defecto: número de tareas hechas; soporta filtros).                        | `LeaderboardEntry[] computeRanking(List<MemberSummary>, String criteria, Map filters)` |
-| **ReportBuilder**         | Genera `ReportData` y crea `Report` (PROJECT/MEMBER/PROGRESS) listo para publicar.                           | `Report buildProjectReport(ProjectAnalytics, DateRange)` · `Report buildMemberReport(MemberAnalytics, DateRange, String kind)` |
-| **BudgetService**         | Calcula `BudgetUsage` a partir del presupuesto aprobado y costos por miembro.                                | `BudgetUsage calculateBudgetUsage(Money approved, List<MemberCost> memberCosts)` |
+**Reglas clave**
+- La fecha de inicio debe ser anterior o igual a la fecha de fin.
 
 ---
 
-## Comandos (domain/commands)
+## 8. Value Object: Money
+Dinero con su moneda.
 
-| Command Name               | ¿Qué hace?                                | Datos mínimos requeridos |
-|---------------------------|-----------------------------------------------------------------------|--------------------------|
-| **GenerateProjectAnalytics** | Construye o actualiza las estadísticas agregadas del proyecto.     | `projectId`, `period(start,end)` |
-| **GenerateMemberAnalytics**  | Construye o actualiza las estadísticas del miembro en el proyecto. | `projectId`, `memberId`, `period` |
-| **GenerateProjectReport**    | Crea el de reporte tipo PROJECT.                           | `projectId`, `period` |
-| **GenerateMemberReport**     | Crea el de reporte tipo MEMBER (TL) o PROGRESS (TM).       | `projectId`, `memberId`, `period`, `kind` |
-| **RecalculateRanking**       | Recalcula el ranking (mejor/peor) con criterios y filtros.          | `projectId`, `period`, `criteria`, `filters?` |
-| **UpdateProjectBudget**      | Actualiza el uso/varianza del presupuesto del proyecto.             | `projectId`, `approved`, `usedDelta` |
-| **SetMemberHourlyRate**      | Define o actualiza la tarifa por hora del miembro para analítica.   | `projectId`, `memberId`, `hourlyRate` |
+| Atributo   | Tipo            | Descripción |
+|------------|-----------------|-------------|
+| `amount`   | Decimal(12,2)   | Monto. |
+| `currency` | String          | Moneda (ej.: `"USD"`). |
 
 ---
 
-## Calculos que se realizaran: 
-- **Conteos por estado**: se derivan de `statusCode` en `Task`.  
-- **Vencidas**: se utiliza `overdue` tal como llega del upstream.  
-- **Promedios de tiempo**: solo para tareas **done**; `durationHours = hours(completedAt - assignedAt)`; promedios por **estado** y **prioridad** con **redondeo a 2 decimales**.  
-- **Costo por miembro**:  
-  - `spentHours = suma( round2(durationHours))` por cada tarea del miembro.  
-  - `accumulatedCost.total = hourlyRate.amount × spentHours`.  
-- **Costo del proyecto**: `budget.used = suma( member.cost.total)`; `budget.variance = budget.approved - budget.used`.  
-- **Velocidad**: configurable: (a) tareas hechas por periodo **o** (b) tiempo medio por tarea; `calculateVelocity()` retorna el valor elegido.  
-- **Ranking (best/worst)**: por defecto **mayor/menor número de tareas hechas**; admite filtros por `priorityCode`/`statusCode` o un **score** ponderado (penalizando `overdue` y tiempos altos).  
-- **Inmutabilidad de Reportes**: después de `publish()`, un `Report` no cambia.  
+## 9. Value Object: TaskStatusCounts
+Conteo rápido de cómo van las tareas.
 
+| Atributo      | Tipo | Descripción |
+|---------------|------|-------------|
+| `total`       | Int  | Total de tareas. |
+| `notStarted`  | Int  | No iniciadas. |
+| `inProgress`  | Int  | En progreso. |
+| `done`        | Int  | Completadas. |
+| `overdue`     | Int  | Vencidas. |
 
+**Reglas clave**
+- El total debe coincidir con la suma de los estados.
 
+---
 
-##### 2.6.1.2. Interface Layer
+## 10. Value Object: PriorityTotal
+Totales por una prioridad específica.
 
-##### 2.6.1.3. Application Layer
+| Atributo        | Tipo               | Descripción |
+|-----------------|--------------------|-------------|
+| `priorityCode`  | String             | Prioridad (ej.: `LOW`, `MEDIUM`, `HIGH`). |
+| `counts`        | `TaskStatusCounts` | Conteos por estado dentro de esa prioridad. |
 
-##### 2.6.1.4. Infrastructure Layer
+---
+
+## 11. Value Object: AverageByStatus
+Promedio de horas para un estado concreto.
+
+| Atributo      | Tipo   | Descripción |
+|---------------|--------|-------------|
+| `statusCode`  | String | Estado (código upstream). |
+| `avgHours`    | Float  | Horas promedio para ese estado. |
+
+---
+
+## 12. Value Object: AverageByPriority
+Promedio de horas para una prioridad concreta.
+
+| Atributo        | Tipo  | Descripción |
+|-----------------|-------|-------------|
+| `priorityCode`  | String| Prioridad (código upstream). |
+| `avgHours`      | Float | Horas promedio para esa prioridad. |
+
+---
+
+## 13. Value Object: MemberCost
+Costo de un miembro según su tiempo invertido.
+
+| Atributo      | Tipo          | Descripción |
+|---------------|---------------|-------------|
+| `hourlyRate`  | `Money`       | Tarifa por hora. |
+| `spentHours`  | Float         | Horas invertidas. |
+| `total`       | `Money`       | Resultado de tarifa × horas. |
+
+---
+
+## 14. Value Object: BudgetUsage
+Cómo va el presupuesto del proyecto.
+
+| Atributo   | Tipo    | Descripción |
+|------------|---------|-------------|
+| `approved` | `Money` | Presupuesto aprobado. |
+| `used`     | `Money` | Suma de costos utilizados. |
+| `variance` | `Money` | Diferencia entre aprobado y usado. |
+
+---
+
+## 15. Value Object: ReportData
+Paquete de datos que dibuja la pantalla o el PDF del reporte.
+
+| Atributo             | Tipo                      | Descripción |
+|----------------------|---------------------------|-------------|
+| `taskCounts`         | `TaskStatusCounts`        | Totales por estado. |
+| `priorityTotals`     | List<`PriorityTotal`>     | Totales por prioridad/estado. |
+| `avgByStatus`        | List<`AverageByStatus`>   | Promedios por estado. |
+| `avgByPriority`      | List<`AverageByPriority`> | Promedios por prioridad. |
+| `budget`             | `BudgetUsage`             | Presupuesto (solo en PROJECT). |
+| `members`            | List<`MemberSummary`>     | Métricas por miembro (solo en PROJECT). |
+| `bestMember`         | `LeaderboardEntry`        | Mejor miembro (solo en PROJECT). |
+| `worstMember`        | `LeaderboardEntry`        | Peor miembro (solo en PROJECT). |
+
+---
+
+## 16. Domain Services (cuadro resumido)
+
+| Service | ¿Qué hace? (en una línea) | Métodos principales (firma) |
+|---|---|---|
+| **TaskAggregationService** | Convierte entradas externas en `Task` listas para cálculo. | `aggregateTasks(List<?> rawTasks): List<Task>` |
+| **CountingService** | Cuenta tareas por estado y calcula `overdue`. | `calculateTaskCounts(List<Task>): TaskStatusCounts` |
+| **PriorityCountingService** | Genera totales por prioridad con sus estados. | `calculatePriorityTotals(List<Task>): List<PriorityTotal>` |
+| **TimeStatsService** | Calcula promedios de duración por estado y prioridad. | `calculateAveragesByStatus(List<Task>): List<AverageByStatus>` · `calculateAveragesByPriority(List<Task>): List<AverageByPriority>` |
+| **CostCalculationService** | Suma horas (redondeadas) y calcula costo por miembro. | `calculateSpentHours(List<Task>): BigDecimal` · `calculateMemberCost(Money rate, BigDecimal hours): MemberCost` |
+| **ProjectAnalyticsService** | Construye/actualiza `ProjectAnalytics` incluyendo presupuesto y ranking. | `calculateProjectAnalytics(Long projectId, List<Task>, List<MemberSummary>, Money approvedBudget, Money usedDelta): ProjectAnalytics` |
+| **MemberAnalyticsService** | Construye/actualiza `MemberAnalytics` con conteos, promedios, costo y velocidad. | `calculateMemberAnalytics(Long projectId, Long memberId, List<Task>, Money hourlyRate): MemberAnalytics` |
+| **RankingService** | Ordena miembros y define best/worst con filtros simples. | `computeRanking(List<MemberSummary>, String criteria, String priorityCode, String statusCode): List<LeaderboardEntry>` |
+| **ReportBuilder** | Crea reportes de `Report` a partir de analíticas. | `buildProjectReport(ProjectAnalytics, DateRange): Report` · `buildMemberReport(MemberAnalytics, DateRange, String kind): Report` |
+| **BudgetService** | Calcula el uso real del presupuesto del proyecto. | `calculateBudgetUsage(Money approved, List<MemberCost>): BudgetUsage` |
+
+---
+
+## 17. Repository: ProjectAnalyticsRepository
+Persistencia de `ProjectAnalytics`.
+
+**Métodos**
+- `findByProjectId(Long projectId)` — Recupera las métricas del proyecto.  
+- `save(ProjectAnalytics aggregate)` — Guarda o actualiza el agregado.
+
+---
+
+## 18. Repository: MemberAnalyticsRepository
+Persistencia de `MemberAnalytics`.
+
+**Métodos**
+- `findByProjectIdAndMemberId(Long projectId, Long memberId)` — Recupera métricas de un miembro.  
+- `save(MemberAnalytics aggregate)` — Guarda o actualiza el agregado.
+
+---
+
+## 19. Repository: ReportRepository
+Persistencia de reportes de `Report`.
+
+**Métodos**
+- `findById(Long reportId)` — Obtiene un reporte por su ID.  
+- `save(Report report)` — Guarda un reporte.  
+- `findLatestProjectReport(Long projectId, DateRange period)` — Último **PROJECT** del periodo.  
+- `findLatestMemberReport(Long projectId, Long memberId, String kind, DateRange period)` — Último **MEMBER/PROGRESS** del periodo.  
+- `existsById(Long reportId)` — Verifica si existe un reporte por su ID.
+
+---
+
+En la Domain Layer de Analítica y Reportes, este modelo recibe tareas y miembros desde otros bounded contexts, calcula conteos, promedios, costos y presupuesto mediante Domain Services consolida todo en los agregados ProjectAnalytics y MemberAnalytics publica reportes con Report y persiste la información a través de Repositories para que el resto del sistema pueda visualizar dashboards y reportes de forma confiable.
+
+---
+
+#### 2.6.1.2. Interface Layer: Analítica y Reportes
+
+La Interface Layer expone los endpoints HTTP (REST + JSON) que permiten al frontend solicitar la generación de estadísticas y obtener reportes para el Project Dashboard, Member Dashboard y Progress Report  
+En esta capa no hay reglas de negocio: los controladores reciben las peticiones, validan formato, convierten recursos a comandos/consultas y delegan en los servicios de la Application Layer.
+
+---
+
+## Controlador: **ProjectReportsController**
+
+ Gestiona endpoints del Proyecto generar estadísticas, consultar métricas, ranking, presupuesto y emitir reportes tipo **PROJECT**.
+
+### Métodos
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/api/v1/projects/{projectId}/analytics/generate` | `generateProjectAnalytics()` — Dispara el cálculo/actualización de estadísticas del proyecto para un rango de fechas. |
+| `GET` | `/api/v1/projects/{projectId}/analytics` | `getProjectAnalytics()` — Retorna métricas actuales del proyecto (`ProjectAnalyticsDTO`) para un rango. |
+| `POST` | `/api/v1/projects/{projectId}/ranking/recalculate` | `recalculateRanking()` — Recalcula el ranking (best/worst) con criterio y filtros opcionales. |
+| `GET` | `/api/v1/projects/{projectId}/ranking` | `getProjectRanking()` — Devuelve ranking, `bestMember` y `worstMember`. |
+| `PATCH` | `/api/v1/projects/{projectId}/budget` | `updateProjectBudget()` — Actualiza presupuesto aprobado/usado. |
+| `POST` | `/api/v1/projects/{projectId}/reports` | `generateProjectReport()` — Crea un reporte de reporte **PROJECT** y lo publica. |
+| `GET` | `/api/v1/projects/{projectId}/reports/latest` | `getLatestProjectReport()` — Obtiene el último reporte **PROJECT** (opcionalmente filtrado por rango). |
+| `GET` | `/api/v1/reports/{reportId}` | `getReportById()` — Recupera un reporte por su identificador. |
+
+### Dependencias
+
+- **Command Services**
+  - `ProjectAnalyticsCommandService` — ejecuta *GenerateProjectAnalytics*, *RecalculateRanking*, *UpdateProjectBudget*.
+  - `ReportCommandService` — ejecuta *GenerateProjectReport* y *DeleteReport*.
+- **Query Services**
+  - `ProjectAnalyticsQueryService` — obtiene `ProjectAnalytics`.
+  - `ReportQueryService` — obtiene reportes por `id` o el *latest*.
+- **Assemblers (Resources ↔ DTOs/Commands)**
+  - `GenerateProjectAnalyticsCommandFromResourceAssembler`
+  - `RecalculateRankingCommandFromResourceAssembler`
+  - `UpdateProjectBudgetCommandFromResourceAssembler`
+  - `ProjectAnalyticsDTOAssembler`
+  - `RankingResponseAssembler`
+  - `ReportDTOAssembler`
+
+---
+
+## Controlador: **MemberReportsController**
+
+Gestiona endpoints de Miembro dentro de un proyecto: generar/consultar estadísticas y emitir reportes tipo **MEMBER** (consumidos por el Team Leader).
+
+### Métodos
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/analytics/generate` | `generateMemberAnalytics()` — Calcula/actualiza métricas del miembro para un rango. |
+| `GET` | `/api/v1/projects/{projectId}/members/{memberId}/analytics` | `getMemberAnalytics()` — Retorna métricas del miembro (`MemberAnalyticsDTO`). |
+| `PATCH` | `/api/v1/projects/{projectId}/members/{memberId}/hourly-rate` | `setMemberHourlyRate()` — Define/actualiza la tarifa por hora del miembro. |
+| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/reports` | `generateMemberReport()` — Crea reporte de reporte **MEMBER** y lo publica. |
+| `GET` | `/api/v1/projects/{projectId}/members/{memberId}/reports/latest?kind=MEMBER|PROGRESS` | `getLatestMemberReport()` — Obtiene el último reporte del miembro. `kind` debe ser `MEMBER` o `PROGRESS`. |
+
+### Dependencias
+
+- **Command Services**
+  - `MemberAnalyticsCommandService` — ejecuta *GenerateMemberAnalytics* y *SetMemberHourlyRate*.
+  - `ReportCommandService` — ejecuta *GenerateMemberReport* y *DeleteReport*.
+- **Query Services**
+  - `MemberAnalyticsQueryService` — obtiene `MemberAnalytics`.
+  - `ReportQueryService` — obtiene *latest* o por `id`.
+- **Assemblers**
+  - `GenerateMemberAnalyticsCommandFromResourceAssembler`
+  - `SetMemberHourlyRateCommandFromResourceAssembler`
+  - `MemberAnalyticsDTOAssembler`
+  - `ReportDTOAssembler`
+
+---
+
+## Controlador: **ProgressReportsController**
+
+Gestiona endpoints para que un Team Member genere y consulte su Progress Report (reporte personal).
+
+### Métodos
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/progress-reports` | `generateProgressReport()` — Genera y publica un reporte **PROGRESS** para el miembro. |
+| `GET` | `/api/v1/projects/{projectId}/members/{memberId}/progress-reports/latest` | `getLatestProgressReport()` — Obtiene el último **PROGRESS** del miembro. |
+| `GET` | `/api/v1/projects/{projectId}/members/{memberId}/progress-reports/{reportId}` | `getProgressReportById()` — Recupera un **PROGRESS** por id. |
+
+### Dependencias
+
+- **Command Services**
+  - `ReportCommandService` — ejecuta *GenerateProgressReport* y *DeleteReport*.
+- **Query Services**
+  - `ReportQueryService` — obtiene *latest* o por `id`.
+- **Assemblers**
+  - `ProgressReportCommandFromResourceAssembler`
+  - `ReportDTOAssembler`
+
+---
+
+## DTOs de Entrada/Salida (usados por todos los controladores)
+
+- `DateRangeDTO { startDate, endDate }`
+- `MoneyDTO { amount, currency }`
+- `TaskCountsDTO { total, notStarted, inProgress, done, overdue }`
+- `PriorityTotalDTO[]` con elementos `{ priorityCode, counts: TaskCountsDTO }`
+- `AverageByStatusDTO[]` con elementos `{ statusCode, avgHours }`
+- `AverageByPriorityDTO[]` con elementos `{ priorityCode, avgHours }`
+- `BudgetUsageDTO { approved, used, variance }`
+- `MemberSummaryDTO { memberId, taskCounts, priorityTotals, avgCompletionHours, spentHours, hourlyRate, cost }`
+- `LeaderboardEntryDTO { memberId, score, reason }`
+- `ProjectAnalyticsDTO { projectId, period, taskCounts, priorityTotals, avgByStatus, avgByPriority, budget, members, bestMember, worstMember }`
+- `MemberAnalyticsDTO { projectId, memberId, period, taskCounts, priorityTotals, avgByStatus, avgByPriority, hourlyRate, spentHours, accumulatedCost, velocity }`
+- `ReportDTO { reportId, kind, generatedAt, period, payload }`
+
+---
+
+#### 2.6.1.3. Application Layer: Analítica y Reportes
+
+La Application Layer coordina la lógica que se ejecuta frente a comandos y eventos  
+Los CommandHandlers procesan solicitudes del usuario (generar estadísticas y reportes, actualizar presupuesto/tarifa).  
+Los EventHandlers reaccionan a cambios del sistema (tareas asignadas/completadas/vencidas, cambios de presupuesto o tarifa) para mantener las métricas al día.
+
+---
+
+### Servicio (CommandHandler): ProjectAnalyticsCommandServiceImpl
+
+Atiende comandos relacionados al Proyecto generación/actualización de métricas agregadas, ranking y presupuesto.
+
+| Método | Descripción |
+|---|---|
+| `handle(GenerateProjectAnalyticsCommand)` | Calcula o refresca las métricas del proyecto para un periodo (conteos, promedios, costos por miembro) y persiste el resultado. |
+| `handle(RecalculateRankingCommand)` | Recalcula `bestMember` y `worstMember` según el criterio/filtros solicitados y actualiza el agregado. |
+| `handle(UpdateProjectBudgetCommand)` | Actualiza el presupuesto aprobado/usado y su varianza en las métricas del proyecto. |
+
+---
+
+### Servicio (CommandHandler): MemberAnalyticsCommandServiceImpl
+
+ Atiende comandos del Team Member dentro de un proyecto.
+
+| Método | Descripción |
+|---|---|
+| `handle(GenerateMemberAnalyticsCommand)` | Calcula o refresca las métricas del miembro (conteos, promedios, horas, costo, velocidad) y las persiste. |
+| `handle(SetMemberHourlyRateCommand)` | Actualiza la tarifa por hora del miembro y recalcula su costo acumulado para el periodo. |
+
+---
+
+### Servicio (CommandHandler): ReportCommandServiceImpl
+
+Genera y administra reportes.
+
+| Método | Descripción |
+|---|---|
+| `handle(GenerateProjectReportCommand)` | Crea un **PROJECT Report** a partir de `ProjectAnalytics`, lo marca como publicado y lo almacena. |
+| `handle(GenerateMemberReportCommand)` | Crea un **MEMBER** o **PROGRESS Report** a partir de `MemberAnalytics`, lo publica y lo almacena. |
+| `handle(DeleteReportCommand)` | Elimina un reporte de reporte cuando la política de retención lo permite. |
+
+---
+
+### Servicio (EventHandler): AnalyticsEventHandler
+
+Reacciona a eventos del BC de Gestión de Proyectos y Tareas para mantener las analíticas actualizadas.
+
+| Método | Descripción |
+|---|---|
+| `handle(TaskAssignedEvent)` | Integra una nueva asignación de tarea; actualiza conteos del miembro y del proyecto. |
+| `handle(TaskCompletedEvent)` | Registra una tarea completada; actualiza conteos y promedios de duración. |
+| `handle(TaskMarkedOverdueEvent)` | Marca vencidas; ajusta métricas globales y del miembro. |
+| `handle(DeadlineChangedEvent)` | Revalida vencimiento y recalcula promedios si corresponde. |
+| `handle(ProjectBudgetChangedEvent)` | Sincroniza presupuesto aprobado/usado del proyecto. |
+| `handle(MemberHourlyRateChangedEvent)` | Actualiza la tarifa del miembro y recalcula su costo. |
+
+---
+
+#### 2.6.1.4. Infrastructure Layer: Analítica y Reportes
+
+En la Infrastructure Layer se ubican las clases que interactúan con la ]base de datos] u otros servicios necesarios para ]persistir] y ]recuperar] información clave (métricas y reportes).  
+Aquí se implementan las interfaces de Repositories definidas en el Domain Layer.
+
+---
+
+### Repository: ProjectAnalyticsRepositoryImpl
+
+Implementación de acceso a datos para `ProjectAnalytics`.
+
+| Método | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| `findByProjectId(Long projectId)` | `Optional<ProjectAnalytics>` | Public | Recupera las métricas agregadas del proyecto para su periodo activo o materializado. |
+| `save(ProjectAnalytics aggregate)` | `void` | Public | Inserta o actualiza las métricas del proyecto (conteos, promedios, presupuesto, ranking). |
+
+---
+
+### Repository: MemberAnalyticsRepositoryImpl
+
+Implementación de acceso a datos para `MemberAnalytics`.
+
+| Método | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| `findByProjectIdAndMemberId(Long projectId, Long memberId)` | `Optional<MemberAnalytics>` | Public | Recupera las métricas del miembro dentro del proyecto. |
+| `save(MemberAnalytics aggregate)` | `void` | Public | Inserta o actualiza las métricas del miembro (conteos, horas, costo, velocidad). |
+
+---
+
+### Repository: ReportRepositoryImpl
+
+Implementación de acceso a datos para reportes de `Report`.
+
+| Método | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| `findById(Long reportId)` | `Optional<Report>` | Public | Recupera un reporte por su identificador. |
+| `save(Report report)` | `Report` | Public | Almacena un reporte de reporte publicado. |
+| `findLatestProjectReport(Long projectId, DateRange period)` | `Optional<Report>` | Public | Devuelve el último **PROJECT Report** dentro del periodo. |
+| `findLatestMemberReport(Long projectId, Long memberId, String kind, DateRange period)` | `Optional<Report>` | Public | Devuelve el último **MEMBER/PROGRESS Report** del miembro dentro del periodo. |
+| `existsById(Long reportId)` | `Boolean` | Public | Verifica si un reporte de reporte existe por su ID. |
+
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
