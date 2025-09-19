@@ -41,9 +41,10 @@ Septiembre de 2025
 |---------|------------|-------|------------------------------|
 | TB1     | 08/09/2025 | Bejarano Martínez Alvaro Leandro      |   **Completar**|
 | TB1     | 08/09/2025 |Luquillas Asto Omar| |
-| TB1     | 08/09/2025 |     Olivera Barzola Eric Marlon    |   |
+| TB1     | 08/09/2025 |     Olivera Barzola Eric Marlon    |  Desarrollo de los ítems: 1.1.1 Descripción de la Startup, 1.1.2 Perfiles de integrantes del equipo, 1.2.1 Nombre del producto |
 | TB1     | 08/09/2025 |Sandoval Paiva Valentino||
 | TB1     | 08/09/2025 |Sarmiento Medina Loreley||
+| TB1     | 17/09/2025 |     Olivera Barzola Eric Marlon    |  Desarrollo de User Stories, Impact Map, Product Backlog |
 ## Project Report Collaboration Insights
 
 |  URL del repositorio del reporte  |
@@ -178,7 +179,12 @@ objetivos reflejen de manera clara y medible cómo cada integrante planea alcanz
 crecimiento profesional continuo tras su graduación. 
 
 <h3>Eric Marlon Olivera Barzola
-  - Esto falta completar
+
+  Objetivo 1: Publicar una aplicación móvil propia en la Play Store dentro del primer año.
+  Objetivo 2: Obtener una certificación en desarrollo móvil (Android o iOS) en un plazo máximo de 18 meses.
+  
+  
+  - Esto falta completareqweqweqwe
   - dasdasdas
 
 
@@ -205,11 +211,11 @@ Facilitar a las organizaciones la gestión de proyectos mediante una plataforma 
 Convertirnos en la organización líder en Latinoamérica en el desarrollo de soluciones móviles de gestión de proyectos empresariales, reconocida por su capacidad de simplificar la colaboración y aportar valor estratégico en la toma de decisiones.
 
 #### 1.1.2. Perfiles de integrantes del equipo  
-|                             | Miembros del equipo        | Codigo Estudiante |          Descripcion            |
+|                             | Miembros del equipo        | Código de Estudiante |          Descripción            |
 |------------------| ----------------------------------------------- | ----------------- | ---------------------- |
-|![Imagen1](Assets/TB1/)      |Eric Marlon Olivera Barzola | U202315032|     |
-|![Imagen2](Assets/TB1/)      |                            |       |         |
-|![Imagen3](Assets/TB1/)      |                            |       |         |
+|![Imagen1](Assets/TB1/)      |Eric Marlon Olivera Barzola | U202315032 |   Soy Eric Marlon Olivera Barzola, estudiante de Ingeniería de Software del séptimo ciclo, con un interés particular en la ciberseguridad. A lo largo de mi formación he adquirido experiencia en diferentes lenguajes de programación como C#, C++ y Java. Me motiva desarrollar soluciones que no solo sean funcionales, sino que también transmitan confianza y seguridad a los usuarios.  |
+|![Imagen2](Assets/TB1/)      |Omar Luquillas Asto         | U20211G641 | Soy estudiante de la carrera de Ingeniería de Software. Elegí esta carrera porque me apasiona la tecnología, el desarrollo de software y la programación. Tengo conocimientos en lenguajes de programación como C++, Python y Java. Me considero una persona investigadora, ya que me gusta aprender cosas nuevas y siempre estoy en busca de soluciones creativas e innovadoras que generen un impacto positivo en la vida de las personas. Además, valoro el trabajo en equipo, soy responsable y me comprometo a cumplir con mis tareas de manera eficiente. |
+|![Imagen3](Assets/TB1/Valentino.png)      | Valentino Sandoval Paiva                           |  U20211A962     |    Soy Valentino Sandoval, tengo 20 años y soy estudiante de la carrera de Ingeniería de Software. Tengo conocimiento en lenguajes de programación como python y c++, y bases de datos como SQLServer y MongoDB. Desde pequeño me sentí atraído por la tecnología, por lo que me decidí a estudiar la carrera, además disfruto de jugar videojuegos con amigos en mi tiempo libre.     |
 |![Imagen4](Assets/TB1/)      |                            |       |         |
 |![Imagen5](Assets/TB1/)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
 
@@ -429,7 +435,10 @@ Hypothesis Statement 15:
 - Creemos que la seguridad en el manejo de datos financieros incrementará la confianza de los clientes.
 - Sabremos que estamos en lo correcto cuando no tengamos reportes de incidentes graves y los usuarios destaquen positivamente la seguridad en encuestas.
 
-##### 1.2.2.4. Lean UX Canvas  
+##### 1.2.2.4. Lean UX Canvas
+
+<img src="./Assets/TB1/LeanUXCanvas.png" alt="Lean UX Canvas">
+
 ### 1.3. Segmentos Objetivo
 
 **Segmento Objetivo 1: Líder o Gerente de Empresa**
@@ -1000,17 +1009,116 @@ En esta sección se definen los requisitos del producto digital a partir del an�
 
 #### 2.4.1. User Stories
 
-| Story ID | User | Priority | Epic | Title | Description | Acceptance Criteria |
-|----------|------|----------|------|-------|-------------|---------------------|
-|          |      |          |      |       |             |                     |
-|          |      |          |      |       |             |                     |
-|          |      |          |      |       |             |                     |
-|          |      |          |      |       |             |                     |
+| **EPIC(ID)** | **Título**                              | **Descripción**                                                                                                                                                        |
+| ------------ | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **EP01**     | **Landing Page**                        | Como visitante, quiero acceder a una página de inicio clara que explique los beneficios de TaskMaster, para evaluar si es adecuado para mis necesidades.               |
+| **EP02**     | **Registro y autentificacion de usuario** | Como trabajador, quiero registrarme y verificar mi identidad para acceder a TaskMaster, garantizando que solo personal autorizado pueda acceder a las funcionalidades. |
+| **EP03**     | **Gestión de Proyectos y Tareas**       | Como líder de equipo, quiero gestionar proyectos y asignar tareas a los miembros del equipo para distribuir el trabajo de manera organizada.                           |
+| **EP05**     | **Notificaciones**                      | Como miembro del equipo, quiero recibir notificaciones sobre tareas asignadas, actualizaciones y fechas límite, para mantenerme informado y priorizar mi trabajo.      |
+| **EP06**     | **Visualización y Seguimiento**         | Como miembro del equipo, quiero poder ver el progreso de mis tareas en tiempo real para estar al tanto de mis responsabilidades.                                       |
+| **EP07**     | **Analítica y Reportes**                | Como líder de equipo, quiero generar y visualizar reportes de desempeño del equipo para mejorar la productividad y tomar decisiones basadas en datos.                  |
+| **EP08**     | **Integraciones Técnicas**              | Como desarrollador, quiero implementar un backend con servicios CRUD (crear, leer, actualizar y eliminar) para proyectos, tareas, usuarios y reportes, de modo que la lógica central de TaskMaster esté estructurada y mantenible  |
+| **EP09**     | **Investigación y Validación Técnica**  | Como miembro del equipo de desarrollo, quiero validar la seguridad de TaskMaster mediante pruebas técnicas para garantizar la protección de los datos de los usuarios. |
 
+
+| Story ID | User      | Priority | Epic | Title                                            | Description                                                                                                                                                               | Acceptance Criteria                                                                                                                                                                                                                                                                                      |
+| -------- | --------- | -------- | ---- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| US01     | Visitante | High     | EP01 | Información general sobre TaskMaster             | Como visitante, quiero entender rápidamente los beneficios y características de TaskMaster, para evaluar si se ajusta a mis necesidades.                                  | Escenario: Dado que el visitante accede a la página principal, cuando hace scroll hasta la sección Características clave, entonces el sistema muestra una lista visual destacada con las funciones principales de la aplicación.                                                                         |
+| US02     | Visitante | High     | EP01 | Llamado a la acción para descargar la aplicación | Como visitante, quiero tener un botón de registro claro y accesible para descargar la aplicación.                                                                         | Escenario: Dado que un visitante accede a la landing page, cuando visualiza el botón de registro en la parte superior o en el pie de página y hace clic en él, entonces el sistema lo redirige a la app store.                                                                                           |
+| US03     | Visitante | Medium   | EP01 | Testimonios de usuarios                          | Como visitante, quiero ver testimonios de usuarios reales de TaskMaster para confiar en su efectividad.                                                                   | Escenario: Dado que el visitante está en la página de inicio, cuando baja hasta la sección de testimonios, el sistema debe mostrar testimonios con texto y fotos de usuarios que han tenido éxito con la app.                                                                                            |
+| US04     | Visitante | Medium   | EP01 | Muestra de planes y precios                      | Como visitante, quiero ver las opciones de planes y precios de TaskMaster para poder elegir el más adecuado.                                                              | Escenario: Dado que el visitante accede a la página principal, cuando navega hasta la sección de planes de suscripción, entonces el sistema muestra los distintos planes con sus características y un botón de comparar.                                                                                 |
+| US05     | Visitante | Low      | EP01 | Adaptabilidad móvil                              | Como usuario móvil, quiero navegar la landing page sin problemas, para acceder a la información desde cualquier dispositivo.                                              | Escenario 1: Dado que el usuario accede desde el móvil, cuando hace clic en el ícono de menú, entonces se despliegan las opciones principales y el fondo se oscurece para mejor contraste.                                                                                                               |
+| US06     | Visitante | Low      | EP01 | Navegación mediante Encabezado                   | Como usuario, quiero un menú de navegación claro en el encabezado, para acceder fácilmente a las diferentes secciones de la página.                                       | Escenario 1: Acceso a secciones desde el encabezado. Dado que un visitante explora la plataforma informativa cuando utiliza las opciones de navegación en el encabezado entonces puede desplazarse a las diferentes secciones informativas. El encabezado permanece accesible durante el desplazamiento. |
+| US07     | Visitante | Medium   | EP01 | Misión y visión                                  | Como visitante interesado, quiero conocer la visión y misión de la empresa, para entender sus objetivos a largo plazo y su proyección de futuro.                          | Escenario 1: Visibilidad de la declaración de visión. Dado que un visitante navega por la sección sobre la empresa, cuando busca información sobre las metas futuras y actuales de la empresa entonces debe encontrar claramente destacada la declaración de visión y misión.                            |
+| US08     | Visitante | High     | EP01 | About the team                                   | Como visitante quiero acceder a la sección About the Team para conocer quiénes son los integrantes y su rol en el proyecto.                                               | Dado que el visitante accede a la landing page, cuando hace scroll o selecciona el enlace "About the Team", entonces el sistema muestra la sección con nombres, fotos, roles y una breve descripción de cada integrante.                                                                                 |
+| US09     | Visitante | Low      | EP01 | Pie de página                                    | Como visitante quiero visualizar un pie de página con enlaces a secciones clave para encontrar fácilmente información adicional y mantenerme conectado con la plataforma. | Dado que el visitante llega al final de la landing page, cuando visualiza el pie de página, entonces el sistema muestra enlaces a Contacto, Políticas, Términos y redes sociales, y al hacer clic en cada enlace redirige a la sección o recurso correspondiente.                                        |
+| US10     | Visitante                 | High     | EP02 | Registro de usuario        | Como visitante quiero registrarme en la plataforma proporcionando mis datos básicos para crear una cuenta y acceder a las funcionalidades de TaskMaster. | Escenario 1: Dado que un visitante proporciona datos válidos, cuando completa el registro, entonces el sistema crea una nueva cuenta y permite el acceso. <br> Escenario 2: Dado que un visitante intenta registrarse con un correo ya existente, cuando completa el registro, entonces el sistema rechaza la acción e informa que el correo ya está en uso.                                           |
+| US11     | Team Member / Team Leader | High     | EP02 | Inicio de sesión           | Como usuario registrado quiero autenticarme con mis credenciales para acceder a mi cuenta y gestionar mis proyectos.                                     | Escenario 1: Dado que un usuario proporciona credenciales válidas, cuando solicita autenticación, entonces el sistema valida los datos y concede acceso. <br> Escenario 2: Dado que un usuario proporciona credenciales inválidas, cuando solicita autenticación, entonces el sistema rechaza la acción e informa que los datos no son correctos.                                                      |
+| US12     | Team Member / Team Leader | Medium   | EP02 | Recuperación de contraseña | Como usuario registrado quiero restablecer mi contraseña en caso de olvido para poder acceder nuevamente a la plataforma.                                | Escenario 1: Dado que un usuario solicita restablecer su contraseña con un correo válido, cuando el sistema verifica que está registrado, entonces envía un método de recuperación. <br> Escenario 2: Dado que un usuario solicita restablecer su contraseña con un correo no registrado, cuando el sistema valida la información, entonces rechaza la acción e informa que no existe cuenta asociada. |
+| US13     | Team Member / Team Leader | Low      | EP02 | Cierre de sesión           | Como usuario registrado quiero finalizar mi sesión para garantizar la seguridad de mi cuenta en cualquier dispositivo.                                   | Escenario 1: Dado que un usuario tiene una sesión activa, cuando solicita cerrarla, entonces el sistema invalida las credenciales y finaliza la sesión. <br> Escenario 2: Dado que un usuario no tiene una sesión activa, cuando solicita cerrar sesión, entonces el sistema rechaza la acción e informa que no hay sesión activa.                                                                     |
+| US14     | Team Leader| High     | EP02 | Invitación de usuarios con código de acceso       | Como Team Leader, quiero invitar a los usuarios a través de un código de acceso para que se registren y luego puedan ser asignados a tareas dentro de los proyectos, asegurando que solo los usuarios autorizados puedan colaborar. | **Escenario 1**: Dado que el Team Leader genera un código de acceso único, cuando el usuario recibe el código e ingresa a la plataforma, entonces el sistema permite que el usuario se registre y se una al proyecto. <br> **Escenario 2**: Dado que el usuario se ha unido al proyecto mediante el código, cuando el Team Leader desea asignar tareas, entonces solo puede seleccionar a los usuarios que han ingresado con el código para ser asignados a las tareas. <br> **Escenario 3**: Dado que el Team Leader intenta invitar a un usuario mediante un código, cuando el código es inválido o caduca, el sistema notifica que el código no es válido y evita el registro del usuario. |
+| US015    | Team Leader | High     | EP03 | Registro de nuevos proyectos            | Como líder de equipo quiero crear un nuevo proyecto para organizar las tareas y asignar responsables de manera estructurada.                         | Escenario 1: Dado que el líder accede a la opción crear proyecto, cuando completa los campos requeridos (nombre, descripción y fechas) y confirma, entonces el sistema guarda el nuevo proyecto y lo muestra en su tablero. <br> Escenario 2: Dado que el líder intenta crear un proyecto sin nombre, cuando hace clic en guardar, entonces el sistema muestra un mensaje de error indicando que el nombre es obligatorio. |
+| US016    | Team Leader | High     | EP03 | Asignación de usuarios a proyectos      | Como líder de equipo quiero asignar usuarios a un proyecto para que puedan colaborar en sus tareas y actividades.                                    | Escenario 1: Dado que el administrador abre la opción asignar usuarios, cuando selecciona varios usuarios y guarda, entonces el sistema asigna a esos usuarios al proyecto y los notifica. <br> Escenario 2: Dado que el administrador intenta asignar un usuario ya agregado, cuando guarda los cambios, entonces el sistema evita duplicados y mantiene la lista correcta.                                               |
+| US017    | Team Leader | High     | EP03 | Asignar Tareas para los usuarios        | Como líder de equipo quiero asignar tareas específicas a los miembros para distribuir la carga de trabajo de forma clara.                            | Escenario 1: Dado que el líder selecciona una tarea, cuando asigna un usuario responsable y guarda, entonces el sistema registra la asignación y muestra el nombre del responsable en el tablero. <br> Escenario 2: Dado que el líder intenta asignar una tarea a un usuario inexistente, cuando confirma la acción, entonces el sistema muestra un mensaje de error y no guarda la asignación.                            |
+| US018    | Team Leader | Medium   | EP03 | Establecer prioridad de tareas          | Como líder de equipo, quiero asignar prioridades a las tareas dentro de un proyecto para garantizar que las tareas más importantes se hagan primero. | Escenario: Dado que el usuario agrega una nueva tarea, cuando selecciona una prioridad entre alta, media o baja, entonces el sistema ordena las tareas en el tablero según su nivel de prioridad.                                                                                                                                                                                                                          |
+| US019    | Team Member | High     | EP03 | Notificaciones de tareas asignadas      | Como miembro del equipo, quiero recibir una notificación cuando se me asigna una nueva tarea, para estar al tanto de mis responsabilidades.          | Escenario: Dado que el administrador asigna una tarea a un miembro del equipo, cuando la asignación se confirma, entonces el sistema envía una notificación en la aplicación y un correo electrónico al miembro correspondiente.                                                                                                                                                                                           |
+| US020    | Team Leader | Medium   | EP03 | Modificación de fechas límite de tareas | Como líder de equipo quiero modificar la fecha límite de las tareas para ajustar los plazos según las necesidades del proyecto.                      | Escenario 1: Dado que el líder de equipo accede a una tarea existente, cuando modifica la fecha límite y guarda los cambios, entonces el sistema actualiza la fecha y notifica al usuario asignado. <br> Escenario 2: Dado que el líder intenta establecer una fecha límite anterior a la fecha actual, cuando confirma el cambio, entonces el sistema muestra un mensaje de error indicando que la fecha no es válida.    |
+| US021    | Team Member | Medium   | EP03 | Modificación de la prioridad de tareas  | Como miembro del equipo quiero modificar la prioridad de una tarea para organizar mejor el trabajo según su urgencia e importancia.                  | Escenario 1: Dado que el usuario accede a la configuración de una tarea, cuando cambia la prioridad a alta, media o baja, entonces el sistema actualiza la prioridad y reordena las tareas en el tablero según este criterio. <br> Escenario 2: Dado que el usuario intenta guardar una tarea sin seleccionar prioridad, cuando confirma la acción, entonces el sistema asigna por defecto la prioridad “media”.           |
+| US022    | Team Member | Medium   | EP03 | Actualización de estado de tareas       | Como miembro del equipo quiero actualizar el estado de una tarea a completada o pendiente para reflejar con precisión su progreso.                   | Escenario 1: Dado que un miembro del equipo accede a una tarea asignada, cuando marca la tarea como completada, entonces el sistema cambia su estado a “Completada” y lo refleja en el tablero. <br> Escenario 2: Dado que un miembro del equipo accede a una tarea, cuando la desmarca como completada, entonces el sistema cambia su estado a “Pendiente” y lo refleja en el tablero.                                    |
+| US023    | Team Member | High     | EP04 | Ver progreso de tareas en tiempo real | Como miembro del equipo, quiero ver el progreso de las tareas asignadas en tiempo real para tener una visión clara del estado de los proyectos. | Escenario 1: Dado que el usuario accede al tablero de tareas, cuando consulta las tareas listadas, entonces el sistema muestra indicadores de estado (Pendiente, En progreso, Completada) y actualiza los avances de forma automática. <br> Escenario 2: Dado que un miembro del equipo cambia el estado de una tarea (por ejemplo, de "En progreso" a "Completada"), entonces el sistema actualiza el progreso en tiempo real para reflejar el cambio.     |
+| US024    | Team Leader | High     | EP04 | Ver métricas de rendimiento           | Como líder de equipo, quiero ver métricas de rendimiento de cada tarea y miembro para evaluar el progreso y la productividad.                   | Escenario 1: Dado que el gerente de proyectos accede a la sección de métricas, cuando solicita un reporte de desempeño, entonces el sistema genera un gráfico o reporte con tareas completadas, retrasadas y porcentaje de avance de cada miembro y proyecto. <br> Escenario 2: Dado que el líder de equipo selecciona un periodo específico (por ejemplo, mensual), entonces el sistema genera métricas de rendimiento solo para ese período seleccionado. |
+| US025    | Team Member | Medium   | EP04 | Visualizar calendario de tareas       | Como miembro del equipo, quiero ver un calendario con mis tareas y sus fechas límite, para organizar mejor mis entregas.                        | Escenario 1: Dado que un miembro tiene tareas con fechas límite, cuando consulta el calendario del proyecto, entonces el sistema muestra las tareas distribuidas según sus plazos. <br> Escenario 2: Dado que el miembro del equipo consulta el calendario, cuando pasa el ratón sobre una tarea, entonces el sistema muestra un resumen rápido de la tarea, incluyendo su nombre y fecha límite.                                                                      |
+| US026    | Team Leader | High     | EP05 | Generar reporte de desempeño por miembro | Como líder de equipo, quiero generar un reporte de desempeño por cada miembro de equipo para identificar áreas de mejora.                     | **Escenario 1**: El usuario selecciona "Generar reporte de desempeño" y el sistema debe permitir visualizar las métricas de cada miembro, como tareas completadas, en progreso y retrasadas. <br> **Escenario 2**: Dado que el líder solicita el reporte de desempeño, cuando el reporte se genera, entonces el sistema permite exportarlo en formato PDF o Excel.                                                            |
+| US027    | Team Leader | High     | EP05 | Reporte de tareas cumplidas y retrasadas | Como líder de equipo, quiero recibir un reporte de tareas cumplidas y retrasadas para saber qué aspectos del proyecto necesitan más atención. | **Escenario 1**: El sistema debe generar un reporte con un desglose de tareas cumplidas y retrasadas. <br> **Escenario 2**: El sistema debe permitir exportar el reporte en formato PDF o Excel para su distribución.                                                                                                                                                                                                         |
+| US028    | Team Member | Medium   | EP05 | Visualizar resumen semanal de avances    | Como miembro del equipo, quiero ver un resumen semanal de mis avances para tener claridad sobre mi progreso en las tareas.                    | **Escenario 1**: Dado que el usuario accede a la sección de reportes, cuando selecciona "Resumen semanal", entonces el sistema muestra un reporte con el número de tareas completadas, en progreso y pendientes durante la última semana. <br> **Escenario 2**: Dado que el usuario selecciona un periodo específico (por ejemplo, de lunes a viernes), entonces el sistema ajusta el reporte según las fechas seleccionadas. |
+| US29     | Team Member | High     | EP06 | Notificación de tarea asignada            | Como miembro del equipo, quiero recibir una notificación cuando se me asigne una nueva tarea para estar al tanto de mis responsabilidades.                                    | **Escenario 1**: Dado que un Team Leader asigna una nueva tarea, cuando la asignación se confirma, el sistema envía una notificación en la app y por correo electrónico al miembro. <br> **Escenario 2**: Dado que un Team Leader asigna una tarea, cuando revisa la bandeja de notificaciones, entonces el sistema muestra la tarea asignada y el nombre del miembro asignado.                                              |
+| US30     | Team Member | High     | EP06 | Notificación de fecha límite cercana      | Como miembro del equipo, quiero recibir una notificación cuando la fecha límite de una tarea esté cerca para poder priorizarla.                                               | **Escenario 1**: Dado que una tarea tiene una fecha límite próxima, cuando la fecha límite se acerque a 24 horas, el sistema envía una notificación en la app y por correo. <br> **Escenario 2**: Dado que una tarea está cerca de su fecha límite, cuando el Team Leader ingresa al tablero de tareas, el sistema resalta las tareas cercanas a la fecha límite y envía una notificación.                                   |
+| US31     | Team Leader | High     | EP06 | Notificación de tarea completada          | Como líder de equipo, quiero recibir una notificación cuando un miembro complete una tarea asignada para hacer un seguimiento del progreso.                                   | **Escenario 1**: Dado que un Team Member marca una tarea como completada, el sistema envía una notificación en la app y por correo electrónico al líder de equipo. <br> **Escenario 2**: Dado que un Team Member ha completado una tarea, cuando ingresa al tablero, el sistema marca la tarea como completada y envía una notificación de progreso.                                                                         |
+| US32     | Team Member | Medium   | EP06 | Notificación de nuevo mensaje en proyecto | Como miembro del equipo, quiero recibir notificaciones cuando se agregue un nuevo mensaje en un proyecto para mantenerme actualizado.                                         | **Escenario 1**: Dado que un mensaje es agregado en el proyecto, cuando el Team Leader o otro miembro envía el mensaje, el sistema envía una notificación dentro de la app y por correo electrónico a los miembros. <br> **Escenario 2**: Dado que el Team Leader envía un mensaje, cuando el Team Member ingresa a la plataforma, el sistema marca el mensaje como leído y muestra una notificación de "nuevo mensaje".     |
+| US33     | Team Member | Medium   | EP06 | Notificación de actualización de tareas   | Como miembro del equipo, quiero recibir notificaciones cuando se actualice una tarea asignada (como cambio de fecha, prioridad o estado) para estar informado de los cambios. | **Escenario 1**: Dado que el Team Leader actualiza una tarea, cuando el Team Member accede al proyecto, el sistema envía una notificación dentro de la app y por correo electrónico. <br> **Escenario 2**: Dado que el Team Leader actualiza una tarea (por ejemplo, cambia la fecha o la prioridad), cuando el Team Leader revisa el tablero, el sistema resalta las tareas actualizadas y muestra una notificación visual. |
+| TS01     | Developer | High     | EP08 | Validación de seguridad en la API                | Como desarrollador, quiero verificar que la API de TaskMaster esté segura para proteger los datos de los usuarios.              | **Escenario**: El equipo de desarrollo realiza pruebas de seguridad para asegurarse de que las credenciales y datos sensibles de los usuarios están correctamente encriptados. |
+| TS02     | Developer | High     | EP08 Optimización del rendimiento de la base de datos | Como desarrollador, quiero mejorar el rendimiento de las consultas en la base de datos para que TaskMaster funcione más rápido. | **Escenario**: El sistema realiza pruebas de carga y optimiza las consultas de la base de datos para garantizar tiempos de respuesta más rápidos.                              |
+| TS03     | Developer   | Alta     | EP08  | Gestión de Proyectos     | Como desarrollador, quiero implementar la creación, modificación y eliminación de proyectos, para mantener la información organizada y coherente.       | Escenario: Dado que un usuario envía una solicitud válida para crear un proyecto, cuando la API procesa la petición, entonces el sistema registra el nuevo proyecto y lo devuelve en la respuesta.                                                     |
+| TS04     | Developer   | Alta     | EP08  | Gestión de Tareas        | Como desarrollador, quiero implementar operaciones para registrar, actualizar estados o prioridades, y eliminar tareas, para reflejar el flujo de trabajo. | Escenario: Dado que un usuario actualiza el estado de una tarea, cuando la API procesa la solicitud, entonces el sistema guarda el cambio y refleja el nuevo estado en la base de datos.                                                                |
+| TS05     | Developer   | Media    | EP08  | Administración de Usuarios | Como desarrollador, quiero implementar el manejo de alta, edición y baja de usuarios, para que roles y permisos se mantengan alineados con los proyectos. | Escenario: Dado que un administrador elimina un usuario, cuando la API procesa la solicitud, entonces el sistema desactiva el usuario y asegura que no tenga acceso a futuros proyectos.                                                               |
+| TS06     | Developer   | Media    | EP08  | Manejo de Reportes       | Como desarrollador, quiero implementar la generación, actualización y almacenamiento de reportes, para que los líderes accedan a información consistente. | Escenario: Dado que un líder solicita un reporte de desempeño, cuando la API procesa la petición, entonces el sistema genera el documento con métricas actualizadas y lo devuelve en formato descargable (PDF o Excel).                               |
+| SS1      | Team Member | High     | EP09 | Integración con herramientas de comunicación | Como miembro del equipo, quiero que TaskMaster se integre con Gmail para recibir actualizaciones sobre mis tareas, para mantenerme al tanto de los cambios importantes sin tener que acceder continuamente a la plataforma. | **Escenario**: El usuario vincula su cuenta de Slack con TaskMaster. Cuando una tarea se asigna o actualiza, el sistema debe enviar una notificación en el canal de Slack correspondiente. |
+| SS2      | Team Member | High     | EP09 | Integración con Google Calendar              | Como miembro del equipo, quiero que TaskMaster sincronice mis tareas con Google Calendar para no olvidar mis plazos.                                                                                                        | **Escenario**: El usuario conecta su cuenta de Google Calendar. Las tareas con fechas establecidas se sincronizan automáticamente en su calendario.                                        |
 
 #### 2.4.2. Impact Mapping
+Segmento Team leader
+![Impact](Assets/TB1/Impact%20map%201.png)
+Segmento Team member
+![Impact](Assets/TB1/Impact%20map%202.png)
 
 #### 2.4.3. Product Backlog
+
+| Orden | Código US | Título                                               | Story Points |
+|-------|-----------|------------------------------------------------------|--------------|
+| 1     | US014     | Invitación de usuarios con código de acceso           | 8 |
+| 2     | US015     | Registro de nuevos proyectos                          | 8 |
+| 3     | US016     | Asignación de usuarios a proyectos                    | 8 |
+| 4     | US017     | Asignar Tareas para los usuarios                      | 8 |
+| 5     | US019     | Notificaciones de tareas asignadas                    | 8 |
+| 6     | US023     | Ver progreso de tareas en tiempo real                 | 8 |
+| 7     | US024     | Ver métricas de rendimiento                           | 8 |
+| 8     | US026     | Generar reporte de desempeño por miembro              | 8 |
+| 9     | US027     | Reporte de tareas cumplidas y retrasadas              | 8 |
+| 10    | US029     | Notificación de tarea asignada                        | 8 |
+| 11    | US030     | Notificación de fecha límite cercana                  | 8 |
+| 12    | US031     | Notificación de tarea completada                      | 8 |
+| 13    | TS01      | Validación de seguridad en la API                     | 8 |
+| 14    | TS02      | Optimización del rendimiento de la base de datos      | 8 |
+| 15    | TS03      | Gestión de Proyectos (implementación en backend)      | 8 |
+| 16    | TS04      | Gestión de Tareas (implementación en backend)         | 8 |
+| 17    | SS1       | Integración con herramientas de comunicación (Slack)  | 8 |
+| 18    | SS2       | Integración con Google Calendar                       | 8 |
+| 19    | US010     | Registro de usuario                                   | 8 |
+| 20    | US011     | Inicio de sesión                                      | 8 |
+| 21    | US012     | Recuperación de contraseña                            | 5 |
+| 22    | US018     | Establecer prioridad de tareas                        | 5 |
+| 23    | US020     | Modificación de fechas límite de tareas               | 5 |
+| 24    | US021     | Modificación de la prioridad de tareas                | 5 |
+| 25    | US022     | Actualización de estado de tareas                     | 5 |
+| 26    | US025     | Visualizar calendario de tareas                       | 5 |
+| 27    | US028     | Visualizar resumen semanal de avances                 | 5 |
+| 28    | US032     | Notificación de nuevo mensaje en proyecto             | 5 |
+| 29    | US033     | Notificación de actualización de tareas               | 5 |
+| 30    | TS05      | Administración de Usuarios (backend)                  | 5 |
+| 31    | TS06      | Manejo de Reportes (backend)                          | 5 |
+| 32    | US013     | Cierre de sesión                                      | 3 |
+| 33    | US05      | Adaptabilidad móvil                                   | 3 |
+| 34    | US06      | Navegación mediante Encabezado                        | 3 |
+| 35    | US09      | Pie de página                                         | 3 |
+| 36    | US01      | Información general sobre TaskMaster                  | 8 |
+| 37    | US02      | Llamado a la acción para descargar la aplicación      | 8 |
+| 38    | US08      | About the team                                        | 8 |
+| 39    | US03      | Testimonios de usuarios                               | 5 |
+| 40    | US04      | Muestra de planes y precios                           | 5 |
+| 41    | US07      | Misión y visión                                       | 5 |
+
+
+
 
 ### 2.5. Strategic-Level Domain-Driven Design
 
@@ -1159,6 +1267,46 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 #### 2.5.2. Context Mapping
 
+El Context Mapping es un proceso clave dentro de la metodología Domain-Driven Design (DDD), utilizado para mapear y visualizar las interacciones y relaciones estructurales entre los diferentes bounded contexts en un sistema. Un bounded context es una delimitación clara en la que un modelo específico tiene validez y significado, y dentro de esa área, las reglas de negocio y los datos son gestionados de forma coherente.
+
+En el caso de **TaskMaster**, nuestra aplicación de gestión de proyectos, el Context Mapping nos permite entender cómo las distintas áreas funcionales del sistema se interconectan. A través de esta visualización, podemos identificar dependencias entre los diferentes dominios, lo que facilita la toma de decisiones sobre la arquitectura y las integraciones de nuestra plataforma. Además, permite entender de manera más clara las responsabilidades de cada contexto y cómo interactúan entre sí.
+
+Se identificaron los siguientes bounded context en el sistema: 
+
+1. Registro y autentificacion de usuario
+
+- Este contexto se encarga de la autenticación y autorización de los usuarios, garantizando que solo las personas autorizadas puedan acceder a las funcionalidades de TaskMaster.
+
+2. Gestión de Proyectos y Tareas
+
+- Se encarga de la creación y gestión de proyectos y tareas, asignando responsables, plazos y prioridades, y permitiendo la distribución organizada del trabajo entre los miembros del equipo.
+
+3. Visualización y Seguimiento
+
+- Permite la visualización de tareas y proyectos a través de diferentes interfaces, como tableros, calendarios, y métricas, para facilitar el seguimiento en tiempo real del progreso y cumplimiento de las fechas de entrega.
+
+4. Analítica y Reportes
+
+- Genera reportes de desempeño y productividad del equipo, utilizando datos de proyectos y tareas, para facilitar la toma de decisiones basadas en datos.
+
+5. Notificaciones
+
+- Maneja el envío de notificaciones a los usuarios, incluyendo tareas asignadas, actualizaciones, y recordatorios sobre fechas límite, asegurando que los miembros del equipo estén informados en tiempo real.
+
+| **Destino (Downstream)**          | **Origen (Upstream)**             | **Tipo de Relación**     | **Comentario**                                                                                                                                                                                               |
+| --------------------------------- | --------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Visualización y Seguimiento**   | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | El contexto de Gestión de Proyectos y Tareas es proveedor de datos de tareas y proyectos, que son consumidos por el contexto de Visualización y Seguimiento.                                                 |
+| **Analítica y Reportes**          | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | Los datos de proyectos y tareas generados en el contexto de Gestión de Proyectos se consumen en Analítica y Reportes para generar informes de desempeño.                                                     |
+| **Notificaciones**                | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | Las actualizaciones de tareas y proyectos en el contexto de Gestión de Proyectos y Tareas generan notificaciones que son enviadas a los usuarios por el contexto de Notificaciones.                          |
+| **Notificaciones**                | **Visualización y Seguimiento**   | **Customer/Supplier**    | El contexto de Visualización y Seguimiento puede generar notificaciones para informar a los usuarios sobre el progreso de tareas y cambios en el estado de los proyectos.                                    |
+| **Gestión de Proyectos y Tareas** | **Registro y autentificacion de usuario**                           | **Partnership**          | Ambos contextos colaboran estrechamente. Registro y autentificacion de usuario gestiona el acceso de los usuarios, mientras que Gestión de Proyectos y Tareas asegura que las tareas y proyectos sean asignados solo a usuarios autorizados.   |
+| **Analítica y Reportes**          | **Notificaciones**                | **Partnership**          | El contexto de Notificaciones puede usar los reportes generados en Analítica y Reportes para crear alertas o notificaciones sobre el desempeño del equipo.                                                   |
+| **Registro y autentificacion de usuario**                           | **Todos los Contextos**           | **Shared Kernel**        | La información sobre usuarios, roles y autenticación se comparte entre todos los contextos para garantizar el acceso controlado a las funcionalidades del sistema.                                           |
+| **Integraciones Técnicas**        | **Gestión de Proyectos y Tareas** | **Anticorruption Layer** | Si TaskMaster se integra con sistemas externos (por ejemplo, CRM o herramientas de gestión de proyectos), el Anticorruption Layer garantiza que los datos externos no alteren el modelo interno del sistema. |
+
+![ddd](Assets/TB1/Diagram.png)
+
+
 #### 2.5.3. Software Architecture
 
 En esta sección se presenta de forma breve la arquitectura del sistema TaskMaster: su organización en bounded contexts y contenedores, las responsabilidades principales de cada uno y cómo se comunican entre sí y con sistemas externos. El diseño usa un API Gateway como punto de entrada, servicios independientes para cada dominio (proyectos, visualización/seguimiento, reportes, notificaciones y autenticación) y una base de datos común, buscando modularidad, escalabilidad y facilidad de mantenimiento para el equipo de desarrollo.
@@ -1182,6 +1330,283 @@ El diagrama de despliegue representa cómo los principales componentes del siste
 ![ddd](Assets/TB1/DeploymentDiagram.PNG)
 
 ### 2.6. Tactical-Level Domain-Driven Design
+
+#### 2.6.1. Bounded Context: IRegistro y autentificacion de usuario
+
+##### 4.2.1.1. Domain Layer
+
+La Domain Layer es el núcleo que orquesta y gestiona las reglas de negocio relacionadas con la autenticación y autorización de usuarios en la plataforma TaskMaster. En este contexto, las entidades como User, Role, y EmailAddress, junto con los servicios y métodos de validación, permiten gestionar la identidad de los usuarios, sus roles, y la verificación de credenciales.
+
+**Objetivo:**
+
+La capa de dominio tiene como objetivo representar las entidades y servicios fundamentales del dominio de la identidad y acceso, cubriendo desde la creación de cuentas hasta la autenticación y autorización para asegurar que solo usuarios autorizados puedan acceder a las funcionalidades del sistema.
+
+**1. Aggregate: User**
+
+**Descripción:**
+
+ El agregado User actúa como la raíz del modelo y encapsula todos los datos y comportamientos relacionados con un usuario del sistema. Esta entidad representa la cuenta de un usuario y contiene las credenciales, roles y la información necesaria para la autenticación. En la base de datos, se representa con la tabla users.
+
+| **Atributo** | **Tipo**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| `id`         | Long      | Identificador único del usuario (autogenerado).       |
+| `username`   | String    | Nombre de usuario único para identificar al usuario.  |
+| `password`   | String    | Contraseña de acceso del usuario.                     |
+| `roles`      | Set<Role> | Conjunto de roles asignados al usuario. (TEAM_MEMBER, TEAM_LEADER).              |
+| `email`      | String    | Dirección de correo electrónico validada del usuario. |
+| `createdAt`  | Date      | Fecha de creación del usuario.                        |
+| `updatedAt`  | Date      | Fecha de última actualización del usuario.            |
+
+**Métodos:**
+- addRoles(List<Role> roles): Añade un conjunto de roles al usuario, retornando el usuario con los roles actualizados.
+
+- getAuthorities(): Retorna el conjunto de roles del usuario, implementando la interfaz GrantedAuthority, permitiendo la integración con Spring Security para la autorización de acceso.
+
+- isAccountNonExpired(): Retorna true si la cuenta del usuario no ha expirado.
+
+- isAccountNonLocked(): Retorna true si la cuenta del usuario no está bloqueada.
+
+- isCredentialsNonExpired(): Retorna true si las credenciales del usuario no han expirado.
+
+- isEnabled(): Retorna true si la cuenta está habilitada.
+
+- getUsername(): Retorna el nombre de usuario.
+
+- getPassword(): Retorna la contraseña del usuario.
+
+**2. Value Object: EmailAddress**
+
+**Descripción:**
+
+ El objeto de valor EmailAddress representa una dirección de correo electrónico válida. Es un objeto embebido que valida y maneja los datos relacionados con la dirección de correo.
+
+| **Atributo** | **Tipo** | **Descripción**                                                                          |
+| ------------ | -------- | ---------------------------------------------------------------------------------------- |
+| `email`      | String   | Dirección de correo electrónico validada (máx. 50 caracteres, formato válido de correo). |
+
+
+**Métodos:**
+- EmailAddress(String email): Constructor que recibe un correo electrónico y lo valida según las restricciones del formato y longitud.
+
+- EmailAddress(): Constructor por defecto que inicializa el objeto con un valor null.
+
+**3. Value Object: Role**
+
+**Descripción:**
+
+El objeto de valor Role define los roles de los usuarios en TaskMaster. Los roles son TEAM_MEMBER y TEAM_LEADER, y están representados como valores enumerados. Los roles son fundamentales para determinar los permisos y el acceso dentro de la plataforma.
+
+| Atributo | Tipo       | Descripción                                              |
+|----------|------------|----------------------------------------------------------|
+| name     | RoleEnum   | Nombre del rol, representado como un valor enumerado (TEAM_MEMBER, TEAM_LEADER). |
+
+**Métodos:**
+- `getStringName()`: Retorna el nombre del rol como una cadena de texto.
+- `getDefaultRole()`: Retorna el rol predeterminado del sistema, en este caso TEAM_MEMBER.
+- `toRoleFromName(String name)`: Convierte el nombre de un rol en una instancia del objeto Role.
+- `validateRoleSet(List<Role> roles)`: Valida un conjunto de roles, retornando el rol predeterminado (TEAM_MEMBER) si el conjunto está vacío o nulo.
+- `getAuthority()`: Retorna el nombre del rol, implementando la interfaz GrantedAuthority para la integración con Spring Security.
+
+**4. Entity: Role**
+
+**Descripción:**
+La entidad Role representa los roles de un usuario dentro del sistema y define los permisos y responsabilidades asociados. Se utiliza para realizar las comprobaciones de seguridad y autorización en las funcionalidades del sistema.
+
+| Atributo | Tipo       | Descripción                                              |
+|----------|------------|----------------------------------------------------------|
+| id       | Long       | Identificador único del rol.                             |
+| name     | String     | Nombre del rol, definido como un valor de enumeración (TEAM_MEMBER, TEAM_LEADER). |
+
+**Métodos:**
+- `getStringName()`: Retorna el nombre del rol como una cadena de texto.
+- `getDefaultRole()`: Devuelve el rol predeterminado del sistema (TEAM_MEMBER).
+- `toRoleFromName(String name)`: Convierte el nombre de un rol en una instancia de la entidad Role.
+- `validateRoleSet(List<Role> roles)`: Valida un conjunto de roles y retorna el rol predeterminado si no se encuentra ningún rol.
+- `getAuthority()`: Devuelve el nombre del rol, implementando la interfaz GrantedAuthority para la integración con Spring Security.
+
+**5. Domain Service: AuthenticationService**
+
+**Descripción:**
+El servicio AuthenticationService encapsula las reglas de negocio relacionadas con la autenticación, validando las credenciales del usuario y gestionando los procesos de inicio de sesión, cierre de sesión y recuperación de contraseñas.
+
+**Métodos:**
+- `authenticate(String username, String password)`: Valida las credenciales del usuario y autentica al mismo.
+- `logout(User user)`: Finaliza la sesión del usuario, invalidando el token de acceso o sesión.
+- `resetPassword(String email)`: Inicia el proceso de recuperación de contraseña, enviando un enlace de restablecimiento al correo electrónico registrado.
+
+**6. Repository: UserRepository**
+
+**Descripción:**
+El UserRepository es una abstracción para la persistencia de los usuarios en la base de datos, permitiendo realizar operaciones CRUD de manera efectiva.
+
+**Métodos:**
+- `save(User user)`: Guarda un nuevo usuario o actualiza uno existente en la base de datos.
+- `findByUsername(String username)`: Recupera un usuario por su nombre de usuario.
+- `findByEmail(String email)`: Recupera un usuario por su correo electrónico.
+- `findById(Long id)`: Recupera un usuario por su identificador único.
+
+**En la Domain Layer de TaskMaster**, hemos definido los roles como TEAM_MEMBER y TEAM_LEADER dentro de un modelo de Domain-Driven Design (DDD). Estas entidades y objetos de valor representan las reglas de negocio fundamentales del sistema de autenticación y autorización. La clase User se asocia con los roles, y se valida el acceso y las credenciales a través de servicios como AuthenticationService y repositorios como UserRepository.
+
+### 4.2.1.2. Interface Layer: Registro y autentificacion de usuario
+
+La Interface Layer es la capa que expone los endpoints de la aplicación, permitiendo la interacción entre los usuarios y el sistema. Los controladores son responsables de recibir las peticiones, validarlas y coordinar con los servicios correspondientes para ejecutar las acciones solicitadas. En esta capa, no se implementan reglas de negocio, sino que se coordina la comunicación entre las solicitudes de los usuarios y la lógica del dominio.
+
+**Controlador: AuthenticationController**
+
+**Descripción:**
+El `AuthenticationController` maneja los endpoints relacionados con la autenticación de los usuarios. Este controlador es responsable del inicio de sesión (signIn), el registro de nuevos usuarios (signUp), y otros procesos relacionados con la autenticación.
+
+| Método   | Ruta                             | Descripción                                                                                  |
+|----------|----------------------------------|----------------------------------------------------------------------------------------------|
+| signIn   | POST /api/v1/authentication/sign-in  | Maneja la solicitud de inicio de sesión. Recibe un objeto `SignInResource` y llama al servicio de autenticación. Si la autenticación es exitosa, devuelve un recurso de usuario autenticado. Si falla, retorna un error 401. |
+| signUp   | POST /api/v1/authentication/sign-up  | Maneja la solicitud de registro de nuevos usuarios. Recibe un objeto `SignUpResource`, lo convierte en un comando, y llama al servicio para registrar al usuario. Si es exitoso, devuelve el recurso de usuario creado. Si hay un error, retorna un error 400. |
+
+**Dependencias:**
+- `UserCommandService`: Servicio que maneja los comandos de creación y autenticación de usuarios.
+- `SignInCommandFromResourceAssembler`: Utilidad para convertir el recurso de inicio de sesión en un comando.
+- `SignUpCommandFromResourceAssembler`: Utilidad para convertir el recurso de registro en un comando.
+- `AuthenticatedUserResourceFromEntityAssembler`: Utilidad para convertir el usuario autenticado en un recurso.
+- `UserResourceFromEntityAssembler`: Utilidad para convertir el usuario registrado en un recurso.
+
+**Controlador: RolesController**
+
+**Descripción:**
+El `RolesController` maneja los endpoints relacionados con la gestión de roles. Los roles, en este caso, son `TEAM_MEMBER` y `TEAM_LEADER`, y se usan para determinar los permisos de acceso dentro del sistema.
+
+| Método       | Ruta                           | Descripción                                                                         |
+|--------------|--------------------------------|-------------------------------------------------------------------------------------|
+| getAllRoles  | GET /api/v1/roles              | Maneja la solicitud para obtener todos los roles. Llama al servicio de consultas, obtiene la lista de roles y los convierte en recursos para la respuesta. Devuelve una lista de recursos de roles. |
+
+**Dependencias:**
+- `RoleQueryService`: Servicio encargado de manejar las consultas relacionadas con roles.
+- `GetAllRolesQuery`: Consulta que se utiliza para obtener todos los roles.
+- `RoleResourceFromEntityAssembler`: Utilidad para convertir las entidades de roles en recursos para enviarlos en la respuesta.
+
+**Controlador: UsersController**
+
+**Descripción:**
+El `UsersController` maneja los endpoints relacionados con la gestión de usuarios. Permite obtener todos los usuarios, obtener un usuario específico por su ID, y actualizar ciertos datos del usuario, como el estado de verificación del apoderado.
+
+| Método                    | Ruta                                | Descripción                                                                                           |
+|---------------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------|
+| getAllUsers               | GET /api/v1/users                   | Maneja la solicitud para obtener todos los usuarios. Llama al servicio de consultas y devuelve la lista de usuarios. |
+| getUserById               | GET /api/v1/users/{userId}          | Maneja la solicitud para obtener un usuario específico por su ID. Si el usuario existe, lo convierte en un recurso y lo devuelve. Si no, retorna un error 404. |
+| updateProofingApoderado   | PUT /api/v1/users/{userId}/update-proofing | Maneja la solicitud para actualizar el estado de verificación de un apoderado. Recibe un objeto `UpdateProofingApoderadoResource` y lo convierte en un comando para actualizar el estado. Si la operación es exitosa, devuelve un mensaje de éxito. |
+
+**Dependencias:**
+- `UserQueryService`: Servicio encargado de manejar las consultas relacionadas con usuarios.
+- `UserCommandService`: Servicio encargado de manejar los comandos relacionados con la gestión de usuarios.
+- `GetAllUsersQuery`: Consulta que se utiliza para obtener todos los usuarios.
+- `GetUserByIdQuery`: Consulta que se utiliza para obtener un usuario específico por su ID.
+- `UpdateProofingApoderadoCommandFromResourceAssembler`: Utilidad para convertir el recurso de actualización de verificación en un comando.
+- `UserResourceFromEntityAssembler`: Utilidad para convertir las entidades de usuario en recursos que se envían en la respuesta.
+
+**Flujo de Trabajo:**
+- **Autenticación**: Los usuarios pueden registrarse (signUp) o iniciar sesión (signIn) a través de la API, lo que invoca los servicios correspondientes para crear una cuenta o validar credenciales.
+- **Gestión de Roles**: Los administradores pueden consultar los roles disponibles a través del endpoint de roles.
+- **Gestión de Usuarios**: Los usuarios y administradores pueden consultar la lista de usuarios, obtener información específica de un usuario o actualizar ciertos datos como el estado de verificación de un apoderado.
+
+En esta capa, los controladores son los encargados de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados, y devolver una respuesta adecuada. Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o los servicios, actuando como una interfaz entre los usuarios y la lógica del negocio. Los controladores presentados permiten gestionar la autenticación de usuarios, la gestión de roles, y la administración de usuarios dentro del sistema TaskMaster.
+
+### 4.2.1.3. Application Layer: Registro y autentificacion de usuario
+
+La **Application Layer** es responsable de coordinar la lógica de negocio que se ejecuta en respuesta a los comandos y consultas. Aquí, los **Command Handlers** manejan la creación, actualización y eliminación de datos, mientras que los **Query Handlers** gestionan las consultas para obtener información del sistema. Además, esta capa garantiza que todas las verificaciones y reglas de negocio se implementen antes de que la información se procese o se persista.
+
+**Servicio: UserCommandServiceImpl**
+
+**Descripción:**
+El `UserCommandServiceImpl` maneja los comandos relacionados con los usuarios, como el registro de nuevos usuarios, inicio de sesión, y la actualización del estado de verificación de apoderados. Este servicio coordina la creación de nuevos usuarios, la autenticación y la modificación de sus datos.
+
+| Método                           | Descripción                                                                                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| handle(SignUpCommand)           | Maneja el comando de registro de un nuevo usuario. Verifica la unicidad del nombre de usuario y correo electrónico. Si todo es válido, crea un nuevo usuario, lo guarda en el repositorio y devuelve el usuario creado. |
+| handle(SignInCommand)           | Maneja el comando de inicio de sesión. Verifica las credenciales del usuario (nombre de usuario y contraseña). Si es válido, genera un token de autenticación y lo devuelve junto con los datos del usuario. |
+| updateProofingApoderado(UpdateProofingApoderadoCommand) | Actualiza el estado de verificación de apoderado para un usuario. Verifica que el usuario tenga el rol adecuado y actualiza su estado en el repositorio. |
+
+**Dependencias:**
+- `UserRepository`: Repositorio encargado de la persistencia de los usuarios.
+- `HashingService`: Servicio para la codificación y validación de contraseñas.
+- `TokenService`: Servicio que genera tokens de autenticación para los usuarios.
+- `RoleRepository`: Repositorio encargado de gestionar los roles de los usuarios.
+- `User`: Entidad que representa a un usuario.
+- `SignUpCommand`: Comando para registrar un nuevo usuario.
+- `SignInCommand`: Comando para iniciar sesión con un usuario.
+- `UpdateProofingApoderadoCommand`: Comando para actualizar el estado de verificación de apoderado.
+
+**Servicio: UserQueryServiceImpl**
+
+**Descripción:**
+El `UserQueryServiceImpl` maneja las consultas relacionadas con los usuarios, permitiendo obtener información sobre los usuarios registrados. Este servicio es responsable de devolver los usuarios por su nombre, ID, o todos los usuarios registrados.
+
+| Método                           | Descripción                                                                                               |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------|
+| handle(GetUserByUsernameQuery)  | Maneja la consulta para obtener un usuario por su nombre de usuario. Devuelve un `Optional<User>` que puede estar vacío si no se encuentra el usuario. |
+| handle(GetUserByIdQuery)        | Maneja la consulta para obtener un usuario por su ID. Devuelve un `Optional<User>` que puede estar vacío si no se encuentra el usuario. |
+| handle(GetAllUsersQuery)        | Maneja la consulta para obtener todos los usuarios registrados. Devuelve una lista de objetos `User`. |
+
+**Dependencias:**
+- `UserRepository`: Repositorio encargado de la persistencia de los usuarios.
+- `User`: Entidad que representa a un usuario.
+- `GetUserByUsernameQuery`: Consulta para obtener un usuario por nombre de usuario.
+- `GetUserByIdQuery`: Consulta para obtener un usuario por su ID.
+- `GetAllUsersQuery`: Consulta para obtener todos los usuarios.
+
+**Servicio: RoleCommandServiceImpl**
+
+**Descripción:**
+El `RoleCommandServiceImpl` maneja los comandos relacionados con los roles, incluyendo la creación y inicialización de roles. En este caso, nos aseguramos de que los roles esenciales como `TEAM_MEMBER` y `TEAM_LEADER` estén presentes en el sistema.
+
+| Método                          | Descripción                                                                                     |
+|---------------------------------|-------------------------------------------------------------------------------------------------|
+| handle(SeedRolesCommand)        | Maneja el comando para inicializar los roles en el sistema. Verifica si los roles ya existen en el repositorio. Si no, los crea y los guarda. |
+| handle(CreateRoleCommand)       | Maneja el comando para crear un nuevo rol. Verifica si el rol ya existe antes de crearlo. |
+
+**Dependencias:**
+- `RoleRepository`: Repositorio encargado de la persistencia de los roles.
+- `Role`: Entidad que representa un rol en el sistema.
+- `SeedRolesCommand`: Comando para inicializar los roles en el sistema.
+- `CreateRoleCommand`: Comando para crear un nuevo rol en el sistema.
+
+**Servicio: RoleQueryServiceImpl**
+
+**Descripción:**
+El `RoleQueryServiceImpl` maneja las consultas relacionadas con los roles, permitiendo obtener información sobre los roles existentes, como `TEAM_MEMBER` y `TEAM_LEADER`.
+
+| Método                          | Descripción                                                                                 |
+|---------------------------------|---------------------------------------------------------------------------------------------|
+| handle(GetAllRolesQuery)        | Maneja la consulta para obtener todos los roles registrados en el sistema. Devuelve una lista de objetos `Role`. |
+| handle(GetRoleByNameQuery)      | Maneja la consulta para obtener un rol por su nombre. Devuelve un `Optional<Role>` que puede estar vacío si no se encuentra el rol. |
+
+**Dependencias:**
+- `RoleRepository`: Repositorio encargado de la persistencia de los roles.
+- `Role`: Entidad que representa un rol en el sistema.
+- `GetAllRolesQuery`: Consulta para obtener todos los roles registrados.
+- `GetRoleByNameQuery`: Consulta para obtener un rol por nombre.
+
+**Flujos de Comandos y Consultas:**
+
+**Comandos:**
+
+- **Registro de usuario (SignUpCommand):**  
+  El servicio `UserCommandServiceImpl` maneja el comando `SignUpCommand`, que crea un nuevo usuario verificando la unicidad del nombre de usuario y correo electrónico. Si los datos son válidos, el usuario es creado y almacenado en el repositorio.
+
+- **Inicio de sesión (SignInCommand):**  
+  El servicio `UserCommandServiceImpl` maneja el comando `SignInCommand`, que valida las credenciales del usuario (nombre de usuario y contraseña), genera un token de autenticación y lo devuelve junto con los datos del usuario.
+
+- **Actualización de verificación de apoderado (UpdateProofingApoderadoCommand):**  
+  Este comando es manejado por `UserCommandServiceImpl` y permite actualizar el estado de verificación de un apoderado para un usuario.
+
+**Consultas:**
+
+- **Obtener un usuario por nombre de usuario (GetUserByUsernameQuery):**  
+  El servicio `UserQueryServiceImpl` maneja esta consulta y devuelve un usuario si se encuentra en el sistema, o un `Optional.empty()` si no se encuentra.
+
+- **Obtener un usuario por ID (GetUserByIdQuery):**  
+  Similar a la consulta anterior, esta consulta busca un usuario por su ID y devuelve un `Optional<User>`.
+
+- **Obtener todos los usuarios (GetAllUsersQuery):**  
+  Devuelve una lista con todos los usuarios registrados en el sistema.
+
 
 #### 2.6.2. Bounded Context: Notificaciones
 
@@ -1835,10 +2260,3 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 ###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 ###### 2.6.5.6.2. Bounded Context Database Design Diagrams
-
-
-
-
-
-
-
