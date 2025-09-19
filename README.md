@@ -1719,36 +1719,7 @@ Mide el desempeño de un Team Member en el proyecto.
 
 ---
 
-## 3. Entity: Task
-Tarea tal como llega del otro BC.
-
-| Campo         | Tipo          | Descripción |
-|---------------|---------------|-------------|
-| `taskId`      | int           | ID de la tarea. |
-| `memberId`    | int           | ID del asignado. |
-| `statusCode`  | String        | Código de estado externo. |
-| `priorityCode`| String        | Código de prioridad externo. |
-| `overdue`     | Boolean       | Si está vencida. |
-| `assignedAt`  | LocalDateTime | Fecha/hora de asignación. |
-| `completedAt` | LocalDateTime?| Fecha/hora de finalización. |
-
----
-
-## 4. Entity: MemberSnapshot
-Tarjeta resumen para comparar desempeño y costo de un miembro.
-
-| Campo                 | Tipo        | Descripción |
-|----------------------|-------------|-------------|
-| `memberId`           | int         | ID del miembro. |
-| `taskStats`          | `TaskStats` | Conteos por estado. |
-| `avgCompletionHours` | Float       | Horas promedio por tarea. |
-| `spentHours`         | Float       | Horas acumuladas. |
-| `hourlyRate`         | `Money`     | Tarifa por hora. |
-| `cost`               | `Money`     | Costo total. |
-
----
-
-## 5. Value Object: DateRange
+## 3. Value Object: DateRange
 Ventana de tiempo usada para los cálculos.
 
 | Atributo | Tipo      | Descripción |
@@ -1761,7 +1732,7 @@ Ventana de tiempo usada para los cálculos.
 
 ---
 
-## 6. Value Object: Money
+## 4. Value Object: Money
 Dinero con su moneda.
 
 | Atributo   | Tipo          | Descripción |
@@ -1771,7 +1742,7 @@ Dinero con su moneda.
 
 ---
 
-## 7. Value Object: TaskStats
+## 5. Value Object: TaskStats
 Conteo rápido de cómo van las tareas.
 
 | Atributo     | Tipo | Descripción |
@@ -1787,7 +1758,7 @@ Conteo rápido de cómo van las tareas.
 
 ---
 
-## 8. Value Object: AverageMetric
+## 6. Value Object: AverageMetric
 Promedio de horas para un estado o prioridad.
 
 | Atributo    | Tipo   | Descripción |
@@ -1798,7 +1769,7 @@ Promedio de horas para un estado o prioridad.
 
 ---
 
-## 9. Value Object: BudgetUsage
+## 7. Value Object: BudgetUsage
 Cómo va el presupuesto del proyecto.
 
 | Atributo   | Tipo    | Descripción |
@@ -1809,7 +1780,7 @@ Cómo va el presupuesto del proyecto.
 
 ---
 
-## 10. Repository: ProjectAnalyticsRepository
+## 8. Repository: ProjectAnalyticsRepository
 Persistencia de `ProjectAnalytics`.
 
 **Métodos**
@@ -1818,7 +1789,7 @@ Persistencia de `ProjectAnalytics`.
 
 ---
 
-## 11. Repository: MemberAnalyticsRepository
+## 9. Repository: MemberAnalyticsRepository
 Persistencia de `MemberAnalytics`.
 
 **Métodos**
