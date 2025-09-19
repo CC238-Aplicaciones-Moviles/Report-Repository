@@ -2259,6 +2259,118 @@ Implementación de acceso a datos para reportes de `Report`.
 
 ##### 2.6.1.1. Domain Layer
 
+
+### 4.2.1.1. Domain Layer
+
+La capa de dominio constituye el núcleo de la aplicación, donde se definen las reglas y modelos que permiten ofrecer a los miembros del equipo una visión clara y organizada del estado de los proyectos y tareas.  
+En este contexto, el agregado **VisualizationAggregate** actúa como la raíz que integra tanto los tableros de tareas como las vistas de calendario, garantizando que la información se muestre de forma coherente y en tiempo real.
+
+**Objetivo:** Representar las entidades que permiten la visualización y seguimiento de las tareas y proyectos, asegurando que cada cambio en el estado de una tarea se refleje de manera precisa en tableros y calendarios sincronizados.
+
+---
+
+* **Aggregate: VisualizationAggregate**  
+**Descripción:** Este agregado coordina la información proveniente de tableros y calendarios. Centraliza las actualizaciones recibidas de otros bounded contexts (como Gestión de Proyectos y Tareas) y asegura que las vistas se mantengan actualizadas.
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|id|Long|Identificador único del agregado.|
+|taskBoard|TaskBoard|Tablero asociado que agrupa tareas en diferentes estados.|
+|calendarView|CalendarView|Vista de calendario con eventos relacionados a tareas y proyectos.|
+
+|Método|Descripción|
+|:-|:-|
+|updateBoard(Task task)|Actualiza el tablero con el nuevo estado de la tarea.|
+|updateCalendar(Task task)|Refleja en el calendario las fechas relevantes de la tarea.|
+|synchronizeViews()|Asegura que tablero y calendario muestren información coherente.|
+
+---
+
+* **Entity: TaskBoard**  
+**Descripción:** Representa un tablero visual donde se agrupan tareas y proyectos en columnas según su estado actual.
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|boardId|Long|Identificador único del tablero.|
+|name|String|Nombre asignado al tablero.|
+|columns|List<TaskStatus>|Lista de columnas que agrupan tareas según su estado.|
+
+|Método|Descripción|
+|:-|:-|
+|addColumn(String name)|Agrega una nueva columna al tablero.|
+|moveTask(Task task, TaskStatus status)|Mueve una tarea de una columna a otra.|
+|refreshBoard()|Refresca la visualización del tablero para reflejar cambios.|
+
+---
+
+* **Entity: CalendarView**  
+**Descripción:** Representa una vista de calendario en la que se muestran fechas de inicio, vencimiento y progreso de las tareas.
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|calendarId|Long|Identificador único de la vista calendario.|
+|events|List<TimeFrame>|Lista de eventos que representan hitos o tareas con fechas clave.|
+
+|Método|Descripción|
+|:-|:-|
+|addEvent(TimeFrame event)|Agrega un evento al calendario.|
+|updateEvent(Task task)|Modifica las fechas de un evento existente.|
+|highlightOverdueTasks()|Resalta visualmente las tareas vencidas.|
+
+---
+
+* **Value Object: TaskStatus**  
+**Descripción:** Define el estado de una tarea dentro del flujo de seguimiento.
+
+|Valor|Descripción|
+|:-|:-|
+|Pendiente|Tarea aún no iniciada.|
+|En Progreso|Tarea actualmente en ejecución.|
+|Completada|Tarea finalizada exitosamente.|
+|Vencida|Tarea cuyo plazo expiró sin completarse.|
+
+---
+
+* **Value Object: TimeFrame**  
+**Descripción:** Encapsula las fechas de inicio y vencimiento de una tarea o proyecto.
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|startDate|Date|Fecha de inicio.|
+|dueDate|Date|Fecha de vencimiento.|
+
+|Método|Descripción|
+|:-|:-|
+|isOverdue()|Devuelve `true` si la fecha actual es posterior al vencimiento.|
+|remainingDays()|Calcula los días restantes hasta la fecha de vencimiento.|
+
+---
+
+* **Domain Service: VisualizationService**  
+**Descripción:** Gestiona la actualización de las vistas (tableros y calendarios) al procesar eventos provenientes de otros bounded contexts.
+
+|Método|Descripción|
+|:-|:-|
+|processTaskUpdate(Task task)|Procesa un evento de actualización de tarea y actualiza las vistas correspondientes.|
+|notifyCriticalChange(Task task)|Comunica a Notificaciones los cambios críticos (ej. tarea vencida).|
+
+---
+
+* **Repository Interfaces**  
+
+- **ITaskBoardRepository**  
+  Métodos:  
+  - `saveBoard(TaskBoard board)`  
+  - `getBoardById(Long id)`  
+  - `updateBoard(TaskBoard board)`  
+
+- **ICalendarRepository**  
+  Métodos:  
+  - `saveCalendar(CalendarView calendar)`  
+  - `getCalendarById(Long id)`  
+  - `updateCalendar(CalendarView calendar)`  
+
+
 ##### 2.6.1.2. Interface Layer
 
 ##### 2.6.1.3. Application Layer
