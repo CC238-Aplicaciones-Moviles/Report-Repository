@@ -178,7 +178,7 @@ profesional de cada estudiante una vez finalizada su carrera. El propósito es q
 objetivos reflejen de manera clara y medible cómo cada integrante planea alcanzar un 
 crecimiento profesional continuo tras su graduación. 
 
-<h3>Eric Marlon Olivera Barzola
+*Eric Marlon Olivera Barzola*
 
   Objetivo 1: Publicar una aplicación móvil propia en la Play Store dentro del primer año.
   Objetivo 2: Obtener una certificación en desarrollo móvil (Android o iOS) en un plazo máximo de 18 meses.
@@ -186,6 +186,8 @@ crecimiento profesional continuo tras su graduación.
   
   - Esto falta completareqweqweqwe
   - dasdasdas
+
+
 
 <h3> Loreley Sarmiento Medina
 
@@ -235,6 +237,13 @@ crecimiento profesional continuo tras su graduación.
   - **Relevante:** La seguridad es esencial para cualquier desarrollador y mejora la calidad profesional de los proyectos.
   - **Tiempo:** Alcanzar este objetivo en 10-12 meses.
 
+<h3> *Alvaro Leandro Bejarano Martíenez*
+
+- **Objetivo 1:**
+- Obtener una certificación internacional en inteligencia artificial aplicada a desarrollo de software en los primeros 12 meses posteriores a mi graduación, con el fin de fortalecer mi perfil profesional y postular a posiciones bien remuneradas en empresas tecnológicas.
+- **Objetivo 2:**
+  - Participar en al menos un curso especializado en bases de datos avanzadas en el extranjero dentro de los primeros dos años después de egresar, para ampliar mi experiencia académica y aplicar dichos conocimientos en proyectos de investigación y desarrollo innovadores.
+
 
 ## Capítulo I: Presentación  
 ### 1.1. Startup Profile  
@@ -264,8 +273,9 @@ Convertirnos en la organización líder en Latinoamérica en el desarrollo de so
 |![Imagen1](Assets/TB1/)      |Eric Marlon Olivera Barzola | U202315032 |   Soy Eric Marlon Olivera Barzola, estudiante de Ingeniería de Software del séptimo ciclo, con un interés particular en la ciberseguridad. A lo largo de mi formación he adquirido experiencia en diferentes lenguajes de programación como C#, C++ y Java. Me motiva desarrollar soluciones que no solo sean funcionales, sino que también transmitan confianza y seguridad a los usuarios.  |
 |![Imagen2](Assets/TB1/)      |Omar Luquillas Asto         | U20211G641 | Soy estudiante de la carrera de Ingeniería de Software. Elegí esta carrera porque me apasiona la tecnología, el desarrollo de software y la programación. Tengo conocimientos en lenguajes de programación como C++, Python y Java. Me considero una persona investigadora, ya que me gusta aprender cosas nuevas y siempre estoy en busca de soluciones creativas e innovadoras que generen un impacto positivo en la vida de las personas. Además, valoro el trabajo en equipo, soy responsable y me comprometo a cumplir con mis tareas de manera eficiente. |
 |![Imagen3](Assets/TB1/Valentino.png)      | Valentino Sandoval Paiva                           |  U20211A962     |    Soy Valentino Sandoval, tengo 20 años y soy estudiante de la carrera de Ingeniería de Software. Tengo conocimiento en lenguajes de programación como python y c++, y bases de datos como SQLServer y MongoDB. Desde pequeño me sentí atraído por la tecnología, por lo que me decidí a estudiar la carrera, además disfruto de jugar videojuegos con amigos en mi tiempo libre.     |
-|![Imagen4](Assets/TB1/)      |                            |       |         |
-|![Imagen5](Assets/TB1/Loreleyimagen.jpg)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
+|![Imagen4](Assets/TB1/Alvaro.png)      | Alvaro Leandro Bejarano Martínez       | U202311640 |     Mi nombre es Alvaro Leandro Bejarano Martínez, estudiante de la carrera Ingeniería de Software y me destaco por mi perseverancia, organización y capacidad para trabajar en equipo. Me esfuerzo por mantener un ambiente estructurado dentro del grupo, donde cada miembro se sienta valorado y sus ideas sean escuchadas y respetadas. Mi compromiso es fomentar la colaboración efectiva, asegurando que cada contribución se integre de manera ordenada y alineada con los objetivos comunes del equipo.|
+|![Imagen5](Assets/TB1/)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
+
 
 ### 1.2. Solution Profile 
 
