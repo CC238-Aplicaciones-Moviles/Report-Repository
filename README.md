@@ -2506,17 +2506,17 @@ Repositorio encargado de la persistencia y gestión de datos relacionados con ta
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-![ddd](Assets/TB1/ComponentDiagramProjectsAndTasks.PNG)
+![ddd](Assets/TB1/ComponentDiagramProjectsAndTasks.png)
 
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-![ddd](Assets/TB1/ClassDiagramProjectsAndTasks.PNG)
+![ddd](Assets/TB1/ClassDiagramProjectsAndTasks.png)
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
 
-![ddd](Assets/TB1/DatabaseDiagramProjectsAndTasks.PNG)
+![ddd](Assets/TB1/DatabaseDiagramProjectsAndTasks.png)
 
 #### 2.6.5. Bounded Context: Notificaciones
 
