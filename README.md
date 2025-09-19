@@ -161,12 +161,12 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET - EAC - Student Outcome 7 Criterio**: La capacidad de adquirir y aplicar nuevos conocimientos según sea
 necesario, utilizando estrategias deaprendizaje apropiadas.
 En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado los criterios especificos.
-  
-| Criterio específico | Acciones realizadas | Conclusiones |
-|---------------------|---------------------|--------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.|- **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>-Sandoval Paiva Valentino<br>**TB1**<br>-Sarmiento Medina, Loreley<br>**TB1**<br>                     |              |
-|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.|- **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>-Sandoval Paiva Valentino<br>**TB1**<br>-Sarmiento Medina, Loreley<br>**TB1**<br>                       |              |
-|
+
+ | Criterio específico                                                                                                                     | Acciones realizadas                                                                                                                                                                                                         | Conclusiones                                                                                                                                                                                                                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>- Sandoval Paiva Valentino<br>**TB1**<br>- Sarmiento Medina, Loreley<br>**TB1**<br> | La elaboración del proyecto permitió reforzar y aplicar conceptos clave en arquitectura de software, metodologías ágiles y diseño de soluciones, fortaleciendo competencias técnicas que son directamente aplicables en la formación profesional y en la práctica de proyectos reales en soluciones de software.                    |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | - **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>- Sandoval Paiva Valentino<br>**TB1**<br>- Sarmiento Medina, Loreley<br>**TB1**<br> | Durante el desarrollo del proyecto se evidenció la importancia de la investigación continua y la adaptación a nuevas herramientas y enfoques, lo que refuerza la necesidad de mantener un aprendizaje constante para enfrentar los retos que plantea el mercado tecnológico y asegurar la mejora continua en el ámbito profesional. |
+ 
 
 <hr>
 
@@ -187,13 +187,63 @@ crecimiento profesional continuo tras su graduación.
   - Esto falta completareqweqweqwe
   - dasdasdas
 
-*Alvaro Leandro Bejarano Martíenez*
 
-Objetivo 1:
-Obtener una certificación internacional en inteligencia artificial aplicada a desarrollo de software en los primeros 12 meses posteriores a mi graduación, con el fin de fortalecer mi perfil profesional y postular a posiciones bien remuneradas en empresas tecnológicas.
 
-Objetivo 2:
-Participar en al menos un curso especializado en bases de datos avanzadas en el extranjero dentro de los primeros dos años después de egresar, para ampliar mi experiencia académica y aplicar dichos conocimientos en proyectos de investigación y desarrollo innovadores.
+<h3> Loreley Sarmiento Medina
+
+- **Objetivo 1: Convertirme en desarrolladora mobile certificada**
+  - **Específico:** Obtener una certificación en desarrollo de aplicaciones móviles (Android/iOS) y crear al menos 2 aplicaciones publicadas en tiendas oficiales.  
+  - **Medible:** Publicar 2 aplicaciones móviles funcionales y obtener al menos 500 descargas en conjunto.  
+  - **Alcanzable:** Dedicar 10 horas semanales a cursos especializados y práctica de programación mobile.  
+  - **Relevante:** Permitirá fortalecer mi perfil profesional y abrir oportunidades laborales en el sector tecnológico.  
+  - **Tiempo:** Lograr la certificación y publicación de apps dentro de los 24 meses posteriores a la graduación.  
+
+- **Objetivo 2: Desarrollar una solución de IA aplicada a ciencia de datos**
+  - **Específico:** Diseñar y poner en marcha una IA que procese y analice grandes volúmenes de datos para generar modelos predictivos aplicables a proyectos de negocio.  
+  - **Medible:** Construir un prototipo funcional con al menos 3 modelos predictivos validados con datasets reales.  
+  - **Alcanzable:** Participar en un programa de especialización en IA y destinar 12 horas semanales a investigación y desarrollo.  
+  - **Relevante:** Permitirá integrar el análisis de datos con inteligencia artificial para la toma de decisiones estratégicas.  
+  - **Tiempo:** Completar el prototipo en un plazo máximo de 2 años después de la graduación.
+
+<h3> Valentino Sandoval Paiva
+
+- **Objetivo 1: Convertirme en ingeniero de software especializado en automoción y Fórmula 1**
+  - **Específico:** Obtener una certificación en desarrollo de software aplicado a la industria automotriz, especialmente en el análisis de datos de telemetría y sistemas de control en tiempo real utilizados en vehículos de alto rendimiento (Fórmula 1, McLaren, etc.).
+  - **Medible:** Completar un curso especializado, desarrollar un proyecto de software que simule un sistema de telemetría de un vehículo de carrera, y obtener al menos 2 recomendaciones de expertos en el sector.
+  - **Alcanzable:** Dedicar 10 horas semanales a estudiar materiales y realizar prácticas en el desarrollo de sistemas de telemetría y control de vehículos, completando un proyecto personal en un plazo de 12 meses.
+  - **Relevante:** Este objetivo fortalecerá mi perfil profesional en un campo altamente demandado por las principales marcas de autos de lujo y las competiciones de la Fórmula 1, ayudándome a ingresar en este sector competitivo.
+  - **Tiempo:** Completar la certificación y el proyecto en los próximos 18 meses después de la graduación.
+
+- **Objetivo 2: Desarrollar sistemas de análisis de datos en tiempo real para vehículos de alto rendimiento**
+  - **Específico:** Diseñar y construir una plataforma de software para procesar y analizar en tiempo real los datos de rendimiento de vehículos, con aplicaciones en la telemetría y simulación de escenarios de carrera, como se usa en la Fórmula 1.
+  - **Medible:** Crear una plataforma funcional capaz de procesar datos de telemetría en tiempo real y generar reportes de rendimiento con al menos 3 métricas clave, como velocidad, temperatura de los frenos y consumo de combustible.
+  - **Alcanzable:** Participar en un bootcamp de programación avanzada en sistemas de análisis de datos y dedicar 12 horas semanales a la investigación y desarrollo de la plataforma de software.
+  - **Relevante:** El desarrollo de sistemas para la Fórmula 1 y vehículos de alto rendimiento es esencial para mejorar la eficiencia y el rendimiento de los autos, un área clave de innovación dentro de la ingeniería automotriz.
+  - **Tiempo:** Tener la plataforma funcional y validada en un plazo de 24 meses después de la graduación.
+
+<h3> Omar Luquillas Asto
+
+- **Objetivo 1: Aprender desarrollo de aplicaciones móviles híbridas**
+  - **Específico:** Construir apps móviles usando frameworks híbridos como Flutter o React Native.
+  - **Medible:** Publicar al menos 2 apps funcionales en Google Play o App Store, con funcionalidades como login, CRUD y notificaciones.
+  - **Alcanzable:** Dedicar 8-10 horas semanales a cursos y práctica, desarrollando proyectos propios.
+  - **Relevante:** Permite combinar conocimientos de web y móvil, aumentando oportunidades laborales.
+  - **Tiempo:** Lograrlo en un plazo de 12-18 meses.
+
+- **Objetivo 2: Mejorar competencias en ciberseguridad**
+  - **Específico:** Aprender a proteger aplicaciones web y móviles frente a ataques comunes (XSS, SQL Injection, CSRF).
+  - **Medible:** Completar un curso certificado de seguridad informática y aplicar medidas de seguridad en al menos 2 proyectos propios.
+  - **Alcanzable:** Dedicar 6 horas semanales a teoría y práctica de ciberseguridad.
+  - **Relevante:** La seguridad es esencial para cualquier desarrollador y mejora la calidad profesional de los proyectos.
+  - **Tiempo:** Alcanzar este objetivo en 10-12 meses.
+
+<h3> *Alvaro Leandro Bejarano Martíenez*
+
+- **Objetivo 1:**
+- Obtener una certificación internacional en inteligencia artificial aplicada a desarrollo de software en los primeros 12 meses posteriores a mi graduación, con el fin de fortalecer mi perfil profesional y postular a posiciones bien remuneradas en empresas tecnológicas.
+- **Objetivo 2:**
+  - Participar en al menos un curso especializado en bases de datos avanzadas en el extranjero dentro de los primeros dos años después de egresar, para ampliar mi experiencia académica y aplicar dichos conocimientos en proyectos de investigación y desarrollo innovadores.
+
 
 ## Capítulo I: Presentación  
 ### 1.1. Startup Profile  
@@ -225,6 +275,7 @@ Convertirnos en la organización líder en Latinoamérica en el desarrollo de so
 |![Imagen3](Assets/TB1/Valentino.png)      | Valentino Sandoval Paiva                           |  U20211A962     |    Soy Valentino Sandoval, tengo 20 años y soy estudiante de la carrera de Ingeniería de Software. Tengo conocimiento en lenguajes de programación como python y c++, y bases de datos como SQLServer y MongoDB. Desde pequeño me sentí atraído por la tecnología, por lo que me decidí a estudiar la carrera, además disfruto de jugar videojuegos con amigos en mi tiempo libre.     |
 |![Imagen4](Assets/TB1/Alvaro.png)      | Alvaro Leandro Bejarano Martínez       | U202311640 |     Mi nombre es Alvaro Leandro Bejarano Martínez, estudiante de la carrera Ingeniería de Software y me destaco por mi perseverancia, organización y capacidad para trabajar en equipo. Me esfuerzo por mantener un ambiente estructurado dentro del grupo, donde cada miembro se sienta valorado y sus ideas sean escuchadas y respetadas. Mi compromiso es fomentar la colaboración efectiva, asegurando que cada contribución se integre de manera ordenada y alineada con los objetivos comunes del equipo.|
 |![Imagen5](Assets/TB1/)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
+
 
 ### 1.2. Solution Profile 
 
@@ -711,9 +762,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 25 |
 | **Profesión** | Ingeniero de Software |
 | **Departamento** | Lima  |
-| **Inicio del video** | 0:00 |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 0:08 |
+| **Fin del video** | 8:30 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![Texto alternativo](Assets/TB1/entrevista1.png) |
 | **Resumen** | La entrevista con Juan de la Cruz, lidel del Grupo JPSP, reveló aspectos clave sobre la gestión de proyectos y el impacto de las herramientas que existen actualmente. El destacó que su principal responsabilidad es supervisar al equipo de desarrollo para cumplir con los plazos y estándares de calidad, mientras maneja el crecimiento rápido y los desafíos de integración tecnológica. Aunque también menciono que ha tenido experiencias mixtas con las herramientas actuales, principalmente debido a problemas de integración y personalización, considera esencial que las nuevas soluciones ofrezcan flexibilidad, integración fluida y capacidades avanzadas. La incorporación de tecnologías emergentes es vista como crucial para mejorar la eficiencia y la toma de decisiones. Además, se busca una solución que facilite la colaboración y la comunicación centralizada, y que esté dispuesta a adaptarse a las necesidades cambiantes del equipo. El entrevistado enfatiza la importancia de la seguridad y prioriza a los proveedores que brindan soporte confiable y pueden adaptar sus soluciones a los requisitos individuales. En el futuro, se espera una evolución hacia mayor automatización y herramientas que se adapten rápidamente a los cambios en los proyectos. |
 
@@ -723,9 +774,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 54 |
 | **Profesión** | Ingeniero de Sistemas  |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 8:31 |
+| **Fin del video** | 23:14 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ImagenEntrevista](Assets/TB1/Imagen_Entrevista2.PNG) |
 | **Resumen** | Durante la entrevista, Carlos, gerente de desarrollo de aplicaciones y servicios en Atentus, explicó que trabaja principalmente de forma remota, coordinando equipos con empleados en distintas partes del mundo. Para la gestión utiliza metodologías ágiles como Agile y Scrum, junto con herramientas como Jira para organizar sprints y el product backlog. Destacó que una de sus principales necesidades es que las herramientas de gestión puedan integrarse con sistemas ya existentes, ya que ninguna empresa empieza desde cero y resulta esencial migrar progresivamente sin afectar la operatividad. También recalcó la importancia de que estas herramientas sean capaces de adaptarse a los horarios y dinámicas de trabajo de un equipo global, pues la coordinación en contextos remotos es clave. Finalmente, resaltó que, en un mercado altamente competitivo, es necesario innovar constantemente, y afirmó estar abierto a probar nuevas soluciones siempre que aporten valor y se ajusten a las necesidades reales de la empresa. |
 
@@ -735,15 +786,15 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 55 |
 | **Profesión** | Ingeniero Electrico  |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 23:15 |
+| **Fin del video** | 30:57 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/alejandrobejarano) |
 | **Resumen** | El entrevistado, líder de empresa orientada principalmente a las ventas y servicios, destacó que actualmente enfrentan limitaciones al gestionar sus procesos de forma manual con herramientas básicas como Office, lo que retrasa la eficiencia y dificulta la innovación. Entre los principales desafíos mencionó la competencia en un mercado en crecimiento y la necesidad de optimizar la gestión de proyectos y servicios. Considera esencial contar con un sistema integral que abarque tanto la parte administrativa como todo el ciclo de servicios, con características avanzadas, personalizables y seguras, que restrinjan accesos indebidos. Además, valora la integración con herramientas existentes, la colaboración fluida entre equipos y el cumplimiento de plazos de entrega por parte de socios estratégicos. Ve la adopción de una nueva herramienta como clave para un cambio total en los próximos años, permitiendo un mejor control en tiempo real de actividades, inversiones y logística, lo cual impactaría directamente en la competitividad y crecimiento de la empresa. |
 
-| **Duración total de las entrevistas** |   |
+| **Duración total de las entrevistas** | 30:57  |
 |---------------------------------------|---|
-| **Link general del video**            |   |
+| **Link general del video**            | https://goo.su/SUO1  |
 
 
 
@@ -755,9 +806,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 24 |
 | **Profesión** | Ingeniero de Sistemas |
 | **Departamento** | Lima |
-| **Inicio del video** |  0:01|
-| **Fin del video** | 7:12 |
-| **Link del video** | https://www.youtube.com/watch?v=chsyvcs7MOw |
+| **Inicio del video** |  31:00|
+| **Fin del video** | 38:17 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/eric_1.png) |
 | **Resumen** | El entrevistado, de 24 años y parte de un equipo de desarrollo de proyectos multidisciplinario en psicología, señaló que su rol se centra en analizar necesidades, coordinar entregables y apoyar la organización del flujo de trabajo. Su equipo trabaja en proyectos digitales con participación de desarrolladores, diseñadores y administradores, pero enfrenta dificultades en la gestión debido a la dispersión de información entre múltiples canales (correos, chats, hojas de cálculo), lo que provoca retrasos, duplicidad de esfuerzos y una menor eficiencia en la colaboración. Además, mencionó experiencias negativas con herramientas poco intuitivas y rígidas, que limitan la capacidad de cumplir plazos con calidad. En cuanto a necesidades, destacó la importancia de contar con una plataforma centralizada que integre tableros visuales, calendarios compartidos, notificaciones claras. |
 
@@ -767,9 +818,9 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 22 |
 | **Profesión** | Ingeniero de Software |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 38:18 |
+| **Fin del video** | 48:47  |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/Entrevista5.png) |
 | **Resumen** | El entrevistado forma parte de un equipo de desarrollo de proyectos, donde apoya en la programación de módulos y pruebas de nuevas funcionalidades. Su equipo está conformado por programadores juniors y seniors, diseñadores UX, QA testers y analistas de requerimientos, trabajando bajo metodologías ágiles. Entre los principales desafíos mencionó la comunicación, ya que al trabajar de forma remota no siempre están conectados al mismo tiempo, así como los cambios repentinos de prioridades que generan desorden al pausar tareas en curso. Sobre herramientas anteriores como Trello, Slack, Excel y Drive, señaló que fueron un dolor de cabeza porque la información estaba dispersa y en ocasiones se duplicaban tareas por falta de claridad. Considera que sería de gran ayuda contar con una plataforma unificada que les permita ahorrar tiempo, ser más eficientes, automatizar procesos con alertas, y que además sea fácil de aprender, rápida, ligera e integrable con aplicaciones externas. |
 
@@ -779,15 +830,15 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Edad** | 20 |
 | **Profesión** | Ingeniero de Software |
 | **Departamento** | Lima |
-| **Inicio del video** |  |
-| **Fin del video** |  |
-| **Link del video** |  |
+| **Inicio del video** | 48:48 |
+| **Fin del video** | 55:22 |
+| **Link del video** | https://goo.su/SUO1 |
 | **Foto entrevista** | ![ddd](Assets/TB1/andresentrevista.jpg) |
 | **Resumen** |El entrevistado, miembro de un equipo multidisciplinario de desarrollo de proyectos digitales, desempeña tareas de programación, pruebas, análisis y coordinación del flujo de trabajo. Señaló que los principales desafíos son la comunicación remota y los cambios repentinos de prioridades, lo que genera desorden y retrasos. Su experiencia con herramientas como Trello, Slack, Excel y Drive fue negativa por la dispersión de información y duplicidad de tareas. Considera clave contar con una plataforma unificada, intuitiva, ligera y flexible, que integre tableros visuales, calendarios, notificaciones claras y automatización con alertas. Resaltó que la falta de herramientas adecuadas disminuye la productividad y limita la calidad de las entregas, mientras que una solución optimizada mejoraría la eficiencia, la visibilidad del progreso y la colaboración entre áreas, siempre que sea fácil de adoptar y permita personalización y soporte continuo.  |
 
-| **Duración total de las entrevistas** |   |
+| **Duración total de las entrevistas** | 55:22  |
 |---------------------------------------|---|
-| **Link general del video**            |   |
+| **Link general del video**            | https://goo.su/SUO1  |
 
 
 
@@ -1180,7 +1231,7 @@ Después de identificar los agregados en la sesión de Event Storming, analizamo
 
 ![ddd](Assets/TB1/boundednotificaciones.jpg)
 
-![ddd](Assets/TB1/boundedanalitica.jpg)
+![ddd](Assets/TB1/boundedca.jpg)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
@@ -1194,7 +1245,7 @@ Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, s
 Analítica y Reportes y Notificaciones:
 Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
 
-![ddd](Assets/TB1/analitica-notificaciones.PNG)
+![Analítica](Assets/TB1/ca-notificaciones.PNG)
 
 Gestión de proyectos y tareas y Analítica y Reportes:
 Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
@@ -1224,7 +1275,7 @@ Cada vez que se asigna un miembro, se crea una tarea o se actualiza su estado, e
 Visualización y Seguimiento y Analítica y Reportes:
 Los cambios en las tareas (como su finalización o vencimiento) alimentan la capa de analítica, donde se recalculan y generan estadísticas actualizadas sobre el rendimiento de los proyectos y de los miembros del equipo.
 
-![ddd](Assets/TB1/visualizacion-analitica.PNG)
+![ddd](Assets/TB1/visualizacion-ca.PNG)
 
 
 ##### 2.5.1.3. Bounded Context Canvases
@@ -1243,7 +1294,7 @@ En este proyecto, los bounded contexts identificados fueron los siguientes:
 
 -Visualización y Seguimiento: orientado a mostrar el estado de las tareas y proyectos en tableros y calendarios.
 
-A-nalítica y Reportes: especializado en el procesamiento de datos y generación de métricas e informes.
+-Analítica y Reportes: especializado en el procesamiento de datos y generación de métricas e informes.
 
 Cada uno de estos bounded contexts se detalla a continuación a través de su canvas, explicando su descripción, clasificación estratégica, roles, comunicaciones entrantes y salientes, lenguaje ubicuo y decisiones de negocio clave.
 
@@ -1255,7 +1306,7 @@ Es el núcleo operativo del sistema, ya que gestiona la creación, organización
 ### *Analítica y Reportes*
 Este bounded context se encarga de recopilar y procesar los datos generados en los proyectos y tareas para transformarlos en métricas y reportes. Su propósito principal es ofrecer a los Team Leaders una visión global del estado de los proyectos y a los Team Members un seguimiento de su propio rendimiento. Este contexto asegura la confiabilidad de la información, recalculando estadísticas automáticamente al recibir eventos de tareas completadas o vencidas, y enviando resultados hacia Notificaciones para mantener informados a los usuarios.
 
-![ddd](Assets/TB1/BoundedCanvasAnaliticayReportes.PNG)
+![ddd](Assets/TB1/BoundedCanvascayReportes.PNG)
 
 ### *Visualización y Seguimiento*
 Su objetivo es ofrecer a los miembros del equipo una vista clara del estado de las tareas y proyectos mediante tableros y calendarios sincronizados. Este bounded context recibe eventos de Gestión de Proyectos y Tareas (como tareas vencidas o completadas) y los organiza en interfaces visuales para facilitar el monitoreo. Además, se comunica con Analítica y Reportes para mostrar estadísticas y con Notificaciones para resaltar cambios críticos en el estado de las tareas.
@@ -1356,7 +1407,7 @@ La capa de dominio tiene como objetivo representar las entidades y servicios fun
 
 | **Atributo** | **Tipo**  | **Descripción**                                       |
 | ------------ | --------- | ----------------------------------------------------- |
-| `id`         | Long      | Identificador único del usuario (autogenerado).       |
+| `id`         | Int      | Identificador único del usuario (autogenerado).       |
 | `username`   | String    | Nombre de usuario único para identificar al usuario.  |
 | `password`   | String    | Contraseña de acceso del usuario.                     |
 | `roles`      | Set<Role> | Conjunto de roles asignados al usuario. (TEAM_MEMBER, TEAM_LEADER).              |
@@ -1421,7 +1472,7 @@ La entidad Role representa los roles de un usuario dentro del sistema y define l
 
 | Atributo | Tipo       | Descripción                                              |
 |----------|------------|----------------------------------------------------------|
-| id       | Long       | Identificador único del rol.                             |
+| id       | int       | Identificador único del rol.                             |
 | name     | String     | Nombre del rol, definido como un valor de enumeración (TEAM_MEMBER, TEAM_LEADER). |
 
 **Métodos:**
@@ -1616,13 +1667,117 @@ El `RoleQueryServiceImpl` maneja las consultas relacionadas con los roles, permi
 
 ##### 2.6.1.4. Infrastructure Layer
 
+La capa de infraestructura gestiona la comunicación con sistemas externos, incluyendo la base de datos relacional. En este contexto, los repositorios se encargan de la persistencia de los datos del dominio, asegurando que la lógica de negocio en capas superiores no se acople a la tecnología de almacenamiento.
+
+Esta capa alberga los componentes de repositorio, que son los responsables de mantener la persistencia de las entidades `User` y `Role` y de gestionar la relación entre ellas.
+
+
+**Repositorio: UserRepository**
+
+**Descripción**: Repositorio que maneja las operaciones de persistencia relacionadas con los usuarios en la base de datos.
+| Método | Descripción |
+| :--- | :--- |
+| `save(User user)` | Guarda un nuevo usuario o actualiza uno existente en la base de datos. |
+| `findByUsername(String username)` | Busca un usuario por su nombre de usuario. Devuelve un `Optional<User>` para manejar la posible ausencia del usuario. |
+| `existsByUsername(String username)` | Verifica si un usuario con el nombre de usuario especificado ya existe en la base de datos. Devuelve un `boolean`. |
+| `findById(Long id)` | Busca un usuario por su ID. Devuelve un `Optional<User>`. |
+| `findAll()` | Devuelve una lista de todos los usuarios almacenados en la base de datos. |
+
+**Dependencias**:
+* **`User`**: Clase que representa la entidad del usuario en el sistema.
+
+**Repositorio: RoleRepository**
+
+**Descripción**: Repositorio que maneja las operaciones de persistencia relacionadas con los roles.
+| Método | Descripción |
+| :--- | :--- |
+| `save(Role role)` | Guarda un nuevo rol o actualiza uno existente en la base de datos. |
+| `findByName(String name)` | Busca un rol por su nombre (ej. "Team Leader"). Devuelve un `Optional<Role>`. |
+| `findById(Long id)` | Busca un rol por su ID. Devuelve un `Optional<Role>`. |
+| `findAll()` | Devuelve una lista de todos los roles almacenados en la base de datos. |
+
+**Dependencias**:
+* **`Role`**: Clase que representa un rol en el sistema.
+
+**Repositorio: UserRoleRepository**
+
+**Descripción**: Repositorio que gestiona la relación de asignación de roles entre usuarios y roles en la tabla de unión `User_Roles`.
+| Método | Descripción |
+| :--- | :--- |
+| `assignRoleToUser(Long userId, Long roleId)` | Asigna un rol a un usuario, creando un nuevo registro en la tabla de unión. |
+| `findRolesByUserId(Long userId)` | Devuelve una lista de todos los roles asignados a un usuario específico. |
+| `findByUserIdAndRoleId(Long userId, Long roleId)` | Verifica si un usuario ya tiene un rol específico. |
+
+**Dependencias**:
+* **`User`**: Clase que representa la entidad del usuario.
+* **`Role`**: Clase que representa la entidad del rol.
+* **`UserRole`**: Clase que representa la relación entre un usuario y un rol.
+
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+El diagrama de clases para la Capa de Dominio en el contexto delimitado de "Registro y autentificación de usuario" es el componente central que representa la estructura y la lógica de negocio del sistema. Este diagrama se centra en las entidades, objetos de valor e interfaces, así como en sus relaciones, con un alto nivel de detalle. El propósito principal es modelar con precisión las reglas de autenticación y autorización para asegurar la coherencia y la integridad de los datos, siguiendo los principios de Domain-Driven Design (DDD).
+
+**1. Capa de Dominio (Domain Layer)**
+
+Esta es el **corazón** del sistema y el lugar donde residen las **reglas de negocio**. Su propósito principal es modelar el negocio de manera precisa, encapsulando la lógica y el comportamiento de las entidades principales. En esta capa, las clases no tienen conocimiento de cómo se guardan o se presentan los datos; solo se preocupan por el negocio.
+
+* **Agregados (Aggregates)**: Son clústeres de objetos que se tratan como una única unidad transaccional. En tu diagrama, **`User`** es el agregado principal, el cual asegura la integridad de los datos relacionados, como la información del usuario y sus roles.
+* **Entidades (Entities)**: Objetos con una **identidad única y persistente** a lo largo del tiempo. **`Role`** es una entidad, ya que tiene un `id` y su propia existencia dentro del sistema.
+* **Objetos de Valor (Value Objects)**: Objetos inmutables que no tienen una identidad única; se definen por sus atributos. **`EmailAddress`** y **`Roles`** (la enumeración) son ejemplos de objetos de valor, que describen una característica o cualidad de una entidad.
+
+---
+
+**2. Capa de Aplicación (Application Layer)**
+
+Esta capa actúa como un **orquestador**. Recibe comandos y consultas de la capa de interfaz y coordina la ejecución de la lógica del negocio. Es el "intermediario" que traduce las peticiones de los usuarios en acciones del dominio, asegurando que las reglas de negocio se apliquen correctamente.
+
+* **Servicios de Comando y Consulta**: Las implementaciones de `UserCommandService` y `UserQueryService` son responsables de las transacciones (escribir datos) y las consultas (leer datos), respectivamente. Estos servicios usan los repositorios para interactuar con el dominio.
+* **Servicios Externos (Outbounded Services)**: Se utilizan para manejar operaciones técnicas que no forman parte de la lógica de negocio principal, como la encriptación de contraseñas (`HashingService`) o la generación de tokens (`TokenService`). Esta separación mantiene el dominio limpio de preocupaciones técnicas.
+
+---
+
+**3. Capa de Infraestructura (Infrastructure Layer)**
+
+Esta capa se encarga de los detalles técnicos y de la **persistencia**. Proporciona las herramientas necesarias para que la capa de aplicación pueda ejecutar sus tareas.
+
+* **Implementación de Repositorios**: Aquí se encuentran las clases concretas (`UserRepositoryImpl`, `RoleRepositoryImpl`) que implementan las interfaces de repositorio del dominio. Estas clases contienen la lógica para interactuar con la base de datos (por ejemplo, a través de SQL o una ORM), guardando y recuperando las entidades del dominio.
+
+---
+
+**4. Capa de Interfaces (Interfaces Layer)**
+
+Esta es la **capa de presentación** y el **punto de entrada** de la aplicación. Se encarga de la comunicación con el mundo exterior. Su única responsabilidad es recibir las solicitudes y convertirlas en un formato que la capa de aplicación pueda entender.
+
+* **Controladores**: Clases como `UsersController` y `AuthenticationController` son los **controladores REST** que exponen los _endpoints_ de la API. Reciben las peticiones HTTP y delegan la lógica a la capa de aplicación.
+* **Recursos (Resources)**: Son objetos de transferencia de datos (DTOs) que representan la información de entrada y salida de la API. Por ejemplo, `SignInResource` contiene los datos necesarios para iniciar sesión.
+* **Assemblers**: Son utilidades que convierten las entidades del dominio en objetos `Resource` y viceversa. Esto **desacopla** la API del modelo de dominio, lo que permite modificar el formato de la API sin afectar la lógica de negocio.
+
+![ddd](Assets/TB1/IAM.png)
+
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+
+El diagrama de base de datos para el **Bounded Context Registro y autentificacion de usuario** detalla el esquema relacional simplificado que soporta el registro y la asignación de roles de los usuarios. Este diseño se centra en la identidad y el acceso, encapsulando la lógica de negocio necesaria para estos procesos.
+
+**Descripción del Diagrama**
+
+* **Tabla `Users`**: Esta es la entidad principal que representa a un usuario en el sistema. Contiene el identificador único `id` (PK), el `username` (VARCHAR), el `password` hasheado (VARCHAR), un campo `proofing_apoderado` y metadatos de auditoría como `created_at` y `updated_at`. Para garantizar la unicidad y el manejo de la identidad, el `username` debe ser único. El campo `password` almacena la contraseña de forma segura (hasheada).
+
+* **Tabla `Roles`**: Esta tabla define los roles predefinidos en la aplicación, como "Team Leader" y "Team Member". Contiene un `id` (PK) para identificar cada rol y un `name` (VARCHAR) que describe el rol.
+
+* **Tabla de Unión `User_Roles`**: Esta tabla implementa la relación **muchos-a-muchos** entre `Users` y `Roles`. Permite que un usuario tenga múltiples roles y que un rol sea asignado a múltiples usuarios. La tabla incluye dos claves foráneas (`user_id` y `role_id`) que referencian las tablas `Users` y `Roles`, respectivamente. La combinación de estas dos claves forma una **clave primaria compuesta**, asegurando que un usuario no pueda tener el mismo rol asignado más de una vez.
+
+**Relaciones Clave**
+
+La conexión entre las tablas `Users` y `Roles` se visualiza a través de la tabla `User_Roles`. Las flechas del diagrama (crow's foot notation) ilustran esta cardinalidad:
+
+* Una fila en la tabla `Users` puede estar asociada a muchas filas en la tabla `User_Roles`.
+* Una fila en la tabla `Roles` puede estar asociada a muchas filas en la tabla `User_Roles`.
+
+![ddd](Assets/TB1/boundedIAM.jpg)
 
 
 #### 2.6.2. Bounded Context: Notificaciones
@@ -1652,11 +1807,9 @@ Este bounded context consume datos de:
 Con esa información calcula y expone:
 - **Estadísticas por Proyecto** (Project Dashboard, visible para el Team Leader).
 - **Estadísticas por Miembro** (Member Dashboard, visible para el Team Leader).
-- **Progress Report** (reporte personal del Team Member).
+- **Progress** (vista personal del Team Member).
 
-Además genera **Reportes** de tipo `PROJECT`, `MEMBER` y `PROGRESS`.
-
-A continuación se listan los **aggregates**, **entities**, **value objects**, **services** y **repositories**.
+A continuación se listan los **aggregates**, **entities**, **value objects** y **repositories**.
 
 ---
 
@@ -1665,29 +1818,28 @@ Reúne la información para entender el estado global del **Proyecto**: producci
 
 **Atributos**
 
-| Atributo            | Tipo                   | Visibilidad | Descripción |
-|---------------------|------------------------|-------------|-------------|
-| `projectId`         | int                    | Private     | Proyecto al que pertenecen las métricas. |
-| `period`            | `DateRange`            | Private     | Rango de fechas considerado. |
-| `taskStats`         | `TaskStats`            | Private     | Conteos por estado (incluye `overdue` y `total`). |
-| `avgMetrics`        | List<`AverageMetric`>  | Private     | Horas promedio por estado o prioridad. |
-| `budget`            | `BudgetUsage`          | Private     | Aprobado, usado y diferencia. |
-| `members`           | List<`MemberSnapshot`> | Private     | Resumen por miembro (producción y costo). |
-| `bestMemberId`      | int                    | Private     | Miembro destacado según criterio. |
-| `worstMemberId`     | int                    | Private     | Miembro con menor desempeño. |
-| `rankingReason`     | String                 | Private     | Motivo corto del ranking. |
+| Atributo        | Tipo                   | Visibilidad | Descripción |
+|-----------------|------------------------|-------------|-------------|
+| `projectId`     | int                    | Private     | Proyecto al que pertenecen las métricas. |
+| `period`        | `DateRange`            | Private     | Rango de fechas considerado. |
+| `taskStats`     | `TaskStats`            | Private     | Conteos por estado (incluye `overdue` y `total`). |
+| `avgMetrics`    | List<`AverageMetric`>  | Private     | Horas promedio por estado o prioridad. |
+| `budget`        | `BudgetUsage`          | Private     | Aprobado, usado y diferencia. |
+| `members`       | List<`MemberSnapshot`> | Private     | Resumen por miembro (producción y costo). |
+| `bestMemberId`  | int                    | Private     | Miembro destacado según criterio. |
+| `worstMemberId` | int                    | Private     | Miembro con menor desempeño. |
+| `rankingReason` | String                 | Private     | Motivo corto del ranking. |
 
 **Métodos**
 
-| Método                                   | Retorno        | Descripción |
-|------------------------------------------|----------------|-------------|
-| `ingestTasks(List<Task> tasks)`          | `void`         | Integra tareas del periodo y actualiza métricas. |
-| `ingestMembers(List<MemberSnapshot>)`    | `void`         | Sincroniza datos de miembros. |
-| `updateBudget(Money approved, Money usedDelta)` | `void`   | Ajusta el presupuesto aprobado y el usado. |
-| `recalculateAverages()`                  | `void`         | Recalcula promedios por estado y prioridad. |
+| Método                                                | Retorno | Descripción |
+|-------------------------------------------------------|---------|-------------|
+| `ingestTasks(List<Task> tasks)`                       | `void`  | Integra tareas del periodo y actualiza métricas. |
+| `ingestMembers(List<MemberSnapshot> members)`         | `void`  | Sincroniza datos de miembros. |
+| `updateBudget(Money approved, Money usedDelta)`       | `void`  | Ajusta el presupuesto aprobado y el usado. |
+| `recalculateAverages()`                               | `void`  | Recalcula promedios por estado y prioridad. |
 | `recalculateRanking(String criteria, String priorityCode, String statusCode)` | `void` | Determina `bestMemberId` y `worstMemberId`. |
-| `toReportPayload()`                      | `ReportPayload`| Prepara los datos del **Project Report**. |
-| `reset()`                                | `void`         | Limpia métricas derivadas para recalcular. |
+| `reset()`                                             | `void`  | Limpia métricas derivadas para recalcular. |
 
 **Reglas clave**
 - Los conteos deben cuadrar con la suma de tareas por estado.
@@ -1700,29 +1852,28 @@ Mide el desempeño de un Team Member en el proyecto.
 
 **Atributos**
 
-| Atributo            | Tipo                  | Visibilidad | Descripción |
-|---------------------|-----------------------|-------------|-------------|
-| `projectId`         | int                   | Private     | Proyecto al que pertenece. |
-| `memberId`          | int                   | Private     | Miembro evaluado. |
-| `period`            | `DateRange`           | Private     | Rango de fechas considerado. |
-| `taskStats`         | `TaskStats`           | Private     | Conteos por estado del miembro. |
-| `avgMetrics`        | List<`AverageMetric`> | Private     | Horas promedio por estado o prioridad. |
-| `hourlyRate`        | `Money`               | Private     | Tarifa por hora. |
-| `spentHours`        | Float                 | Private     | Horas invertidas. |
-| `cost`              | `Money`               | Private     | Costo total del miembro. |
+| Atributo      | Tipo                  | Visibilidad | Descripción |
+|---------------|-----------------------|-------------|-------------|
+| `projectId`   | int                   | Private     | Proyecto al que pertenece. |
+| `memberId`    | int                   | Private     | Miembro evaluado. |
+| `period`      | `DateRange`           | Private     | Rango de fechas considerado. |
+| `taskStats`   | `TaskStats`           | Private     | Conteos por estado del miembro. |
+| `avgMetrics`  | List<`AverageMetric`> | Private     | Horas promedio por estado o prioridad. |
+| `hourlyRate`  | `Money`               | Private     | Tarifa por hora. |
+| `spentHours`  | Float                 | Private     | Horas invertidas. |
+| `cost`        | `Float`               | Private     | Costo total del miembro. |
 
 **Métodos**
 
-| Método                               | Retorno       | Descripción |
-|--------------------------------------|---------------|-------------|
-| `ingestTasks(List<Task> tasks)`      | `void`        | Integra tareas del miembro y actualiza métricas. |
-| `setHourlyRate(Money rate)`          | `void`        | Define o ajusta la tarifa por hora. |
-| `recalculateHours()`                 | `float`       | Recalcula horas invertidas. |
-| `recalculateCost()`                  | `Money`       | Recalcula el costo total del miembro. |
-| `recalculateAverages()`              | `void`        | Recalcula promedios por estado y prioridad. |
-| `velocity()`                         | `float`       | Velocidad del miembro. |
-| `toReportPayload(String kind)`       | `ReportPayload` | Prepara datos para **Member** o **Progress Report**. |
-| `reset()`                            | `void`        | Limpia métricas derivadas para recalcular. |
+| Método                          | Retorno | Descripción |
+|---------------------------------|---------|-------------|
+| `ingestTasks(List<Task> tasks)` | `void`  | Integra tareas del miembro y actualiza métricas. |
+| `setHourlyRate(Money rate)`     | `void`  | Define o ajusta la tarifa por hora. |
+| `recalculateHours()`            | `float` | Recalcula horas invertidas. |
+| `recalculateCost()`             | `Float` | Recalcula el costo total del miembro. |
+| `recalculateAverages()`         | `void`  | Recalcula promedios por estado y prioridad. |
+| `velocity()`                    | `float` | Velocidad del miembro. |
+| `reset()`                       | `void`  | Limpia métricas derivadas para recalcular. |
 
 **Reglas clave**
 - El costo total debe ser coherente con `tarifa × horas`.
@@ -1730,133 +1881,58 @@ Mide el desempeño de un Team Member en el proyecto.
 
 ---
 
-## 3. Aggregate: Report
-Guarda una foto del estado para historial y consulta.
-
-**Atributos**
-
-| Atributo      | Tipo          | Visibilidad | Descripción |
-|---------------|---------------|-------------|-------------|
-| `reportId`    | int           | Private     | Identificador del reporte. |
-| `kind`        | String        | Private     | `PROJECT`, `MEMBER` o `PROGRESS`. |
-| `generatedAt` | LocalDateTime | Private     | Momento de generación. |
-| `period`      | `DateRange`   | Private     | Rango de fechas cubierto. |
-| `payload`     | `ReportPayload` | Private   | Datos listos para la UI. |
-
-**Métodos**
-
-| Método                                            | Retorno  | Descripción |
-|---------------------------------------------------|----------|-------------|
-| `fromProject(ProjectAnalytics analytics)`         | `Report` | Crea un reporte **PROJECT**. |
-| `fromMember(MemberAnalytics analytics, String kind)` | `Report` | Crea un **MEMBER** o **PROGRESS**. |
-| `publish()`                                       | `void`   | Marca el reporte como definitivo. |
-| `getPayload()`                                    | `ReportPayload` | Devuelve el contenido. |
-
-**Reglas clave**
-- Una vez publicado, el reporte no se modifica.
-
----
-
-## 4. Entity: Task
-Tarea tal como llega del otro BC.
-
-| Campo          | Tipo          | Descripción |
-|----------------|---------------|-------------|
-| `taskId`       | int           | ID de la tarea. |
-| `memberId`     | int           | ID del asignado. |
-| `statusCode`   | String        | Código de estado externo. |
-| `priorityCode` | String        | Código de prioridad externo. |
-| `overdue`      | Boolean       | Si está vencida. |
-| `assignedAt`   | LocalDateTime | Fecha/hora de asignación. |
-| `completedAt`  | LocalDateTime?| Fecha/hora de finalización. |
-
----
-
-## 5. Entity: MemberSnapshot
-Tarjeta resumen para comparar desempeño y costo de un miembro.
-
-| Campo                 | Tipo         | Descripción |
-|----------------------|--------------|-------------|
-| `memberId`           | int          | ID del miembro. |
-| `taskStats`          | `TaskStats`  | Conteos por estado. |
-| `avgCompletionHours` | Float        | Horas promedio por tarea. |
-| `spentHours`         | Float        | Horas acumuladas. |
-| `hourlyRate`         | `Money`      | Tarifa por hora. |
-| `cost`               | `Money`      | Costo total. |
-
----
-
-## 6. Value Object: DateRange
+## 3. Value Object: DateRange
 Ventana de tiempo usada para los cálculos.
 
 | Atributo | Tipo      | Descripción |
-|----------|-----------|-------------|
-| `start`  | LocalDate | Inicio del rango (incluido). |
-| `end`    | LocalDate | Fin del rango (incluido). |
+|---------|-----------|-------------|
+| `start` | LocalDate | Inicio del rango (incluido). |
+| `end`   | LocalDate | Fin del rango (incluido). |
 
 **Reglas clave**
 - La fecha de inicio debe ser anterior o igual a la fecha de fin.
 
 ---
 
-## 7. Value Object: Money
-Dinero con su moneda.
-
-| Atributo   | Tipo            | Descripción |
-|------------|-----------------|-------------|
-| `amount`   | Decimal(12,2)   | Monto. |
-| `currency` | String          | Moneda (ej.: `"USD"`). |
-
----
-
-## 8. Value Object: TaskStats
+## 4. Value Object: TaskStats
 Conteo rápido de cómo van las tareas.
 
-| Atributo      | Tipo | Descripción |
-|---------------|------|-------------|
-| `total`       | Int  | Total de tareas. |
-| `notStarted`  | Int  | No iniciadas. |
-| `inProgress`  | Int  | En progreso. |
-| `done`        | Int  | Completadas. |
-| `overdue`     | Int  | Vencidas. |
+| Atributo     | Tipo | Descripción |
+|--------------|------|-------------|
+| `total`      | Int  | Total de tareas. |
+| `notStarted` | Int  | No iniciadas. |
+| `inProgress` | Int  | En progreso. |
+| `done`       | Int  | Completadas. |
+| `overdue`    | Int  | Vencidas. |
 
 **Reglas clave**
 - El total debe coincidir con la suma de los estados.
 
 ---
 
-## 9. Value Object: AverageMetric
+## 5. Value Object: AverageMetric
 Promedio de horas para un estado o prioridad.
 
-| Atributo      | Tipo   | Descripción |
-|---------------|--------|-------------|
-| `dimension`   | String | STATUS o PRIORITY. |
-| `code`        | String | Código de estado o prioridad. |
-| `avgHours`    | Float  | Horas promedio. |
+| Atributo    | Tipo   | Descripción |
+|-------------|--------|-------------|
+| `dimension` | String | STATUS o PRIORITY. |
+| `code`      | String | Código de estado o prioridad. |
+| `avgHours`  | Float  | Horas promedio. |
 
 ---
 
-## 10. Value Object: BudgetUsage
+## 6. Value Object: BudgetUsage
 Cómo va el presupuesto del proyecto.
 
 | Atributo   | Tipo    | Descripción |
 |------------|---------|-------------|
-| `approved` | `Money` | Presupuesto aprobado. |
-| `used`     | `Money` | Suma de costos utilizados. |
-| `variance` | `Money` | Diferencia entre aprobado y usado. |
+| `approved` | `Float` | Presupuesto aprobado. |
+| `used`     | `Float` | Suma de costos utilizados. |
+| `variance` | `Float` | Diferencia entre aprobado y usado. |
 
 ---
 
-## 11. Value Object: ReportPayload
-Paquete genérico de datos de reporte.
-
-| Atributo | Tipo                | Descripción |
-|----------|---------------------|-------------|
-| `data`   | Map<String, Object> | Datos listos para la UI. |
-
----
-
-## 12. Repository: ProjectAnalyticsRepository
+## 7. Repository: ProjectAnalyticsRepository
 Persistencia de `ProjectAnalytics`.
 
 **Métodos**
@@ -1865,7 +1941,7 @@ Persistencia de `ProjectAnalytics`.
 
 ---
 
-## 13. Repository: MemberAnalyticsRepository
+## 8. Repository: MemberAnalyticsRepository
 Persistencia de `MemberAnalytics`.
 
 **Métodos**
@@ -1874,171 +1950,91 @@ Persistencia de `MemberAnalytics`.
 
 ---
 
-## 14. Repository: ReportRepository
-Persistencia de reportes de `Report`.
-
-**Métodos**
-- `findById(int reportId)` — Obtiene un reporte por su ID.  
-- `save(Report report)` — Guarda un reporte.  
-- `findLatestProjectReport(int projectId, DateRange period)` — Último **PROJECT** del periodo.  
-- `findLatestMemberReport(int projectId, int memberId, String kind, DateRange period)` — Último **MEMBER/PROGRESS** del periodo.  
-- `existsById(int reportId)` — Verifica si existe un reporte por su ID.
-
----
-
-En la Domain Layer de Analítica y Reportes, este modelo recibe tareas y miembros desde otros bounded contexts, calcula conteos, promedios, costos y presupuesto **dentro de los Aggregates** (apoyado opcionalmente por `StatsCalculator`), consolida todo en `ProjectAnalytics` y `MemberAnalytics`, publica reportes con `Report` y persiste la información a través de Repositories para que el resto del sistema pueda visualizar dashboards y reportes de forma confiable.
-
+En la Domain Layer de Analítica y Reportes, este modelo recibe tareas y miembros desde otros bounded contexts, calcula conteos, promedios, costos y presupuesto dentro de los **Aggregates** y persiste las métricas a través de los **Repositories** para que el frontend pueda visualizar dashboards (Project, Member y Progress) con datos confiables **sin historial ni descargas**.
 
 #### 2.6.1.2. Interface Layer
 
-
-La Interface Layer expone los endpoints HTTP (REST + JSON) que permiten al frontend solicitar la generación de estadísticas y obtener reportes para el Project Dashboard, Member Dashboard y Progress Report.  
+La Interface Layer expone los endpoints HTTP (REST + JSON) que permiten al frontend **generar y consultar métricas vivas** para el Project Dashboard, Member Dashboard y la vista de Progress (personal).  
 En esta capa no hay reglas de negocio: los controladores reciben las peticiones, validan formato, convierten recursos a comandos/consultas y delegan en los servicios de la Application Layer.
 
 ---
 
-## Controlador: **ProjectReportsController**
+## Controlador: **AnalyticsController**
 
-Gestiona endpoints del Proyecto para generar estadísticas, consultar métricas, ranking, presupuesto y emitir reportes tipo **PROJECT**.
+Gestiona métricas de **Proyecto** y **Miembro**, ranking y presupuesto.
 
 ### Métodos
 
 | Método | Ruta | Descripción |
 |---|---|---|
-| `POST` | `/api/v1/projects/{projectId}/analytics/generate` | `generateProjectAnalytics()` — Dispara el cálculo/actualización de estadísticas del proyecto para un rango de fechas. |
+| `POST` | `/api/v1/projects/{projectId}/analytics/generate` | `generateProjectAnalytics()` — Dispara el cálculo/actualización de métricas del proyecto para un rango de fechas. |
 | `GET`  | `/api/v1/projects/{projectId}/analytics` | `getProjectAnalytics()` — Retorna métricas actuales del proyecto (`ProjectAnalyticsDTO`) para un rango. |
-| `POST` | `/api/v1/projects/{projectId}/ranking/recalculate` | `recalculateRanking()` — Recalcula el ranking con criterio y filtros opcionales. |
-| `GET`  | `/api/v1/projects/{projectId}/ranking` | `getProjectRanking()` — Devuelve `bestMemberId`, `worstMemberId` y `rankingReason`. |
+| `POST` | `/api/v1/projects/{projectId}/ranking/recalculate` | `recalculateRanking()` — Recalcula `bestMemberId`, `worstMemberId` y `rankingReason` con criterio y filtros opcionales. |
+| `GET`  | `/api/v1/projects/{projectId}/ranking` | `getProjectRanking()` — Devuelve el ranking actual del proyecto. |
 | `PATCH`| `/api/v1/projects/{projectId}/budget` | `updateProjectBudget()` — Actualiza presupuesto aprobado/usado. |
-| `POST` | `/api/v1/projects/{projectId}/reports` | `generateProjectReport()` — Crea un reporte **PROJECT** y lo publica. |
-| `GET`  | `/api/v1/projects/{projectId}/reports/latest` | `getLatestProjectReport()` — Obtiene el último reporte **PROJECT** (opcionalmente filtrado por rango). |
-| `GET`  | `/api/v1/reports/{reportId}` | `getReportById()` — Recupera un reporte por su identificador. |
+| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/analytics/generate` | `generateMemberAnalytics()` — Calcula/actualiza métricas del miembro para un rango. |
+| `GET`  | `/api/v1/projects/{projectId}/members/{memberId}/analytics` | `getMemberAnalytics()` — Retorna métricas del miembro (`MemberAnalyticsDTO`). |
+| `PATCH`| `/api/v1/projects/{projectId}/members/{memberId}/hourly-rate` | `setMemberHourlyRate()` — Define/actualiza la tarifa por hora del miembro. |
 
 ### Dependencias
 
 - **Command Services**
   - `ProjectAnalyticsCommandService` — ejecuta *GenerateProjectAnalytics*, *RecalculateRanking*, *UpdateProjectBudget*.
-  - `ReportCommandService` — ejecuta *GenerateProjectReport* y *DeleteReport*.
+  - `MemberAnalyticsCommandService` — ejecuta *GenerateMemberAnalytics* y *SetMemberHourlyRate*.
 - **Query Services**
   - `ProjectAnalyticsQueryService` — obtiene `ProjectAnalytics`.
-  - `ReportQueryService` — obtiene reportes por `id` o el *latest*.
+  - `MemberAnalyticsQueryService` — obtiene `MemberAnalytics`.
 - **Assemblers (Resources ↔ DTOs/Commands)**
   - `GenerateProjectAnalyticsCommandFromResourceAssembler`
   - `RecalculateRankingCommandFromResourceAssembler`
   - `UpdateProjectBudgetCommandFromResourceAssembler`
-  - `ProjectAnalyticsDTOAssembler`
-  - `RankingResponseAssembler`
-  - `ReportDTOAssembler`
-
----
-
-## Controlador: **MemberReportsController**
-
-Gestiona endpoints de Miembro dentro de un proyecto: generar/consultar estadísticas y emitir reportes tipo **MEMBER** (consumidos por el Team Leader).
-
-### Métodos
-
-| Método | Ruta | Descripción |
-|---|---|---|
-| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/analytics/generate` | `generateMemberAnalytics()` — Calcula/actualiza métricas del miembro para un rango. |
-| `GET`  | `/api/v1/projects/{projectId}/members/{memberId}/analytics` | `getMemberAnalytics()` — Retorna métricas del miembro (`MemberAnalyticsDTO`). |
-| `PATCH`| `/api/v1/projects/{projectId}/members/{memberId}/hourly-rate` | `setMemberHourlyRate()` — Define/actualiza la tarifa por hora del miembro. |
-| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/reports` | `generateMemberReport()` — Crea reporte **MEMBER** y lo publica. |
-| `GET`  | `/api/v1/projects/{projectId}/members/{memberId}/reports/latest?kind=MEMBER|PROGRESS` | `getLatestMemberReport()` — Obtiene el último reporte del miembro. `kind` debe ser `MEMBER` o `PROGRESS`. |
-
-### Dependencias
-
-- **Command Services**
-  - `MemberAnalyticsCommandService` — ejecuta *GenerateMemberAnalytics* y *SetMemberHourlyRate*.
-  - `ReportCommandService` — ejecuta *GenerateMemberReport* y *DeleteReport*.
-- **Query Services**
-  - `MemberAnalyticsQueryService` — obtiene `MemberAnalytics`.
-  - `ReportQueryService` — obtiene *latest* o por `id`.
-- **Assemblers**
   - `GenerateMemberAnalyticsCommandFromResourceAssembler`
   - `SetMemberHourlyRateCommandFromResourceAssembler`
+  - `ProjectAnalyticsDTOAssembler`
   - `MemberAnalyticsDTOAssembler`
-  - `ReportDTOAssembler`
-
----
-
-## Controlador: **ProgressReportsController**
-
-Gestiona endpoints para que un Team Member genere y consulte su Progress Report (reporte personal).
-
-### Métodos
-
-| Método | Ruta | Descripción |
-|---|---|---|
-| `POST` | `/api/v1/projects/{projectId}/members/{memberId}/progress-reports` | `generateProgressReport()` — Genera y publica un reporte **PROGRESS** para el miembro. |
-| `GET`  | `/api/v1/projects/{projectId}/members/{memberId}/progress-reports/latest` | `getLatestProgressReport()` — Obtiene el último **PROGRESS** del miembro. |
-| `GET`  | `/api/v1/projects/{projectId}/members/{memberId}/progress-reports/{reportId}` | `getProgressReportById()` — Recupera un **PROGRESS** por id. |
-
-### Dependencias
-
-- **Command Services**
-  - `ReportCommandService` — ejecuta *GenerateProgressReport* y *DeleteReport*.
-- **Query Services**
-  - `ReportQueryService` — obtiene *latest* o por `id`.
-- **Assemblers**
-  - `ProgressReportCommandFromResourceAssembler`
-  - `ReportDTOAssembler`
+  - `RankingResponseAssembler`
 
 ---
 
 ## DTOs de Entrada/Salida 
 
 - `DateRangeDTO { startDate, endDate }`
-- `MoneyDTO { amount, currency }`
 - `TaskStatsDTO { total, notStarted, inProgress, done, overdue }`
 - `AverageMetricDTO[]` con elementos `{ dimension, code, avgHours }`
 - `BudgetUsageDTO { approved, used, variance }`
 - `MemberSnapshotDTO { memberId, taskStats, avgCompletionHours, spentHours, hourlyRate, cost }`
 - `ProjectAnalyticsDTO { projectId, period, taskStats, avgMetrics, budget, members, bestMemberId, worstMemberId, rankingReason }`
 - `MemberAnalyticsDTO { projectId, memberId, period, taskStats, avgMetrics, hourlyRate, spentHours, cost, velocity }`
-- `ReportDTO { reportId, kind, generatedAt, period, payload }`
 
 
 #### 2.6.1.3. Application Layer: Analítica y Reportes
 
-La Application Layer coordina la lógica que se ejecuta frente a comandos y eventos  
-Los CommandHandlers procesan solicitudes del usuario (generar estadísticas y reportes, actualizar presupuesto/tarifa).  
+La Application Layer coordina la lógica que se ejecuta frente a **comandos** y **eventos**.  
+Los CommandHandlers procesan solicitudes del usuario (generar/actualizar estadísticas, recalcular ranking, actualizar presupuesto/tarifa).  
 Los EventHandlers reaccionan a cambios del sistema (tareas asignadas/completadas/vencidas, cambios de presupuesto o tarifa) para mantener las métricas al día.
 
 ---
 
 ### Servicio (CommandHandler): ProjectAnalyticsCommandServiceImpl
 
-Atiende comandos relacionados al Proyecto generación/actualización de métricas agregadas, ranking y presupuesto.
+Atiende comandos relacionados al Proyecto: generación/actualización de métricas agregadas, ranking y presupuesto.
 
 | Método | Descripción |
 |---|---|
 | `handle(GenerateProjectAnalyticsCommand)` | Calcula o refresca las métricas del proyecto para un periodo (conteos, promedios, costos por miembro) y persiste el resultado. |
-| `handle(RecalculateRankingCommand)` | Recalcula `bestMember` y `worstMember` según el criterio/filtros solicitados y actualiza el agregado. |
+| `handle(RecalculateRankingCommand)` | Recalcula `bestMemberId`, `worstMemberId` y `rankingReason` según el criterio/filtros solicitados y actualiza el agregado. |
 | `handle(UpdateProjectBudgetCommand)` | Actualiza el presupuesto aprobado/usado y su varianza en las métricas del proyecto. |
 
 ---
 
 ### Servicio (CommandHandler): MemberAnalyticsCommandServiceImpl
 
- Atiende comandos del Team Member dentro de un proyecto.
+Atiende comandos del Team Member dentro de un proyecto.
 
 | Método | Descripción |
 |---|---|
 | `handle(GenerateMemberAnalyticsCommand)` | Calcula o refresca las métricas del miembro (conteos, promedios, horas, costo, velocidad) y las persiste. |
 | `handle(SetMemberHourlyRateCommand)` | Actualiza la tarifa por hora del miembro y recalcula su costo acumulado para el periodo. |
-
----
-
-### Servicio (CommandHandler): ReportCommandServiceImpl
-
-Genera y administra reportes.
-
-| Método | Descripción |
-|---|---|
-| `handle(GenerateProjectReportCommand)` | Crea un **PROJECT Report** a partir de `ProjectAnalytics`, lo marca como publicado y lo almacena. |
-| `handle(GenerateMemberReportCommand)` | Crea un **MEMBER** o **PROGRESS Report** a partir de `MemberAnalytics`, lo publica y lo almacena. |
-| `handle(DeleteReportCommand)` | Elimina un reporte cuando la política de retención lo permite. |
 
 ---
 
@@ -2056,48 +2052,38 @@ Reacciona a eventos del BC de Gestión de Proyectos y Tareas para mantener las a
 | `handle(MemberHourlyRateChangedEvent)` | Actualiza la tarifa del miembro y recalcula su costo. |
 
 ---
- 
-### Servicio (QueryHandler): ProjectAnalyticsQueryServiceImpl
-Atiende consultas de métricas del Proyecto ya calculadas .
-| Método                             | Descripción                                                              |
-| ---------------------------------- | ------------------------------------------------------------------------ |
-| `handle(GetProjectAnalyticsQuery)` | Retorna `ProjectAnalytics` del proyecto y periodo indicados (si existe). |
-| `handle(GetProjectRankingQuery)`   | Devuelve `bestMember`, `worstMember` y el ranking actual del proyecto.   |
 
-*Dependencias:*
--`ProjectAnalyticsRepository`
+### Servicio (QueryHandler): ProjectAnalyticsQueryServiceImpl
+Atiende consultas de métricas del Proyecto ya calculadas.
+
+| Método | Descripción |
+|---|---|
+| `handle(GetProjectAnalyticsQuery)` | Retorna `ProjectAnalytics` del proyecto y periodo indicados (si existe). |
+| `handle(GetProjectRankingQuery)` | Devuelve `bestMemberId`, `worstMemberId` y el `rankingReason` actuales del proyecto. |
+
+*Dependencias:*  
+- `ProjectAnalyticsRepository`
 
 ---
 
 ### Servicio (QueryHandler): MemberAnalyticsQueryServiceImpl
 
 Atiende consultas de métricas del Team Member dentro de un proyecto.
-| Método                            | Descripción                                                                 |
-| --------------------------------- | --------------------------------------------------------------------------- |
+
+| Método | Descripción |
+|---|---|
 | `handle(GetMemberAnalyticsQuery)` | Retorna `MemberAnalytics` para `projectId` y `memberId` en el periodo dado. |
 
-*Dependencias:*
--`MemberAnalyticsRepository`
-
----
-### Servicio (QueryHandler): ReportQueryServiceImpl
-
-Atiende consultas de reportes
-| Método                                 | Descripción                                                           |
-| -------------------------------------- | --------------------------------------------------------------------- |
-| `handle(GetReportByIdQuery)`           | Retorna un `Report` por su `reportId`.                                |
-| `handle(GetLatestProjectReportQuery)`  | Retorna el último `Report` tipo **PROJECT** del periodo.              |
-| `handle(GetLatestMemberReportQuery)`   | Retorna el último `Report` tipo **MEMBER** del miembro en el periodo. |
-| `handle(GetLatestProgressReportQuery)` | Retorna el último `Report` tipo **PROGRESS** del miembro.             |
-
-*Dependencias:*
--`ReportRepository`
+*Dependencias:*  
+- `MemberAnalyticsRepository`
 
 
 #### 2.6.1.4. Infrastructure Layer: Analítica y Reportes
 
-En la Infrastructure Layer se ubican las clases que interactúan con la ]base de datos] u otros servicios necesarios para persistir y recuperar información clave (métricas y reportes).  
-Aquí se implementan las interfaces de Repositories definidas en el Domain Layer.
+En la Infrastructure Layer se ubican las clases que interactúan con la base de datos u otros servicios necesarios para persistir y recuperar información clave **de métricas**.  
+Aquí se implementan las interfaces de Repositories definidas en el Domain Layer.  
+
+---
 
 ### Repository: ProjectAnalyticsRepositoryImpl
 
@@ -2119,65 +2105,656 @@ Implementación de acceso a datos para `MemberAnalytics`.
 | `findByProjectIdAndMemberId(int projectId, int memberId)` | `Optional<MemberAnalytics>` | Public | Recupera las métricas del miembro dentro del proyecto. |
 | `save(MemberAnalytics aggregate)` | `void` | Public | Inserta o actualiza las métricas del miembro (taskStats, avgMetrics, horas, costo, velocidad). |
 
----
-
-### Repository: ReportRepositoryImpl
-
-Implementación de acceso a datos para reportes de `Report`.
-
-| Método | Tipo de retorno | Visibilidad | Descripción |
-|---|---|---|---|
-| `findById(int reportId)` | `Optional<Report>` | Public | Recupera un reporte por su identificador. |
-| `save(Report report)` | `Report` | Public | Almacena un reporte publicado. |
-| `findLatestProjectReport(int projectId, DateRange period)` | `Optional<Report>` | Public | Devuelve el último **PROJECT Report** dentro del periodo. |
-| `findLatestMemberReport(int projectId, int memberId, String kind, DateRange period)` | `Optional<Report>` | Public | Devuelve el último **MEMBER/PROGRESS Report** del miembro dentro del periodo. |
-| `existsById(int reportId)` | `Boolean` | Public | Verifica si un reporte existe por su ID. |
-
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
-![ddd](Assets/TB1/C4-Component-AnaliticaYReportes.png)
+![ddd](Assets/TB1/C4-componentesv1-AYR.png)
 
 
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
-
+A continuacion se mostraran como se interconectan los componentes a mayor detalle
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-
+![ddd](Assets/TB1/Diagrama-Clases-AYR.png)
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+![ddd](Assets/TB1/DiagramClassAYR.PNG)
 
 ####  2.6.3. Bounded Context:Visualización y Seguimiento
 
-##### 2.6.1.1. Domain Layer
+##### 2.6.3.1. Domain Layer
 
-##### 2.6.1.2. Interface Layer
+La capa de dominio constituye el núcleo de la aplicación, donde se definen las reglas y modelos que permiten ofrecer a los miembros del equipo una visión clara y organizada del estado de los proyectos y tareas.  
+En este contexto, el agregado **VisualizationAggregate** actúa como la raíz que integra tanto los tableros de tareas como las vistas de calendario, garantizando que la información se muestre de forma coherente y en tiempo real.
 
-##### 2.6.1.3. Application Layer
+**Objetivo:** Representar las entidades que permiten la visualización y seguimiento de las tareas y proyectos, asegurando que cada cambio en el estado de una tarea se refleje de manera precisa en tableros y calendarios sincronizados.
 
-##### 2.6.1.4. Infrastructure Layer
+---
 
-##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+* **Aggregate: VisualizationAggregate**  
+**Descripción:** Este agregado coordina la información proveniente de tableros y calendarios. Centraliza las actualizaciones recibidas de otros bounded contexts (como Gestión de Proyectos y Tareas) y asegura que las vistas se mantengan actualizadas.
 
-##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|id|Long|Identificador único del agregado.|
+|taskBoard|TaskBoard|Tablero asociado que agrupa tareas en diferentes estados.|
+|calendarView|CalendarView|Vista de calendario con eventos relacionados a tareas y proyectos.|
 
-###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+|Método|Descripción|
+|:-|:-|
+|updateBoard(Task task)|Actualiza el tablero con el nuevo estado de la tarea.|
+|updateCalendar(Task task)|Refleja en el calendario las fechas relevantes de la tarea.|
+|synchronizeViews()|Asegura que tablero y calendario muestren información coherente.|
 
-###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+---
+
+* **Entity: TaskBoard**  
+**Descripción:** Representa un tablero visual donde se agrupan tareas y proyectos en columnas según su estado actual.
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|boardId|Long|Identificador único del tablero.|
+|name|String|Nombre asignado al tablero.|
+|columns|List<TaskStatus>|Lista de columnas que agrupan tareas según su estado.|
+
+|Método|Descripción|
+|:-|:-|
+|addColumn(String name)|Agrega una nueva columna al tablero.|
+|moveTask(Task task, TaskStatus status)|Mueve una tarea de una columna a otra.|
+|refreshBoard()|Refresca la visualización del tablero para reflejar cambios.|
+
+---
+
+* **Entity: CalendarView**  
+**Descripción:** Representa una vista de calendario en la que se muestran fechas de inicio, vencimiento y progreso de las tareas.
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|calendarId|Long|Identificador único de la vista calendario.|
+|events|List<TimeFrame>|Lista de eventos que representan hitos o tareas con fechas clave.|
+
+|Método|Descripción|
+|:-|:-|
+|addEvent(TimeFrame event)|Agrega un evento al calendario.|
+|updateEvent(Task task)|Modifica las fechas de un evento existente.|
+|highlightOverdueTasks()|Resalta visualmente las tareas vencidas.|
+
+---
+
+* **Value Object: TaskStatus**  
+**Descripción:** Define el estado de una tarea dentro del flujo de seguimiento.
+
+|Valor|Descripción|
+|:-|:-|
+|Pendiente|Tarea aún no iniciada.|
+|En Progreso|Tarea actualmente en ejecución.|
+|Completada|Tarea finalizada exitosamente.|
+|Vencida|Tarea cuyo plazo expiró sin completarse.|
+
+---
+
+* **Value Object: TimeFrame**  
+**Descripción:** Encapsula las fechas de inicio y vencimiento de una tarea o proyecto.
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|startDate|Date|Fecha de inicio.|
+|dueDate|Date|Fecha de vencimiento.|
+
+|Método|Descripción|
+|:-|:-|
+|isOverdue()|Devuelve `true` si la fecha actual es posterior al vencimiento.|
+|remainingDays()|Calcula los días restantes hasta la fecha de vencimiento.|
+
+---
+
+* **Domain Service: VisualizationService**  
+**Descripción:** Gestiona la actualización de las vistas (tableros y calendarios) al procesar eventos provenientes de otros bounded contexts.
+
+|Método|Descripción|
+|:-|:-|
+|processTaskUpdate(Task task)|Procesa un evento de actualización de tarea y actualiza las vistas correspondientes.|
+|notifyCriticalChange(Task task)|Comunica a Notificaciones los cambios críticos (ej. tarea vencida).|
+
+---
+
+* **Repository Interfaces**  
+
+- **ITaskBoardRepository**  
+  Métodos:  
+  - `saveBoard(TaskBoard board)`  
+  - `getBoardById(Long id)`  
+  - `updateBoard(TaskBoard board)`  
+
+- **ICalendarRepository**  
+  Métodos:  
+  - `saveCalendar(CalendarView calendar)`  
+  - `getCalendarById(Long id)`  
+  - `updateCalendar(CalendarView calendar)`  
+
+
+##### 2.6.3.2. Interface Layer
+
+La capa de interfaz es la encargada de manejar la comunicación entre el usuario y el sistema, así como entre sistemas externos que envían o reciben eventos. Aquí se definen los controladores y consumidores responsables de recibir solicitudes, procesarlas y delegarlas a la capa de dominio.
+
+**Objetivo:** Facilitar la interacción de los usuarios y sistemas externos con las funcionalidades de visualización y seguimiento, asegurando que las operaciones sobre tableros y calendarios se gestionen de forma clara y eficiente.
+
+---
+
+* **Controller: VisualizationController**  
+**Descripción:** Expone endpoints REST para acceder y actualizar las vistas de tableros y calendarios de tareas.
+
+|Método|Ruta|Descripción|
+|:-|:-|:-|
+|getBoard(Long boardId)|GET `/boards/{boardId}`|Obtiene el estado actual de un tablero.|
+|getCalendar(Long calendarId)|GET `/calendars/{calendarId}`|Obtiene la vista del calendario asociado a un proyecto.|
+|updateTaskStatus(Long taskId, TaskStatus status)|PUT `/tasks/{taskId}/status`|Actualiza el estado de una tarea en tablero y calendario.|
+|refreshViews()|POST `/views/refresh`|Fuerza la sincronización entre tablero y calendario.|
+
+---
+
+* **Controller: TaskTrackingController**  
+**Descripción:** Controlador orientado al seguimiento de tareas específicas. Permite consultar y visualizar su progreso.
+
+|Método|Ruta|Descripción|
+|:-|:-|:-|
+|getTaskProgress(Long taskId)|GET `/tasks/{taskId}/progress`|Devuelve el progreso detallado de una tarea.|
+|getOverdueTasks()|GET `/tasks/overdue`|Lista todas las tareas vencidas en el sistema.|
+|getTeamOverview(Long projectId)|GET `/projects/{projectId}/overview`|Muestra el estado general del equipo en el proyecto.|
+
+---
+
+* **Consumer: TaskEventConsumer**  
+**Descripción:** Clase encargada de recibir eventos de actualización de tareas provenientes del bounded context de Gestión de Proyectos y Tareas.
+
+|Evento|Acción|
+|:-|:-|
+|TaskCreated|Agrega la tarea al tablero y al calendario.|
+|TaskUpdated|Actualiza la información de la tarea en las vistas.|
+|TaskCompleted|Marca la tarea como completada en tablero y calendario.|
+|TaskOverdue|Resalta la tarea vencida y notifica cambios críticos.|
+
+---
+
+* **Consumer: NotificationConsumer**  
+**Descripción:** Recibe eventos de Analítica y Reportes o de Notificaciones para reflejar cambios visuales en la interfaz de seguimiento.  
+
+|Evento|Acción|
+|:-|:-|
+|StatisticsUpdatedEvent|Refresca la vista con estadísticas resumidas.|
+
+##### 2.6.3.3. Application Layer
+
+La capa de aplicación se encarga de coordinar los flujos de procesos del negocio relacionados con la visualización y el seguimiento.
+**Objetivo:** Gestionar la lógica de orquestación de procesos, ejecutando comandos y reaccionando a eventos que afectan la visualización de tableros y calendarios, para mantener la información siempre actualizada y consistente.
+
+---
+
+* **Command Handler: UpdateTaskStatusHandler**  
+**Descripción:** Maneja el comando para actualizar el estado de una tarea. Se asegura de que los cambios se reflejen tanto en el tablero como en el calendario.  
+
+|Comando|Acción|
+|:-|:-|
+|UpdateTaskStatusCommand|Valida el cambio de estado de la tarea, lo aplica en el dominio y notifica la actualización a los consumidores visuales.|
+
+---
+
+* **Command Handler: RefreshBoardViewHandler**  
+**Descripción:** Ejecuta la acción de refrescar las vistas de un tablero o calendario cuando se solicita manualmente.  
+
+|Comando|Acción|
+|:-|:-|
+|RefreshBoardViewCommand|Solicita al dominio regenerar las vistas de tablero y calendario para reflejar datos actuales.|
+
+---
+
+* **Event Handler: TaskCreatedEventHandler**  
+**Descripción:** Reacciona a la creación de una tarea proveniente del bounded context de Gestión de Proyectos y Tareas.  
+
+|Evento|Acción|
+|:-|:-|
+|TaskCreatedEvent|Inicia la sincronización para agregar la tarea en las vistas de tablero y calendario.|
+
+---
+
+* **Event Handler: TaskCompletedEventHandler**  
+**Descripción:** Gestiona el evento que indica que una tarea ha sido completada.  
+
+|Evento|Acción|
+|:-|:-|
+|TaskCompletedEvent|Actualiza el tablero y calendario para marcar la tarea como completada y recalcula los indicadores visuales.|
+
+---
+
+* **Event Handler: TaskOverdueEventHandler**  
+**Descripción:** Procesa el evento de tarea vencida y resalta el cambio en las vistas visuales.  
+
+|Evento|Acción|
+|:-|:-|
+|TaskOverdueEvent|Marca la tarea como atrasada en el tablero, actualiza el calendario y emite notificaciones visuales.|
+
+
+
+##### 2.6.3.4. Infrastructure Layer
+**Objetivo:** Implementar los mecanismos técnicos de persistencia y comunicación externa que aseguren la consistencia y disponibilidad de la información visualizada en tableros y calendarios.
+
+---
+
+* **Repository: TaskViewRepositoryImpl**  
+**Descripción:** Implementación concreta del repositorio definido en la capa de dominio. Se encarga de almacenar y recuperar el estado visual de las tareas para tableros y calendarios.  
+
+|Método|Acción|
+|:-|:-|
+|save(TaskView taskView)|Guarda el estado actualizado de una vista de tarea en la base de datos.|
+|findByProjectId(Long projectId)|Recupera todas las vistas de tareas asociadas a un proyecto específico.|
+|updateStatus(Long taskId, String status)|Actualiza el estado de una tarea y lo refleja en la persistencia.|
+|deleteByTaskId(Long taskId)|Elimina la vista de una tarea del repositorio.|
+
+---
+
+* **Repository: BoardViewRepositoryImpl**  
+**Descripción:** Administra la persistencia de configuraciones y estados de los tableros de visualización.  
+
+|Método|Acción|
+|:-|:-|
+|save(BoardView boardView)|Guarda la configuración actual de un tablero.|
+|findByUserId(Long userId)|Recupera el tablero asociado a un usuario.|
+|refresh(Long boardId)|Actualiza y sincroniza los datos del tablero desde la base de datos.|
+
+---
+
+* **MessageBroker Adapter: EventConsumer**  
+**Descripción:** Clase que escucha los eventos provenientes de otros bounded contexts (como Gestión de Proyectos y Tareas) y los adapta para ser procesados por los Event Handlers en la Application Layer.  
+
+|Evento recibido|Acción|
+|:-|:-|
+|TaskCreatedEvent|Convierte el mensaje recibido en un evento de dominio interno y lo pasa al Event Handler correspondiente.|
+|TaskCompletedEvent|Adapta el evento para actualizar las vistas locales de las tareas.|
+|TaskOverdueEvent|Procesa el mensaje y lo reenvía para resaltar tareas vencidas.|
+
+---
+
+* **Database Adapter: TaskViewEntity**  
+**Descripción:** Clase de mapeo (ORM) que traduce los objetos de dominio como `TaskView` a entidades de persistencia en la base de datos relacional.  
+
+|Atributo|Tipo|Descripción|
+|:-|:-|:-|
+|id|Long|Identificador único de la vista de tarea.|
+|taskId|Long|Identificador de la tarea original.|
+|status|String|Estado actual de la tarea (pendiente, en progreso, completada, vencida).|
+|lastUpdated|Date|Fecha y hora de la última sincronización.|
+
+##### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+![ddd](Assets/TB1/ddd.png)
+
+##### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+![ddd](Assets/TB1/domain.png)
+
+###### 2.6.3.6.2. Bounded Context Database Design Diagrams
+
 
 #### 2.6.4. Bounded Context: Gestión de Proyectos y Tareas
 
 ##### 2.6.1.1. Domain Layer
 
+El Domain Layer de este bounded context concentra las reglas de negocio esenciales relacionadas con la creación, asignación y seguimiento de proyectos y tareas. Esta capa se encarga de representar los conceptos fundamentales mediante aggregates, entities, value objects, domain services y repositories.
+
+1. **Aggregate: Project**
+
+**Descripción:**
+
+El proyecto es la raíz de agregado, encargado de mantener la consistencia de su información interna y de las tareas que le pertenecen. A través del DateRange asegura que las fechas sean válidas y mediante su lista de tareas gestiona el ciclo de vida de estas.
+
+| Atributo   | Tipo          | Descripción                                      |
+|------------|---------------|--------------------------------------------------|
+| projectId  | int           | Identificador único del proyecto.                |
+| title      | String        | Nombre del proyecto.                             |
+| description| String        | Descripción general.                             |
+| dateRange  | DateRange     | Período de inicio y fin del proyecto.            |
+| status     | String        | Estado del proyecto (activo, completado, cancelado). |
+| tasks      | List<Task>    | Conjunto de tareas asociadas al proyecto.        |
+| ownerId    | int           | Identificador del usuario responsable.           |
+
+**Métodos:**
+
+- addTask(Task task): Agrega una nueva tarea validando que esté dentro del rango de fechas.
+- removeTask(int taskId): Elimina una tarea del proyecto.
+- updateStatus(String newStatus): Cambia el estado del proyecto.
+- getProgress(): Retorna el porcentaje de avance calculado en función de las tareas.
+
+2. **Entity: Task**
+
+**Descripción:**
+
+Una tarea representa una unidad de trabajo dentro de un proyecto. Mantiene atributos como prioridad, estado y las fechas de asignación y finalización.
+
+| Atributo       | Tipo           | Descripción                                                |
+|----------------|----------------|------------------------------------------------------------|
+| taskId         | int            | Identificador único de la tarea.                           |
+| title          | String         | Nombre de la tarea.                                        |
+| description    | String         | Detalle de la tarea.                                       |
+| dueDate        | LocalDate      | Fecha límite para completarla.                             |
+| priority       | PriorityLevel  | Nivel de prioridad.                                        |
+| status         | TaskStatus     | Estado actual de la tarea.                                 |
+| assignedUserId | int            | Identificador del usuario asignado.                        |
+| assignedAt     | LocalDateTime  | Fecha y hora en que fue asignada.                          |
+| completedAt    | LocalDateTime? | Fecha y hora en que fue completada (opcional).             |
+
+**Métodos:**
+
+- updateStatus(TaskStatus newStatus): Cambia el estado de la tarea.
+- assignUser(int userId):  Asigna un responsable.
+- markAsCompleted():  Marca la tarea como finalizada registrando completedAt.
+
+3. **Value Object: TaskStatus**
+
+**Descripción:**
+
+Representa el estado de una tarea. Se define como un objeto de valor para mantener consistencia.
+
+**Valores posibles:**
+
+- TO_DO
+- IN_PROGRESS
+- DONE
+
+4. **Value Object: PriorityLevel**
+
+**Descripción:**
+
+Define la importancia relativa de una tarea.
+
+**Valores posibles:**
+
+- HIGH
+- MEDIUM
+- LOW
+
+5. **Value Object: DateRange**
+
+**Descripción:**
+
+Intervalo de fechas que determina el tiempo de duración de un proyecto.
+
+| Atributo  | Tipo       | Descripción             |
+|-----------|------------|-------------------------|
+| startDate | LocalDate  | Fecha de inicio.        |
+| endDate   | LocalDate  | Fecha de finalización.  |
+
+**Reglas clave:**
+
+- startDate debe ser anterior o igual a endDate.
+
+6. **Domain Service: TaskAssignmentService**
+
+**Descripción:**
+
+Se encarga de validar y asignar una tarea a un usuario del proyecto, asegurando que el miembro pertenezca al equipo.
+
+**Métodos:**
+
+- assignTask(Task task, int userId): Asigna la tarea validando que el usuario pertenece al proyecto.
+
+7. **Domain Service: ProjectProgressService**
+
+**Descripción:**
+
+Calcula el porcentaje de avance de un proyecto en función del estado de sus tareas.
+
+**Métodos:**
+
+- calculateProgress(Project project): Retorna el avance como un valor numérico.
+
+8. **Repository: ProjectRepository**
+
+**Descripción:**
+
+Interfaz encargada de la persistencia de proyectos.
+
+**Métodos:**
+
+- save(Project project): Guarda o actualiza un proyecto.
+- findById(int projectId): Busca un proyecto por su ID.
+- findAll(): Lista todos los proyectos.
+- delete(int projectId): Elimina un proyecto.
+
+9. **Repository: TaskRepository**
+
+**Descripción:**
+
+Interfaz encargada de la persistencia de tareas.
+
+**Métodos:**
+
+- save(Task task): Guarda o actualiza una tarea.
+- findById(int taskId): Busca una tarea por su ID.
+- findByProject(int projectId): Obtiene todas las tareas de un proyecto.
+- updateStatus(int taskId, TaskStatus newStatus): Cambia el estado de una tarea.
+- delete(int taskId): Elimina una tarea.
+
 ##### 2.6.1.2. Interface Layer
+
+La Interface Layer es la capa que expone los endpoints de la aplicación para la gestión de proyectos y tareas. Su principal función es permitir que los usuarios interactúen con el sistema mediante peticiones HTTP. En esta capa, los controladores reciben las solicitudes, las validan y se encargan de coordinar con los servicios de la capa de dominio para ejecutar las acciones requeridas. Es importante señalar que aquí no se implementan reglas de negocio, sino que se orquesta la comunicación entre la capa de presentación y la lógica del dominio.
+
+**Controlador: ProjectsController**
+
+**Descripción:**
+
+El ProjectsController maneja los endpoints relacionados con la creación, actualización, consulta y eliminación de proyectos. A través de este controlador los usuarios pueden registrar nuevos proyectos, actualizar información, consultar detalles específicos o eliminar proyectos existentes.
+
+| Método         | Ruta                           | Descripción                                                                                                                                 |
+|----------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| createProject  | POST /api/v1/projects          | Permite registrar un nuevo proyecto en el sistema. Recibe un objeto `CreateProjectResource`, lo convierte en un comando y lo envía al servicio de comandos. |
+| updateProject  | PUT /api/v1/projects/{projectId} | Permite actualizar los datos de un proyecto específico. Recibe un objeto `UpdateProjectResource` y llama al servicio para modificar el proyecto. |
+| getAllProjects | GET /api/v1/projects           | Devuelve la lista completa de proyectos registrados en el sistema.                                                                          |
+| getProjectById | GET /api/v1/projects/{projectId} | Obtiene los detalles de un proyecto específico identificado por su ID. Si no existe, retorna un error 404.                                  |
+| deleteProject  | DELETE /api/v1/projects/{projectId} | Elimina un proyecto existente. Si la operación es exitosa, devuelve un mensaje de confirmación.                                               |
+
+**Dependencias:**
+
+| Dependencia                                  | Descripción                                                                                          |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------|
+| ProjectCommandService                        | Servicio encargado de manejar los comandos relacionados con la creación, actualización y eliminación de proyectos. |
+| ProjectQueryService                          | Servicio encargado de manejar las consultas relacionadas con proyectos.                              |
+| CreateProjectCommandFromResourceAssembler    | Convierte recursos REST en comandos de creación de proyectos.                                        |
+| UpdateProjectCommandFromResourceAssembler    | Convierte recursos REST en comandos de actualización de proyectos.                                  |
+| ProjectResourceFromEntityAssembler           | Convierte entidades de proyecto en recursos REST para la respuesta.                                  |
+
+**Controlador: TasksController**
+
+**Descripción:**
+
+El TasksController maneja los endpoints relacionados con la gestión de tareas dentro de los proyectos. A través de este controlador, los usuarios pueden registrar nuevas tareas, actualizarlas, consultar su información, marcarlas como completadas o eliminarlas.
+
+| Método              | Ruta                                  | Descripción                                                                                  |
+|---------------------|---------------------------------------|----------------------------------------------------------------------------------------------|
+| createTask          | POST /api/v1/tasks                    | Permite registrar una nueva tarea en el sistema. Recibe un objeto CreateTaskResource y lo convierte en un comando. |
+| updateTask          | PUT /api/v1/tasks/{taskId}            | Permite actualizar los datos de una tarea específica. Recibe un objeto UpdateTaskResource y llama al servicio para modificar la tarea. |
+| getAllTasks         | GET /api/v1/tasks                     | Devuelve la lista completa de tareas existentes.                                             |
+| getTaskById         | GET /api/v1/tasks/{taskId}            | Obtiene los detalles de una tarea específica por su ID. Si no existe, retorna un error 404.  |
+| markTaskAsCompleted | PATCH /api/v1/tasks/{taskId}/complete | Marca una tarea como completada, actualizando su estado y fecha de finalización.             |
+| deleteTask          | DELETE /api/v1/tasks/{taskId}         | Elimina una tarea existente del sistema.                                                     |
+
+**Dependencias:**
+
+| Dependencia                          | Descripción                                                                                   |
+|--------------------------------------|-----------------------------------------------------------------------------------------------|
+| TaskCommandService                   | Servicio encargado de manejar los comandos relacionados con la creación, actualización, eliminación y finalización de tareas. |
+| TaskQueryService                     | Servicio encargado de manejar las consultas relacionadas con tareas.                          |
+| CreateTaskCommandFromResourceAssembler | Convierte recursos REST en comandos de creación de tareas.                                    |
+| UpdateTaskCommandFromResourceAssembler | Convierte recursos REST en comandos de actualización de tareas.                               |
+| TaskResourceFromEntityAssembler      | Convierte entidades de tarea en recursos REST para la respuesta.                              |
 
 ##### 2.6.1.3. Application Layer
 
+La Application Layer es la responsable de orquestar los procesos de negocio dentro del bounded context de Gestión de Proyectos y Tareas.
+En esta capa se implementan los Command Handlers y Query/Event Handlers, los cuales se encargan de recibir comandos o consultas, coordinar con el dominio y los repositorios, y devolver respuestas o provocar cambios en el sistema.
+Aquí no se aplican directamente las reglas de negocio (que pertenecen al dominio), sino que se gestionan los flujos de proceso, asegurando que cada acción se ejecute en el orden correcto y con las dependencias adecuadas.
+
+**Clase: ProjectCommandServiceImpl**
+
+**Descripción:**
+
+Implementación del servicio de comandos para las operaciones de escritura relacionadas con proyectos. Gestiona la creación, actualización y eliminación de proyectos, coordinando con el agregado Project y el repositorio correspondiente.
+
+| Método                          | Descripción                                                                                  |
+|---------------------------------|----------------------------------------------------------------------------------------------|
+| handle(CreateProjectCommand)     | Crea un nuevo proyecto con su información básica (nombre, descripción, rango de fechas).     |
+| handle(UpdateProjectCommand)     | Actualiza los datos principales de un proyecto ya existente.                                 |
+| handle(DeleteProjectCommand)     | Elimina un proyecto, siempre que no tenga dependencias críticas activas.                     |
+| handle(AssignTaskToProjectCommand) | Asocia una tarea existente a un proyecto específico.                                        |
+
+**Dependencias:**
+
+| Dependencias                                             | Descripción                                                                                     |
+|----------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| ProjectRepository                                        | Repositorio encargado de acceder y persistir los datos de proyectos en la base de datos.       |
+| TaskRepository                                           | Repositorio utilizado para validar y consultar tareas antes de asignarlas a proyectos.         |
+| CreateProjectCommand                                     | Comando que representa la acción de crear un nuevo proyecto con su información básica.         |
+| UpdateProjectCommand                                     | Comando que representa la acción de actualizar los datos de un proyecto existente.             |
+| DeleteProjectCommand                                     | Comando que representa la acción de eliminar un proyecto del sistema.                          |
+| AssignTaskToProjectCommand                               | Comando que representa la acción de asociar una tarea existente a un proyecto específico.      |
+
+**Clase: TaskCommandServiceImpl**
+
+**Descripción:**
+
+Implementación del servicio de comandos para operaciones de escritura relacionadas con tareas. Gestiona la creación, actualización, asignación y finalización de tareas, coordinando con el repositorio y el agregado Task.
+
+| Método                       | Descripción                                                                                     |
+|-------------------------------|-------------------------------------------------------------------------------------------------|
+| handle(CreateTaskCommand)     | Crea una nueva tarea vinculada a un proyecto y asigna un responsable.                           |
+| handle(UpdateTaskCommand)     | Actualiza información de una tarea existente, incluyendo nombre, descripción y prioridad.      |
+| handle(DeleteTaskCommand)     | Elimina una tarea del sistema.                                                                 |
+| handle(CompleteTaskCommand)   | Marca una tarea como completada y registra la fecha y hora de finalización.                     |
+| handle(AssignUserToTaskCommand)| Asigna un usuario específico a una tarea determinada.                                          |
+
+**Dependencias:**
+
+| Dependencia                                                         | Descripción                                                                                     |
+|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| TaskRepository                                                       | Repositorio encargado del acceso a los datos de tareas, permitiendo CRUD y consultas específicas. |
+| ProjectRepository                                                    | Repositorio para validar la existencia de proyectos antes de crear o asignar tareas.            |
+| NotificationService                                                  | Servicio encargado de enviar notificaciones a los usuarios cuando se asigna o completa una tarea. |
+| CreateTaskCommand                                                    | Comando que representa la acción de crear una nueva tarea dentro del sistema.                  |
+| UpdateTaskCommand                                                    | Comando que representa la acción de actualizar los datos de una tarea existente.               |
+| DeleteTaskCommand                                                    | Comando que representa la acción de eliminar una tarea del sistema.                             |
+| CompleteTaskCommand                                                  | Comando que representa la acción de marcar una tarea como completada y registrar su fecha de finalización. |
+| AssignUserToTaskCommand                                              | Comando que representa la acción de asignar un usuario específico a una tarea determinada.     |
+
+**Clase: ProjectQueryServiceImpl**
+
+**Descripción:**
+
+Implementación del servicio de consultas para obtener información de los proyectos. Gestiona consultas de lectura sin modificar el estado del sistema.
+
+| Método                   | Descripción                                                      |
+|---------------------------|------------------------------------------------------------------|
+| handle(GetProjectByIdQuery) | Obtiene los detalles completos de un proyecto por su ID.        |
+| handle(ListProjectsQuery)   | Devuelve todos los proyectos registrados en el sistema.         |
+| handle(GetProjectTasksQuery)| Recupera todas las tareas vinculadas a un proyecto específico. |
+
+**Dependencias:**
+
+| Dependencia                         | Descripción                                                                 |
+|-------------------------------------|-----------------------------------------------------------------------------|
+| ProjectRepository                    | Repositorio encargado del acceso y manipulación de datos de proyectos.      |
+| GetProjectByIdQuery                  | Consulta que permite obtener los detalles completos de un proyecto por su ID.|
+| ListProjectsQuery                    | Consulta que devuelve todos los proyectos registrados en el sistema.       |
+| GetProjectTasksQuery                 | Consulta que recupera todas las tareas asociadas a un proyecto específico. |
+
+**Clase: TaskQueryServiceImpl**
+
+**Descripción:**
+
+Implementación del servicio de consultas para obtener información de las tareas. Facilita la recuperación de tareas por diferentes criterios.
+
+| Método                          | Descripción                                                                 |
+|---------------------------------|-----------------------------------------------------------------------------|
+| handle(GetTaskByIdQuery)         | Devuelve los detalles de una tarea específica según su ID.                  |
+| handle(ListTasksByProjectQuery)  | Recupera todas las tareas asociadas a un proyecto determinado.             |
+| handle(ListTasksByUserQuery)     | Obtiene todas las tareas asignadas a un usuario específico.                 |
+
+**Dependencias**
+
+| Dependencia                        | Descripción                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|
+| TaskRepository                     | Repositorio encargado de acceder y manipular los datos de las tareas.       |
+| GetTaskByIdQuery                   | Consulta que permite obtener los detalles completos de una tarea por su ID. |
+| ListTasksByProjectQuery            | Consulta que permite recuperar todas las tareas asociadas a un proyecto.   |
+| ListTasksByUserQuery               | Consulta que permite obtener todas las tareas asignadas a un usuario específico. |
+
+**Clase: TaskEventHandler**
+
+**Descripción:**
+
+Implementación de un manejador de eventos que responde a cambios en el estado de las tareas. Se utiliza para disparar acciones secundarias cuando una tarea se crea o se completa.
+
+| Evento           | Descripción                                                                                  |
+|-----------------|----------------------------------------------------------------------------------------------|
+| onTaskCreated    | Al crearse una tarea, envía una notificación al usuario asignado.                             |
+| onTaskCompleted  | Cuando una tarea se marca como completada, actualiza métricas del proyecto y envía confirmación. |
+
+**Dependencias:**
+
+| Dependencia         | Descripción                                                       |
+|--------------------|-------------------------------------------------------------------|
+| NotificationService | Envía notificaciones a los usuarios.                               |
+| ProjectRepository   | Actualiza métricas relacionadas con el avance de proyectos.       |
+
+
 ##### 2.6.1.4. Infrastructure Layer
 
+En el bounded context de Gestión de Proyectos y Tareas, la infraestructura se centra principalmente en el acceso a la base de datos interna, donde se almacenan las entidades principales (Project y Task).
+En esta capa se definen las implementaciones concretas de los Repositories declarados en la capa de dominio. Estas implementaciones permiten realizar operaciones CRUD sobre proyectos y tareas, asegurando la persistencia de los datos y facilitando su recuperación cuando son requeridos por la capa de aplicación.
+
+**Clase: ProjectRepository**
+
+**Descripción:**
+
+Repositorio encargado de la persistencia y gestión de datos relacionados con proyectos. Define las operaciones CRUD y consultas específicas para proyectos.
+
+| Método         | Descripción                                                |
+|----------------|------------------------------------------------------------|
+| save(ProjectEntity)  | Persiste un nuevo proyecto o actualiza uno existente. |
+| deleteById(Long)     | Elimina un proyecto por su identificador único.      |
+| findById(Long)       | Recupera un proyecto completo a partir de su identificador. |
+| findAll()            | Lista todos los proyectos registrados en el sistema. |
+
+**Clase: TaskRepository**
+
+**Descripción:**
+
+Repositorio encargado de la persistencia y gestión de datos relacionados con tareas. Define las operaciones CRUD y consultas específicas para tareas.
+
+| Método             | Descripción                                                   |
+|-------------------|---------------------------------------------------------------|
+| save(TaskEntity)   | Persiste una nueva tarea o actualiza una existente.          |
+| deleteById(Long)   | Elimina una tarea por su identificador único.                |
+| findById(Long)     | Recupera una tarea completa a partir de su identificador.    |
+| findByProjectId(Long) | Obtiene todas las tareas asociadas a un proyecto específico. |
+| findAll()          | Lista todas las tareas registradas en el sistema.            |
+
+**Dependencias**
+
+| Dependencia   | Descripción                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| ProjectEntity | Clase que representa a un proyecto y sus atributos principales.            |
+| TaskEntity    | Clase que representa a una tarea con su respectiva relación a un proyecto. |
+| Database      | Sistema de gestión de base de datos utilizado para almacenar y consultar la información persistente. |
+
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+![ddd](Assets/TB1/ComponentDiagramProjectsAndTasks.png)
 
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+![ddd](Assets/TB1/ClassDiagramProjectsAndTasks.png)
+
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+
+![ddd](Assets/TB1/DatabaseDiagramProjectsAndTasks.png)
 
 #### 2.6.5. Bounded Context: Notificaciones
 
@@ -2277,3 +2854,16 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 ###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 ###### 2.6.5.6.2. Bounded Context Database Design Diagrams
+
+
+# Conclusiones
+
+# Bibliografía
+-Chandrasekaran, P. (2024, 9 agosto). Remote EventStorming in Practice. Domain-driven Design: A Practitioner’s Guide. 
+[https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/](https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/)
+
+-Ddd-Crew. (s. f.). GitHub - ddd-crew/bounded-context-canvas: A structured approach to designing and documenting each of your bounded contexts. GitHub. 
+[https://github.com/ddd-crew/bounded-context-canvas](https://github.com/ddd-crew/bounded-context-canvas)
+
+# Anexos
+
