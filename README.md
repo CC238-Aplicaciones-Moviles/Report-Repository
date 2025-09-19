@@ -113,8 +113,8 @@ del informe, realizados por los miembros del equipo
       - [2.6.1.4. Infrastructure Layer](#2613-infrastructure-layer)
       - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2613-bounded-context-software-architecture-component-level-diagrams)
       - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2613-bounded-context-software-architecture-code-level-diagrams)
-           -[2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
-           -[2.6.1.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
+          - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#2613-bounded-context-domain-layer-class-diagrams)
+          - [2.6.1.6.2. Bounded Context Database Design Diagrams](#2613-bounded-context-database-design-diagrams)
     - [2.6.2. Bounded Context: Analítica y Reportes](#262-bounded-context-analítica-y-reportes)
       - [2.6.2.1. Domain Layer](#2621-domain-layer)
       - [2.6.2.2. Interface Layer](#2622-interface-layer)
@@ -122,8 +122,8 @@ del informe, realizados por los miembros del equipo
       - [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
       - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
       - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
-           -[2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
-           -[2.6.2.6.2. Bounded Context Database Design Diagrams](#26262-bounded-context-database-design-diagrams)
+          - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
+          - [2.6.2.6.2. Bounded Context Database Design Diagrams](#26262-bounded-context-database-design-diagrams)
     - [2.6.3. Bounded Context: Visualización y Seguimiento](#263-bounded-context-visualización-y-seguimiento)
       - [2.6.3.1. Domain Layer](#2631-domain-layer)
       - [2.6.3.2. Interface Layer](#2632-interface-layer)
@@ -131,8 +131,8 @@ del informe, realizados por los miembros del equipo
       - [2.6.3.4. Infrastructure Layer](#2634-infrastructure-layer)
       - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#2635-bounded-context-software-architecture-component-level-diagrams)
       - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
-           -[2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
-           -[2.6.3.6.2. Bounded Context Database Design Diagrams](#26362-bounded-context-database-design-diagrams)
+          - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
+          - [2.6.3.6.2. Bounded Context Database Design Diagrams](#26362-bounded-context-database-design-diagrams)
     - [2.6.4. Bounded Context: Registro y Autenticación de Usuario](#264-bounded-context-registro-y-autenticación-de-usuario)
       - [2.6.4.1. Domain Layer](#2641-domain-layer)
       - [2.6.4.2. Interface Layer](#2642-interface-layer)
@@ -140,8 +140,8 @@ del informe, realizados por los miembros del equipo
       - [2.6.4.4. Infrastructure Layer](#2644-infrastructure-layer)
       - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#2645-bounded-context-software-architecture-component-level-diagrams)
       - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
-           -[2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
-           -[2.6.4.6.2. Bounded Context Database Design Diagrams](#26462-bounded-context-database-design-diagrams)
+          - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
+          - [2.6.4.6.2. Bounded Context Database Design Diagrams](#26462-bounded-context-database-design-diagrams)
     - [2.6.5. Bounded Context: Notificaciones](#265-bounded-context-notificaciones)
       - [2.6.5.1. Domain Layer](#2651-domain-layer)
       - [2.6.5.2. Interface Layer](#2652-interface-layer)
@@ -149,8 +149,8 @@ del informe, realizados por los miembros del equipo
       - [2.6.5.4. Infrastructure Layer](#2654-infrastructure-layer)
       - [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](#2655-bounded-context-software-architecture-component-level-diagrams)
       - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
-           -[2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
-           -[2.6.5.6.2. Bounded Context Database Design Diagrams](#26562-bounded-context-database-design-diagrams)
+          - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
+          - [2.6.5.6.2. Bounded Context Database Design Diagrams](#26562-bounded-context-database-design-diagrams)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -1176,6 +1176,10 @@ En el nivel de contenedores se desglosan los principales componentes internos de
 ![ddd](Assets/TB1/ContainerDiagram.PNG)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
+
+El diagrama de despliegue representa cómo los principales componentes del sistema TaskMaster se distribuyen en el entorno de producción. En este caso, la aplicación móvil se ejecuta en dispositivos Android de los usuarios, mientras que los servicios principales del backend están alojados en la nube dentro de un clúster de contenedores Node.js. Finalmente, la base de datos se encuentra en un servidor dedicado, asegurando el almacenamiento persistente de la información del sistema. Esta organización permite una arquitectura escalable, separando la lógica de negocio de la capa de presentación y del almacenamiento de datos.
+
+![ddd](Assets/TB1/DeploymentDiagram.PNG)
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
