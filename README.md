@@ -1699,7 +1699,7 @@ Mide el desempeño de un Team Member en el proyecto.
 | `avgMetrics`  | List<`AverageMetric`> | Private     | Horas promedio por estado o prioridad. |
 | `hourlyRate`  | `Money`               | Private     | Tarifa por hora. |
 | `spentHours`  | Float                 | Private     | Horas invertidas. |
-| `cost`        | `Money`               | Private     | Costo total del miembro. |
+| `cost`        | `Float`               | Private     | Costo total del miembro. |
 
 **Métodos**
 
@@ -1708,7 +1708,7 @@ Mide el desempeño de un Team Member en el proyecto.
 | `ingestTasks(List<Task> tasks)` | `void`  | Integra tareas del miembro y actualiza métricas. |
 | `setHourlyRate(Money rate)`     | `void`  | Define o ajusta la tarifa por hora. |
 | `recalculateHours()`            | `float` | Recalcula horas invertidas. |
-| `recalculateCost()`             | `Money` | Recalcula el costo total del miembro. |
+| `recalculateCost()`             | `Float` | Recalcula el costo total del miembro. |
 | `recalculateAverages()`         | `void`  | Recalcula promedios por estado y prioridad. |
 | `velocity()`                    | `float` | Velocidad del miembro. |
 | `reset()`                       | `void`  | Limpia métricas derivadas para recalcular. |
@@ -1764,9 +1764,9 @@ Cómo va el presupuesto del proyecto.
 
 | Atributo   | Tipo    | Descripción |
 |------------|---------|-------------|
-| `approved` | `Money` | Presupuesto aprobado. |
-| `used`     | `Money` | Suma de costos utilizados. |
-| `variance` | `Money` | Diferencia entre aprobado y usado. |
+| `approved` | `Float` | Presupuesto aprobado. |
+| `used`     | `Float` | Suma de costos utilizados. |
+| `variance` | `Float` | Diferencia entre aprobado y usado. |
 
 ---
 
@@ -1837,7 +1837,6 @@ Gestiona métricas de **Proyecto** y **Miembro**, ranking y presupuesto.
 ## DTOs de Entrada/Salida 
 
 - `DateRangeDTO { startDate, endDate }`
-- `MoneyDTO { amount, currency }`
 - `TaskStatsDTO { total, notStarted, inProgress, done, overdue }`
 - `AverageMetricDTO[]` con elementos `{ dimension, code, avgHours }`
 - `BudgetUsageDTO { approved, used, variance }`
