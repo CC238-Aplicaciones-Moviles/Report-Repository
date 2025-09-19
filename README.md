@@ -1173,7 +1173,7 @@ Se identificaron los siguientes bounded context en el sistema:
 | **Registro y autentificacion de usuario**                           | **Todos los Contextos**           | **Shared Kernel**        | La información sobre usuarios, roles y autenticación se comparte entre todos los contextos para garantizar el acceso controlado a las funcionalidades del sistema.                                           |
 | **Integraciones Técnicas**        | **Gestión de Proyectos y Tareas** | **Anticorruption Layer** | Si TaskMaster se integra con sistemas externos (por ejemplo, CRM o herramientas de gestión de proyectos), el Anticorruption Layer garantiza que los datos externos no alteren el modelo interno del sistema. |
 
-![ddd](Assets/TB1/ContextM.png)
+![ddd](Assets/TB1/Diagram.png)
 
 
 #### 2.5.3. Software Architecture
