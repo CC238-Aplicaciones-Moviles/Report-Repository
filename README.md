@@ -959,7 +959,7 @@ En esta sección se definen los requisitos del producto digital a partir del an�
 | **EPIC(ID)** | **Título**                              | **Descripción**                                                                                                                                                        |
 | ------------ | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **EP01**     | **Landing Page**                        | Como visitante, quiero acceder a una página de inicio clara que explique los beneficios de TaskMaster, para evaluar si es adecuado para mis necesidades.               |
-| **EP02**     | **Gestión de Identidad y Acceso (IAM)** | Como trabajador, quiero registrarme y verificar mi identidad para acceder a TaskMaster, garantizando que solo personal autorizado pueda acceder a las funcionalidades. |
+| **EP02**     | **Registro y autentificacion de usuario** | Como trabajador, quiero registrarme y verificar mi identidad para acceder a TaskMaster, garantizando que solo personal autorizado pueda acceder a las funcionalidades. |
 | **EP03**     | **Gestión de Proyectos y Tareas**       | Como líder de equipo, quiero gestionar proyectos y asignar tareas a los miembros del equipo para distribuir el trabajo de manera organizada.                           |
 | **EP05**     | **Notificaciones**                      | Como miembro del equipo, quiero recibir notificaciones sobre tareas asignadas, actualizaciones y fechas límite, para mantenerme informado y priorizar mi trabajo.      |
 | **EP06**     | **Visualización y Seguimiento**         | Como miembro del equipo, quiero poder ver el progreso de mis tareas en tiempo real para estar al tanto de mis responsabilidades.                                       |
@@ -1142,7 +1142,7 @@ En el caso de **TaskMaster**, nuestra aplicación de gestión de proyectos, el C
 
 Se identificaron los siguientes bounded context en el sistema: 
 
-1. IAM (Gestión de Identidad y Acceso)
+1. Registro y autentificacion de usuario
 
 - Este contexto se encarga de la autenticación y autorización de los usuarios, garantizando que solo las personas autorizadas puedan acceder a las funcionalidades de TaskMaster.
 
@@ -1168,9 +1168,9 @@ Se identificaron los siguientes bounded context en el sistema:
 | **Analítica y Reportes**          | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | Los datos de proyectos y tareas generados en el contexto de Gestión de Proyectos se consumen en Analítica y Reportes para generar informes de desempeño.                                                     |
 | **Notificaciones**                | **Gestión de Proyectos y Tareas** | **Customer/Supplier**    | Las actualizaciones de tareas y proyectos en el contexto de Gestión de Proyectos y Tareas generan notificaciones que son enviadas a los usuarios por el contexto de Notificaciones.                          |
 | **Notificaciones**                | **Visualización y Seguimiento**   | **Customer/Supplier**    | El contexto de Visualización y Seguimiento puede generar notificaciones para informar a los usuarios sobre el progreso de tareas y cambios en el estado de los proyectos.                                    |
-| **Gestión de Proyectos y Tareas** | **IAM**                           | **Partnership**          | Ambos contextos colaboran estrechamente. IAM gestiona el acceso de los usuarios, mientras que Gestión de Proyectos y Tareas asegura que las tareas y proyectos sean asignados solo a usuarios autorizados.   |
+| **Gestión de Proyectos y Tareas** | **Registro y autentificacion de usuario**                           | **Partnership**          | Ambos contextos colaboran estrechamente. Registro y autentificacion de usuario gestiona el acceso de los usuarios, mientras que Gestión de Proyectos y Tareas asegura que las tareas y proyectos sean asignados solo a usuarios autorizados.   |
 | **Analítica y Reportes**          | **Notificaciones**                | **Partnership**          | El contexto de Notificaciones puede usar los reportes generados en Analítica y Reportes para crear alertas o notificaciones sobre el desempeño del equipo.                                                   |
-| **IAM**                           | **Todos los Contextos**           | **Shared Kernel**        | La información sobre usuarios, roles y autenticación se comparte entre todos los contextos para garantizar el acceso controlado a las funcionalidades del sistema.                                           |
+| **Registro y autentificacion de usuario**                           | **Todos los Contextos**           | **Shared Kernel**        | La información sobre usuarios, roles y autenticación se comparte entre todos los contextos para garantizar el acceso controlado a las funcionalidades del sistema.                                           |
 | **Integraciones Técnicas**        | **Gestión de Proyectos y Tareas** | **Anticorruption Layer** | Si TaskMaster se integra con sistemas externos (por ejemplo, CRM o herramientas de gestión de proyectos), el Anticorruption Layer garantiza que los datos externos no alteren el modelo interno del sistema. |
 
 ![ddd](Assets/TB1/ContextM.png)
@@ -1186,11 +1186,278 @@ Se identificaron los siguientes bounded context en el sistema:
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
+#### 2.6.1. Bounded Context: IRegistro y autentificacion de usuario
+
+##### 4.2.1.1. Domain Layer
+
+La Domain Layer es el núcleo que orquesta y gestiona las reglas de negocio relacionadas con la autenticación y autorización de usuarios en la plataforma TaskMaster. En este contexto, las entidades como User, Role, y EmailAddress, junto con los servicios y métodos de validación, permiten gestionar la identidad de los usuarios, sus roles, y la verificación de credenciales.
+
+**Objetivo:**
+
+La capa de dominio tiene como objetivo representar las entidades y servicios fundamentales del dominio de la identidad y acceso, cubriendo desde la creación de cuentas hasta la autenticación y autorización para asegurar que solo usuarios autorizados puedan acceder a las funcionalidades del sistema.
+
+**1. Aggregate: User**
+
+**Descripción:**
+
+ El agregado User actúa como la raíz del modelo y encapsula todos los datos y comportamientos relacionados con un usuario del sistema. Esta entidad representa la cuenta de un usuario y contiene las credenciales, roles y la información necesaria para la autenticación. En la base de datos, se representa con la tabla users.
+
+| **Atributo** | **Tipo**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| `id`         | Long      | Identificador único del usuario (autogenerado).       |
+| `username`   | String    | Nombre de usuario único para identificar al usuario.  |
+| `password`   | String    | Contraseña de acceso del usuario.                     |
+| `roles`      | Set<Role> | Conjunto de roles asignados al usuario. (TEAM_MEMBER, TEAM_LEADER).              |
+| `email`      | String    | Dirección de correo electrónico validada del usuario. |
+| `createdAt`  | Date      | Fecha de creación del usuario.                        |
+| `updatedAt`  | Date      | Fecha de última actualización del usuario.            |
+
+**Métodos:**
+- addRoles(List<Role> roles): Añade un conjunto de roles al usuario, retornando el usuario con los roles actualizados.
+
+- getAuthorities(): Retorna el conjunto de roles del usuario, implementando la interfaz GrantedAuthority, permitiendo la integración con Spring Security para la autorización de acceso.
+
+- isAccountNonExpired(): Retorna true si la cuenta del usuario no ha expirado.
+
+- isAccountNonLocked(): Retorna true si la cuenta del usuario no está bloqueada.
+
+- isCredentialsNonExpired(): Retorna true si las credenciales del usuario no han expirado.
+
+- isEnabled(): Retorna true si la cuenta está habilitada.
+
+- getUsername(): Retorna el nombre de usuario.
+
+- getPassword(): Retorna la contraseña del usuario.
+
+**2. Value Object: EmailAddress**
+
+**Descripción:**
+
+ El objeto de valor EmailAddress representa una dirección de correo electrónico válida. Es un objeto embebido que valida y maneja los datos relacionados con la dirección de correo.
+
+| **Atributo** | **Tipo** | **Descripción**                                                                          |
+| ------------ | -------- | ---------------------------------------------------------------------------------------- |
+| `email`      | String   | Dirección de correo electrónico validada (máx. 50 caracteres, formato válido de correo). |
 
 
+**Métodos:**
+- EmailAddress(String email): Constructor que recibe un correo electrónico y lo valida según las restricciones del formato y longitud.
 
+- EmailAddress(): Constructor por defecto que inicializa el objeto con un valor null.
 
+**3. Value Object: Role**
 
+**Descripción:**
 
+El objeto de valor Role define los roles de los usuarios en TaskMaster. Los roles son TEAM_MEMBER y TEAM_LEADER, y están representados como valores enumerados. Los roles son fundamentales para determinar los permisos y el acceso dentro de la plataforma.
 
+| Atributo | Tipo       | Descripción                                              |
+|----------|------------|----------------------------------------------------------|
+| name     | RoleEnum   | Nombre del rol, representado como un valor enumerado (TEAM_MEMBER, TEAM_LEADER). |
 
+**Métodos:**
+- `getStringName()`: Retorna el nombre del rol como una cadena de texto.
+- `getDefaultRole()`: Retorna el rol predeterminado del sistema, en este caso TEAM_MEMBER.
+- `toRoleFromName(String name)`: Convierte el nombre de un rol en una instancia del objeto Role.
+- `validateRoleSet(List<Role> roles)`: Valida un conjunto de roles, retornando el rol predeterminado (TEAM_MEMBER) si el conjunto está vacío o nulo.
+- `getAuthority()`: Retorna el nombre del rol, implementando la interfaz GrantedAuthority para la integración con Spring Security.
+
+**4. Entity: Role**
+
+**Descripción:**
+La entidad Role representa los roles de un usuario dentro del sistema y define los permisos y responsabilidades asociados. Se utiliza para realizar las comprobaciones de seguridad y autorización en las funcionalidades del sistema.
+
+| Atributo | Tipo       | Descripción                                              |
+|----------|------------|----------------------------------------------------------|
+| id       | Long       | Identificador único del rol.                             |
+| name     | String     | Nombre del rol, definido como un valor de enumeración (TEAM_MEMBER, TEAM_LEADER). |
+
+**Métodos:**
+- `getStringName()`: Retorna el nombre del rol como una cadena de texto.
+- `getDefaultRole()`: Devuelve el rol predeterminado del sistema (TEAM_MEMBER).
+- `toRoleFromName(String name)`: Convierte el nombre de un rol en una instancia de la entidad Role.
+- `validateRoleSet(List<Role> roles)`: Valida un conjunto de roles y retorna el rol predeterminado si no se encuentra ningún rol.
+- `getAuthority()`: Devuelve el nombre del rol, implementando la interfaz GrantedAuthority para la integración con Spring Security.
+
+**5. Domain Service: AuthenticationService**
+
+**Descripción:**
+El servicio AuthenticationService encapsula las reglas de negocio relacionadas con la autenticación, validando las credenciales del usuario y gestionando los procesos de inicio de sesión, cierre de sesión y recuperación de contraseñas.
+
+**Métodos:**
+- `authenticate(String username, String password)`: Valida las credenciales del usuario y autentica al mismo.
+- `logout(User user)`: Finaliza la sesión del usuario, invalidando el token de acceso o sesión.
+- `resetPassword(String email)`: Inicia el proceso de recuperación de contraseña, enviando un enlace de restablecimiento al correo electrónico registrado.
+
+**6. Repository: UserRepository**
+
+**Descripción:**
+El UserRepository es una abstracción para la persistencia de los usuarios en la base de datos, permitiendo realizar operaciones CRUD de manera efectiva.
+
+**Métodos:**
+- `save(User user)`: Guarda un nuevo usuario o actualiza uno existente en la base de datos.
+- `findByUsername(String username)`: Recupera un usuario por su nombre de usuario.
+- `findByEmail(String email)`: Recupera un usuario por su correo electrónico.
+- `findById(Long id)`: Recupera un usuario por su identificador único.
+
+**En la Domain Layer de TaskMaster**, hemos definido los roles como TEAM_MEMBER y TEAM_LEADER dentro de un modelo de Domain-Driven Design (DDD). Estas entidades y objetos de valor representan las reglas de negocio fundamentales del sistema de autenticación y autorización. La clase User se asocia con los roles, y se valida el acceso y las credenciales a través de servicios como AuthenticationService y repositorios como UserRepository.
+
+### 4.2.1.2. Interface Layer: Registro y autentificacion de usuario
+
+La Interface Layer es la capa que expone los endpoints de la aplicación, permitiendo la interacción entre los usuarios y el sistema. Los controladores son responsables de recibir las peticiones, validarlas y coordinar con los servicios correspondientes para ejecutar las acciones solicitadas. En esta capa, no se implementan reglas de negocio, sino que se coordina la comunicación entre las solicitudes de los usuarios y la lógica del dominio.
+
+**Controlador: AuthenticationController**
+
+**Descripción:**
+El `AuthenticationController` maneja los endpoints relacionados con la autenticación de los usuarios. Este controlador es responsable del inicio de sesión (signIn), el registro de nuevos usuarios (signUp), y otros procesos relacionados con la autenticación.
+
+| Método   | Ruta                             | Descripción                                                                                  |
+|----------|----------------------------------|----------------------------------------------------------------------------------------------|
+| signIn   | POST /api/v1/authentication/sign-in  | Maneja la solicitud de inicio de sesión. Recibe un objeto `SignInResource` y llama al servicio de autenticación. Si la autenticación es exitosa, devuelve un recurso de usuario autenticado. Si falla, retorna un error 401. |
+| signUp   | POST /api/v1/authentication/sign-up  | Maneja la solicitud de registro de nuevos usuarios. Recibe un objeto `SignUpResource`, lo convierte en un comando, y llama al servicio para registrar al usuario. Si es exitoso, devuelve el recurso de usuario creado. Si hay un error, retorna un error 400. |
+
+**Dependencias:**
+- `UserCommandService`: Servicio que maneja los comandos de creación y autenticación de usuarios.
+- `SignInCommandFromResourceAssembler`: Utilidad para convertir el recurso de inicio de sesión en un comando.
+- `SignUpCommandFromResourceAssembler`: Utilidad para convertir el recurso de registro en un comando.
+- `AuthenticatedUserResourceFromEntityAssembler`: Utilidad para convertir el usuario autenticado en un recurso.
+- `UserResourceFromEntityAssembler`: Utilidad para convertir el usuario registrado en un recurso.
+
+**Controlador: RolesController**
+
+**Descripción:**
+El `RolesController` maneja los endpoints relacionados con la gestión de roles. Los roles, en este caso, son `TEAM_MEMBER` y `TEAM_LEADER`, y se usan para determinar los permisos de acceso dentro del sistema.
+
+| Método       | Ruta                           | Descripción                                                                         |
+|--------------|--------------------------------|-------------------------------------------------------------------------------------|
+| getAllRoles  | GET /api/v1/roles              | Maneja la solicitud para obtener todos los roles. Llama al servicio de consultas, obtiene la lista de roles y los convierte en recursos para la respuesta. Devuelve una lista de recursos de roles. |
+
+**Dependencias:**
+- `RoleQueryService`: Servicio encargado de manejar las consultas relacionadas con roles.
+- `GetAllRolesQuery`: Consulta que se utiliza para obtener todos los roles.
+- `RoleResourceFromEntityAssembler`: Utilidad para convertir las entidades de roles en recursos para enviarlos en la respuesta.
+
+**Controlador: UsersController**
+
+**Descripción:**
+El `UsersController` maneja los endpoints relacionados con la gestión de usuarios. Permite obtener todos los usuarios, obtener un usuario específico por su ID, y actualizar ciertos datos del usuario, como el estado de verificación del apoderado.
+
+| Método                    | Ruta                                | Descripción                                                                                           |
+|---------------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------|
+| getAllUsers               | GET /api/v1/users                   | Maneja la solicitud para obtener todos los usuarios. Llama al servicio de consultas y devuelve la lista de usuarios. |
+| getUserById               | GET /api/v1/users/{userId}          | Maneja la solicitud para obtener un usuario específico por su ID. Si el usuario existe, lo convierte en un recurso y lo devuelve. Si no, retorna un error 404. |
+| updateProofingApoderado   | PUT /api/v1/users/{userId}/update-proofing | Maneja la solicitud para actualizar el estado de verificación de un apoderado. Recibe un objeto `UpdateProofingApoderadoResource` y lo convierte en un comando para actualizar el estado. Si la operación es exitosa, devuelve un mensaje de éxito. |
+
+**Dependencias:**
+- `UserQueryService`: Servicio encargado de manejar las consultas relacionadas con usuarios.
+- `UserCommandService`: Servicio encargado de manejar los comandos relacionados con la gestión de usuarios.
+- `GetAllUsersQuery`: Consulta que se utiliza para obtener todos los usuarios.
+- `GetUserByIdQuery`: Consulta que se utiliza para obtener un usuario específico por su ID.
+- `UpdateProofingApoderadoCommandFromResourceAssembler`: Utilidad para convertir el recurso de actualización de verificación en un comando.
+- `UserResourceFromEntityAssembler`: Utilidad para convertir las entidades de usuario en recursos que se envían en la respuesta.
+
+**Flujo de Trabajo:**
+- **Autenticación**: Los usuarios pueden registrarse (signUp) o iniciar sesión (signIn) a través de la API, lo que invoca los servicios correspondientes para crear una cuenta o validar credenciales.
+- **Gestión de Roles**: Los administradores pueden consultar los roles disponibles a través del endpoint de roles.
+- **Gestión de Usuarios**: Los usuarios y administradores pueden consultar la lista de usuarios, obtener información específica de un usuario o actualizar ciertos datos como el estado de verificación de un apoderado.
+
+En esta capa, los controladores son los encargados de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados, y devolver una respuesta adecuada. Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o los servicios, actuando como una interfaz entre los usuarios y la lógica del negocio. Los controladores presentados permiten gestionar la autenticación de usuarios, la gestión de roles, y la administración de usuarios dentro del sistema TaskMaster.
+
+### 4.2.1.3. Application Layer: Registro y autentificacion de usuario
+
+La **Application Layer** es responsable de coordinar la lógica de negocio que se ejecuta en respuesta a los comandos y consultas. Aquí, los **Command Handlers** manejan la creación, actualización y eliminación de datos, mientras que los **Query Handlers** gestionan las consultas para obtener información del sistema. Además, esta capa garantiza que todas las verificaciones y reglas de negocio se implementen antes de que la información se procese o se persista.
+
+**Servicio: UserCommandServiceImpl**
+
+**Descripción:**
+El `UserCommandServiceImpl` maneja los comandos relacionados con los usuarios, como el registro de nuevos usuarios, inicio de sesión, y la actualización del estado de verificación de apoderados. Este servicio coordina la creación de nuevos usuarios, la autenticación y la modificación de sus datos.
+
+| Método                           | Descripción                                                                                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| handle(SignUpCommand)           | Maneja el comando de registro de un nuevo usuario. Verifica la unicidad del nombre de usuario y correo electrónico. Si todo es válido, crea un nuevo usuario, lo guarda en el repositorio y devuelve el usuario creado. |
+| handle(SignInCommand)           | Maneja el comando de inicio de sesión. Verifica las credenciales del usuario (nombre de usuario y contraseña). Si es válido, genera un token de autenticación y lo devuelve junto con los datos del usuario. |
+| updateProofingApoderado(UpdateProofingApoderadoCommand) | Actualiza el estado de verificación de apoderado para un usuario. Verifica que el usuario tenga el rol adecuado y actualiza su estado en el repositorio. |
+
+**Dependencias:**
+- `UserRepository`: Repositorio encargado de la persistencia de los usuarios.
+- `HashingService`: Servicio para la codificación y validación de contraseñas.
+- `TokenService`: Servicio que genera tokens de autenticación para los usuarios.
+- `RoleRepository`: Repositorio encargado de gestionar los roles de los usuarios.
+- `User`: Entidad que representa a un usuario.
+- `SignUpCommand`: Comando para registrar un nuevo usuario.
+- `SignInCommand`: Comando para iniciar sesión con un usuario.
+- `UpdateProofingApoderadoCommand`: Comando para actualizar el estado de verificación de apoderado.
+
+**Servicio: UserQueryServiceImpl**
+
+**Descripción:**
+El `UserQueryServiceImpl` maneja las consultas relacionadas con los usuarios, permitiendo obtener información sobre los usuarios registrados. Este servicio es responsable de devolver los usuarios por su nombre, ID, o todos los usuarios registrados.
+
+| Método                           | Descripción                                                                                               |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------|
+| handle(GetUserByUsernameQuery)  | Maneja la consulta para obtener un usuario por su nombre de usuario. Devuelve un `Optional<User>` que puede estar vacío si no se encuentra el usuario. |
+| handle(GetUserByIdQuery)        | Maneja la consulta para obtener un usuario por su ID. Devuelve un `Optional<User>` que puede estar vacío si no se encuentra el usuario. |
+| handle(GetAllUsersQuery)        | Maneja la consulta para obtener todos los usuarios registrados. Devuelve una lista de objetos `User`. |
+
+**Dependencias:**
+- `UserRepository`: Repositorio encargado de la persistencia de los usuarios.
+- `User`: Entidad que representa a un usuario.
+- `GetUserByUsernameQuery`: Consulta para obtener un usuario por nombre de usuario.
+- `GetUserByIdQuery`: Consulta para obtener un usuario por su ID.
+- `GetAllUsersQuery`: Consulta para obtener todos los usuarios.
+
+**Servicio: RoleCommandServiceImpl**
+
+**Descripción:**
+El `RoleCommandServiceImpl` maneja los comandos relacionados con los roles, incluyendo la creación y inicialización de roles. En este caso, nos aseguramos de que los roles esenciales como `TEAM_MEMBER` y `TEAM_LEADER` estén presentes en el sistema.
+
+| Método                          | Descripción                                                                                     |
+|---------------------------------|-------------------------------------------------------------------------------------------------|
+| handle(SeedRolesCommand)        | Maneja el comando para inicializar los roles en el sistema. Verifica si los roles ya existen en el repositorio. Si no, los crea y los guarda. |
+| handle(CreateRoleCommand)       | Maneja el comando para crear un nuevo rol. Verifica si el rol ya existe antes de crearlo. |
+
+**Dependencias:**
+- `RoleRepository`: Repositorio encargado de la persistencia de los roles.
+- `Role`: Entidad que representa un rol en el sistema.
+- `SeedRolesCommand`: Comando para inicializar los roles en el sistema.
+- `CreateRoleCommand`: Comando para crear un nuevo rol en el sistema.
+
+**Servicio: RoleQueryServiceImpl**
+
+**Descripción:**
+El `RoleQueryServiceImpl` maneja las consultas relacionadas con los roles, permitiendo obtener información sobre los roles existentes, como `TEAM_MEMBER` y `TEAM_LEADER`.
+
+| Método                          | Descripción                                                                                 |
+|---------------------------------|---------------------------------------------------------------------------------------------|
+| handle(GetAllRolesQuery)        | Maneja la consulta para obtener todos los roles registrados en el sistema. Devuelve una lista de objetos `Role`. |
+| handle(GetRoleByNameQuery)      | Maneja la consulta para obtener un rol por su nombre. Devuelve un `Optional<Role>` que puede estar vacío si no se encuentra el rol. |
+
+**Dependencias:**
+- `RoleRepository`: Repositorio encargado de la persistencia de los roles.
+- `Role`: Entidad que representa un rol en el sistema.
+- `GetAllRolesQuery`: Consulta para obtener todos los roles registrados.
+- `GetRoleByNameQuery`: Consulta para obtener un rol por nombre.
+
+**Flujos de Comandos y Consultas:**
+
+**Comandos:**
+
+- **Registro de usuario (SignUpCommand):**  
+  El servicio `UserCommandServiceImpl` maneja el comando `SignUpCommand`, que crea un nuevo usuario verificando la unicidad del nombre de usuario y correo electrónico. Si los datos son válidos, el usuario es creado y almacenado en el repositorio.
+
+- **Inicio de sesión (SignInCommand):**  
+  El servicio `UserCommandServiceImpl` maneja el comando `SignInCommand`, que valida las credenciales del usuario (nombre de usuario y contraseña), genera un token de autenticación y lo devuelve junto con los datos del usuario.
+
+- **Actualización de verificación de apoderado (UpdateProofingApoderadoCommand):**  
+  Este comando es manejado por `UserCommandServiceImpl` y permite actualizar el estado de verificación de un apoderado para un usuario.
+
+**Consultas:**
+
+- **Obtener un usuario por nombre de usuario (GetUserByUsernameQuery):**  
+  El servicio `UserQueryServiceImpl` maneja esta consulta y devuelve un usuario si se encuentra en el sistema, o un `Optional.empty()` si no se encuentra.
+
+- **Obtener un usuario por ID (GetUserByIdQuery):**  
+  Similar a la consulta anterior, esta consulta busca un usuario por su ID y devuelve un `Optional<User>`.
+
+- **Obtener todos los usuarios (GetAllUsersQuery):**  
+  Devuelve una lista con todos los usuarios registrados en el sistema.
