@@ -1013,7 +1013,6 @@ Segmento Team member
 ![Impact](Assets/TB1/Impact%20map%202.png)
 
 #### 2.4.3. Product Backlog
-# 📌 Product Backlog – TaskMaster
 
 | Orden | Código US | Título                                               | Story Points |
 |-------|-----------|------------------------------------------------------|--------------|
