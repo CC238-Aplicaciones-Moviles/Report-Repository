@@ -2520,13 +2520,13 @@ La capa de aplicación se encarga de coordinar los flujos de procesos del negoci
 |lastUpdated|Date|Fecha y hora de la última sincronización.|
 
 ##### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
-![ddd](Assets/TB1/ddd)
+![ddd](Assets/TB1/ddd.png)
 
 ##### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-![ddd](Assets/TB1/domain)
+![ddd](Assets/TB1/domain.png)
 
 ###### 2.6.3.6.2. Bounded Context Database Design Diagrams
 
