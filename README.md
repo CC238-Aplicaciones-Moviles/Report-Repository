@@ -2257,7 +2257,7 @@ Implementación de acceso a datos para reportes de `Report`.
 
 ####  2.6.3. Bounded Context:Visualización y Seguimiento
 
-##### 2.6.1.1. Domain Layer
+##### 2.6.3.1. Domain Layer
 
 La capa de dominio constituye el núcleo de la aplicación, donde se definen las reglas y modelos que permiten ofrecer a los miembros del equipo una visión clara y organizada del estado de los proyectos y tareas.  
 En este contexto, el agregado **VisualizationAggregate** actúa como la raíz que integra tanto los tableros de tareas como las vistas de calendario, garantizando que la información se muestre de forma coherente y en tiempo real.
@@ -2368,7 +2368,7 @@ En este contexto, el agregado **VisualizationAggregate** actúa como la raíz qu
   - `updateCalendar(CalendarView calendar)`  
 
 
-##### 2.6.1.2. Interface Layer
+##### 2.6.3.2. Interface Layer
 
 La capa de interfaz es la encargada de manejar la comunicación entre el usuario y el sistema, así como entre sistemas externos que envían o reciben eventos. Aquí se definen los controladores y consumidores responsables de recibir solicitudes, procesarlas y delegarlas a la capa de dominio.
 
@@ -2418,7 +2418,7 @@ La capa de interfaz es la encargada de manejar la comunicación entre el usuario
 |:-|:-|
 |StatisticsUpdatedEvent|Refresca la vista con estadísticas resumidas.|
 
-##### 2.6.1.3. Application Layer
+##### 2.6.3.3. Application Layer
 
 La capa de aplicación se encarga de coordinar los flujos de procesos del negocio relacionados con la visualización y el seguimiento.
 **Objetivo:** Gestionar la lógica de orquestación de procesos, ejecutando comandos y reaccionando a eventos que afectan la visualización de tableros y calendarios, para mantener la información siempre actualizada y consistente.
@@ -2470,7 +2470,7 @@ La capa de aplicación se encarga de coordinar los flujos de procesos del negoci
 
 
 
-##### 2.6.1.4. Infrastructure Layer
+##### 2.6.3.4. Infrastructure Layer
 **Objetivo:** Implementar los mecanismos técnicos de persistencia y comunicación externa que aseguren la consistencia y disponibilidad de la información visualizada en tableros y calendarios.
 
 ---
@@ -2519,16 +2519,14 @@ La capa de aplicación se encarga de coordinar los flujos de procesos del negoci
 |status|String|Estado actual de la tarea (pendiente, en progreso, completada, vencida).|
 |lastUpdated|Date|Fecha y hora de la última sincronización.|
 
+##### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+![ddd](Assets/TB1/ddd)
 
+##### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
+###### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
-
-##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
-
-###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-
-###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+###### 2.6.3.6.2. Bounded Context Database Design Diagrams
 
 #### 2.6.4. Bounded Context: Gestión de Proyectos y Tareas
 
