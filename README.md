@@ -1944,13 +1944,13 @@ Implementación de acceso a datos para `MemberAnalytics`.
 | `save(MemberAnalytics aggregate)` | `void` | Public | Inserta o actualiza las métricas del miembro (taskStats, avgMetrics, horas, costo, velocidad). |
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
-![ddd]()
+![ddd](Assets/TB1/C4-componentesv1-AYR.png)
 
 
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
-
+A continuacion se mostraran como se interconectan los componentes a mayor detalle
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-
+![ddd](Assets/TB1/Diagrama-Clases-AYR.png)
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
 
 ####  2.6.3. Bounded Context:Visualización y Seguimiento
