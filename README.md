@@ -161,12 +161,12 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET - EAC - Student Outcome 7 Criterio**: La capacidad de adquirir y aplicar nuevos conocimientos según sea
 necesario, utilizando estrategias deaprendizaje apropiadas.
 En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado los criterios especificos.
-  
-| Criterio específico | Acciones realizadas | Conclusiones |
-|---------------------|---------------------|--------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.|- **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>-Sandoval Paiva Valentino<br>**TB1**<br>-Sarmiento Medina, Loreley<br>**TB1**<br>                     |              |
-|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.|- **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>-Sandoval Paiva Valentino<br>**TB1**<br>-Sarmiento Medina, Loreley<br>**TB1**<br>                       |              |
-|
+
+ | Criterio específico                                                                                                                     | Acciones realizadas                                                                                                                                                                                                         | Conclusiones                                                                                                                                                                                                                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>- Sandoval Paiva Valentino<br>**TB1**<br>- Sarmiento Medina, Loreley<br>**TB1**<br> | La elaboración del proyecto permitió reforzar y aplicar conceptos clave en arquitectura de software, metodologías ágiles y diseño de soluciones, fortaleciendo competencias técnicas que son directamente aplicables en la formación profesional y en la práctica de proyectos reales en soluciones de software.                    |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | - **Bejarano Martínez, Álvaro Leandro**<br>**TB1**<br>- Luquillas Asto, Omar<br>**TB1**<br>- Olivera Barzola, Eric Marlon<br>**TB1**<br>- Sandoval Paiva Valentino<br>**TB1**<br>- Sarmiento Medina, Loreley<br>**TB1**<br> | Durante el desarrollo del proyecto se evidenció la importancia de la investigación continua y la adaptación a nuevas herramientas y enfoques, lo que refuerza la necesidad de mantener un aprendizaje constante para enfrentar los retos que plantea el mercado tecnológico y asegurar la mejora continua en el ámbito profesional. |
+ 
 
 <hr>
 
@@ -187,6 +187,21 @@ crecimiento profesional continuo tras su graduación.
   - Esto falta completareqweqweqwe
   - dasdasdas
 
+<h3> Loreley Sarmiento Medina
+
+- **Objetivo 1: Convertirme en desarrolladora mobile certificada**
+  - **Específico:** Obtener una certificación en desarrollo de aplicaciones móviles (Android/iOS) y crear al menos 2 aplicaciones publicadas en tiendas oficiales.  
+  - **Medible:** Publicar 2 aplicaciones móviles funcionales y obtener al menos 500 descargas en conjunto.  
+  - **Alcanzable:** Dedicar 10 horas semanales a cursos especializados y práctica de programación mobile.  
+  - **Relevante:** Permitirá fortalecer mi perfil profesional y abrir oportunidades laborales en el sector tecnológico.  
+  - **Tiempo:** Lograr la certificación y publicación de apps dentro de los 24 meses posteriores a la graduación.  
+
+- **Objetivo 2: Desarrollar una solución de IA aplicada a ciencia de datos**
+  - **Específico:** Diseñar y poner en marcha una IA que procese y analice grandes volúmenes de datos para generar modelos predictivos aplicables a proyectos de negocio.  
+  - **Medible:** Construir un prototipo funcional con al menos 3 modelos predictivos validados con datasets reales.  
+  - **Alcanzable:** Participar en un programa de especialización en IA y destinar 12 horas semanales a investigación y desarrollo.  
+  - **Relevante:** Permitirá integrar el análisis de datos con inteligencia artificial para la toma de decisiones estratégicas.  
+  - **Tiempo:** Completar el prototipo en un plazo máximo de 2 años después de la graduación.  
 
 ## Capítulo I: Presentación  
 ### 1.1. Startup Profile  
@@ -217,7 +232,7 @@ Convertirnos en la organización líder en Latinoamérica en el desarrollo de so
 |![Imagen2](Assets/TB1/)      |Omar Luquillas Asto         | U20211G641 | Soy estudiante de la carrera de Ingeniería de Software. Elegí esta carrera porque me apasiona la tecnología, el desarrollo de software y la programación. Tengo conocimientos en lenguajes de programación como C++, Python y Java. Me considero una persona investigadora, ya que me gusta aprender cosas nuevas y siempre estoy en busca de soluciones creativas e innovadoras que generen un impacto positivo en la vida de las personas. Además, valoro el trabajo en equipo, soy responsable y me comprometo a cumplir con mis tareas de manera eficiente. |
 |![Imagen3](Assets/TB1/Valentino.png)      | Valentino Sandoval Paiva                           |  U20211A962     |    Soy Valentino Sandoval, tengo 20 años y soy estudiante de la carrera de Ingeniería de Software. Tengo conocimiento en lenguajes de programación como python y c++, y bases de datos como SQLServer y MongoDB. Desde pequeño me sentí atraído por la tecnología, por lo que me decidí a estudiar la carrera, además disfruto de jugar videojuegos con amigos en mi tiempo libre.     |
 |![Imagen4](Assets/TB1/)      |                            |       |         |
-|![Imagen5](Assets/TB1/)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
+|![Imagen5](Assets/TB1/Loreleyimagen.jpg)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
 
 ### 1.2. Solution Profile 
 
