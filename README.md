@@ -1161,6 +1161,8 @@ Este bounded context actúa como un canal de comunicación entre el sistema y lo
 
 #### 2.5.3. Software Architecture
 
+En esta sección se presenta de forma breve la arquitectura del sistema TaskMaster: su organización en bounded contexts y contenedores, las responsabilidades principales de cada uno y cómo se comunican entre sí y con sistemas externos. El diseño usa un API Gateway como punto de entrada, servicios independientes para cada dominio (proyectos, visualización/seguimiento, reportes, notificaciones y autenticación) y una base de datos común, buscando modularidad, escalabilidad y facilidad de mantenimiento para el equipo de desarrollo.
+
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
 
 En el nivel de contexto se representa de manera general cómo el sistema TaskMaster se relaciona con los usuarios y con otros sistemas externos. En este diagrama se puede observar que los principales actores son el líder de equipo y el integrante de equipo, quienes interactúan con la plataforma a través de la aplicación móvil y la landing page. Además, el sistema mantiene comunicación con servicios externos como Gmail para el envío de notificaciones y Google Calendar para la gestión de plazos y eventos. Este nivel nos ayuda a entender la interacción global del software sin entrar en detalles técnicos complejos.
@@ -1168,6 +1170,10 @@ En el nivel de contexto se representa de manera general cómo el sistema TaskMas
 ![ddd](Assets/TB1/ContextDiagram.PNG)
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+
+En el nivel de contenedores se desglosan los principales componentes internos de TaskMaster, mostrando cómo está organizado el sistema a nivel tecnológico. Aquí se incluyen la aplicación móvil desarrollada en Kotlin con Jetpack Compose, la Landing Page, el API Gateway como punto central de comunicación, y los diferentes servicios que conforman los bounded contexts, tales como la gestión de proyectos y tareas, visualización y seguimiento, reportes, notificaciones, registro y autenticación de usuarios. Cada uno de estos contenedores cumple una función específica y se conecta entre sí a través de APIs y una base de datos común, lo que garantiza la integración y el correcto funcionamiento de la plataforma.
+
+![ddd](Assets/TB1/ContainerDiagram.PNG)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
 
