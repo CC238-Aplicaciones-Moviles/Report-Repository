@@ -1221,7 +1221,7 @@ Después de identificar los agregados en la sesión de Event Storming, analizamo
 
 ![ddd](Assets/TB1/boundednotificaciones.jpg)
 
-![ddd](Assets/TB1/boundedanalitica.jpg)
+![ddd](Assets/TB1/boundedca.jpg)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
@@ -1235,7 +1235,7 @@ Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, s
 Analítica y Reportes y Notificaciones:
 Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
 
-![Analítica](Assets/TB1/analitica-notificaciones.PNG)
+![Analítica](Assets/TB1/ca-notificaciones.PNG)
 
 Gestión de proyectos y tareas y Analítica y Reportes:
 Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
@@ -1265,7 +1265,7 @@ Cada vez que se asigna un miembro, se crea una tarea o se actualiza su estado, e
 Visualización y Seguimiento y Analítica y Reportes:
 Los cambios en las tareas (como su finalización o vencimiento) alimentan la capa de analítica, donde se recalculan y generan estadísticas actualizadas sobre el rendimiento de los proyectos y de los miembros del equipo.
 
-![ddd](Assets/TB1/visualizacion-analitica.PNG)
+![ddd](Assets/TB1/visualizacion-ca.PNG)
 
 
 ##### 2.5.1.3. Bounded Context Canvases
@@ -1284,7 +1284,7 @@ En este proyecto, los bounded contexts identificados fueron los siguientes:
 
 -Visualización y Seguimiento: orientado a mostrar el estado de las tareas y proyectos en tableros y calendarios.
 
-A-nalítica y Reportes: especializado en el procesamiento de datos y generación de métricas e informes.
+-Analítica y Reportes: especializado en el procesamiento de datos y generación de métricas e informes.
 
 Cada uno de estos bounded contexts se detalla a continuación a través de su canvas, explicando su descripción, clasificación estratégica, roles, comunicaciones entrantes y salientes, lenguaje ubicuo y decisiones de negocio clave.
 
@@ -1296,7 +1296,7 @@ Es el núcleo operativo del sistema, ya que gestiona la creación, organización
 ### *Analítica y Reportes*
 Este bounded context se encarga de recopilar y procesar los datos generados en los proyectos y tareas para transformarlos en métricas y reportes. Su propósito principal es ofrecer a los Team Leaders una visión global del estado de los proyectos y a los Team Members un seguimiento de su propio rendimiento. Este contexto asegura la confiabilidad de la información, recalculando estadísticas automáticamente al recibir eventos de tareas completadas o vencidas, y enviando resultados hacia Notificaciones para mantener informados a los usuarios.
 
-![ddd](Assets/TB1/BoundedCanvasAnaliticayReportes.PNG)
+![ddd](Assets/TB1/BoundedCanvascayReportes.PNG)
 
 ### *Visualización y Seguimiento*
 Su objetivo es ofrecer a los miembros del equipo una vista clara del estado de las tareas y proyectos mediante tableros y calendarios sincronizados. Este bounded context recibe eventos de Gestión de Proyectos y Tareas (como tareas vencidas o completadas) y los organiza en interfaces visuales para facilitar el monitoreo. Además, se comunica con Analítica y Reportes para mostrar estadísticas y con Notificaciones para resaltar cambios críticos en el estado de las tareas.
@@ -2104,6 +2104,7 @@ A continuacion se mostraran como se interconectan los componentes a mayor detall
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 ![ddd](Assets/TB1/Diagrama-Clases-AYR.png)
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
+![ddd](Assets/TB1/DiagramClassAYR.PNG)
 
 ####  2.6.3. Bounded Context:Visualización y Seguimiento
 
@@ -2843,3 +2844,15 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 ###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 ###### 2.6.5.6.2. Bounded Context Database Design Diagrams
+
+
+# Conclusiones
+
+# Bibliografía
+-Chandrasekaran, P. (2024, 9 agosto). Remote EventStorming in Practice. Domain-driven Design: A Practitioner’s Guide. 
+(https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/)[https://ddd-practitioners.com/2023/03/20/remote-eventstorming-workshop/]
+-Ddd-Crew. (s. f.). GitHub - ddd-crew/bounded-context-canvas: A structured approach to designing and documenting each of your bounded contexts. GitHub. 
+(https://github.com/ddd-crew/bounded-context-canvas)[https://github.com/ddd-crew/bounded-context-canvas]
+
+# Anexos
+
