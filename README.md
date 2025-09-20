@@ -2793,7 +2793,7 @@ Value Object: NotificationType
 
 ##### 2.6.5.2. Interface Layer
 
-La Interface Layer expone los endpoints REST (JSON) que permiten a la interfaz web y otros módulos enviar, consultar y actualizar notificaciones.
+La Interface Layer expone loss endpoints REST (JSON) que permiten a la interfaz web y otros módulos enviar, consultar y actualizar notificaciones.
 En esta capa no hay reglas de negocio: los controladores reciben las peticiones, validan datos de entrada y delegan a la Application Layer.
 
 Controlador: NotificationController
