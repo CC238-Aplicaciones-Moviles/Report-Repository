@@ -2839,6 +2839,8 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 
 ##### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
+![ddd](Assets/TB1/notisc4.PNG)notisc4
+
 ##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
