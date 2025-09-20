@@ -2852,13 +2852,28 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 
 ##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
+
+
 ###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![ddd](Assets/TB1/DiagramaClasesNotis.jpg)
+
 ###### 2.6.5.6.2. Bounded Context Database Design Diagrams
 
+![ddd](Assets/TB1/dbNotifications.jpg)
 
 # Conclusiones
+
+- El desarrollo del proyecto permitió abordar de manera integral todas las etapas de diseño y análisis de una solución de software, comenzando por la definición del perfil de la startup, la problemática y el planteamiento de hipótesis con Lean UX, lo cual proporcionó una base sólida para alinear la propuesta con las necesidades reales del usuario.
+
+- A través del requirements elicitation & analysis, se logró recopilar y analizar información clave mediante entrevistas, user personas, journeys y empatía, identificando de forma clara los requerimientos funcionales y no funcionales. Esto garantizó que la solución se enfoque en los problemas más relevantes para el segmento objetivo.
+
+- La aplicación de Domain-Driven Design (DDD) en sus niveles estratégico y táctico permitió estructurar el sistema en bounded contexts bien definidos (Registro y Autenticación, Analítica y Reportes, Visualización y Seguimiento, Gestión de Proyectos y Tareas, y Notificaciones). Esto no solo facilitó la modularidad, sino que también promovió la escalabilidad y mantenibilidad de la solución.
+
+- La construcción de diagramas de arquitectura de software en distintos niveles (contexto, contenedor, despliegue y componentes) aportó una visión clara de la interacción entre los elementos del sistema y de la manera en que se soportarán los requerimientos del negocio mediante infraestructura tecnológica apropiada.
+
+- El trabajo en equipo fue esencial para lograr un entregable completo, integrando competencias diversas y fomentando la colaboración en la resolución de problemas, lo que refleja la importancia de la gestión ágil y multidisciplinaria en proyectos tecnológicos.
+
 
 # Bibliografía
 -Chandrasekaran, P. (2024, 9 agosto). Remote EventStorming in Practice. Domain-driven Design: A Practitioner’s Guide. 
@@ -2871,18 +2886,25 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 
 - Miro. (n.d.). *Miro | Event storming*. Miro. Recuperado el 19 de septiembre de 2025, de
 [https://miro.com/app/board/uXjVJIJqxgg=/](https://miro.com/app/board/uXjVJIJqxgg=/)
+
 -Biblioteca UPC. (2024). Biblioteca virtual de la Universidad Peruana de Ciencias Aplicadas.
 [https://biblioteca.upc.edu.pe](https://biblioteca.upc.edu.pe)
+
 -Miro. (2024). Miro. Miro Corporation.
 [https://miro.com](https://miro.com)
+
 -LucidChart. (2024). LucidChart. Lucid Software Inc.
 [https://www.lucidchart.com](https://www.lucidchart.com)
+
 -Cohn, M. (2006). Historias de usuario: Un enfoque ágil. Pearson Educación.
 [https://www.scrummanager.com/files/scrum_manager_historias_usuario.pdf](https://www.scrummanager.com/files/scrum_manager_historias_usuario.pdf)
+
 -Pressman, R. S. (2010). Ingeniería de Software: Un enfoque práctico. McGraw-Hill.
 [https://www.javier8a.com/itc/bd1/ld-Ingenieria.de.software.enfoque.practico.7ed.Pressman.PDF](https://www.javier8a.com/itc/bd1/ld-Ingenieria.de.software.enfoque.practico.7ed.Pressman.PDF)
+
 -The C4 model for visualising software architecture. (2024).
 [https://c4model.com/](https://c4model.com/)
+
 -Structurizr. (2024).
 [https://www.structurizr.com/ ](https://www.structurizr.com/)
 
