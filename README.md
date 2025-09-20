@@ -804,7 +804,7 @@ preguntas ordenadas para entrevistar a los dos segmentos objetivos de la startup
 | **Inicio del video** | 23:15 |
 | **Fin del video** | 30:57 |
 | **Link del video** | https://goo.su/SUO1 |
-| **Foto entrevista** | ![ddd](Assets/TB1/alejandrobejarano) |
+| **Foto entrevista** | ![ddd](Assets/TB1/alejandrobejarano.jpg) |
 | **Resumen** | El entrevistado, líder de empresa orientada principalmente a las ventas y servicios, destacó que actualmente enfrentan limitaciones al gestionar sus procesos de forma manual con herramientas básicas como Office, lo que retrasa la eficiencia y dificulta la innovación. Entre los principales desafíos mencionó la competencia en un mercado en crecimiento y la necesidad de optimizar la gestión de proyectos y servicios. Considera esencial contar con un sistema integral que abarque tanto la parte administrativa como todo el ciclo de servicios, con características avanzadas, personalizables y seguras, que restrinjan accesos indebidos. Además, valora la integración con herramientas existentes, la colaboración fluida entre equipos y el cumplimiento de plazos de entrega por parte de socios estratégicos. Ve la adopción de una nueva herramienta como clave para un cambio total en los próximos años, permitiendo un mejor control en tiempo real de actividades, inversiones y logística, lo cual impactaría directamente en la competitividad y crecimiento de la empresa. |
 
 | **Duración total de las entrevistas** | 30:57  |
