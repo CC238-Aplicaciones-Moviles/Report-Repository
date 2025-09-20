@@ -37,14 +37,18 @@ Septiembre de 2025
 </div>
 
 ## Registro de Versiones del Informe
-| Versión | Fecha      | Autor | Descripción de modificación |
-|---------|------------|-------|------------------------------|
-| TB1     | 08/09/2025 | Bejarano Martínez Alvaro Leandro      |   **Completar**|
-| TB1     | 08/09/2025 |Luquillas Asto Omar| |
-| TB1     | 08/09/2025 |     Olivera Barzola Eric Marlon    |  Desarrollo de los ítems: 1.1.1 Descripción de la Startup, 1.1.2 Perfiles de integrantes del equipo, 1.2.1 Nombre del producto |
-| TB1     | 08/09/2025 |Sandoval Paiva Valentino||
-| TB1     | 08/09/2025 |Sarmiento Medina Loreley||
-| TB1     | 17/09/2025 |     Olivera Barzola Eric Marlon    |  Desarrollo de User Stories, Impact Map, Product Backlog |
+
+| Versión | Fecha      | Autor                            | Descripción de modificación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------- | ---------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| TB1     | 08/09/2025 | Valentino Sandoval               | **Competidores**: Análisis de los competidores directos e indirectos en el mercado. **Análisis Competitivo**: Estudio detallado de las estrategias de los competidores y cómo diferenciarse. **Estrategia y tácticas frente a competidores**: Definición de estrategias y tácticas para enfrentar la competencia. **Diseño de entrevistas**: Diseño y estructuración de las entrevistas para obtener información de los stakeholders clave. **User Stories**: Colaboración en la creación de las historias de usuario junto con Erick. **Software Architecture Deployment Diagrams**: Colaboración con Omar en la creación de diagramas de despliegue para la infraestructura. **Bounded Context: IAM**: Desarrollo del Bounded Context IAM, incluyendo la creación de las capas de dominio, interfaz, aplicación e infraestructura. |
+| TB1     | 08/09/2025 | Erick Olivera                    | **Solution Profile**: Creación del perfil de la solución propuesta para el problema identificado. **Lean UX Process**: Definición y estructura del proceso Lean UX utilizado para validar las ideas del producto. **User Stories**: Creación de historias de usuario junto con Valentino, para estructurar las funcionalidades del sistema. **Impact Mapping**: Creación del mapa de impacto para definir las prioridades de desarrollo. **Product Backlog**: Desarrollo y priorización del Product Backlog con las funcionalidades necesarias.                                                                                                                                                                                                                                                                                      |
+| TB1     | 08/09/2025 | Loreley Sarmiento                | **Startup Profile**: Desarrollo del perfil de la startup, incluyendo su misión y visión. **Lean UX Canvas**: Creación del Lean UX Canvas para estructurar el producto. **Empathy Mapping**: Desarrollo de un mapa de empatía para comprender mejor a los usuarios. **Requirements specification**: Elaboración de la especificación de los requisitos del producto. **Strategic-Level Domain-Driven Design**: Participación en el diseño de alto nivel del dominio.                                                                                                                                                                                                                                                                                                                                                                  |
+| TB1     | 08/09/2025 | Omar Luquillas                   | **Lean UX Assumptions**: Definición de las suposiciones clave sobre los usuarios y sus necesidades. **Software Architecture**: Definición de la arquitectura de software para el sistema. **Bounded Context: Gestión de Proyectos y Tareas**: Creación del Bounded Context para la gestión de proyectos y tareas. **Domain Layer**: Implementación de la capa de dominio para la gestión de la lógica del negocio. **Infrastructure Layer**: Desarrollo de la infraestructura para la gestión de datos.                                                                                                                                                                                                                                                                                                                              |
+| TB1     | 08/09/2025 | Alvaro Bejarano                  | **Competidores**: Análisis de competidores directos e indirectos en el mercado. **Estrategia y tácticas frente a competidores**: Definición de la estrategia para competir en el mercado. **Needfinding**: Investigación sobre las necesidades de los usuarios. **User Persona**: Creación de los perfiles de usuario para entender sus características y necesidades. **User Task Matrix**: Creación de la matriz de tareas de los usuarios.                                                                                                                                                                                                                                                                                                                                                                                        |
+
+
+
+
 ## Project Report Collaboration Insights
 
 |  URL del repositorio del reporte  |
@@ -53,11 +57,15 @@ Septiembre de 2025
 
 TB1:
 
-S
+REPORT: 
 
-e presenta capturas 
-en imagen de los analíticos de colaboración y commits en GitHub para el repositorio 
-del informe, realizados por los miembros del equipo
+![Imagen5](Assets/TB1/REPORT.png)
+
+- Bejarano Martínez Alvaro Leandro: 37
+- Luquillas Asto Omar: 12
+- Olivera Barzola Eric Marlon: 21
+- Sandoval Paiva Valentino: 9
+- Sarmiento Medina Lorele: 81
 
 
 ## Contenido
@@ -277,11 +285,11 @@ Convertirnos en la organización líder en Latinoamérica en el desarrollo de so
 #### 1.1.2. Perfiles de integrantes del equipo  
 |                             | Miembros del equipo        | Código de Estudiante |          Descripción            |
 |------------------| ----------------------------------------------- | ----------------- | ---------------------- |
-|![Imagen1](Assets/TB1/)      |Eric Marlon Olivera Barzola | U202315032 |   Soy Eric Marlon Olivera Barzola, estudiante de Ingeniería de Software del séptimo ciclo, con un interés particular en la ciberseguridad. A lo largo de mi formación he adquirido experiencia en diferentes lenguajes de programación como C#, C++ y Java. Me motiva desarrollar soluciones que no solo sean funcionales, sino que también transmitan confianza y seguridad a los usuarios.  |
-|![Imagen2](Assets/TB1/)      |Omar Luquillas Asto         | U20211G641 | Soy estudiante de la carrera de Ingeniería de Software. Elegí esta carrera porque me apasiona la tecnología, el desarrollo de software y la programación. Tengo conocimientos en lenguajes de programación como C++, Python y Java. Me considero una persona investigadora, ya que me gusta aprender cosas nuevas y siempre estoy en busca de soluciones creativas e innovadoras que generen un impacto positivo en la vida de las personas. Además, valoro el trabajo en equipo, soy responsable y me comprometo a cumplir con mis tareas de manera eficiente. |
+|![Imagen1](Assets/TB1/eric.png)      |Eric Marlon Olivera Barzola | U202315032 |   Soy Eric Marlon Olivera Barzola, estudiante de Ingeniería de Software del séptimo ciclo, con un interés particular en la ciberseguridad. A lo largo de mi formación he adquirido experiencia en diferentes lenguajes de programación como C#, C++ y Java. Me motiva desarrollar soluciones que no solo sean funcionales, sino que también transmitan confianza y seguridad a los usuarios.  |
+|![Imagen2](Assets/TB1/donlox.png)      |Omar Luquillas Asto         | U20211G641 | Soy estudiante de la carrera de Ingeniería de Software. Elegí esta carrera porque me apasiona la tecnología, el desarrollo de software y la programación. Tengo conocimientos en lenguajes de programación como C++, Python y Java. Me considero una persona investigadora, ya que me gusta aprender cosas nuevas y siempre estoy en busca de soluciones creativas e innovadoras que generen un impacto positivo en la vida de las personas. Además, valoro el trabajo en equipo, soy responsable y me comprometo a cumplir con mis tareas de manera eficiente. |
 |![Imagen3](Assets/TB1/Valentino.png)      | Valentino Sandoval Paiva                           |  U20211A962     |    Soy Valentino Sandoval, tengo 20 años y soy estudiante de la carrera de Ingeniería de Software. Tengo conocimiento en lenguajes de programación como python y c++, y bases de datos como SQLServer y MongoDB. Desde pequeño me sentí atraído por la tecnología, por lo que me decidí a estudiar la carrera, además disfruto de jugar videojuegos con amigos en mi tiempo libre.     |
 |![Imagen4](Assets/TB1/Alvaro.png)      | Alvaro Leandro Bejarano Martínez       | U202311640 |     Mi nombre es Alvaro Leandro Bejarano Martínez, estudiante de la carrera Ingeniería de Software y me destaco por mi perseverancia, organización y capacidad para trabajar en equipo. Me esfuerzo por mantener un ambiente estructurado dentro del grupo, donde cada miembro se sienta valorado y sus ideas sean escuchadas y respetadas. Mi compromiso es fomentar la colaboración efectiva, asegurando que cada contribución se integre de manera ordenada y alineada con los objetivos comunes del equipo.|
-|![Imagen5](Assets/TB1/)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
+|![Imagen5](Assets/TB1/lore.png)      | Loreley Sarmiento Medina   | U202310005 | Me interesa el desarrollo frontend, principalmente con Angular, creando interfaces dinámicas y centradas en el usuario. Utilizo herramientas como GitHub para organizar proyectos y colaborar en equipo, y me motiva aprender constantemente nuevas tecnologías que fortalezcan mis capacidades técnicas.Además, destaco por mis habilidades blandas, como el trabajo en equipo, la adaptabilidad y la comunicación efectiva, que me permiten integrarme fácilmente en proyectos multidisciplinarios. Soy una persona responsable, proactiva y creativa, cualidades que me impulsan a asumir retos y aportar soluciones que sumen al desarrollo integral del producto. |
 
 
 ### 1.2. Solution Profile 
@@ -1249,10 +1257,6 @@ Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, s
 
 ![ddd](Assets/TB1/gestion-notificaciones.PNG)
 
-Analítica y Reportes y Notificaciones:
-Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
-
-![Analítica](Assets/TB1/ca-notificaciones.PNG)
 
 Gestión de proyectos y tareas y Analítica y Reportes:
 Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
@@ -1380,19 +1384,19 @@ En esta sección se presenta de forma breve la arquitectura del sistema TaskMast
 
 En el nivel de contexto se representa de manera general cómo el sistema TaskMaster se relaciona con los usuarios y con otros sistemas externos. En este diagrama se puede observar que los principales actores son el líder de equipo y el integrante de equipo, quienes interactúan con la plataforma a través de la aplicación móvil y la landing page. Además, el sistema mantiene comunicación con servicios externos como Gmail para el envío de notificaciones y Google Calendar para la gestión de plazos y eventos. Este nivel nos ayuda a entender la interacción global del software sin entrar en detalles técnicos complejos.
 
-![ddd](Assets/TB1/ContextDiagram.PNG)
+![ddd](Assets/TB1/ContextDiagram.png)
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
 
 En el nivel de contenedores se desglosan los principales componentes internos de TaskMaster, mostrando cómo está organizado el sistema a nivel tecnológico. Aquí se incluyen la aplicación móvil desarrollada en Kotlin con Jetpack Compose, la Landing Page, el API Gateway como punto central de comunicación, y los diferentes servicios que conforman los bounded contexts, tales como la gestión de proyectos y tareas, visualización y seguimiento, reportes, notificaciones, registro y autenticación de usuarios. Cada uno de estos contenedores cumple una función específica y se conecta entre sí a través de APIs y una base de datos común, lo que garantiza la integración y el correcto funcionamiento de la plataforma.
 
-![ddd](Assets/TB1/ContainerDiagram.PNG)
+![ddd](Assets/TB1/ContainerDiagram.png)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
 
 El diagrama de despliegue representa cómo los principales componentes del sistema TaskMaster se distribuyen en el entorno de producción. En este caso, la aplicación móvil se ejecuta en dispositivos Android de los usuarios, mientras que los servicios principales del backend están alojados en la nube dentro de un clúster de contenedores Node.js. Finalmente, la base de datos se encuentra en un servidor dedicado, asegurando el almacenamiento persistente de la información del sistema. Esta organización permite una arquitectura escalable, separando la lógica de negocio de la capa de presentación y del almacenamiento de datos.
 
-![ddd](Assets/TB1/DeploymentDiagram.PNG)
+![ddd](Assets/TB1/DeploymentDiagram.png)
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
