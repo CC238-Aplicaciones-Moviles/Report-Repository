@@ -1726,6 +1726,8 @@ Esta capa alberga los componentes de repositorio, que son los responsables de ma
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
+![ddd](Assets/TB1/c4-iam.png)
+
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
@@ -1790,24 +1792,6 @@ La conexión entre las tablas `Users` y `Roles` se visualiza a través de la tab
 
 ![ddd](Assets/TB1/boundedIAM.jpg)
 
-
-#### 2.6.2. Bounded Context: Notificaciones
-
-##### 2.6.2.1. Domain Layer
-
-##### 2.6.2.2. Interface Layer
-
-##### 2.6.2.3. Application Layer
-
-##### 2.6.2.4. Infrastructure Layer
-
-##### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
-
-##### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
-
-###### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
-
-###### 2.6.2.6.2. Bounded Context Database Design Diagrams
 
 #### 2.6.2. Bounded Context: Analítica y Reportes
 #### 2.6.1.1. Domain Layer
@@ -2875,6 +2859,10 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 
 -Ddd-Crew. (s. f.). GitHub - ddd-crew/bounded-context-canvas: A structured approach to designing and documenting each of your bounded contexts. GitHub. 
 [https://github.com/ddd-crew/bounded-context-canvas](https://github.com/ddd-crew/bounded-context-canvas)
+
+- Miro. (n.d.). *Miro | Bounded context Canvas*. Miro. Recuperado el 19 de septiembre de 2025, de [https://miro.com/app/board/uXjVJHX-IGk=/](https://miro.com/app/board/uXjVJHX-IGk=/)
+
+- Miro. (n.d.). *Miro | Event storming*. Miro. Recuperado el 19 de septiembre de 2025, de [https://miro.com/app/board/uXjVJIJqxgg=/](https://miro.com/app/board/uXjVJIJqxgg=/)
 
 # Anexos
 
