@@ -1246,7 +1246,7 @@ Después de identificar los agregados en la sesión de Event Storming, analizamo
 
 ![ddd](Assets/TB1/boundednotificaciones.jpg)
 
-![ddd](Assets/TB1/boundedca.jpg)
+![ddd](Assets/TB1/AnaliticaYReportes.PNG)
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
@@ -1261,7 +1261,7 @@ Cada vez que se crea, modifica, elimina o cambia el estado/fecha de una tarea, s
 Gestión de proyectos y tareas y Analítica y Reportes:
 Los cambios en asignación de tareas, prioridades y estados alimentan la capa de analítica, donde se generan estadísticas de desempeño tanto a nivel de proyecto como de cada miembro del equipo.
 
-![ddd](Assets/TB1/gestion-analitica.PNG)
+![ddd](Assets/TB1/FlowMessageAnaliticasXGestion.PNG)
 
 Gestión de proyectos y tareas y Visualización y Seguimiento:
 Al asignar tareas y actualizar su estado, la información se refleja en herramientas de visualización como tableros o calendarios, facilitando el monitoreo del progreso en tiempo real.
@@ -1271,9 +1271,13 @@ Al asignar tareas y actualizar su estado, la información se refleja en herramie
 Analítica y Reportes y Visualización y Seguimiento:
 Las métricas obtenidas de proyectos y miembros se proyectan en dashboards y reportes visuales, ofreciendo una vista consolidada del avance y de las áreas que requieren atención.
 
-![ddd](Assets/TB1/analitica-visualizacion.PNG)
+![ddd](Assets/TB1/FlowMessageAnaliticasXVisualizacion.PNG)
 
-IAM y Gestión de proyectos y tareas:
+Analítica y Reportes y Notificaciones:
+Cuando una tarea es completada o vence su fecha límite, se envía una notificación al responsable o al líder de equipo, permitiendo reaccionar oportunamente a los hitos cumplidos o incumplidos.
+![ddd](Assets/TB1/FlowMessageAnaliticasXNotis.PNG)
+
+Registro,autentifacion de usuario y Gestión de proyectos y tareas:
 Cuando un usuario se registra e inicia sesión correctamente, obtiene acceso para crear proyectos, asignar tareas y participar en la gestión de actividades dentro del sistema.
 
 ![ddd](Assets/TB1/FlowMessageRegistroXGestionProyecto.PNG)
@@ -1317,7 +1321,7 @@ Es el núcleo operativo del sistema, ya que gestiona la creación, organización
 ### *Analítica y Reportes*
 Este bounded context se encarga de recopilar y procesar los datos generados en los proyectos y tareas para transformarlos en métricas y reportes. Su propósito principal es ofrecer a los Team Leaders una visión global del estado de los proyectos y a los Team Members un seguimiento de su propio rendimiento. Este contexto asegura la confiabilidad de la información, recalculando estadísticas automáticamente al recibir eventos de tareas completadas o vencidas, y enviando resultados hacia Notificaciones para mantener informados a los usuarios.
 
-![ddd](Assets/TB1/BoundedCanvascayReportes.PNG)
+![ddd](Assets/TB1/BoundedCanvasAnaliticayReportes.PNG)
 
 ### *Visualización y Seguimiento*
 Su objetivo es ofrecer a los miembros del equipo una vista clara del estado de las tareas y proyectos mediante tableros y calendarios sincronizados. Este bounded context recibe eventos de Gestión de Proyectos y Tareas (como tareas vencidas o completadas) y los organiza en interfaces visuales para facilitar el monitoreo. Además, se comunica con Analítica y Reportes para mostrar estadísticas y con Notificaciones para resaltar cambios críticos en el estado de las tareas.
@@ -2749,7 +2753,7 @@ Repositorio encargado de la persistencia y gestión de datos relacionados con ta
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagrams
 
-![ddd](Assets/TB1/DatabaseDiagramProjectsAndTasks.png)
+![ddd](Assets/TB1/ProjectMangementDiagramClass.png)
 
 #### 2.6.5. Bounded Context: Notificaciones
 
@@ -2844,10 +2848,13 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 
 ##### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
+![ddd](Assets/TB1/C4Notis.jpg)
+
 ##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
+![ddd](Assets/TB1/DiagramaClasesNotis.jpg)
 ###### 2.6.5.6.2. Bounded Context Database Design Diagrams
 
 
@@ -2862,7 +2869,23 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 
 - Miro. (n.d.). *Miro | Bounded context Canvas*. Miro. Recuperado el 19 de septiembre de 2025, de [https://miro.com/app/board/uXjVJHX-IGk=/](https://miro.com/app/board/uXjVJHX-IGk=/)
 
-- Miro. (n.d.). *Miro | Event storming*. Miro. Recuperado el 19 de septiembre de 2025, de [https://miro.com/app/board/uXjVJIJqxgg=/](https://miro.com/app/board/uXjVJIJqxgg=/)
+- Miro. (n.d.). *Miro | Event storming*. Miro. Recuperado el 19 de septiembre de 2025, de
+[https://miro.com/app/board/uXjVJIJqxgg=/](https://miro.com/app/board/uXjVJIJqxgg=/)
+-Biblioteca UPC. (2024). Biblioteca virtual de la Universidad Peruana de Ciencias Aplicadas.
+[https://biblioteca.upc.edu.pe](https://biblioteca.upc.edu.pe)
+-Miro. (2024). Miro. Miro Corporation.
+[https://miro.com](https://miro.com)
+-LucidChart. (2024). LucidChart. Lucid Software Inc.
+[https://www.lucidchart.com](https://www.lucidchart.com)
+-Cohn, M. (2006). Historias de usuario: Un enfoque ágil. Pearson Educación.
+[https://www.scrummanager.com/files/scrum_manager_historias_usuario.pdf](https://www.scrummanager.com/files/scrum_manager_historias_usuario.pdf)
+-Pressman, R. S. (2010). Ingeniería de Software: Un enfoque práctico. McGraw-Hill.
+[https://www.javier8a.com/itc/bd1/ld-Ingenieria.de.software.enfoque.practico.7ed.Pressman.PDF](https://www.javier8a.com/itc/bd1/ld-Ingenieria.de.software.enfoque.practico.7ed.Pressman.PDF)
+-The C4 model for visualising software architecture. (2024).
+[https://c4model.com/](https://c4model.com/)
+-Structurizr. (2024).
+[https://www.structurizr.com/ ](https://www.structurizr.com/)
+
 
 # Anexos
 
