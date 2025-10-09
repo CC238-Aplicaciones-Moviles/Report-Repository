@@ -160,7 +160,7 @@ REPORT:
       - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
           - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
           - [2.6.5.6.2. Bounded Context Database Design Diagrams](#26562-bounded-context-database-design-diagrams)
-          - [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
+- [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
   - [3.1. Product design](#31-product-design)
     - [3.1.1. Style Guidelines](#311-style-guidelines)
       - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
