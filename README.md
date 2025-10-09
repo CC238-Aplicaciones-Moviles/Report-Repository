@@ -2904,8 +2904,18 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 ## Capítulo III: Solution UI/UX Design  
 
 ### 3.1. Product design  
+
+El diseño del producto de WorkHub se basa en un enfoque centrado en el usuario, priorizando la claridad visual, la accesibilidad y la eficiencia en la gestión colaborativa de proyectos. La interfaz busca ofrecer una experiencia intuitiva donde cada elemento, desde la navegación hasta la disposición de las tareas, responda a las necesidades reales de los equipos de trabajo. Este enfoque permite equilibrar estética y funcionalidad, garantizando una interacción fluida y coherente con los principios del diseño de experiencias digitales (Nielsen Norman Group, 2023).
+
 #### 3.1.1. Style Guidelines  
+
+El diseño de estilo de WorkHub se fundamenta en la coherencia visual y la identidad de marca, garantizando una experiencia estética uniforme en todos los componentes de la interfaz. Se aplicó una paleta cromática equilibrada que combina tonos neutros con acentos contrastantes para resaltar acciones clave, junto con una tipografía moderna y legible que refuerza la claridad comunicativa. Asimismo, se definieron márgenes, espaciados y jerarquías visuales consistentes para mantener armonía entre las vistas de proyectos, tareas y estadísticas. Estas guías de estilo buscan no solo reforzar la identidad visual de la plataforma, sino también mejorar la usabilidad y la comprensión del contenido por parte del usuario (Interaction Design Foundation, 2022).
+
 ##### 3.1.1.1. General Style Guidelines  
+
+**Color:**
+
+Para WorkHub, una plataforma de gestión colaborativa de proyectos y tareas, la paleta de colores busca reflejar claridad, accesibilidad y profesionalismo. Los tonos principales transmiten confianza y simplicidad, mientras que los secundarios se aplican en fondos, estados y tipografía para mantener equilibrio visual y una experiencia coherente.
 
 #### 3.1.2. Information Architecture  
 ##### 3.1.2.1. Organization Systems  
@@ -2994,11 +3004,16 @@ La Infrastructure Layer contiene las implementaciones concretas para persistir n
 [https://www.javier8a.com/itc/bd1/ld-Ingenieria.de.software.enfoque.practico.7ed.Pressman.PDF](https://www.javier8a.com/itc/bd1/ld-Ingenieria.de.software.enfoque.practico.7ed.Pressman.PDF)
 
 -The C4 model for visualising software architecture. (2024).
-[https://c4model.com/](https://c4model.com/)
+[https://c4model.com/](https://c4model.com/).
 
 -Structurizr. (2024).
 [https://www.structurizr.com/ ](https://www.structurizr.com/)
 
+-Nielsen Norman Group. (2023). 10 Usability Heuristics for User Interface Design. 
+[https://www.nngroup.com](https://www.nngroup.com).
+
+-Interaction Design Foundation. (2022). What is User Interface (UI) Design. 
+[https://www.interaction-design.org](https://www.interaction-design.org)
 
 # Anexos
 
