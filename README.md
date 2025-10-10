@@ -3163,23 +3163,451 @@ En esta sección se presentan los prototipos interactivos desarrollados en Figma
 
 ### 4.1. Software Configuration Management  
 #### 4.1.1. Software Development Environment Configuration  
-#### 4.1.2. Source Code Management  
+En este apartado se describe la configuración del entorno de desarrollo de Task Master, establecida para garantizar la correcta integración, colaboración y trazabilidad de las actividades realizadas por los miembros del equipo.  
+Se definen las herramientas, plataformas y productos de software utilizados a lo largo del ciclo de vida del desarrollo, desde la gestión del proyecto hasta el despliegue y la documentación técnica.
+
+| Plataforma / Herramienta | Descripción | Enlace |
+|---------------------------|--------------|---------|
+| GitHub | Plataforma de control de versiones basada en Git que permite la colaboración entre desarrolladores, la gestión de ramas, control de cambios y automatización del despliegue continuo (CI/CD). | [https://github.com](https://github.com) |
+| Render | Servicio de despliegue automatizado para backend y frontend. Facilita la integración continua, escalado automático y monitoreo del sistema en producción. | [https://render.com](https://render.com) |
+| Figma | Herramienta colaborativa de diseño de interfaces, utilizada para la creación de wireframes, mockups y prototipos interactivos de Task Master. Permite trabajo simultáneo entre diseñadores y desarrolladores. | [https://www.figma.com](https://www.figma.com) |
+| Mural | Plataforma colaborativa para sesiones de ideación, flujo de usuario (user flow) y mapas de tareas. Ideal para estructurar el diseño de experiencias y estrategias de interacción del usuario. | [https://www.mural.co](https://www.mural.co) |
+| Lucidchart | Herramienta para la creación de diagramas UML, diagramas de flujo de tareas y modelos de procesos de Task Master. Facilita la documentación visual y el análisis técnico. | [https://lucidchart.com](https://lucidchart.com) |
+| Vertabelo | Plataforma especializada para el modelado y documentación de bases de datos relacionales, utilizada para diseñar la estructura de datos del sistema de gestión de tableros, columnas y tareas. | [https://vertabelo.com](https://vertabelo.com) |
+| Structurizr | Herramienta usada para representar la arquitectura C4 de Task Master (Contexto, Contenedor, Componente, Código), mostrando la relación entre los módulos principales (Gestión de Tareas, Tableros, Usuarios, Visualización). | [https://structurizr.com](https://structurizr.com) |
+| C4 Model | Modelo conceptual que permite documentar las decisiones arquitectónicas del sistema de manera jerárquica y comprensible para todo el equipo. | [https://c4model.com](https://c4model.com) |
+| Postman | Herramienta para pruebas y validación de APIs REST del backend de Task Master. Permite automatizar test cases, analizar respuestas y validar endpoints de integración. | [https://www.postman.com](https://www.postman.com) |
+| Trello | Plataforma de gestión de proyectos que facilita la organización de tareas y entregables mediante tableros, listas y tarjetas. Se emplea para la planificación ágil (sprints, backlogs, revisiones). | [https://trello.com](https://trello.com) |
+| UXPressia | Utilizada para la creación de User Personas y Customer Journey Maps, ayudando a entender las necesidades, frustraciones y objetivos de los usuarios que gestionan tareas dentro de la app. | [https://uxpressia.com](https://uxpressia.com) |
+| Canva | Aplicación complementaria para el diseño visual de materiales gráficos, como banners, íconos e imágenes promocionales de la marca Task Master. | [https://www.canva.com](https://www.canva.com) |
+| Firebase (opcional) | Plataforma en la nube utilizada para autenticación de usuarios y almacenamiento en tiempo real en etapas tempranas del desarrollo o pruebas del módulo de notificaciones. | [https://firebase.google.com](https://firebase.google.com) |
+
+
+#### 4.1.2. Source Code Management 
+
+En esta sección, el equipo de desarrollo de Task Master establece los medios y el esquema de organización aplicados para el seguimiento de modificaciones, utilizando GitHub como plataforma principal de control de versiones.  
+De esta manera, se configuró un repositorio remoto en GitHub para almacenar el código fuente, documentar los cambios y colaborar de manera eficiente entre los miembros del equipo durante todo el ciclo de desarrollo.
+
+Se utiliza GitHub como sistema centralizado para el versionado y la colaboración.  
+Los repositorios oficiales del proyecto Task Master son los siguientes:
+
+- Landing Page: `https://github.com/CC238-Aplicaciones-Moviles/TaskMaster-LandingPage`
+- Movile App Application: `https://github.com/CC238-Aplicaciones-Moviles/AppMobile-TaskMaster`
+- Backend Web Services: `https://github.com/CC238-Aplicaciones-Moviles/Backend-TaskMaster-`
+
+Cada repositorio cuenta con flujos de trabajo independientes, integraciones de despliegue automático en Render y acciones de CI/CD configuradas en GitHub Actions.
+
+
+#### Implementación de GitFlow
+
+Para mantener una estructura organizada y evitar conflictos durante el desarrollo colaborativo, el equipo adopta la estrategia **GitFlow**, con ramas bien definidas para diferentes etapas y propósitos del proyecto.
+
+**Ramas base:**
+
+- **main**: Contiene la versión estable del código desplegada en producción.  
+- **develop**: Incluye las últimas actualizaciones y desarrollos en curso que eventualmente serán fusionados a `main`.
+
+**Feature branches:**
+
+Cada nueva funcionalidad o módulo inicia desde `develop`.  
+Convención de nombres: `feature/nombre-descriptivo`  
+Ejemplo: `feature/task-calendar-sync`
+
+**Release branches:**
+
+Cuando el proyecto alcanza una versión candidata para producción, se crea una rama de liberación desde `develop`.  
+Convención: `release/x.y.z` (siguiendo versionado semántico)
+
+**Hotfix branches:**
+
+Si se detecta un error crítico en producción, se crea una rama desde `main` para solucionarlo de inmediato.  
+
+
+#### Versionado Semántico (Semantic Versioning)
+
+El proyecto Task Master aplica **versionado semántico** (SemVer) siguiendo el formato **MAJOR.MINOR.PATCH**, asegurando coherencia entre las actualizaciones y compatibilidad entre versiones.
+
+| Parte  | Significado |
+|--------|--------------|
+| MAJOR  | Cambios incompatibles o refactorizaciones críticas que alteran el funcionamiento existente. |
+| MINOR  | Nuevas funcionalidades agregadas de forma retrocompatible. |
+| PATCH  | Corrección de errores menores sin alterar funcionalidades existentes. |
+
+**Tipos comunes de commits:**
+
+- `feat`: nueva funcionalidad o módulo implementado  
+- `fix`: corrección de errores  
+- `docs`: cambios en documentación  
+- `style`: ajustes de formato o estilo (sin afectar el código)  
+- `refactor`: reestructuración de código sin alterar el comportamiento  
+- `test`: creación o modificación de pruebas unitarias  
+- `chore`: tareas de mantenimiento o actualización de dependencias  
+
+
 #### 4.1.3. Source Code Style Guide & Conventions  
+
+El equipo ha definido las siguientes convenciones de nombres y estilos de codificación para el proyecto LearnHive, aplicadas en los lenguajes HTML, CSS, JavaScript, TypeScript y Java. Todas las nomenclaturas están en inglés, buscando claridad, estandarización y buenas prácticas de desarrollo. Se han adoptado guías de estilo reconocidas y actualizadas para cada tecnología.
+
+## HTML
+
+- Guía adoptada: [W3C HTML Style Guide](https://www.w3.org/TR/html5/)
+- Nomenclatura y convenciones:
+  - Minúsculas para etiquetas y atributos: `<div class="container">`
+  - Indentación: 2 espacios
+  - Atributos entre comillas dobles: `<img src="logo.png" alt="TaskMaster Logo">`
+  - Uso semántico de etiquetas: `<header>`, `<section>`, `<footer>`
+  - Comentarios HTML: `<!-- This is a comment -->`
+
+## CSS
+
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Nomenclatura y convenciones:
+  - `kebab-case` para clases e IDs  
+    Ejemplo: `.main-header`, `#footer-section`
+  - Agrupación de estilos por componente
+  - Evitar el uso de `!important` salvo en casos necesarios
+  - Indentación: 2 espacios
+
+## JavaScript
+
+- Guía adoptada: [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+- Nomenclatura y convenciones:
+  - `camelCase` para variables y funciones  
+    Ejemplo: `let Name = 'Luis';`, `function calculateAverage() {}`
+  - `PascalCase` para clases  
+    Ejemplo: `class DashboardManager {}`
+  - Evitar `snake_case`
+  - Usar `const` y `let` en lugar de `var`
+
+## TypeScript
+
+- Guía adoptada: [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
+- Nomenclatura y convenciones:
+  - `camelCase` para variables, funciones y propiedades  
+    Ejemplo: `let isActive: boolean = true;`, `function getUserData() {}`
+  - `PascalCase` para clases, interfaces, enums y tipos  
+    Ejemplo: `class CourseCard {}`, `interface UserProfileDTO {}`, `enum Role { Member,Leader  }`
+  - Tipado estricto (`strict: true`) habilitado
+  - Interfaces nombradas con sufijo `DTO` o `Props`
+  - Uso de modificadores `readonly`, `private`, `public`
+
+## Java
+
+- Guía adoptada: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- Nomenclatura y convenciones:
+  - `PascalCase` para clases  
+    Ejemplo: `public class CourseService {}`
+  - `camelCase` para variables, métodos y atributos  
+    Ejemplo: `int totalCourses;`, `calculateProgress();`
+  - Constantes en MAYÚSCULAS con `snake_case`  
+    Ejemplo: `public static final int MAX_MEMBERS = 50;`
+  - Paquetes en minúsculas separados por punto  
+    Ejemplo: `com.taskmaster.backend.controller`
+
+## Gherkin Conventions for Readable Specifications
+
+- Guía adoptada: [Gherkin Syntax and Conventions](https://cucumber.io/docs/gherkin/reference/)
+- Nomenclatura y convenciones:
+  - Estructura:
+    - Given: Define el contexto o estado inicial
+    - When: Define la acción o evento que ocurre
+    - Then: Define el resultado o expectativa
+  - Ejemplo:
+    ```gherkin
+    Feature: Member dashboard access
+      Scenario: Successful login with valid credentials
+        Given the Member is on the login page
+        When the member enters valid credentials
+        Then the member should be redirected to the dashboard
+    ```
+  - Uso de tablas para datos:
+    ```gherkin
+    Given the following users exist:
+      | username | password |
+      | member1 | pass123  |
+      | leader1 | pass456  |
+    ```
+
+## SQL / Data Modeling (Vertabelo)
+
+- Guía adoptada: [SQL Style Guide](https://www.sqlstyle.guide/)
+- Nomenclatura y convenciones:
+  - Nombres en inglés, en singular
+  - Prefijos según entidad o módulo
+  - Palabras reservadas en mayúsculas
+  - Relaciones consistentes entre tablas
+  - Ejemplo:
+    ```sql
+    CREATE TABLE Member (
+      member_id INT PRIMARY KEY,
+      first_name VARCHAR(50),
+      last_name VARCHAR(50),
+      enrollment_date DATE
+    );
+    ```
+
+## Kotlin / XML (Aplicativo móvil – Android Studio)
+
+- Guía adoptada: [Android Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)
+- Nomenclatura y convenciones:
+  - Código limpio, reutilizable y seguro
+  - `camelCase` para variables y funciones  
+    Ejemplo: `val userName: String = "Eric"`
+  - `PascalCase` para clases y componentes de UI  
+    Ejemplo: `class DashboardActivity : AppCompatActivity()`
+  - XML en `snake_case`  
+    Ejemplo: `<TextView android:id="@+id/student_name_text" />`
+  - Comentarios claros y concisos
+
+
 #### 4.1.4. Software Deployment Configuration  
+
+## Despliegue del Frontend (Landing Page)
+
+La landing page de Task Master fue desarrollada utilizando HTML, CSS y JavaScript, enfocándose en un diseño responsivo, limpio y rápido.  
+El sitio se publica mediante GitHub Pages, lo que permite una distribución gratuita, confiable y accesible desde cualquier navegador.  
+Durante el proceso de preparación para producción, se aplican optimizaciones de carga como la reducción de archivos CSS y JS, la organización modular del código y la compresión de imágenes en formatos .jpg, .png y .svg.  
+
+## Despliegue del Backend (API – Spring Boot)
+
+El backend de Task Master está implementado con Java y el framework Spring Boot, siguiendo principios de arquitectura modular y escalable.  Actualmente, el entorno de despliegue se realiza en la nube en Render.  
+Se manejan variables de entorno para gestionar las credenciales y configuraciones sensibles, manteniendo la seguridad y trazabilidad del sistema.  
+La API REST está diseñada para gestionar tareas, usuarios y tableros de forma eficiente, garantizando una comunicación estable con el frontend y la aplicación móvil.
+
+## Configuración del Aplicativo Móvil (Android)
+
+La versión móvil de Task Master fue desarrollada en Android Studio, empleando Kotlin para la lógica y XML para el diseño de interfaces.  
+En la etapa actual, las pruebas se realizan mediante emuladores locales y dispositivos físicos, asegurando la compatibilidad con diferentes versiones del sistema operativo Android.  
+El despliegue se gestiona mediante la generación de archivos .apk y su distribución interna para pruebas cerradas.  
+El aplicativo mantiene sincronización con el backend en tiempo real, permitiendo a los usuarios gestionar tareas, recibir actualizaciones y visualizar su progreso desde el móvil.
+
+## Protocolo de Pruebas y Validación
+
+Antes de cada despliegue, se ejecuta un conjunto de pruebas funcionales y de integración que validan la comunicación entre los módulos del sistema.  
+También se realizan pruebas de rendimiento, validaciones de interfaz y revisiones de experiencia de usuario para garantizar una interacción fluida y coherente entre las plataformas.  
+Finalmente, cada versión se documenta y se etiqueta en el repositorio, siguiendo un control de versiones ordenado que facilita la trazabilidad y el mantenimiento del proyecto.
+
+
 
 ### 4.2. Landing Page & Mobile Application Implementation  
 #### 4.2.1. Sprint 1  
+Esta sección presenta los detalles de la primera reunión de planificación de Sprint del equipo para avanzar el desarrollo de **Task Master**.  
+Durante esta sesión se definieron los objetivos principales del sprint, la capacidad del equipo y las historias de usuario priorizadas para esta primera iteración.  
+Al ser el primer Sprint del proyecto, no se incluyen revisiones ni retrospectivas previas.  
+
+El enfoque principal fue desarrollar la Landing Page informativa y estructurar los primeros módulos del backend.
+
+
 ##### 4.2.1.1. Sprint Planning 1  
+
+
+| Elemento | Detalle |
+|-----------|----------|
+| Sprint # | Sprint 1 |
+| Fecha | 1 de octubre de 2025 |
+| Hora | 3:00 p.m. |
+| Lugar | Virtual – Google Meet |
+| Elaborado por | Luquillas Asto Omar |
+| Participantes (Reunión de planificación) | Bejarano Martínez Álvaro Leandro, Luquillas Asto Omar, Olivera Barzola Eric Marlon, Sandoval Paiva Valentino, Sarmiento Medina Loreley |
+| Resumen de la revisión anterior | Al ser el primer sprint, aún no se completa|
+| Resumen de la retrospectiva anterior |Al ser el primer sprint, aún no se completa |
+| Objetivo del Sprint | El objetivo de este sprint es establecer la base técnica y visual del proyecto Task Master, desarrollando la landing page y los módulos principales del backend para la gestión de usuarios y tareas. Se busca garantizar que los usuarios puedan gestionar sus primeras tareas. Resultado esperado: Desplegar la primera versión funcional del sistema. Impacto: Validar la propuesta de valor e iniciar pruebas internas. Usuarios objetivo: Personas interesadas en organizar sus actividades y proyectos. Evento clave: Los usuarios pueden registrarse, iniciar sesión y visualizar sus tareas dentro del sistema. |
+| Velocidad del Sprint | El equipo puede atender hasta 30 Story Points. |
+| Suma de Story Points | La suma de Story Points planificados para este sprint es de 30 Story Points. |
+
 ##### 4.2.1.2. Sprint Backlog 1 
+
+El objetivo principal del Sprint 1 fue implementar las secciones principales de la Landing Page de Task Master y desarrollar las funcionalidades base del backend para la gestión de proyectos y tareas.  
+Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en JavaScript y construcción de endpoints en Spring Boot.  
+
+
+| Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Asignado a | Estado |
+|----------------|---------|--------------|--------------------|--------------|------------------|-------------|---------|
+| TS03 | Gestión de Proyectos (backend) | T03-1 | Crear entidades y repositorios | Diseñar entidades y repositorios para la gestión de proyectos en la base de datos. | 4 | Luquillas Asto Omar | Done |
+| TS03 | Gestión de Proyectos (backend) | T03-2 | Implementar servicios y controladores | Crear los servicios y controladores REST para registrar y listar proyectos. | 4 | Bejarano Martínez Álvaro Leandro | In Progress |
+| TS04 | Gestión de Tareas (backend) | T04-1 | Definir modelo de tareas | Crear entidad y relaciones con proyectos y usuarios. | 3 | Luquillas Asto Omar | Done |
+| TS04 | Gestión de Tareas (backend) | T04-2 | Implementar endpoints CRUD | Programar endpoints para crear, actualizar y eliminar tareas. | 5 | Bejarano Martínez Álvaro Leandro | In Progress |
+| US01 | Información general sobre Task Master | T01-1 | Diseñar sección principal (hero) | Crear la sección principal de la página con título, descripción y CTA. | 2 | Sarmiento Medina Loreley | Done |
+| US01 | Información general sobre Task Master | T01-2 | Implementar HTML y CSS | Desarrollar la estructura visual en HTML y CSS. | 3 | Sandoval Paiva Valentino | Done |
+| US02 | Llamado a la acción para descargar la aplicación | T02-1 | Crear sección CTA | Diseñar y programar la sección con botones de descarga. | 2 | Olivera Barzola Eric Marlon | Done |
+| US02 | Llamado a la acción para descargar la aplicación | T02-2 | Enlazar con repositorios oficiales | Configurar los enlaces de descarga desde GitHub Pages o tiendas oficiales. | 1 | Olivera Barzola Eric Marlon | Done |
+| US03 | Testimonios de usuarios | T03-1 | Diseñar carrusel visual | Crear una sección con testimonios animados de usuarios. | 2 | Sarmiento Medina Loreley | Done |
+| US03 | Testimonios de usuarios | T03-2 | Implementar lógica de rotación JS | Crear animaciones con JavaScript para el desplazamiento automático. | 2 | Sandoval Paiva Valentino | Done |
+| US04 | Muestra de planes y precios | T04-1 | Diseñar sección de precios | Crear estructura con diferentes planes (free y premium). | 3 | Sarmiento Medina Loreley | Done |
+| US04 | Muestra de planes y precios | T04-2 | Implementar HTML y CSS | Desarrollar visualmente la sección. | 2 | Olivera Barzola Eric Marlon | Done |
+| US05 | Adaptabilidad móvil | T05-1 | Implementar responsive design | Asegurar la compatibilidad móvil de toda la landing page. | 4 | Sandoval Paiva Valentino | In Progress |
+| US05 | Adaptabilidad móvil | T05-2 | Ajustar fuentes y tamaños | Modificar tipografías y márgenes para pantallas pequeñas. | 2 | Olivera Barzola Eric Marlon | Done |
+| US05 | Adaptabilidad móvil | T05-3 | Verificar compatibilidad en diferentes dispositivos | Probar en varios emuladores y dispositivos móviles. | 2 | Sarmiento Medina Loreley | To Do |
+| US06 | Navegación mediante encabezado | T06-1 | Crear barra de navegación fija | Programar encabezado con comportamiento sticky y enlaces internos. | 2 | Olivera Barzola Eric Marlon | Done |
+| US06 | Navegación mediante encabezado | T06-2 | Implementar animación de desplazamiento | Añadir efecto de desplazamiento suave al hacer clic en cada enlace. | 1 | Sandoval Paiva Valentino | Done |
+| US06 | Navegación mediante encabezado | T06-3 | Integrar logotipo y enlaces a redes | Añadir logo y enlaces al menú principal. | 1 | Sarmiento Medina Loreley | Done |
+| US07 | Misión y visión | T07-1 | Diseñar sección informativa | Crear la sección con los valores principales de Task Master. | 1 | Sarmiento Medina Loreley | Done |
+| US07 | Misión y visión | T07-2 | Agregar iconografía representativa | Incorporar íconos que representen los valores del proyecto. | 1 | Sandoval Paiva Valentino | Done |
+| US07 | Misión y visión | T07-3 | Adaptar estilo visual coherente | Alinear tipografía y colores con la identidad del sitio. | 2 | Olivera Barzola Eric Marlon | In Progress |
+| US08 | About the team | T08-1 | Diseñar sección del equipo | Mostrar a los integrantes con nombre, rol e imagen. | 2 | Sarmiento Medina Loreley | Done |
+| US08 | About the team | T08-2 | Implementar diseño con grid | Distribuir los perfiles con diseño limpio y adaptable. | 2 | Sandoval Paiva Valentino | Done |
+| US08 | About the team | T08-3 | Añadir animaciones al pasar el cursor | Implementar efecto hover para mostrar información adicional. | 1 | Olivera Barzola Eric Marlon | In Progress |
+| US09 | Pie de página | T09-1 | Crear footer informativo | Incluir enlaces de contacto, redes sociales y derechos reservados. | 1 | Sandoval Paiva Valentino | Done |
+| US09 | Pie de página | T09-2 | Diseñar estilo visual uniforme | Aplicar coherencia con el resto del diseño de la página. | 1 | Sarmiento Medina Loreley | Done |
+| US09 | Pie de página | T09-3 | Agregar enlace al correo de soporte | Incluir dirección de contacto para soporte técnico. | 1 | Olivera Barzola Eric Marlon | Done |
+
 ##### 4.2.1.3. Development Evidence for Sprint Review  
+
+
+| Hash | Rama / Referencia | Mensaje | Descripción | Fecha |
+|------|-------------------|----------|--------------|--------|
+| 223ae06 | (HEAD -> feature/chapter-4, origin/feature/chapter-4) | feat: Add chapter 4.1 |  | 2025-10-10 |
+| fe73d58 |  | Merge pull request #23 from CC238-Aplicaciones-Moviles/main | feat add: mock up images | 2025-10-10 |
+| 8e8c13e |  | feat add: mock up images |  | 2025-10-10 |
+| c585fa5 |  | feat add: chapter 3 until 3.1.4 |  | 2025-10-09 |
+| d9d138d | (main) | add General Style Guidelines |  | 2025-10-09 |
+| 75885bf |  | Merge branch 'main' of https://github.com/CC238-Aplicaciones-Moviles/Report-Repository | Merge | 2025-10-09 |
+| 678dbb2 |  | Add general Style Guidelines |  | 2025-10-09 |
+| 48a20dc |  | feat add: mock-up images |  | 2025-10-09 |
+| 49f25ab |  | feat fix: wireframes images |  | 2025-10-09 |
+| fedfe77 |  | feat add: wireframes images |  | 2025-10-09 |
+| cdebd49 |  | feat add: General Style Guidelines images |  | 2025-10-09 |
+| af97170 |  | feat add: product design |  | 2025-10-09 |
+| 9f9a484 |  | feat add: secciones informe |  | 2025-10-09 |
+| 2b7c963 |  | FEAT FIX: INDICE |  | 2025-10-09 |
+| ee12430 | (origin/feature/chapter-3) | feat add: indice |  | 2025-10-09 |
+| e88fc4d |  | feat fix: fix |  | 2025-09-19 |
+| 7445916 |  | feat add: Conclusiones |  | 2025-09-19 |
+| 628f44d |  | feat add: Interview Alejandro |  | 2025-09-19 |
+| 9468d12 |  | feat add: DB notifications image |  | 2025-09-19 |
+| d8bd2d6 |  | fix(document) |  | 2025-09-19 |
+| 9efd889 |  | Add files via upload |  | 2025-09-19 |
+| 841a73e |  | Add files via upload |  | 2025-09-19 |
+| 3ace7a7 |  | feat: Revise student outcome criteria and actions |  | 2025-09-19 |
+| e9941eb |  | Add files via upload |  | 2025-09-19 |
+| 3d8ed1a |  | Merge pull request #21 from CC238-Aplicaciones-Moviles/feature/report1 | fix: links | 2025-09-19 |
+| 562b536 |  | fix: links |  | 2025-09-19 |
+| 647f57b |  | Add files via upload |  | 2025-09-19 |
+| 165cf5e |  | Merge pull request #20 from CC238-Aplicaciones-Moviles/feature/report1 | fix: links | 2025-09-19 |
+| 0986201 |  | fix: links |  | 2025-09-19 |
+| c2666cd |  | Revise objectives for mobile app development and certification | Updated personal objectives with specific, measurable, achievable, relevant, and time-bound criteria for mobile app development and certification. | 2025-09-19 |
+| fd4bfb6 |  | Merge pull request #19 from CC238-Aplicaciones-Moviles/feature/chapter-1 | Feature/chapter 1 | 2025-09-19 |
+| abc5753 | (origin/feature/chapter-1) | Merge branch 'main' into feature/chapter-1 |  | 2025-09-19 |
+| 0fb459d |  | Merge pull request #18 from CC238-Aplicaciones-Moviles/feature/chapter-2 | fix(document) | 2025-09-19 |
+| 3712cc7 |  | fix(document) |  | 2025-09-19 |
+| db9e4c3 |  | Merge pull request #17 from CC238-Aplicaciones-Moviles/feature/chapter-2 | Feature/chapter 2 | 2025-09-19 |
+| 91e718a |  | fix(document) |  | 2025-09-19 |
+
+BACKEND
+
+| Hash | Rama / Referencia | Mensaje | Descripción | Fecha |
+|------|-------------------|----------|--------------|--------|
+| from CC238-Aplicaciones-Moviles/develop |  | feat: fix backend service |  | 2025-10-10 |
+| 9d10bda | (origin/develop) | Merge branch 'master' into develop |  | 2025-10-10 |
+| 91659de |  | feat: fix backend service |  | 2025-10-10 |
+| 6f56fbd |  | Update database configuration to use environment variables |  | 2025-10-10 |
+| 3415049 |  | primer commit |  | 2025-10-08 |
+| 5b8ab1b |  | Primer commit en el nuevo repositorio |  | 2025-10-06 |
+
+
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review  
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
+
+En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
+Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMaster-LandingPage 
+
+![a1](Assets/TP1/a1.png)
+![a1](Assets/TP1/a2.png)
+![a1](Assets/TP1/a3.png)
+![a1](Assets/TP1/a5.png)
+![a1](Assets/TP1/a6.png)
+![a1](Assets/TP1/a7.png)
+![a1](Assets/TP1/a8.png)
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
+
+En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
+Enlance del Backend: https://backend-taskmaster-1.onrender.com/swagger-ui/index.html
+
+Sección Autentificación Y Roles
+![b1](Assets/TP1/B1.png)
+
+Sección de Tasks:
+![b1](Assets/TP1/B2.png)
+
+Sección de Users:
+![b1](Assets/TP1/B3.png)
+
+Sección de Projects:
+![b1](Assets/TP1/B4.png)
+
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
+
+Desing:
+
+Accedemos a Figma: https://www.figma.com/login
+![c1](Assets/TP1/c1.png)
+En el apartado o creamos un nuevo proyecto o nos unimos a un proyecto
+![c1](Assets/TP1/c2.png)
+![c1](Assets/TP1/c3.png)
+
+Deployment
+Ingresamos a Github: https://www.github.com
+![c1](Assets/TP1/c4.png)
+Nos registramos o ingresamos a una cuenta
+![c1](Assets/TP1/c5.png)
+Ingresamos al repositorio que queremos publicar
+![c1](Assets/TP1/c6.png)
+Ingresamos a "Settings" y luego a "Pages"
+![c1](Assets/TP1/c7.png)
+Desplegamos la página y ya tendremos un link
+![c1](Assets/TP1/c8.png)
+
+Accedamos a Render
+![c1](Assets/TP1/c9.png)
+Ponemos nuestro repositorio de Backend
+![c1](Assets/TP1/c11.png)
+Lanzamos el web Services
+![c1](Assets/TP1/c12.png)
+![c1](Assets/TP1/c13.png)
+
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
+
+![c1](Assets/TP1/c14.png)
 
 ### 4.3. Validation Interviews  
 #### 4.3.1. Diseño de Entrevistas  
+
+### Segmento Objetivo #1: Miembros del Equipo (Team Members)
+
+**Objetivo de la entrevista:**  
+Evaluar la claridad visual, la facilidad de navegación y la comprensión de la interfaz de TaskMaster desde la perspectiva de los miembros del equipo. Se busca conocer qué tan intuitiva resulta la organización de tareas y cómo perciben la experiencia de uso en términos visuales y de estructura.
+
+**Preguntas:**
+
+1. ¿Qué impresión te dio la interfaz de TaskMaster al usarla por primera vez?  
+2. ¿Qué tan fácil fue identificar las secciones principales de la plataforma (tablero, tareas, calendario, etc.)?  
+3. ¿Te resultó clara la forma en que se presentan tus tareas y su estado de avance?  
+4. ¿Qué opinas del diseño visual general (colores, íconos, tipografía, disposición de elementos)?  
+5. ¿La distribución de la información te ayudó a entender rápidamente qué hacer dentro de la app?  
+6. ¿Qué tan intuitiva te pareció la navegación entre pantallas o vistas de tareas?  
+7. ¿Hubo algún elemento visual que te resultara confuso o poco visible?  
+8. ¿Qué cambios harías en el diseño para sentir la interfaz más cómoda o atractiva?
+
+---
+
+### Segmento Objetivo #2: Líderes de Equipo (Team Leaders)
+
+**Objetivo de la entrevista:**  
+Explorar la percepción visual y la facilidad de comprensión del diseño de TaskMaster desde el punto de vista de los líderes. El enfoque está en cómo la interfaz apoya la organización visual del trabajo y la supervisión de tareas del equipo.
+
+**Preguntas:**
+
+1. ¿Cómo describirías la claridad visual del tablero de tareas y sus indicadores de progreso?  
+2. ¿Qué tan fácil fue para ti identificar las tareas de cada miembro del equipo en la interfaz?  
+3. ¿El diseño del dashboard te permitió entender de un vistazo el estado general del proyecto?  
+4. ¿Qué opinas sobre el uso de colores y etiquetas para diferenciar prioridades o estados?  
+5. ¿Consideras que los íconos y botones son lo suficientemente claros para cumplir su función?  
+6. ¿Qué tan ordenada y equilibrada percibes la distribución visual del contenido en la plataforma?  
+7. ¿Hubo algún elemento visual o layout que te confundiera al momento de gestionar tareas?  
+8. ¿Qué mejoras visuales propondrías para facilitar la supervisión y gestión del equipo?
+
+
 #### 4.3.2. Registro de Entrevistas  
 #### 4.3.3. Evaluaciones según heurísticas  
 
