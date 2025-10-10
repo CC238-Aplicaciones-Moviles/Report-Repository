@@ -3087,9 +3087,8 @@ El wireframe de la Landing Page de TaskMaster representa la estructura base y la
 
 ![Inicio Wireframe](Assets/TB1/iniciowireframe.jpeg)  
 ![Características Wireframe](Assets/TB1/caracteristicaswireframee.jpeg)  
-![About the Team Wireframe](Assets/TB1/about-the-team-wireframee.jpeg)  
+![About the Team Wireframe](Assets/TB1/sobreelproductowireframee.jpeg)  
 ![Beneficios](Assets/TB1/beneficioswireframee.jpeg)
-![About the Team Wireframe](Assets/TB1/about-the-team-wireframee.jpeg)  
 ![Nosotros Wireframe](Assets/TB1/nosotroswireframee.jpeg)  
 ![About the Team Wireframe](Assets/TB1/about-the-team-wireframee.jpeg)  
 ![Contáctanos Wireframe](Assets/TB1/contactanoswireframee.jpeg)  
@@ -3098,18 +3097,40 @@ El wireframe de la Landing Page de TaskMaster representa la estructura base y la
 
 ![Inicio Mockup](Assets/TB1/iniciomockup.jpeg)  
 ![Características Mockup](Assets/TB1/caracteristicasmockup.jpeg)  
-![About the Team Mockup](Assets/TB1/about-the-team-mockup.jpeg)  
+![About the Team Mockup](Assets/TB1/sobreelproductomuckup.jpeg)  
 ![Beneficios](Assets/TB1/beneficiosmockup.jpeg)  
-![About the Team Mockup](Assets/TB1/about-the-team-mockup.jpeg)  
 ![Nosotros Mockup](Assets/TB1/nosotrosmockup.jpeg)  
 ![About the Team Mockup](Assets/TB1/about-the-team-mockup.jpeg)  
 ![Contáctanos Mockup](Assets/TB1/contactanosmockup.jpeg)
 
+
 #### 3.1.4. Mobile Applications UX/UI Design  
 ##### 3.1.4.1. Mobile Applications Wireframes  
+
+
+
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams  
+
+
+
 ##### 3.1.4.3. Mobile Applications Mock-ups  
+
+![ddd](Assets/TB1/mockup.jpeg)
+
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams  
+
+![ddd](Assets/TB1/iniciosesion.jpeg)
+![ddd](Assets/TB1/crearproyecto.jpeg)  
+![ddd](Assets/TB1/creartarea.jpeg)  
+![ddd](Assets/TB1/ajustesproyecto.jpeg)  
+![ddd](Assets/TB1/estadisticasproyecto.jpeg)  
+![ddd](Assets/TB1/ingresarproyecto.jpeg)  
+![ddd](Assets/TB1/calendario.jpeg)  
+![ddd](Assets/TB1/membresias.jpeg)  
+![ddd](Assets/TB1/notificaciones.jpeg)  
+![ddd](Assets/TB1/secciontareas.jpeg)
+
+
 ##### 3.1.4.5. Mobile Applications Prototyping  
 
 
