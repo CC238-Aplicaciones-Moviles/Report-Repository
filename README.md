@@ -3505,7 +3505,35 @@ BACKEND
 | 5b8ab1b |  | Primer commit en el nuevo repositorio |  | 2025-10-06 |
 
 
-##### 4.2.1.4. Testing Suite Evidence for Sprint Review  
+##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
+
+**Unit Tests**
+
+Durante el desarrollo del sprint se implementaron pruebas unitarias orientadas a validar el correcto funcionamiento de las clases principales del backend. Estas pruebas se enfocaron en verificar los métodos responsables de la creación, actualización y eliminación de entidades dentro del sistema, garantizando que la lógica de negocio se ejecute de manera consistente. Además, se utilizaron frameworks de testing como JUnit y Mockito para simular dependencias y asegurar la cobertura individual de cada componente.
+
+![unit_test](Assets/TP1/unit_test.png)
+
+**Integration Tests**
+
+En cuanto a las pruebas de integración, se realizaron con el objetivo de comprobar la correcta interacción entre los distintos módulos del sistema. Se validó el flujo completo desde el controlador hasta las capas de servicio y repositorio, asegurando la comunicación adecuada con la base de datos y los servicios REST. Estas pruebas permitieron detectar posibles fallos en la configuración de dependencias y en la transferencia de datos entre componentes.
+
+![integration_test](Assets/TP1/integration_test.png)
+
+**BDD Tests**
+
+Finalmente, se desarrollaron pruebas de aceptación bajo el enfoque BDD (Behavior Driven Development), utilizando archivos .feature escritos en lenguaje Gherkin. Estas pruebas reflejan los escenarios definidos en las historias de usuario, permitiendo validar el comportamiento del sistema desde la perspectiva del usuario final. Cada escenario fue automatizado mediante pasos (Steps) programados, comprobando que las funcionalidades entregadas cumplen con los criterios de aceptación definidos en el sprint.
+
+![bdd_test](Assets/TP1/bdd_test.png)
+
+![bdd_test2](Assets/TP1/bdd_test2.png)
+
+![bdd_test3](Assets/TP1/bdd_test3.png)
+
+![bdd_test4](Assets/TP1/bdd_test4.png)
+
+![bdd_test5](Assets/TP1/bdd_test5.png)
+
+
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
 En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
