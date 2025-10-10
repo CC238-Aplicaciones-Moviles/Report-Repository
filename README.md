@@ -3085,6 +3085,8 @@ El wireframe de la Landing Page de TaskMaster representa la estructura base y la
 
 ##### 3.1.3.1. Landing Page Wireframe  
 
+En esta sección se presenta la estructura base de la página principal del proyecto, mostrando la disposición inicial de los elementos visuales y la jerarquía de contenido. El wireframe permite definir la arquitectura de información antes de aplicar estilos gráficos o componentes interactivos.
+
 ![Inicio Wireframe](Assets/TB1/iniciowireframe.jpeg)  
 ![Características Wireframe](Assets/TB1/caracteristicaswireframee.jpeg)  
 ![About the Team Wireframe](Assets/TB1/sobreelproductowireframee.jpeg)  
@@ -3094,6 +3096,8 @@ El wireframe de la Landing Page de TaskMaster representa la estructura base y la
 ![Contáctanos Wireframe](Assets/TB1/contactanoswireframee.jpeg)  
 
 ##### 3.1.3.2. Landing Page Mock-up  
+
+El mock-up de la Landing Page muestra la propuesta visual final, incorporando colores, tipografía y estilo gráfico definidos en la guía de diseño. Este prototipo de alta fidelidad permite visualizar la apariencia y coherencia estética del sitio web antes de su desarrollo.
 
 ![Inicio Mockup](Assets/TB1/iniciomockup.jpeg)  
 ![Características Mockup](Assets/TB1/caracteristicasmockup.jpeg)  
@@ -3105,19 +3109,38 @@ El wireframe de la Landing Page de TaskMaster representa la estructura base y la
 
 
 #### 3.1.4. Mobile Applications UX/UI Design  
+
+Esta sección detalla el proceso de diseño de la experiencia (UX) y la interfaz de usuario (UI) de la aplicación móvil, enfocado en ofrecer una navegación intuitiva, coherente y funcional. Se abordan los lineamientos visuales, interacción y usabilidad general del sistema.
+
 ##### 3.1.4.1. Mobile Applications Wireframes  
 
+Los wireframes representan la estructura funcional de cada pantalla de la aplicación móvil, definiendo la distribución de elementos y flujos de interacción básicos. Sirven como punto de partida para validar la organización visual y funcional del producto.
 
+![ddd](Assets/TP1/wireframes.jpeg)  
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams  
 
+Los diagramas de wireflow integran los wireframes con los flujos de navegación, mostrando la relación entre pantallas y las acciones del usuario. Este recurso visual facilita la comprensión del recorrido del usuario dentro de la aplicación.
 
+![ddd](Assets/TP1/iniciosesionwireframe.jpeg)  
+![ddd](Assets/TP1/crearproyectowireframe.jpeg)  
+![ddd](Assets/TP1/creartareawireframe.jpeg)  
+![ddd](Assets/TP1/ajusteswireframe.jpeg)  
+![ddd](Assets/TP1/estadisticaswireframe.jpeg)  
+![ddd](Assets/TP1/ingresarproyectowireframe.jpeg)  
+![ddd](Assets/TP1/calendariowireframe.jpeg)  
+![ddd](Assets/TP1/membresiaswireframe.jpeg)  
+![ddd](Assets/TP1/notificacioneswireframe.jpeg)
 
 ##### 3.1.4.3. Mobile Applications Mock-ups  
+
+Los mock-ups presentan las pantallas finales de la aplicación móvil con el diseño visual completo, reflejando el estilo gráfico, paleta de colores, iconografía y tipografía definidos. Permiten apreciar la identidad visual del producto antes de su implementación.
 
 ![ddd](Assets/TP1/mockup.jpeg)
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams  
+
+En esta parte se detallan los diagramas de flujo de usuario, donde se describen las rutas posibles dentro de la aplicación y las decisiones que puede tomar el usuario. Estos diagramas garantizan una navegación clara y alineada con los objetivos funcionales.
 
 ![ddd](Assets/TP1/iniciosesion.jpeg)
 ![ddd](Assets/TP1/crearproyecto.jpeg)  
@@ -3133,6 +3156,8 @@ El wireframe de la Landing Page de TaskMaster representa la estructura base y la
 
 ##### 3.1.4.5. Mobile Applications Prototyping  
 
+En esta sección se presentan los prototipos interactivos desarrollados en Figma, que permiten simular la navegación y las interacciones principales de la aplicación móvil. Estos prototipos reflejan las decisiones de diseño, los criterios de usabilidad y la coherencia con la arquitectura de información definida. A continuación, se incluye el enlace al prototipo funcional en Figma para su exploración.
+[https://www.figma.com/design/qVKsPHnPjsibpP8v8EV9y4/Android-Adaptive-Icon-Template--Community-?node-id=14673-2444&t=RlkgCrmkxokKxwlS-1](https://www.figma.com/design/qVKsPHnPjsibpP8v8EV9y4/Android-Adaptive-Icon-Template--Community-?node-id=14673-2444&t=RlkgCrmkxokKxwlS-1)
 
 ## Capítulo IV: Product Implementation & Validation  
 
