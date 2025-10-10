@@ -2911,13 +2911,75 @@ El diseño del producto de WorkHub se basa en un enfoque centrado en el usuario,
 
 El diseño de estilo de WorkHub se fundamenta en la coherencia visual y la identidad de marca, garantizando una experiencia estética uniforme en todos los componentes de la interfaz. Se aplicó una paleta cromática equilibrada que combina tonos neutros con acentos contrastantes para resaltar acciones clave, junto con una tipografía moderna y legible que refuerza la claridad comunicativa. Asimismo, se definieron márgenes, espaciados y jerarquías visuales consistentes para mantener armonía entre las vistas de proyectos, tareas y estadísticas. Estas guías de estilo buscan no solo reforzar la identidad visual de la plataforma, sino también mejorar la usabilidad y la comprensión del contenido por parte del usuario (Interaction Design Foundation, 2022).
 
+
 ##### 3.1.1.1. General Style Guidelines  
+
 
 **Color:**
 
 Para WorkHub, una plataforma de gestión colaborativa de proyectos y tareas, la paleta de colores busca reflejar claridad, accesibilidad y profesionalismo. Los tonos principales transmiten confianza y simplicidad, mientras que los secundarios se aplican en fondos, estados y tipografía para mantener equilibrio visual y una experiencia coherente.
 
+**Branding**
+
+un símbolo que representa estrategia, precisión y maestría. Su diseño transmite dominio absoluto sobre cada movimiento —una metáfora del control total que los usuarios alcanzan al gestionar sus proyectos con nuestra plataforma.
+![1](Assets/TP1/1.png)
+
+**Typography**
+
+Fuente principal: Inter (sans-serif)
+Jerarquía de títulos: H1-H5 con tamaños y pesos específicos
+Texto de cuerpo: Tres tamaños (base, small, caption)
+Estilos especiales: Énfasis, itálica y enlaces
+
+![2](Assets/TP1/2.png)
+
+![3](Assets/TP1/3.png)
+
+**Colors**
+
+Rojo	Color principal, representa energía y liderazgo #C62828
+Blanco Simboliza claridad y enfoque	#FFFFFF
+Negro Tipografía y contornos	#212121
+
+
+-  **State Colors**
+
+Success: #16A34A (verde estratégico para indicar ejecución exitosa y logro de objetivos)
+Warning: #F59E0B (ámbar táctico para advertencias o acciones que requieren atención)
+Error: #DC2626 (rojo intenso que comunica fallas críticas o errores en la operación)
+Info: #2563EB (azul enfoque para información útil y actualizaciones del sistema)
+Primary: #C62828 (rojo TaskMaster, color de marca que refleja energía, liderazgo y precisión)
+Neutral Dark: #1E1E1E (negro carbono para fondos y contraste principal)
+Neutral Light: #FFFFFF (blanco puro para equilibrio visual y legibilidad sobre fondos oscuros)
+
+
+-  **Black/grey Colors**
+
+
+
+Gray 900: #111827 (texto principal)
+Gray 700: #374151 (texto secundario)
+Gray 500: #6B7280 (texto terciario, iconos)
+Gray 300: #D1D5DB (bordes, divisores)
+Gray 100: #F3F4F6 (fondos, estados hover)
+![4](Assets/TP1/4.png)
+
+-  **Spacing**
+
+
+Sistema basado en incrementos de 4px
+Escala: 4px (xs), 8px (sm), 16px (md), 24px (lg), 32px (xl), 48px (2xl), 64px (3xl)
+Espaciado adaptativo para diferentes tamaños de pantalla:
+Móvil: Espaciado reducido, elementos apilados verticalmente
+Tablet: Espaciado estándar
+Desktop: Espaciado amplio para mejor legibilidad
+![5](Assets/TP1/5.png)
+
 #### 3.1.2. Information Architecture  
+
+
+
+
 ##### 3.1.2.1. Organization Systems  
 ##### 3.1.2.2. Labelling Systems  
 ##### 3.1.2.3. SEO Tags and Meta Tags  
