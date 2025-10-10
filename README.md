@@ -3254,7 +3254,7 @@ El equipo ha definido las siguientes convenciones de nombres y estilos de codifi
   - `camelCase` para variables, métodos y atributos  
     Ejemplo: `int totalCourses;`, `calculateProgress();`
   - Constantes en MAYÚSCULAS con `snake_case`  
-    Ejemplo: `public static final int MAX_STUDENTS = 50;`
+    Ejemplo: `public static final int MAX_MEMBERS = 50;`
   - Paquetes en minúsculas separados por punto  
     Ejemplo: `com.taskmaster.backend.controller`
 
@@ -3268,18 +3268,18 @@ El equipo ha definido las siguientes convenciones de nombres y estilos de codifi
     - Then: Define el resultado o expectativa
   - Ejemplo:
     ```gherkin
-    Feature: Student dashboard access
+    Feature: Member dashboard access
       Scenario: Successful login with valid credentials
-        Given the student is on the login page
-        When the student enters valid credentials
-        Then the student should be redirected to the dashboard
+        Given the Member is on the login page
+        When the member enters valid credentials
+        Then the member should be redirected to the dashboard
     ```
   - Uso de tablas para datos:
     ```gherkin
     Given the following users exist:
       | username | password |
-      | student1 | pass123  |
-      | teacher1 | pass456  |
+      | member1 | pass123  |
+      | leader1 | pass456  |
     ```
 
 ## SQL / Data Modeling (Vertabelo)
@@ -3292,8 +3292,8 @@ El equipo ha definido las siguientes convenciones de nombres y estilos de codifi
   - Relaciones consistentes entre tablas
   - Ejemplo:
     ```sql
-    CREATE TABLE student (
-      student_id INT PRIMARY KEY,
+    CREATE TABLE Member (
+      member_id INT PRIMARY KEY,
       first_name VARCHAR(50),
       last_name VARCHAR(50),
       enrollment_date DATE
@@ -3345,11 +3345,126 @@ Finalmente, cada versión se documenta y se etiqueta en el repositorio, siguiend
 
 ### 4.2. Landing Page & Mobile Application Implementation  
 #### 4.2.1. Sprint 1  
+Esta sección presenta los detalles de la primera reunión de planificación de Sprint del equipo para avanzar el desarrollo de **Task Master**.  
+Durante esta sesión se definieron los objetivos principales del sprint, la capacidad del equipo y las historias de usuario priorizadas para esta primera iteración.  
+Al ser el primer Sprint del proyecto, no se incluyen revisiones ni retrospectivas previas.  
+
+El enfoque principal fue desarrollar la Landing Page informativa y estructurar los primeros módulos del backend.
+
+
 ##### 4.2.1.1. Sprint Planning 1  
+
+
+| Elemento | Detalle |
+|-----------|----------|
+| Sprint # | Sprint 1 |
+| Fecha | 1 de octubre de 2025 |
+| Hora | 3:00 p.m. |
+| Lugar | Virtual – Google Meet |
+| Elaborado por | Luquillas Asto Omar |
+| Participantes (Reunión de planificación) | Bejarano Martínez Álvaro Leandro, Luquillas Asto Omar, Olivera Barzola Eric Marlon, Sandoval Paiva Valentino, Sarmiento Medina Loreley |
+| Resumen de la revisión anterior | Al ser el primer sprint, aún no se completa|
+| Resumen de la retrospectiva anterior |Al ser el primer sprint, aún no se completa |
+| Objetivo del Sprint | El objetivo de este sprint es establecer la base técnica y visual del proyecto Task Master, desarrollando la landing page y los módulos principales del backend para la gestión de usuarios y tareas. Se busca garantizar que los usuarios puedan gestionar sus primeras tareas. Resultado esperado: Desplegar la primera versión funcional del sistema. Impacto: Validar la propuesta de valor e iniciar pruebas internas. Usuarios objetivo: Personas interesadas en organizar sus actividades y proyectos. Evento clave: Los usuarios pueden registrarse, iniciar sesión y visualizar sus tareas dentro del sistema. |
+| Velocidad del Sprint | El equipo puede atender hasta 30 Story Points. |
+| Suma de Story Points | La suma de Story Points planificados para este sprint es de 30 Story Points. |
+
 ##### 4.2.1.2. Sprint Backlog 1 
+
+El objetivo principal del Sprint 1 fue implementar las secciones principales de la Landing Page de Task Master y desarrollar las funcionalidades base del backend para la gestión de proyectos y tareas.  
+Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en JavaScript y construcción de endpoints en Spring Boot.  
+
+
+| Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Asignado a | Estado |
+|----------------|---------|--------------|--------------------|--------------|------------------|-------------|---------|
+| TS03 | Gestión de Proyectos (backend) | T03-1 | Crear entidades y repositorios | Diseñar entidades y repositorios para la gestión de proyectos en la base de datos. | 4 | Luquillas Asto Omar | Done |
+| TS03 | Gestión de Proyectos (backend) | T03-2 | Implementar servicios y controladores | Crear los servicios y controladores REST para registrar y listar proyectos. | 4 | Bejarano Martínez Álvaro Leandro | In Progress |
+| TS04 | Gestión de Tareas (backend) | T04-1 | Definir modelo de tareas | Crear entidad y relaciones con proyectos y usuarios. | 3 | Luquillas Asto Omar | Done |
+| TS04 | Gestión de Tareas (backend) | T04-2 | Implementar endpoints CRUD | Programar endpoints para crear, actualizar y eliminar tareas. | 5 | Bejarano Martínez Álvaro Leandro | In Progress |
+| US01 | Información general sobre Task Master | T01-1 | Diseñar sección principal (hero) | Crear la sección principal de la página con título, descripción y CTA. | 2 | Sarmiento Medina Loreley | Done |
+| US01 | Información general sobre Task Master | T01-2 | Implementar HTML y CSS | Desarrollar la estructura visual en HTML y CSS. | 3 | Sandoval Paiva Valentino | Done |
+| US02 | Llamado a la acción para descargar la aplicación | T02-1 | Crear sección CTA | Diseñar y programar la sección con botones de descarga. | 2 | Olivera Barzola Eric Marlon | Done |
+| US02 | Llamado a la acción para descargar la aplicación | T02-2 | Enlazar con repositorios oficiales | Configurar los enlaces de descarga desde GitHub Pages o tiendas oficiales. | 1 | Olivera Barzola Eric Marlon | Done |
+| US03 | Testimonios de usuarios | T03-1 | Diseñar carrusel visual | Crear una sección con testimonios animados de usuarios. | 2 | Sarmiento Medina Loreley | Done |
+| US03 | Testimonios de usuarios | T03-2 | Implementar lógica de rotación JS | Crear animaciones con JavaScript para el desplazamiento automático. | 2 | Sandoval Paiva Valentino | Done |
+| US04 | Muestra de planes y precios | T04-1 | Diseñar sección de precios | Crear estructura con diferentes planes (free y premium). | 3 | Sarmiento Medina Loreley | Done |
+| US04 | Muestra de planes y precios | T04-2 | Implementar HTML y CSS | Desarrollar visualmente la sección. | 2 | Olivera Barzola Eric Marlon | Done |
+| US05 | Adaptabilidad móvil | T05-1 | Implementar responsive design | Asegurar la compatibilidad móvil de toda la landing page. | 4 | Sandoval Paiva Valentino | In Progress |
+| US05 | Adaptabilidad móvil | T05-2 | Ajustar fuentes y tamaños | Modificar tipografías y márgenes para pantallas pequeñas. | 2 | Olivera Barzola Eric Marlon | Done |
+| US05 | Adaptabilidad móvil | T05-3 | Verificar compatibilidad en diferentes dispositivos | Probar en varios emuladores y dispositivos móviles. | 2 | Sarmiento Medina Loreley | To Do |
+| US06 | Navegación mediante encabezado | T06-1 | Crear barra de navegación fija | Programar encabezado con comportamiento sticky y enlaces internos. | 2 | Olivera Barzola Eric Marlon | Done |
+| US06 | Navegación mediante encabezado | T06-2 | Implementar animación de desplazamiento | Añadir efecto de desplazamiento suave al hacer clic en cada enlace. | 1 | Sandoval Paiva Valentino | Done |
+| US06 | Navegación mediante encabezado | T06-3 | Integrar logotipo y enlaces a redes | Añadir logo y enlaces al menú principal. | 1 | Sarmiento Medina Loreley | Done |
+| US07 | Misión y visión | T07-1 | Diseñar sección informativa | Crear la sección con los valores principales de Task Master. | 1 | Sarmiento Medina Loreley | Done |
+| US07 | Misión y visión | T07-2 | Agregar iconografía representativa | Incorporar íconos que representen los valores del proyecto. | 1 | Sandoval Paiva Valentino | Done |
+| US07 | Misión y visión | T07-3 | Adaptar estilo visual coherente | Alinear tipografía y colores con la identidad del sitio. | 2 | Olivera Barzola Eric Marlon | In Progress |
+| US08 | About the team | T08-1 | Diseñar sección del equipo | Mostrar a los integrantes con nombre, rol e imagen. | 2 | Sarmiento Medina Loreley | Done |
+| US08 | About the team | T08-2 | Implementar diseño con grid | Distribuir los perfiles con diseño limpio y adaptable. | 2 | Sandoval Paiva Valentino | Done |
+| US08 | About the team | T08-3 | Añadir animaciones al pasar el cursor | Implementar efecto hover para mostrar información adicional. | 1 | Olivera Barzola Eric Marlon | In Progress |
+| US09 | Pie de página | T09-1 | Crear footer informativo | Incluir enlaces de contacto, redes sociales y derechos reservados. | 1 | Sandoval Paiva Valentino | Done |
+| US09 | Pie de página | T09-2 | Diseñar estilo visual uniforme | Aplicar coherencia con el resto del diseño de la página. | 1 | Sarmiento Medina Loreley | Done |
+| US09 | Pie de página | T09-3 | Agregar enlace al correo de soporte | Incluir dirección de contacto para soporte técnico. | 1 | Olivera Barzola Eric Marlon | Done |
+
 ##### 4.2.1.3. Development Evidence for Sprint Review  
+
+
+| Hash | Rama / Referencia | Mensaje | Descripción | Fecha |
+|------|-------------------|----------|--------------|--------|
+| 223ae06 | (HEAD -> feature/chapter-4, origin/feature/chapter-4) | feat: Add chapter 4.1 |  | 2025-10-10 |
+| fe73d58 |  | Merge pull request #23 from CC238-Aplicaciones-Moviles/main | feat add: mock up images | 2025-10-10 |
+| 8e8c13e |  | feat add: mock up images |  | 2025-10-10 |
+| c585fa5 |  | feat add: chapter 3 until 3.1.4 |  | 2025-10-09 |
+| d9d138d | (main) | add General Style Guidelines |  | 2025-10-09 |
+| 75885bf |  | Merge branch 'main' of https://github.com/CC238-Aplicaciones-Moviles/Report-Repository | Merge | 2025-10-09 |
+| 678dbb2 |  | Add general Style Guidelines |  | 2025-10-09 |
+| 48a20dc |  | feat add: mock-up images |  | 2025-10-09 |
+| 49f25ab |  | feat fix: wireframes images |  | 2025-10-09 |
+| fedfe77 |  | feat add: wireframes images |  | 2025-10-09 |
+| cdebd49 |  | feat add: General Style Guidelines images |  | 2025-10-09 |
+| af97170 |  | feat add: product design |  | 2025-10-09 |
+| 9f9a484 |  | feat add: secciones informe |  | 2025-10-09 |
+| 2b7c963 |  | FEAT FIX: INDICE |  | 2025-10-09 |
+| ee12430 | (origin/feature/chapter-3) | feat add: indice |  | 2025-10-09 |
+| e88fc4d |  | feat fix: fix |  | 2025-09-19 |
+| 7445916 |  | feat add: Conclusiones |  | 2025-09-19 |
+| 628f44d |  | feat add: Interview Alejandro |  | 2025-09-19 |
+| 9468d12 |  | feat add: DB notifications image |  | 2025-09-19 |
+| d8bd2d6 |  | fix(document) |  | 2025-09-19 |
+| 9efd889 |  | Add files via upload |  | 2025-09-19 |
+| 841a73e |  | Add files via upload |  | 2025-09-19 |
+| 3ace7a7 |  | feat: Revise student outcome criteria and actions |  | 2025-09-19 |
+| e9941eb |  | Add files via upload |  | 2025-09-19 |
+| 3d8ed1a |  | Merge pull request #21 from CC238-Aplicaciones-Moviles/feature/report1 | fix: links | 2025-09-19 |
+| 562b536 |  | fix: links |  | 2025-09-19 |
+| 647f57b |  | Add files via upload |  | 2025-09-19 |
+| 165cf5e |  | Merge pull request #20 from CC238-Aplicaciones-Moviles/feature/report1 | fix: links | 2025-09-19 |
+| 0986201 |  | fix: links |  | 2025-09-19 |
+| c2666cd |  | Revise objectives for mobile app development and certification | Updated personal objectives with specific, measurable, achievable, relevant, and time-bound criteria for mobile app development and certification. | 2025-09-19 |
+| fd4bfb6 |  | Merge pull request #19 from CC238-Aplicaciones-Moviles/feature/chapter-1 | Feature/chapter 1 | 2025-09-19 |
+| abc5753 | (origin/feature/chapter-1) | Merge branch 'main' into feature/chapter-1 |  | 2025-09-19 |
+| 0fb459d |  | Merge pull request #18 from CC238-Aplicaciones-Moviles/feature/chapter-2 | fix(document) | 2025-09-19 |
+| 3712cc7 |  | fix(document) |  | 2025-09-19 |
+| db9e4c3 |  | Merge pull request #17 from CC238-Aplicaciones-Moviles/feature/chapter-2 | Feature/chapter 2 | 2025-09-19 |
+| 91e718a |  | fix(document) |  | 2025-09-19 |
+
+BACKEND
+
+| Hash | Rama / Referencia | Mensaje | Descripción | Fecha |
+|------|-------------------|----------|--------------|--------|
+| from CC238-Aplicaciones-Moviles/develop |  | feat: fix backend service |  | 2025-10-10 |
+| 9d10bda | (origin/develop) | Merge branch 'master' into develop |  | 2025-10-10 |
+| 91659de |  | feat: fix backend service |  | 2025-10-10 |
+| 6f56fbd |  | Update database configuration to use environment variables |  | 2025-10-10 |
+| 3415049 |  | primer commit |  | 2025-10-08 |
+| 5b8ab1b |  | Primer commit en el nuevo repositorio |  | 2025-10-06 |
+
+
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review  
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
+
+
+
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
