@@ -218,12 +218,6 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 <hr>
 
 ## Objetivos SMART
-ncorporar una sección en una nueva página, situada después de la sección Student 
-Outcome, donde cada miembro del equipo de trabajo formule un plan que incluya al 
-menos dos objetivos SMART. Estos objetivos deben centrarse en el desarrollo 
-profesional de cada estudiante una vez finalizada su carrera. El propósito es que los 
-objetivos reflejen de manera clara y medible cómo cada integrante planea alcanzar un 
-crecimiento profesional continuo tras su graduación. 
 
 <h3> Eric Marlon Olivera Barzola
 
