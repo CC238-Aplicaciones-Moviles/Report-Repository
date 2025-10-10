@@ -3115,20 +3115,20 @@ El wireframe de la Landing Page de TaskMaster representa la estructura base y la
 
 ##### 3.1.4.3. Mobile Applications Mock-ups  
 
-![ddd](Assets/TB1/mockup.jpeg)
+![ddd](Assets/TP1/mockup.jpeg)
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams  
 
-![ddd](Assets/TB1/iniciosesion.jpeg)
-![ddd](Assets/TB1/crearproyecto.jpeg)  
-![ddd](Assets/TB1/creartarea.jpeg)  
-![ddd](Assets/TB1/ajustesproyecto.jpeg)  
-![ddd](Assets/TB1/estadisticasproyecto.jpeg)  
-![ddd](Assets/TB1/ingresarproyecto.jpeg)  
-![ddd](Assets/TB1/calendario.jpeg)  
-![ddd](Assets/TB1/membresias.jpeg)  
-![ddd](Assets/TB1/notificaciones.jpeg)  
-![ddd](Assets/TB1/secciontareas.jpeg)
+![ddd](Assets/TP1/iniciosesion.jpeg)
+![ddd](Assets/TP1/crearproyecto.jpeg)  
+![ddd](Assets/TP1/creartarea.jpeg)  
+![ddd](Assets/TP1/ajustesproyecto.jpeg)  
+![ddd](Assets/TP1/estadisticasproyecto.jpeg)  
+![ddd](Assets/TP1/ingresarproyecto.jpeg)  
+![ddd](Assets/TP1/calendario.jpeg)  
+![ddd](Assets/TP1/membresias.jpeg)  
+![ddd](Assets/TP1/notificaciones.jpeg)  
+![ddd](Assets/TP1/secciontareas.jpeg)
 
 
 ##### 3.1.4.5. Mobile Applications Prototyping  
