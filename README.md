@@ -3462,15 +3462,106 @@ BACKEND
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review  
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
+En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
+Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMaster-LandingPage 
 
-
+![a1](Assets/TP1/a1.png)
+![a1](Assets/TP1/a2.png)
+![a1](Assets/TP1/a3.png)
+![a1](Assets/TP1/a5.png)
+![a1](Assets/TP1/a6.png)
+![a1](Assets/TP1/a7.png)
+![a1](Assets/TP1/a8.png)
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
+
+En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
+Enlance del Backend: https://backend-taskmaster-1.onrender.com/swagger-ui/index.html
+
+Sección Autentificación Y Roles
+![b1](Assets/TP1/B1.png)
+
+Sección de Tasks:
+![b1](Assets/TP1/B2.png)
+
+Sección de Users:
+![b1](Assets/TP1/B3.png)
+
+Sección de Projects:
+![b1](Assets/TP1/B4.png)
+
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
+
+Desing:
+
+Accedemos a Figma: https://www.figma.com/login
+![c1](Assets/TP1/c1.png)
+En el apartado o creamos un nuevo proyecto o nos unimos a un proyecto
+![c1](Assets/TP1/c2.png)
+![c1](Assets/TP1/c3.png)
+
+Deployment
+Ingresamos a Github: https://www.github.com
+![c1](Assets/TP1/c4.png)
+Nos registramos o ingresamos a una cuenta
+![c1](Assets/TP1/c5.png)
+Ingresamos al repositorio que queremos publicar
+![c1](Assets/TP1/c6.png)
+Ingresamos a "Settings" y luego a "Pages"
+![c1](Assets/TP1/c7.png)
+Desplegamos la página y ya tendremos un link
+![c1](Assets/TP1/c8.png)
+
+Accedamos a Render
+![c1](Assets/TP1/c9.png)
+Ponemos nuestro repositorio de Backend
+![c1](Assets/TP1/c11.png)
+Lanzamos el web Services
+![c1](Assets/TP1/c12.png)
+![c1](Assets/TP1/c13.png)
+
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
+
+![c1](Assets/TP1/c14.png)
 
 ### 4.3. Validation Interviews  
 #### 4.3.1. Diseño de Entrevistas  
+
+### Segmento Objetivo #1: Miembros del Equipo (Team Members)
+
+**Objetivo de la entrevista:**  
+Evaluar la claridad visual, la facilidad de navegación y la comprensión de la interfaz de TaskMaster desde la perspectiva de los miembros del equipo. Se busca conocer qué tan intuitiva resulta la organización de tareas y cómo perciben la experiencia de uso en términos visuales y de estructura.
+
+**Preguntas:**
+
+1. ¿Qué impresión te dio la interfaz de TaskMaster al usarla por primera vez?  
+2. ¿Qué tan fácil fue identificar las secciones principales de la plataforma (tablero, tareas, calendario, etc.)?  
+3. ¿Te resultó clara la forma en que se presentan tus tareas y su estado de avance?  
+4. ¿Qué opinas del diseño visual general (colores, íconos, tipografía, disposición de elementos)?  
+5. ¿La distribución de la información te ayudó a entender rápidamente qué hacer dentro de la app?  
+6. ¿Qué tan intuitiva te pareció la navegación entre pantallas o vistas de tareas?  
+7. ¿Hubo algún elemento visual que te resultara confuso o poco visible?  
+8. ¿Qué cambios harías en el diseño para sentir la interfaz más cómoda o atractiva?
+
+---
+
+### Segmento Objetivo #2: Líderes de Equipo (Team Leaders)
+
+**Objetivo de la entrevista:**  
+Explorar la percepción visual y la facilidad de comprensión del diseño de TaskMaster desde el punto de vista de los líderes. El enfoque está en cómo la interfaz apoya la organización visual del trabajo y la supervisión de tareas del equipo.
+
+**Preguntas:**
+
+1. ¿Cómo describirías la claridad visual del tablero de tareas y sus indicadores de progreso?  
+2. ¿Qué tan fácil fue para ti identificar las tareas de cada miembro del equipo en la interfaz?  
+3. ¿El diseño del dashboard te permitió entender de un vistazo el estado general del proyecto?  
+4. ¿Qué opinas sobre el uso de colores y etiquetas para diferenciar prioridades o estados?  
+5. ¿Consideras que los íconos y botones son lo suficientemente claros para cumplir su función?  
+6. ¿Qué tan ordenada y equilibrada percibes la distribución visual del contenido en la plataforma?  
+7. ¿Hubo algún elemento visual o layout que te confundiera al momento de gestionar tareas?  
+8. ¿Qué mejoras visuales propondrías para facilitar la supervisión y gestión del equipo?
+
+
 #### 4.3.2. Registro de Entrevistas  
 #### 4.3.3. Evaluaciones según heurísticas  
 
