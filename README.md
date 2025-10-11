@@ -3699,6 +3699,7 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 #### 4.3.3. Evaluaciones según heurísticas  
 
+
 **Evaluación Heurística de TaskMaster**
 
 Carrera: Ingeniería de Software  
@@ -3726,55 +3727,50 @@ Plataforma evaluada: TaskMaster – Aplicación Móvil y Landing Page
 
 | #  | Problema detectado                                                                 | Severidad | Heurística / Principio violado                   |
 |----|-------------------------------------------------------------------------------------|-----------|-------------------------------------------------|
-| 1  | El propósito de la plataforma no se comunica de inmediato en la landing page        | 2         | Correspondencia entre sistema y el mundo real   |
-| 2  | El botón de llamado a la acción (Call to Action) es pequeño y poco visible          | 3         | Visibilidad del estado del sistema              |
-| 3  | El tamaño del texto en algunas secciones es demasiado pequeño                      | 3         | Legibilidad / Accesibilidad visual              |
-| 4  | Algunos colores del menú hacen que el usuario pierda la referencia de navegación    | 3         | Consistencia y estándares / Diseño visual       |
-| 5  | Falta de retroalimentación visual al crear o eliminar una tarea                    | 2         | Visibilidad del estado del sistema              |
-| 6  | En pantallas pequeñas, algunos componentes se superponen o pierden alineación       | 3         | Diseño adaptable / Consistencia visual          |
-| 7  | No se destaca claramente la diferencia entre tareas completadas y pendientes        | 2         | Reconocer antes que recordar                    |
-| 8  | La jerarquía visual entre títulos, botones y textos secundarios no es clara         | 2         | Estética y diseño minimalista                   |
+| 1  | El botón de llamado a la acción (Call to Action) es pequeño y poco visible          | 3         | Visibilidad del estado del sistema              |
+| 2  | El tamaño del texto en algunas secciones es demasiado pequeño                      | 3         | Legibilidad / Accesibilidad visual              |
+| 3  | Algunos colores del menú hacen que el usuario pierda la referencia de navegación    | 3         | Consistencia y estándares / Diseño visual       |
+| 4  | Falta de retroalimentación visual al crear o eliminar una tarea                    | 2         | Visibilidad del estado del sistema              |
+| 5  | En pantallas pequeñas, algunos componentes se superponen o pierden alineación       | 3         | Diseño adaptable / Consistencia visual          |
+| 6  | No se destaca claramente la diferencia entre tareas completadas y pendientes        | 2         | Reconocer antes que recordar                    |
+| 7  | La jerarquía visual entre títulos, botones y textos secundarios no es clara         | 2         | Estética y diseño minimalista                   |
 
 
 ## Descripción de problemas clave
 
-### Problema #2: Botón de llamado a la acción demasiado pequeño  
+### Problema #1: Botón de llamado a la acción demasiado pequeño  
 Severidad: 3  
 Heurística violada: Visibilidad del estado del sistema  
 Descripción: El botón principal para registrarse o iniciar sesión en la landing page tiene un tamaño reducido y poca diferenciación visual respecto al fondo. Esto hace que el usuario no lo identifique como la acción principal.  
 Recomendación: Aumentar el tamaño del botón y aplicar un color de contraste que refuerce su función principal, manteniendo coherencia con la identidad visual de TaskMaster.
 
 
-### Problema #3: Tamaño de texto insuficiente  
+### Problema #2: Tamaño de texto insuficiente  
 Severidad: 3  
 Heurística violada: Legibilidad / Accesibilidad visual  
 Descripción: Algunos textos en secciones informativas y de descripción son demasiado pequeños, dificultando la lectura en monitores medianos o dispositivos móviles.  
 Recomendación: Ajustar la tipografía a un tamaño mínimo de 16 px para textos generales y asegurar un contraste suficiente con el fondo.
 
 
-### Problema #4: Colores de navegación confusos  
+### Problema #3: Colores de navegación confusos  
 Severidad: 3  
 Heurística violada: Consistencia y estándares / Diseño visual  
 Descripción: En ciertas secciones, los colores seleccionados para los menús o pestañas activas no se distinguen claramente, lo que puede generar confusión sobre qué sección está activa.  
 Recomendación: Redefinir la paleta de colores para estados activos e inactivos, utilizando tonos contrastantes que mantengan coherencia con la marca.
 
 
-### Problema #6: Desajuste visual en pantallas pequeñas  
+### Problema #4: Desajuste visual en pantallas pequeñas  
 Severidad: 3  
 Heurística violada: Diseño adaptable / Consistencia visual  
 Descripción: Algunos componentes, como botones o cuadros de texto, se solapan en pantallas con resoluciones reducidas.  
 Recomendación: Revisar el diseño responsive con breakpoints adecuados y pruebas visuales en distintos dispositivos para mantener la legibilidad y estructura.
 
 
-### Problema #8: Falta de jerarquía visual clara  
+### Problema #5: Falta de jerarquía visual clara  
 Severidad: 2  
 Heurística violada: Estética y diseño minimalista  
 Descripción: La jerarquía entre títulos, subtítulos y botones no siempre es clara, lo que dificulta que el usuario identifique qué acción o información es prioritaria.  
 Recomendación: Aplicar una estructura tipográfica coherente, con tamaños y pesos diferenciados para reforzar la lectura y el flujo visual.
-
-
-
-
 
 
 # Conclusiones
