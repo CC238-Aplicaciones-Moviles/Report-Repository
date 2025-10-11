@@ -3506,6 +3506,10 @@ BACKEND
 
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review  
+Prueba de las Test de creación de tareas:
+![a1](Assets/TP1/e1.png)
+Prueba de Test de creación de usuarios (IAM)
+![a1](Assets/TP1/e2.png)
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
 En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
