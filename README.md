@@ -3654,7 +3654,7 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 
 
-| Entrevista 1: Segmento Líder |
+| Entrevista 1: Segmento Líder | |
 |----------------------------------------------|---------------------------------------------|
 | **Nombre de Entrevistado**                   | Aleida Esmeralda Martínez Estela            |
 | **Edad**                                     | 50 años                                     |
@@ -3664,9 +3664,9 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 | **Resumen**                   | La entrevista realizada a Aleida Martínez, representante del segmento líder, evidenció una percepción positiva del tablero de tareas. Destacó su claridad visual, la facilidad para identificar las tareas asignadas y la organización equilibrada del contenido. Mencionó que los colores e íconos son adecuados, aunque sugirió mejorar los contrastes y la alineación entre secciones. Finalmente, propuso incorporar gráficos o vistas rápidas que permitan visualizar de forma más clara el progreso del equipo y el estado general del proyecto. |
 | **Url**                    | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EdfIDGcTdEZFrbz78FU390IBBHeaSFZGgvhsyTPcRxUjbg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Qg8fsU](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EdfIDGcTdEZFrbz78FU390IBBHeaSFZGgvhsyTPcRxUjbg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Qg8fsU) |
 
-![ddd](Assets/TP1/centrevistaAleida.jpeg)
+![ddd](Assets/TP1/entrevistaAleida.jpeg)
 
-| Entrevista 2: Segmento Líder |
+| Entrevista 2: Segmento Líder | |
 |----------------------------------------------|---------------------------------------------|
 | **Nombre de Entrevistado**                   | Aleida Esmeralda Martínez Estela            |
 | **Edad**                                     | 50 años                                     |
