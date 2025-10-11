@@ -3519,6 +3519,17 @@ Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMast
 ![a1](Assets/TP1/a7.png)
 ![a1](Assets/TP1/a8.png)
 
+Vistas de nuestra aplicación móvil: 
+
+![a1](Assets/TP1/d1.png)
+![a1](Assets/TP1/d2.png)
+![a1](Assets/TP1/d3.png)
+![a1](Assets/TP1/d5.png)
+![a1](Assets/TP1/d6.png)
+![a1](Assets/TP1/d7.png)
+![a1](Assets/TP1/d8.png)
+
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
 
 En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
