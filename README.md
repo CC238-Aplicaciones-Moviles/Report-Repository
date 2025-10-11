@@ -3662,6 +3662,18 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 ### Segmento Objetivo #1: Miembros del Equipo (Team Members)
 
+### Segmento Objetivo #1: Miembros del Equipo (Team Members)
+
+| Entrevista 1: Segmento Líder | |
+|----------------------------------------------|---------------------------------------------|
+| **Nombre de Entrevistado**                   | Sebastian Calderon Real                     |
+| **Edad**                                     | 25 años                                     |
+| **Distrito**                                 | Pueblo Libre                                  |
+| **Duración de la Entrevista**                | 4:46                                        |
+| **Inicio de la Entrevista**                  | 0:03                                        |
+| **Resumen**                   | En la entrevista Sebastian evidenció problemas visuales como bajo contraste, textos pequeños y botones poco visibles, además de una navegación confusa por el uso de colores y distribución de elementos|
+| **Url**                    | .[link](https://upcedupe-my.sharepoint.com/personal/u202315032_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202315032_upc_edu_pe%2FDocuments%2FEntrevistas%2FEntrevista-SegmentoObjetivo%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1ebbb400-a4d1-4878-b88b-3107bb2e342a)|
+![g](Assets/TP1/g1.png)
 
 
 
