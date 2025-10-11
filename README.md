@@ -3505,7 +3505,13 @@ BACKEND
 
 Durante el desarrollo del sprint se implementaron pruebas unitarias orientadas a validar el correcto funcionamiento de las clases principales del backend. Estas pruebas se enfocaron en verificar los métodos responsables de la creación, actualización y eliminación de entidades dentro del sistema, garantizando que la lógica de negocio se ejecute de manera consistente. Además, se utilizaron frameworks de testing como JUnit y Mockito para simular dependencias y asegurar la cobertura individual de cada componente.
 
-![unit_test](Assets/TP1/unit_test.png)
+Prueba de las Test de creación de tareas:
+              
+![a1](Assets/TP1/e1.png)
+              
+Prueba de Test de creación de usuarios (IAM)
+              
+![a1](Assets/TP1/e2.png)
 
 **Integration Tests**
 
@@ -3527,7 +3533,6 @@ Finalmente, se desarrollaron pruebas de aceptación bajo el enfoque BDD (Behavio
 
 ![bdd_test5](Assets/TP1/bdd_test5.png)
 
-
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
 En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
@@ -3540,6 +3545,17 @@ Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMast
 ![a1](Assets/TP1/a6.png)
 ![a1](Assets/TP1/a7.png)
 ![a1](Assets/TP1/a8.png)
+
+Vistas de nuestra aplicación móvil: 
+
+![a1](Assets/TP1/d1.png)
+![a1](Assets/TP1/d2.png)
+![a1](Assets/TP1/d3.png)
+![a1](Assets/TP1/d5.png)
+![a1](Assets/TP1/d6.png)
+![a1](Assets/TP1/d7.png)
+![a1](Assets/TP1/d8.png)
+
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
 
