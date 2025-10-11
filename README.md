@@ -3666,14 +3666,14 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 ![ddd](Assets/TP1/entrevistaAleida.jpeg)
 
-| Entrevista 2: Segmento Líder | |
+| Entrevista 3: Segmento Líder | |
 |----------------------------------------------|---------------------------------------------|
-| **Nombre de Entrevistado**                   | Aleida Esmeralda Martínez Estela            |
-| **Edad**                                     | 50 años                                     |
-| **Distrito**                                 | Miraflores                                  |
-| **Duración de la Entrevista**                | 6:46                                        |
-| **Inicio de la Entrevista**                  | 0:03                                        |
-| **Resumen**                   | La entrevista realizada a Aleida Martínez, representante del segmento líder, evidenció una percepción positiva del tablero de tareas. Destacó su claridad visual, la facilidad para identificar las tareas asignadas y la organización equilibrada del contenido. Mencionó que los colores e íconos son adecuados, aunque sugirió mejorar los contrastes y la alineación entre secciones. Finalmente, propuso incorporar gráficos o vistas rápidas que permitan visualizar de forma más clara el progreso del equipo y el estado general del proyecto. |
+| **Nombre de Entrevistado**                   | Raúl Fernández López                        |
+| **Edad**                                     | 52 años                                     |
+| **Distrito**                                 | Surco                                       |
+| **Duración de la Entrevista**                | 4:39                                        |
+| **Inicio de la Entrevista**                  | 0:12                                        |
+| **Resumen**                                  | La entrevista realizada a Raúl Fernández López, integrante del segmento líder, mostró una opinión favorable sobre la usabilidad de la aplicación. Destacó especialmente la opción inicial para recordar la contraseña, señalando que resulta muy práctica para los usuarios frecuentes. Además, mencionó que el cambio entre modo oscuro y modo claro le parece visualmente atractivo y funcional. Finalmente, resaltó la facilidad para acceder a las distintas opciones del sistema, lo que contribuye a una experiencia de navegación fluida y sencilla. |
 | **Url**                    | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EVHU4VEpkMpFmJE8VbY1YMMB8YRj43UwOTTN01qygp-J2Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KrLmoL](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EVHU4VEpkMpFmJE8VbY1YMMB8YRj43UwOTTN01qygp-J2Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KrLmoL)|
 
 ![ddd](Assets/TP1/entrevistaRaul.jpeg)
