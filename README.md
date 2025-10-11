@@ -73,7 +73,18 @@ REPORT:
 - Sandoval Paiva Valentino: 9
 - Sarmiento Medina Lorele: 81
 
+  
+TP:
 
+REPORT: 
+
+![Imagen5](Assets/TP1/commits_tp.PNG)
+- Bejarano Martínez Alvaro Leandro: 58
+- Luquillas Asto Omar: 16
+- Olivera Barzola Eric Marlon: 32
+- Sandoval Paiva Valentino: 11
+- Sarmiento Medina Lorele: 86
+- 
 ## Contenido
 
 - [Student Outcome](#student-outcome)
