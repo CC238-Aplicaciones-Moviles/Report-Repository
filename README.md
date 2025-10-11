@@ -217,9 +217,8 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 
 | Criterio específico                                                                                                                     | Acciones realizadas                                                                                                                                                                                                         | Conclusiones                                                                                                                                                                                                                                                                                                                        |
 | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Bejarano Martínez, Álvaro Leandro – TB1**<br>Reconocí la necesidad del aprendizaje permanente al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, entendiendo su valor en el diseño inicial de soluciones de software.<br>- **Luquillas Asto, Omar – TB1**<br>Reconocí la necesidad del aprendizaje permanente al trabajar con Context Mapping y Software Architecture en sus niveles Context, Container y Deployment, lo que me permitió comprender cómo estructurar sistemas complejos.<br>- **Olivera Barzola, Eric Marlon – TB1**<br>Reconocí la necesidad del aprendizaje permanente al desarrollar el Bounded Context: Registro y Autenticación de Usuario, aplicando capas de Domain, Interface, Application e Infrastructure, además de diagramas de componentes, clases y base de datos.<br>- **Sandoval Paiva, Valentino – TB1**<br>Reconocí la necesidad del aprendizaje permanente al participar en el diseño del Bounded Context: Analítica y Reportes y Visualización y Seguimiento, construyendo las capas de arquitectura, componentes, diagramas de clases y de base de datos.<br>- **Sarmiento Medina, Loreley – TB1**<br>Reconocí la necesidad del aprendizaje permanente al aplicar la arquitectura en los Bounded Contexts de Gestión de Proyectos y Tareas y Notificaciones, trabajando sus capas de software, diagramas de componentes, clases y base de datos. | La elaboración del proyecto permitió reforzar y aplicar conceptos clave en arquitectura de software, metodologías ágiles y diseño de soluciones, fortaleciendo competencias técnicas que son directamente aplicables en la formación profesional y en la práctica de proyectos reales en soluciones de software.                    |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | - **Bejarano Martínez, Álvaro Leandro – TB1**<br>Me di cuenta de lo importante que es seguir aprendiendo mientras trabajaba en el Bounded Context de Registro y Autenticación, porque tuve que investigar y aplicar nuevos enfoques para resolver problemas de seguridad y acceso.<br>- **Luquillas Asto, Omar – TB1**<br>Comprendí la necesidad de aprender de forma constante al desarrollar el Bounded Context de Analítica y Reportes, ya que cada avance me exigió actualizarme para interpretar datos y presentarlos de manera útil.<br>- **Olivera Barzola, Eric Marlon – TB1**<br>Reconocí que el aprendizaje nunca termina al diseñar el Bounded Context de Visualización y Seguimiento, pues tuve que explorar nuevas formas de mostrar información de manera clara y comprensible.<br>- **Sandoval Paiva, Valentino – TB1**<br>Noté lo esencial que es seguir aprendiendo al elaborar el Bounded Context de Gestión de Proyectos y Tareas, porque enfrenté retos que me llevaron a investigar y aplicar ideas que no conocía antes.<br>- **Sarmiento Medina, Loreley – TB1**<br>Valoré la importancia del aprendizaje permanente al trabajar en el Bounded Context de Notificaciones, ya que tuve que adaptarme a nuevas formas de diseño para que la comunicación en el sistema fuera efectiva. | Durante el desarrollo del proyecto se evidenció la importancia de la investigación continua y la adaptación a nuevas herramientas y enfoques, lo que refuerza la necesidad de mantener un aprendizaje constante para enfrentar los retos que plantea el mercado tecnológico y asegurar la mejora continua en el ámbito profesional. |
-
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Bejarano Martínez, Álvaro Leandro – TB1**<br>Reconocí la necesidad del aprendizaje permanente al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, entendiendo su valor en el diseño inicial de soluciones de software  TP1: Reconocí la necesidad del aprendizaje permanente al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, entendiendo su valor en el diseño inicial de soluciones de software. En el TP1 participé en la definición de las Style Guidelines y la arquitectura de la información, organizando los sistemas de navegación y etiquetado  .<br>- **Luquillas Asto, Omar – TB1**<br>Reconocí la necesidad del aprendizaje permanente al trabajar con Context Mapping y Software Architecture en sus niveles Context, Container y Deployment, lo que me permitió comprender cómo estructurar sistemas complejos  TP1: Reconocí la necesidad del aprendizaje permanente al trabajar con Context Mapping y Software Architecture en sus niveles Context, Container y Deployment, lo que me permitió comprender cómo estructurar sistemas complejos. En el TP1 me encargué de los sistemas de búsqueda y SEO Tags, además de la configuración del entorno de desarrollo y el control de versiones. .<br>- **Olivera Barzola, Eric Marlon – TB1**<br>Reconocí la necesidad del aprendizaje permanente al desarrollar el Bounded Context: Registro y Autenticación de Usuario, aplicando capas de Domain, Interface, Application e Infrastructure, además de diagramas de componentes, clases y base de datos  TP1: Reconocí la necesidad del aprendizaje permanente al desarrollar el Bounded Context: Registro y Autenticación de Usuario, aplicando capas de Domain, Interface, Application e Infrastructure, además de diagramas de componentes, clases y base de datos. En el TP1 diseñé los wireframes y mockups de la landing page, además del prototipo de la aplicación móvil..<br>- **Sandoval Paiva, Valentino – TB1**<br>Reconocí la necesidad del aprendizaje permanente al participar en el diseño del Bounded Context: Analítica y Reportes y Visualización y Seguimiento, construyendo las capas de arquitectura, componentes, diagramas de clases y de base de datos  TP1: Reconocí la necesidad del aprendizaje permanente al participar en el diseño del Bounded Context: Analítica y Reportes y Visualización y Seguimiento, construyendo las capas de arquitectura, componentes, diagramas de clases y de base de datos. En el TP1 trabajé en los user flows y wireflows de la aplicación móvil, y colaboré en la configuración del despliegue del software..<br>- **Sarmiento Medina, Loreley – TB1**<br>Reconocí la necesidad del aprendizaje permanente al aplicar la arquitectura en los Bounded Contexts de Gestión de Proyectos y Tareas y Notificaciones, trabajando sus capas de software, diagramas de componentes, clases y base de datos. TP1:  | La elaboración del proyecto permitió reforzar y aplicar conceptos clave en arquitectura de software, metodologías ágiles y diseño de soluciones, fortaleciendo competencias técnicas que son directamente aplicables en la formación profesional y en la práctica de proyectos reales en soluciones de software.        TP1: Nos permitió integrar conocimientos teóricos y prácticos sobre diseño centrado en el usuario, arquitectura de la información y desarrollo ágil, fortaleciendo la capacidad del equipo para transformar requerimientos conceptuales en interfaces funcionales y coherentes.            |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | - **Bejarano Martínez, Álvaro Leandro – TB1**<br>Me di cuenta de lo importante que es seguir aprendiendo mientras trabajaba en el Bounded Context de Registro y Autenticación, porque tuve que investigar y aplicar nuevos enfoques para resolver problemas de seguridad y acceso TP1: aprendí sobre la definición de estilos visuales y coherencia de diseño en la interfaz..<br>- **Luquillas Asto, Omar – TB1**<br>Comprendí la necesidad de aprender de forma constante al desarrollar el Bounded Context de Analítica y Reportes, ya que cada avance me exigió actualizarme para interpretar datos y presentarlos de manera útil TP1: reforcé mis conocimientos en etiquetado semántico, SEO y configuración de entornos de trabajo colaborativos..<br>- **Olivera Barzola, Eric Marlon – TB1**<br>Reconocí que el aprendizaje nunca termina al diseñar el Bounded Context de Visualización y Seguimiento, pues tuve que explorar nuevas formas de mostrar información de manera clara y comprensible TP1 adquirí experiencia en la elaboración de mockups y prototipos interactivos..<br>- **Sandoval Paiva, Valentino – TB1**<br>Noté lo esencial que es seguir aprendiendo al elaborar el Bounded Context de Gestión de Proyectos y Tareas, porque enfrenté retos que me llevaron a investigar y aplicar ideas que no conocía antes. TP1 reforcé mis conocimientos en diseño de interacción móvil y documentación de despliegues.<br>- **Sarmiento Medina, Loreley – TB1**<br>Valoré la importancia del aprendizaje permanente al trabajar en el Bounded Context de Notificaciones, ya que tuve que adaptarme a nuevas formas de diseño para que la comunicación en el sistema fuera efectiva .TP1: aprendí sobre la documentación técnica, planificación de sprints y la validación de software a través de pruebas sistemáticas. | Durante el desarrollo del proyecto se evidenció la importancia de la investigación continua y la adaptación a nuevas herramientas y enfoques, lo que refuerza la necesidad de mantener un aprendizaje constante para enfrentar los retos que plantea el mercado tecnológico y asegurar la mejora continua en el ámbito profesional. TP1: Se evidenció el crecimiento del equipo en el manejo de herramientas de diseño, gestión del código y despliegue de software. A través de la planificación por sprints, la definición de guías de estilo |                                                                                                                                                          
 
 <hr>
 
@@ -3688,6 +3687,81 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 
 #### 4.3.3. Evaluaciones según heurísticas  
+
+**Evaluación Heurística de TaskMaster**
+
+Carrera: Ingeniería de Software  
+Curso: Aplicaciones para Dispositivos Móviles  
+Auditor: WorkHub Team  
+Plataforma evaluada: TaskMaster – Aplicación Móvil y Landing Page
+
+
+
+## Tareas evaluadas
+
+- Comprender el propósito principal de TaskMaster al ingresar.  
+- Navegar por la interfaz principal (inicio, tablero de tareas, equipos).  
+- Identificar cómo crear y asignar tareas dentro de un proyecto.  
+- Explorar la vista general de equipo (roles de líder y miembros).  
+- Evaluar la claridad visual de los botones y menús.  
+- Revisar la legibilidad del texto y el contraste de los colores.  
+- Probar el flujo visual de registro y autenticación de usuarios.  
+- Comprobar la consistencia gráfica entre la landing page y la móvil app.  
+- Verificar la retroalimentación visual al realizar acciones (crear tarea, editar, eliminar).  
+- Evaluar el diseño adaptable en diferentes resoluciones.  
+
+
+## Tabla resumen de problemas detectados
+
+| #  | Problema detectado                                                                 | Severidad | Heurística / Principio violado                   |
+|----|-------------------------------------------------------------------------------------|-----------|-------------------------------------------------|
+| 1  | El propósito de la plataforma no se comunica de inmediato en la landing page        | 2         | Correspondencia entre sistema y el mundo real   |
+| 2  | El botón de llamado a la acción (Call to Action) es pequeño y poco visible          | 3         | Visibilidad del estado del sistema              |
+| 3  | El tamaño del texto en algunas secciones es demasiado pequeño                      | 3         | Legibilidad / Accesibilidad visual              |
+| 4  | Algunos colores del menú hacen que el usuario pierda la referencia de navegación    | 3         | Consistencia y estándares / Diseño visual       |
+| 5  | Falta de retroalimentación visual al crear o eliminar una tarea                    | 2         | Visibilidad del estado del sistema              |
+| 6  | En pantallas pequeñas, algunos componentes se superponen o pierden alineación       | 3         | Diseño adaptable / Consistencia visual          |
+| 7  | No se destaca claramente la diferencia entre tareas completadas y pendientes        | 2         | Reconocer antes que recordar                    |
+| 8  | La jerarquía visual entre títulos, botones y textos secundarios no es clara         | 2         | Estética y diseño minimalista                   |
+
+
+## Descripción de problemas clave
+
+### Problema #2: Botón de llamado a la acción demasiado pequeño  
+Severidad: 3  
+Heurística violada: Visibilidad del estado del sistema  
+Descripción: El botón principal para registrarse o iniciar sesión en la landing page tiene un tamaño reducido y poca diferenciación visual respecto al fondo. Esto hace que el usuario no lo identifique como la acción principal.  
+Recomendación: Aumentar el tamaño del botón y aplicar un color de contraste que refuerce su función principal, manteniendo coherencia con la identidad visual de TaskMaster.
+
+
+### Problema #3: Tamaño de texto insuficiente  
+Severidad: 3  
+Heurística violada: Legibilidad / Accesibilidad visual  
+Descripción: Algunos textos en secciones informativas y de descripción son demasiado pequeños, dificultando la lectura en monitores medianos o dispositivos móviles.  
+Recomendación: Ajustar la tipografía a un tamaño mínimo de 16 px para textos generales y asegurar un contraste suficiente con el fondo.
+
+
+### Problema #4: Colores de navegación confusos  
+Severidad: 3  
+Heurística violada: Consistencia y estándares / Diseño visual  
+Descripción: En ciertas secciones, los colores seleccionados para los menús o pestañas activas no se distinguen claramente, lo que puede generar confusión sobre qué sección está activa.  
+Recomendación: Redefinir la paleta de colores para estados activos e inactivos, utilizando tonos contrastantes que mantengan coherencia con la marca.
+
+
+### Problema #6: Desajuste visual en pantallas pequeñas  
+Severidad: 3  
+Heurística violada: Diseño adaptable / Consistencia visual  
+Descripción: Algunos componentes, como botones o cuadros de texto, se solapan en pantallas con resoluciones reducidas.  
+Recomendación: Revisar el diseño responsive con breakpoints adecuados y pruebas visuales en distintos dispositivos para mantener la legibilidad y estructura.
+
+
+### Problema #8: Falta de jerarquía visual clara  
+Severidad: 2  
+Heurística violada: Estética y diseño minimalista  
+Descripción: La jerarquía entre títulos, subtítulos y botones no siempre es clara, lo que dificulta que el usuario identifique qué acción o información es prioritaria.  
+Recomendación: Aplicar una estructura tipográfica coherente, con tamaños y pesos diferenciados para reforzar la lectura y el flujo visual.
+
+
 
 
 
