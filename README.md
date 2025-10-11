@@ -1320,11 +1320,6 @@ Cada vez que se asigna un miembro, se crea una tarea o se actualiza su estado, e
 
 ![ddd](Assets/TB1/gestion-visualizacion.PNG)
 
-Visualización y Seguimiento y Analítica y Reportes:
-Los cambios en las tareas (como su finalización o vencimiento) alimentan la capa de analítica, donde se recalculan y generan estadísticas actualizadas sobre el rendimiento de los proyectos y de los miembros del equipo.
-
-![ddd](Assets/TB1/visualizacion-ca.PNG)
-
 
 ##### 2.5.1.3. Bounded Context Canvases
 
@@ -2909,7 +2904,7 @@ El diseño de estilo de WorkHub se fundamenta en la coherencia visual y la ident
 
 La identidad de TaskMaster refleja organización, colaboración y eficiencia. Su diseño combina colores cálidos y suaves que transmiten equilibrio y dinamismo, mientras que el logotipo y la interfaz proyectan una estética moderna y accesible. El branding busca conectar con jóvenes profesionales y estudiantes que valoran la simplicidad y la claridad en la gestión de proyectos.
 
-![ddd](Assets/TB1/LOGO1.png)
+![ddd](Assets/TP1/branding.jpeg)
 
 **Color:**
 
@@ -3647,6 +3642,45 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 
 #### 4.3.2. Registro de Entrevistas  
+
+
+### Segmento Objetivo #1: Miembros del Equipo (Team Members)
+
+
+
+
+
+### Segmento Objetivo #2: Líderes de Equipo (Team Leaders)
+
+
+
+| Entrevista 1: Segmento Líder |
+|----------------------------------------------|---------------------------------------------|
+| **Nombre de Entrevistado**                   | Aleida Esmeralda Martínez Estela            |
+| **Edad**                                     | 50 años                                     |
+| **Distrito**                                 | Miraflores                                  |
+| **Duración de la Entrevista**                | 6:46                                        |
+| **Inicio de la Entrevista**                  | 0:03                                        |
+| **Resumen**                   | La entrevista realizada a Aleida Martínez, representante del segmento líder, evidenció una percepción positiva del tablero de tareas. Destacó su claridad visual, la facilidad para identificar las tareas asignadas y la organización equilibrada del contenido. Mencionó que los colores e íconos son adecuados, aunque sugirió mejorar los contrastes y la alineación entre secciones. Finalmente, propuso incorporar gráficos o vistas rápidas que permitan visualizar de forma más clara el progreso del equipo y el estado general del proyecto. |
+| **Url**                    | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EdfIDGcTdEZFrbz78FU390IBBHeaSFZGgvhsyTPcRxUjbg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Qg8fsU](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EdfIDGcTdEZFrbz78FU390IBBHeaSFZGgvhsyTPcRxUjbg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Qg8fsU) |
+
+![ddd](Assets/TP1/centrevistaAleida.jpeg)
+
+| Entrevista 2: Segmento Líder |
+|----------------------------------------------|---------------------------------------------|
+| **Nombre de Entrevistado**                   | Aleida Esmeralda Martínez Estela            |
+| **Edad**                                     | 50 años                                     |
+| **Distrito**                                 | Miraflores                                  |
+| **Duración de la Entrevista**                | 6:46                                        |
+| **Inicio de la Entrevista**                  | 0:03                                        |
+| **Resumen**                   | La entrevista realizada a Aleida Martínez, representante del segmento líder, evidenció una percepción positiva del tablero de tareas. Destacó su claridad visual, la facilidad para identificar las tareas asignadas y la organización equilibrada del contenido. Mencionó que los colores e íconos son adecuados, aunque sugirió mejorar los contrastes y la alineación entre secciones. Finalmente, propuso incorporar gráficos o vistas rápidas que permitan visualizar de forma más clara el progreso del equipo y el estado general del proyecto. |
+| **Url**                    | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EVHU4VEpkMpFmJE8VbY1YMMB8YRj43UwOTTN01qygp-J2Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KrLmoL](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311640_upc_edu_pe/EVHU4VEpkMpFmJE8VbY1YMMB8YRj43UwOTTN01qygp-J2Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KrLmoL)|
+
+![ddd](Assets/TP1/entrevistaRaul.jpeg)
+
+
+
+
 #### 4.3.3. Evaluaciones según heurísticas  
 
 
