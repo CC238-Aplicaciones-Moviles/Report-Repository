@@ -3620,6 +3620,188 @@ Lanzamos el web Services
 
 ![c1](Assets/TP1/c14.png)
 
+#### 4.2.2. Sprint 2  
+Esta sección presenta los detalles de la segunda reunión de planificación de Sprint del equipo para continuar con el desarrollo de **Task Master**.
+Durante esta sesión se establecieron los objetivos técnicos y funcionales del segundo sprint, orientados a culminar la implementación del backend y avanzar con las interfaces móviles.
+El enfoque principal fue finalizar el backend al 100%, desplegarlo en un entorno público y desarrollar las interfaces del Team Leader y Team Member en sus respectivas tecnologías.
+
+El enfoque principal fue desarrollar la Landing Page informativa y estructurar los primeros módulos del backend.
+
+
+##### 4.2.2.1. Sprint Planning 2  
+
+| **Elemento** | **Detalle** |
+|---------------|-------------|
+| **Sprint #** | Sprint 2 |
+| **Fecha** | 31 de octubre de 2025 |
+| **Hora** | 3:00 p.m. |
+| **Lugar** | Virtual – Google Meet |
+| **Elaborado por** | Bejarano Martínez Álvaro Leandro |
+| **Participantes (Reunión de planificación)** | Bejarano Martínez Álvaro Leandro, Luquillas Asto Omar, Olivera Barzola Eric Marlon, Sandoval Paiva Valentino, Sarmiento Medina Loreley |
+| **Resumen de la revisión anterior** | Durante el Sprint 1 se completó exitosamente la landing page y se estableció la estructura base del backend, cumpliendo con los objetivos iniciales del proyecto. |
+| **Resumen de la retrospectiva anterior** | Se identificó la necesidad de mejorar la comunicación entre los subgrupos de trabajo y optimizar la gestión del tiempo en el desarrollo paralelo de frontend y backend. |
+| **Objetivo del Sprint** | El objetivo de este sprint es culminar al 100% el desarrollo del backend y desplegarlo en un sitio público para pruebas externas. En paralelo, se busca finalizar completamente la interfaz del **Team Leader**, desarrollada en **Kotlin (lógica)** y **XML (diseño)**, así como iniciar el primer avance de la interfaz del **Team Member**, desarrollada en **Flutter y Dart**.<br><br>**Resultado esperado:** Backend funcional y desplegado públicamente, con las interfaces móviles del Team Leader listas y el primer prototipo del Team Member operativo.<br><br>**Impacto:** Garantizar la integración entre backend y aplicación móvil, habilitando las primeras pruebas de usabilidad.<br><br>**Usuarios objetivo:** Líderes y miembros de equipos que gestionan tareas colaborativas dentro de la plataforma.<br><br>**Evento clave:** Acceso estable al backend en entorno público y visualización de la interfaz móvil funcional. |
+| **Velocidad del Sprint** | El equipo puede atender hasta **32 Story Points**. |
+| **Suma de Story Points** | La suma de Story Points planificados para este sprint es de **32 Story Points**. |
+
+##### 4.2.2.1. Sprint Backlog 2  
+
+Durante este sprint, el equipo concentró sus esfuerzos en la culminación del backend y el desarrollo de las interfaces móviles para los perfiles de Team Leader (en Kotlin/XML) y Team Member (en Flutter/Dart).
+Las historias de usuario priorizadas estuvieron centradas en mejorar la experiencia visual, la interacción con los módulos principales y la conexión con los servicios backend ya desplegados.
+
+| Código US / TS | Título                                       | Id de Tarea | Título de la Tarea                        | Descripción                                                                | Estimación (hrs) | Asignado a                       | Estado      |
+| -------------- | -------------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------------------------------------- | ---------------- | -------------------------------- | ----------- |
+| **US10**       | **Registro de usuarios**                     | T10-1       | Diseñar interfaz de registro              | Crear la pantalla de registro con validaciones de entrada en Kotlin/XML.   | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T10-2       | Implementar validaciones visuales         | Mostrar mensajes de error cuando los campos sean inválidos o estén vacíos. | 2                | Sandoval Paiva Valentino         | Done        |
+| **US11**       | **Inicio de sesión**                         | T11-1       | Crear pantalla de inicio de sesión        | Diseñar la interfaz del login con campos y botones funcionales.            | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T11-2       | Implementar transición al panel principal | Añadir animación y navegación fluida al ingresar correctamente.            | 2                | Sarmiento Medina Loreley         | Done        |
+| **US12**       | **Recuperación de contraseña**               | T12-1       | Diseñar vista de recuperación             | Crear pantalla para solicitar restablecimiento mediante correo.            | 3                | Luquillas Asto Omar              | Done        |
+|                |                                              | T12-2       | Implementar confirmación visual           | Mostrar mensaje al enviar la solicitud correctamente.                      | 2                | Sarmiento Medina Loreley         | Done        |
+| **US13**       | **Cierre de sesión**                         | T13-1       | Agregar botón de cierre                   | Colocar botón visible en menú principal y limpiar sesión activa.           | 2                | Bejarano Martínez Álvaro Leandro | Done        |
+| **US14**       | **Ingreso mediante código de invitación**    | T14-1       | Crear campo de código de acceso           | Permitir ingresar un código para unirse a un proyecto.                     | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T14-2       | Validar código visualmente                | Mostrar mensaje de error si el código no es válido.                        | 2                | Sarmiento Medina Loreley         | Done        |
+| **US15**       | **Registro de proyectos**                    | T15-1       | Diseñar formulario visual                 | Crear formulario con campos: nombre, descripción y equipo.                 | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T15-2       | Añadir botón de guardar                   | Implementar botón con retroalimentación visual.                            | 2                | Bejarano Martínez Álvaro Leandro | Done        |
+| **US16**       | **Asignación de usuarios a proyectos**       | T16-1       | Crear lista desplegable de miembros       | Mostrar usuarios disponibles para asignar a un proyecto.                   | 3                | Sarmiento Medina Loreley         | Done        |
+|                |                                              | T16-2       | Implementar selección múltiple            | Permitir seleccionar varios miembros desde la interfaz.                    | 2                | Sandoval Paiva Valentino         | Done        |
+| **US17**       | **Asignación de tareas**                     | T17-1       | Diseñar vista de tareas asignadas         | Mostrar tareas pendientes y completadas del Team Member.                   | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T17-2       | Añadir opción de asignar nueva tarea      | Crear botón que permita agregar tareas nuevas visualmente.                 | 3                | Luquillas Asto Omar              | Done        |
+| **US18**       | **Prioridad de tareas**                      | T18-1       | Implementar selector de prioridad         | Agregar opción de prioridad alta, media o baja con colores distintivos.    | 2                | Sarmiento Medina Loreley         | Done        |
+| **US19**       | **Notificaciones de tareas asignadas**       | T19-1       | Crear panel de notificaciones             | Mostrar alertas visuales de tareas nuevas o actualizadas.                  | 3                | Bejarano Martínez Álvaro Leandro | Done        |
+|                |                                              | T19-2       | Diseñar icono dinámico de notificaciones  | Actualizar contador visual en la barra superior.                           | 2                | Sandoval Paiva Valentino         | Done        |
+| **US20**       | **Modificación de fechas límite**            | T20-1       | Agregar campo editable de fecha           | Permitir que el usuario cambie la fecha límite visualmente.                | 3                | Luquillas Asto Omar              | Done        |
+| **US21**       | **Modificar prioridad de tareas**            | T21-1       | Crear botón de cambio de prioridad        | Cambiar prioridad directamente desde la lista de tareas.                   | 2                | Sandoval Paiva Valentino         | Done        |
+| **US22**       | **Actualización de estado de tareas**        | T22-1       | Implementar control de estado             | Permitir marcar tareas como completadas o pendientes.                      | 3                | Sandoval Paiva Valentino         | Done        |
+| **US23**       | **Ver progreso de tareas en tiempo real**    | T23-1       | Crear barra de progreso dinámica          | Mostrar avance en tiempo real del porcentaje de tareas completadas.        | 4                | Sarmiento Medina Loreley         | Done |
+|                |                                              | T23-2       | Actualizar datos en tiempo real           | Refrescar la vista automáticamente al cambiar estados.                     | 3                | Bejarano Martínez Álvaro Leandro | Done |
+| **US24**       | **Métricas de rendimiento**                  | T24-1       | Diseñar pantalla de métricas              | Mostrar estadísticas de productividad con gráficos.                        | 4                | Luquillas Asto Omar              | Done        |
+| **US25**       | **Visualizar calendario de tareas**          | T25-1       | Implementar calendario interactivo        | Mostrar tareas según fecha límite mediante vista mensual.                  | 4                | Sandoval Paiva Valentino         | Done        |
+| **US26**       | **Reporte de desempeño**                     | T26-1       | Crear pantalla de resumen                 | Mostrar tabla con desempeño individual y general.                          | 3                | Luquillas Asto Omar              | Done        |
+|                |                                              | T26-2       | Diseñar exportación visual                | Generar visualización en PDF o pantalla resumen.                           | 2                | Sandoval Paiva Valentino         | Done        |
+| **US27**       | **Reporte de tareas cumplidas y retrasadas** | T27-1       | Diseñar gráfico comparativo               | Mostrar gráfico de barras de tareas cumplidas vs retrasadas.               | 3                | Bejarano Martínez Álvaro Leandro | Done        |
+| **US28**       | **Resumen semanal de avances**               | T28-1       | Crear tarjeta de resumen semanal          | Mostrar porcentaje de avance semanal por usuario.                          | 2                | Sandoval Paiva Valentino         | Done        |
+| **US29**       | **Notificación de tarea asignada**           | T29-1       | Diseñar vista emergente de notificación   | Mostrar ventana emergente cuando se asigne una nueva tarea.                | 3                | Sarmiento Medina Loreley         | Done        |
+| **US30**       | **Revisión de tareas completadas**           | T30-1       | Crear sección de revisión                 | Mostrar lista de tareas completadas con opción de comentarios.             | 3                | Sandoval Paiva Valentino         | Done        |
+| **US31**       | **Historial de actividades**                 | T31-1       | Implementar registro visual de cambios    | Mostrar histórico de tareas editadas o eliminadas.                         | 3                | Luquillas Asto Omar              | Done        |
+| **US32**       | **Gestión de roles**                         | T32-1       | Diseñar pantalla de roles                 | Permitir cambiar el rol de los miembros del equipo visualmente.            | 3                | Sarmiento Medina Loreley         | Done        |
+| **US33**       | **Notificación de cambios importantes**      | T33-1       | Crear notificación global                 | Mostrar alerta visual cuando se edite o elimine un proyecto.               | 3                | Bejarano Martínez Álvaro Leandro | Done        |
+
+
+##### 4.2.1.3. Development Evidence for Sprint Review  
+
+
+BACKEND
+
+
+
+##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
+
+**Unit Tests**
+
+Durante el desarrollo del sprint se implementaron pruebas unitarias orientadas a validar el correcto funcionamiento de las clases principales del backend. Estas pruebas se enfocaron en verificar los métodos responsables de la creación, actualización y eliminación de entidades dentro del sistema, garantizando que la lógica de negocio se ejecute de manera consistente. Además, se utilizaron frameworks de testing como JUnit y Mockito para simular dependencias y asegurar la cobertura individual de cada componente.
+
+Prueba de las Test de creación de tareas:
+              
+![a1](Assets/TP1/e1.png)
+              
+Prueba de Test de creación de usuarios (IAM)
+              
+![a1](Assets/TP1/e2.png)
+
+**Integration Tests**
+
+En cuanto a las pruebas de integración, se realizaron con el objetivo de comprobar la correcta interacción entre los distintos módulos del sistema. Se validó el flujo completo desde el controlador hasta las capas de servicio y repositorio, asegurando la comunicación adecuada con la base de datos y los servicios REST. Estas pruebas permitieron detectar posibles fallos en la configuración de dependencias y en la transferencia de datos entre componentes.
+
+![integration_test](Assets/TP1/integration_test.png)
+
+**BDD Tests**
+
+Finalmente, se desarrollaron pruebas de aceptación bajo el enfoque BDD (Behavior Driven Development), utilizando archivos .feature escritos en lenguaje Gherkin. Estas pruebas reflejan los escenarios definidos en las historias de usuario, permitiendo validar el comportamiento del sistema desde la perspectiva del usuario final. Cada escenario fue automatizado mediante pasos (Steps) programados, comprobando que las funcionalidades entregadas cumplen con los criterios de aceptación definidos en el sprint.
+
+![bdd_test](Assets/TP1/bdd_test.png)
+
+![bdd_test2](Assets/TP1/bdd_test2.png)
+
+![bdd_test3](Assets/TP1/bdd_test3.png)
+
+![bdd_test4](Assets/TP1/bdd_test4.png)
+
+![bdd_test5](Assets/TP1/bdd_test5.png)
+
+##### 4.2.1.5. Execution Evidence for Sprint Review  
+
+En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
+Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMaster-LandingPage 
+
+![a1](Assets/TP1/a1.png)
+![a1](Assets/TP1/a2.png)
+![a1](Assets/TP1/a3.png)
+![a1](Assets/TP1/a5.png)
+![a1](Assets/TP1/a6.png)
+![a1](Assets/TP1/a7.png)
+![a1](Assets/TP1/a8.png)
+
+Vistas de nuestra aplicación móvil: 
+
+![a1](Assets/TP1/d1.png)
+![a1](Assets/TP1/d2.png)
+![a1](Assets/TP1/d3.png)
+![a1](Assets/TP1/d5.png)
+![a1](Assets/TP1/d6.png)
+![a1](Assets/TP1/d7.png)
+![a1](Assets/TP1/d8.png)
+
+
+##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
+
+En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
+Enlance del Backend: https://backend-taskmaster-1.onrender.com/swagger-ui/index.html
+
+Sección Autentificación Y Roles
+![b1](Assets/TP1/B1.png)
+
+Sección de Tasks:
+![b1](Assets/TP1/B2.png)
+
+Sección de Users:
+![b1](Assets/TP1/B3.png)
+
+Sección de Projects:
+![b1](Assets/TP1/B4.png)
+
+##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
+
+Desing:
+
+Accedemos a Figma: https://www.figma.com/login
+![c1](Assets/TP1/c1.png)
+En el apartado o creamos un nuevo proyecto o nos unimos a un proyecto
+![c1](Assets/TP1/c2.png)
+![c1](Assets/TP1/c3.png)
+
+Deployment
+Ingresamos a Github: https://www.github.com
+![c1](Assets/TP1/c4.png)
+Nos registramos o ingresamos a una cuenta
+![c1](Assets/TP1/c5.png)
+Ingresamos al repositorio que queremos publicar
+![c1](Assets/TP1/c6.png)
+Ingresamos a "Settings" y luego a "Pages"
+![c1](Assets/TP1/c7.png)
+Desplegamos la página y ya tendremos un link
+![c1](Assets/TP1/c8.png)
+
+Accedamos a Render
+![c1](Assets/TP1/c9.png)
+Ponemos nuestro repositorio de Backend
+![c1](Assets/TP1/c11.png)
+Lanzamos el web Services
+![c1](Assets/TP1/c12.png)
+![c1](Assets/TP1/c13.png)
+
+##### 4.2.1.8. Team Collaboration Insights during Sprint  
+
+
 ### 4.3. Validation Interviews  
 #### 4.3.1. Diseño de Entrevistas  
 
