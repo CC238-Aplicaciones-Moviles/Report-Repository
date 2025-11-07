@@ -4084,16 +4084,10 @@ Authorization: Bearer <JWT>
 }
 ```
 
-Sección de Tasks:
-![b1](Assets/TP1/B2.png)
-
-Perfecto ✅ Aquí tienes el documento completo para tu siguiente módulo en **el mismo formato y estilo** que el ejemplo del *Project Management*, pero aplicado al **TasksController**. Todo está en **Markdown** y listo para agregar a tu informe.
-
----
 
 ### **Sección Task Management**
 
-![b2](Assets/TP1/B5.png)
+![b2](Assets/TP1/B2.png)
 
 Se desarrolló e implementó la **documentación y despliegue de los servicios web correspondientes al módulo de Task Management**, responsable de la **gestión integral de tareas, asignación de usuarios, actualización de estados y control de prioridades** dentro de la plataforma **TaskMaster**.
 
