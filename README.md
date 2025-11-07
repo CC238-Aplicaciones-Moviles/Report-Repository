@@ -3757,17 +3757,482 @@ Vistas de nuestra aplicación móvil:
 En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
 Enlance del Backend: https://backend-taskmaster-1.onrender.com/swagger-ui/index.html
 
-Sección Autentificación Y Roles
+### **Sección IAM (Identity and Access Management)**
+
 ![b1](Assets/TP1/B1.png)
+
+![b1](Assets/TP1/B3.png)
+
+El módulo **IAM (Identity and Access Management)** de **TaskMaster** proporciona una gestión centralizada y segura de usuarios, roles y autenticación, asegurando el control de acceso a los distintos recursos del sistema.
+Durante este *Sprint*, se implementaron los controladores principales para autenticación, usuarios y roles, siguiendo los principios de **arquitectura limpia** y **Domain-Driven Design (DDD)**.
+
+A continuación, se detallan los **endpoints desarrollados**, sus funcionalidades principales y la documentación técnica generada mediante **Swagger (OpenAPI 3.0)**.
+
+---
+
+## Tabla de Endpoints IAM
+
+| **Bounded Context** | **Endpoint**                     | **Acción**                     | **Verbo HTTP** | **Parámetros**                                                                        | **Ejemplo de Respuesta**                                          | **Documentación** |
+| ------------------- | -------------------------------- | ------------------------------ | -------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------- |
+| **Autenticación**   | `/api/v1/authentication/sign-in` | Iniciar sesión                 | POST           | `{"email": "string", "password": "string"}`                                           | `{"id": 1, "email": "user@mail.com", "token": "jwt_token"}`       | Swagger           |
+|                     | `/api/v1/authentication/sign-up` | Registrar usuario              | POST           | `{"email": "string","password": "string","firstName": "string","lastName": "string"}` | `{"id": 1,"email": "user@mail.com","fullName": "string"}`         | Swagger           |
+| **Usuarios**        | `/api/v1/users`                  | Listar todos los usuarios      | GET            | -                                                                                     | `[{"id": 1,"email": "user@mail.com","roles": ["ROLE_USER"]}]`     | Swagger           |
+|                     | `/api/v1/users/{userId}`         | Obtener usuario por ID         | GET            | `userId: Long`                                                                        | `{"id": 1,"email": "user@mail.com","roles": ["ROLE_USER"]}`       | Swagger           |
+|                     | `/api/v1/users/email/{email}`    | Buscar usuario por email       | GET            | `email: String`                                                                       | `{"id": 1,"email": "user@mail.com","roles": ["ROLE_ADMIN"]}`      | Swagger           |
+|                     | `/api/v1/users`                  | Actualizar usuario autenticado | PUT            | `{"firstName": "string","lastName": "string"}`                                        | `{"message": "User updated successfully"}`                        | Swagger           |
+|                     | `/api/v1/users/{userId}`         | Eliminar usuario por ID        | DELETE         | `userId: Long`                                                                        | `204 No Content`                                                  | Swagger           |
+| **Roles**           | `/api/v1/roles`                  | Listar roles disponibles       | GET            | -                                                                                     | `[{"id": 1,"name": "ROLE_USER"}, {"id": 2,"name": "ROLE_ADMIN"}]` | Swagger           |
+
+---
+
+## Ejemplos de Uso
+
+### 1. Autenticación (JWT)
+
+**Request:**
+
+```http
+POST /api/v1/authentication/sign-in
+Content-Type: application/json
+```
+
+**Body:**
+
+```json
+{
+  "email": "admin@taskmaster.com",
+  "password": "123456"
+}
+```
+
+**Response (200 OK):**
+
+```json
+{
+  "id": 1,
+  "email": "admin@taskmaster.com",
+  "token": "eyJhbGciOiJIUzI1NiIsInR..."
+}
+```
+
+---
+
+### 2. Registro de Usuario
+
+**Request:**
+
+```http
+POST /api/v1/authentication/sign-up
+```
+
+**Body:**
+
+```json
+{
+  "email": "newuser@taskmaster.com",
+  "password": "password123",
+  "firstName": "Valentino",
+  "lastName": "Sandoval"
+}
+```
+
+**Response (201 Created):**
+
+```json
+{
+  "id": 2,
+  "email": "newuser@taskmaster.com",
+  "fullName": "Valentino Sandoval"
+}
+```
+
+---
+
+### 3. Gestión de Usuarios
+
+#### Actualizar Usuario Autenticado
+
+**Request:**
+
+```http
+PUT /api/v1/users
+```
+
+**Body:**
+
+```json
+{
+  "firstName": "Valentino",
+  "lastName": "Sandoval Paiva"
+}
+```
+
+**Response (200 OK):**
+
+```json
+{
+  "message": "User updated successfully"
+}
+```
+
+#### Eliminar Usuario
+
+**Request:**
+
+```http
+DELETE /api/v1/users/2
+```
+
+**Response (204 No Content)**
+
+---
+
+## Arquitectura y Patrones
+
+### CQRS (Command Query Responsibility Segregation)
+
+Separación clara entre operaciones de lectura y escritura:
+
+* **UserCommandService:** Manejo de comandos como `sign-up`, `updateUser`, `deleteUser`.
+* **UserQueryService:** Consultas como `getAllUsers`, `getUserById`, `getUserByEmail`.
+
+---
+
+### DTO Pattern (Data Transfer Object)
+
+Uso de *Resource* y *Command* para desacoplar las entidades del dominio y las representaciones REST:
+
+```java
+public record UserResource(Long id, String email, String firstName, String lastName) {}
+public record SignInResource(String email, String password) {}
+```
+
+---
+
+### Swagger Integration
+
+Documentación automática generada mediante anotaciones `@Tag`, `@Operation`, y `@ApiResponses` en cada endpoint.
+
+La interfaz **Swagger UI** se encuentra disponible en:
+🔗 [https://managewise-api.onrender.com/swagger-ui/index.html](https://managewise-api.onrender.com/swagger-ui/index.html)
+
+---
+
+## Seguridad
+
+### Autenticación JWT
+
+Implementada en `AuthenticationController`, garantizando la validación segura de credenciales y la emisión de tokens firmados.
+
+### Validaciones
+
+* Validación de entrada con `@Valid`.
+* Respuestas de error estandarizadas (400, 404, 401).
+* Control de acceso basado en roles (`ROLE_USER`, `ROLE_ADMIN`).
+
+### Manejo de Sesión Segura
+
+Se utiliza `SecurityContextHolder` para obtener el contexto de autenticación actual dentro de `UsersController`.
+
+**Ejemplo:**
+
+```java
+var auth = SecurityContextHolder.getContext().getAuthentication();
+var userDetails = (UserDetailsImpl) auth.getPrincipal();
+Long userId = userDetails.getId();
+```
+
+---
+
+## Conclusión
+
+El módulo **IAM** constituye el núcleo de la **seguridad y gestión de identidades** en *TaskMaster*, proporcionando:
+
+- Autenticación segura mediante JWT.
+- Gestión estructurada de usuarios y roles.
+- Desacoplamiento mediante CQRS y DTO Pattern.
+- Documentación automatizada con Swagger (OpenAPI 3.0).
+
+### **Sección Project Management**
+
+
+![b1](Assets/TP1/B4.png)
+
+Durante este Sprint, se completó la **documentación y despliegue de los servicios web asociados al módulo de Project Management**, encargados de la **gestión integral de proyectos, miembros y códigos de acceso** dentro de la plataforma **TaskMaster**.
+
+El controlador `ProjectsController` fue implementado siguiendo los principios de **arquitectura limpia (Clean Architecture)** y **CQRS (Command Query Responsibility Segregation)**, separando claramente las operaciones de lectura (Query) y escritura (Command).
+
+Toda la documentación fue generada utilizando **OpenAPI (Swagger 3.0)** para describir la estructura, los verbos HTTP, parámetros y ejemplos de respuesta de cada endpoint.
+A continuación, se detalla la relación completa de los endpoints desarrollados.
+
+---
+
+## Tabla de Endpoints – `ProjectsController`
+
+| **Endpoint**                                      | **Descripción / Acción**                                                       | **Verbo HTTP** | **Parámetros / Body**                                                                | **Ejemplo de Respuesta (Resumen)**                                 | **Documentación** |
+| ------------------------------------------------- | ------------------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------- |
+| `/api/v1/projects`                                | Crea un nuevo proyecto asociado al usuario autenticado (rol Leader).           | **POST**       | `{"name": "Project Alpha", "description": "Test project", "deadline": "2025-12-31"}` | `{"id":1,"name":"Project Alpha","leaderId":5}`                     | Swagger                         |
+| `/api/v1/projects/{id}`                           | Actualiza un proyecto existente.                                               | **PUT**        | `id: Long`, `{"name": "Updated name", "description": "New desc"}`                    | `{"id":1,"name":"Updated name","description":"New desc"}`          | Swagger                         |
+| `/api/v1/projects/{id}`                           | Elimina un proyecto por ID.                                                    | **DELETE**     | `id: Long`                                                                           | `204 No Content`                                                   | Swagger                         |
+| `/api/v1/projects/join/{key}`                     | Permite a un miembro unirse a un proyecto mediante un código único.            | **GET**        | `key: String`                                                                        | `{"id":2,"name":"Project Beta","members":[...]}`                   | Swagger                         |
+| `/api/v1/projects/{projectId}/members/{memberId}` | Elimina un usuario del proyecto (solo el líder del proyecto puede hacerlo).    | **DELETE**     | `projectId: Long`, `memberId: Long`                                                  | `204 No Content`                                                   | Swagger                         |
+| `/api/v1/projects/{projectId}/code`               | Asigna un código único de acceso al proyecto.                                  | **PUT**        | `{"keycode": "ABC123", "expiration": "2025-12-31"}`                                  | `{"keycode":"ABC123","expiration":"2025-12-31"}`                   | Swagger                         |
+| `/api/v1/projects`                                | Obtiene la lista completa de proyectos existentes.                             | **GET**        | —                                                                                    | `[{"id":1,"name":"Project Alpha"},{"id":2,"name":"Project Beta"}]` | Swagger                         |
+| `/api/v1/projects/{projectId}`                    | Obtiene la información detallada de un proyecto por su ID.                     | **GET**        | `projectId: Long`                                                                    | `{"id":1,"name":"Project Alpha","description":"Details"}`          | Swagger                         |
+| `/api/v1/projects/member`                         | Devuelve los proyectos a los que pertenece el usuario autenticado (según JWT). | **GET**        | —                                                                                    | `[{"id":3,"name":"Project Gamma"}]`                                | Swagger                         |
+| `/api/v1/projects/leader`                         | Devuelve los proyectos donde el usuario autenticado es líder.                  | **GET**        | —                                                                                    | `[{"id":4,"name":"Project Delta"}]`                                | Swagger                         |
+
+---
+
+## Arquitectura y Diseño
+
+El `ProjectsController` utiliza los siguientes **servicios internos** para la gestión de datos:
+
+* `ProjectCommandService`: Maneja comandos del dominio (Create, Update, Delete, AddUser, RemoveUser, SetCode).
+* `ProjectQueryService`: Ejecuta consultas del dominio (GetAll, GetById, GetByLeader, GetByMember).
+
+Cada comando y consulta se define como un objeto inmutable, siguiendo el patrón **Command Pattern** para operaciones seguras y predecibles.
+
+### Clases y ensambladores utilizados:
+
+* `CreateProjectCommandFromResourceAssembler`
+* `UpdateProjectCommandFromResourceAssembler`
+* `ProjectResourceFromEntityAssembler`
+* `SetCodeCommandFromResourceAssembler`
+
+Estos ensambladores garantizan la correcta transformación entre **DTOs (recursos REST)** y **entidades de dominio**, manteniendo la separación de capas.
+
+---
+
+## Ejemplo de Interacción
+
+### Crear un Proyecto
+
+**Request:**
+
+```http
+POST /api/v1/projects
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "name": "Project Alpha",
+  "description": "Initial testing project",
+  "deadline": "2025-12-31"
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 1,
+  "name": "Project Alpha",
+  "description": "Initial testing project",
+  "leaderId": 5,
+  "members": []
+}
+```
+
+---
+
+### Unirse a un Proyecto
+
+**Request:**
+
+```http
+GET /api/v1/projects/join/ABC123
+Authorization: Bearer <JWT>
+```
+
+**Response:**
+
+```json
+{
+  "id": 2,
+  "name": "Project Beta",
+  "members": [
+    { "id": 5, "username": "jdoe" },
+    { "id": 7, "username": "vpaiva" }
+  ]
+}
+```
+
+---
+
+### Asignar Código de Proyecto
+
+**Request:**
+
+```http
+PUT /api/v1/projects/1/code
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "keycode": "NEW123",
+  "expiration": "2026-01-01"
+}
+```
+
+**Response:**
+
+```json
+{
+  "keycode": "NEW123",
+  "expiration": "2026-01-01"
+}
+```
 
 Sección de Tasks:
 ![b1](Assets/TP1/B2.png)
 
-Sección de Users:
-![b1](Assets/TP1/B3.png)
+Perfecto ✅ Aquí tienes el documento completo para tu siguiente módulo en **el mismo formato y estilo** que el ejemplo del *Project Management*, pero aplicado al **TasksController**. Todo está en **Markdown** y listo para agregar a tu informe.
 
-Sección de Projects:
-![b1](Assets/TP1/B4.png)
+---
+
+### **Sección Task Management**
+
+![b2](Assets/TP1/B5.png)
+
+Se desarrolló e implementó la **documentación y despliegue de los servicios web correspondientes al módulo de Task Management**, responsable de la **gestión integral de tareas, asignación de usuarios, actualización de estados y control de prioridades** dentro de la plataforma **TaskMaster**.
+
+El controlador `TasksController` fue construido siguiendo los principios de **arquitectura limpia (Clean Architecture)** y **CQRS (Command Query Responsibility Segregation)**, separando las operaciones de lectura (Query) y escritura (Command) a través de servicios especializados.
+
+Toda la documentación fue generada utilizando **OpenAPI (Swagger 3.0)**, permitiendo describir con precisión los endpoints, verbos HTTP, parámetros requeridos y ejemplos de respuesta.
+
+---
+
+## Tabla de Endpoints – `TasksController`
+
+| **Endpoint**                                            | **Descripción / Acción**                                                        | **Verbo HTTP** | **Parámetros / Body**                                                                            | **Ejemplo de Respuesta (Resumen)**                                   | **Documentación** |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | ----------------- |
+| `/api/v1/tasks`                                         | Crea una nueva tarea dentro de un proyecto existente.                           | **POST**       | `{"title":"Design UI","description":"Create interface mockups","projectId":1,"priority":"HIGH"}` | `{"id":1,"title":"Design UI","status":"PENDING"}`                    | Swagger           |
+| `/api/v1/tasks`                                         | Obtiene la lista completa de tareas registradas.                                | **GET**        | —                                                                                                | `[{"id":1,"title":"Design UI"},{"id":2,"title":"Setup Database"}]`   | Swagger           |
+| `/api/v1/tasks/{taskId}`                                | Obtiene una tarea específica por su ID.                                         | **GET**        | `taskId: Long`                                                                                   | `{"id":3,"title":"Fix bugs","status":"IN_PROGRESS"}`                 | Swagger           |
+| `/api/v1/tasks/project/{projectId}`                     | Lista todas las tareas asociadas a un proyecto determinado.                     | **GET**        | `projectId: Long`                                                                                | `[{"id":1,"title":"Create API"},{"id":2,"title":"Frontend Layout"}]` | Swagger           |
+| `/api/v1/tasks/user/{userId}`                           | Muestra todas las tareas asignadas a un usuario específico.                     | **GET**        | `userId: Long`                                                                                   | `[{"id":1,"title":"Code Review","assignedTo":5}]`                    | Swagger           |
+| `/api/v1/tasks/project/{projectId}/user/{userId}`       | Obtiene las tareas asignadas a un usuario dentro de un proyecto.                | **GET**        | `projectId: Long`, `userId: Long`                                                                | `[{"id":1,"title":"Database Setup"}]`                                | Swagger           |
+| `/api/v1/tasks/project/{projectId}/status/{status}`     | Filtra tareas de un proyecto según su estado (PENDING, IN_PROGRESS, COMPLETED). | **GET**        | `projectId: Long`, `status: String`                                                              | `[{"id":4,"status":"IN_PROGRESS"}]`                                  | Swagger           |
+| `/api/v1/tasks/project/{projectId}/priority/{priority}` | Filtra tareas por prioridad (LOW, MEDIUM, HIGH).                                | **GET**        | `projectId: Long`, `priority: String`                                                            | `[{"id":3,"priority":"HIGH"}]`                                       | Swagger           |
+| `/api/v1/tasks/{taskId}`                                | Actualiza los datos de una tarea específica.                                    | **PUT**        | `taskId: Long`, `{"title":"Update UI","description":"New layout","priority":"MEDIUM"}`           | `{"id":1,"title":"Update UI","priority":"MEDIUM"}`                   | Swagger           |
+| `/api/v1/tasks/{taskId}/status`                         | Actualiza el estado de una tarea existente.                                     | **PUT**        | `{"status":"COMPLETED"}`                                                                         | `{"id":2,"title":"Design DB","status":"COMPLETED"}`                  | Swagger           |
+| `/api/v1/tasks/{taskId}/assign`                         | Asigna un usuario a una tarea.                                                  | **PUT**        | `{"userId":5}`                                                                                   | `{"id":1,"title":"API Integration","assignedTo":5}`                  | Swagger           |
+| `/api/v1/tasks/{taskId}/unassign`                       | Remueve un usuario asignado a una tarea.                                        | **PUT**        | `{"userId":5}`                                                                                   | `{"id":1,"title":"API Integration","assignedTo":null}`               | Swagger           |
+| `/api/v1/tasks/{taskId}`                                | Elimina una tarea específica del sistema.                                       | **DELETE**     | `taskId: Long`                                                                                   | `200 OK - "Task deleted successfully"`                               | Swagger           |
+
+---
+
+## Arquitectura y Diseño
+
+El `TasksController` se apoya en los siguientes **servicios de dominio** para ejecutar las operaciones de negocio:
+
+* **`TaskCommandService`**: maneja los comandos relacionados con la creación, actualización, asignación y eliminación de tareas.
+* **`TaskQueryService`**: ejecuta las consultas que permiten obtener información filtrada o detallada de las tareas.
+
+El diseño sigue el patrón **Command Pattern** para asegurar la consistencia de las operaciones y mantener la trazabilidad de las acciones dentro del dominio.
+
+### Clases y ensambladores utilizados:
+
+* `CreateTaskCommandFromResourceAssembler`
+* `UpdateTaskCommandFromResourceAssembler`
+* `UpdateTaskStatusCommandFromResourceAssembler`
+* `AssignUserToTaskCommandFromResourceAssembler`
+* `RemoveUserFromTaskCommandFromResourceAssembler`
+* `TaskResourceFromEntityAssembler`
+
+Estos ensambladores se encargan de transformar objetos de transporte (`Resource`) en comandos o entidades de dominio, garantizando una capa de comunicación desacoplada entre la API REST y la lógica del negocio.
+
+---
+
+## Ejemplo de Interacción
+
+### Crear una Nueva Tarea
+
+**Request:**
+
+```http
+POST /api/v1/tasks
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "title": "Implement Login",
+  "description": "Develop login page with Firebase auth",
+  "projectId": 1,
+  "priority": "HIGH"
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 7,
+  "title": "Implement Login",
+  "description": "Develop login page with Firebase auth",
+  "status": "PENDING",
+  "priority": "HIGH"
+}
+```
+
+---
+
+### Actualizar Estado de Tarea
+
+**Request:**
+
+```http
+PUT /api/v1/tasks/7/status
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "status": "COMPLETED"
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 7,
+  "title": "Implement Login",
+  "status": "COMPLETED",
+  "priority": "HIGH"
+}
+```
+
+---
+
+### Asignar Usuario a Tarea
+
+**Request:**
+
+```http
+PUT /api/v1/tasks/7/assign
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "userId": 5
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 7,
+  "title": "Implement Login",
+  "assignedTo": {
+    "id": 5,
+    "username": "vpaiva"
+  },
+  "status": "PENDING"
+}
+```
+
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 
