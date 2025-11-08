@@ -3689,8 +3689,41 @@ Las historias de usuario priorizadas estuvieron centradas en mejorar la experien
 
 ##### 4.2.1.3. Development Evidence for Sprint Review  
 
+**Frontend-flutter**
 
-BACKEND
+**Frontend-jetpack compose**
+
+**Backend**
+
+| Repository         | Branch             | Commit Id | Commit Message                                                                                        | Commit Message Body                                                                                                | Date         |
+| ------------------ | ------------------ | --------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------ |
+| Backend-TaskMaster | feat/notifications | a0b8da7   | Merge remote-tracking branch 'origin/master'                                                          | Sincronización con la rama principal para mantener el código actualizado antes del despliegue.                     | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 35b0d28   | fix: update base image to eclipse-temurin:17-jdk                                                      | Actualización de la imagen base de Docker a la versión Eclipse Temurin JDK 17 para compatibilidad con Spring Boot. | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | e1a1786   | Merge pull request #3 from CC238-Aplicaciones-Movies/feat/notifications                               | Integración de la rama de desarrollo de notificaciones al backend principal.                                       | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 12e177a   | Merge pull request #2 from CC238-Aplicaciones-Movies/feat/notifications                               | Fusión de la rama de funcionalidades de notificaciones con la rama base del backend.                               | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 0cc2dc7   | feat: add UpdateNotificationCommand for updating notification details                                 | Implementación del comando para actualizar los detalles de las notificaciones desde el dominio.                    | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 3526f9e   | feat: add method to TaskRepository for finding tasks by end date range                                | Se añadió un método al repositorio de tareas para obtener tareas filtradas por rango de fechas.                    | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 495dc07   | feat: enhance TaskCommandServiceImpl to send notifications on task assignment and updates             | Mejora del servicio de comandos de tareas para enviar notificaciones al asignar o actualizar tareas.               | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | dec6475   | feat: integrate NotificationCommandService to send notifications when a user joins a project          | Integración del servicio de comandos de notificaciones para enviar alertas cuando un usuario se une a un proyecto. | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | c3998cb   | feat: add NotificationResourceFromEntityAssembler for transforming Notification entities to resources | Creación de un ensamblador para mapear entidades de notificación a recursos REST.                                  | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 2386022   | feat: add NotificationResource for representing notification data                                     | Adición de una clase recurso para representar la información de las notificaciones en las respuestas HTTP.         | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 633e854   | feat: add NotificationRepository for accessing notifications by user ID                               | Implementación del repositorio para consultar notificaciones filtradas por identificador de usuario.               | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 6b619f6   | feat: implement NotificationQueryService for retrieving notifications by user ID                      | Creación del servicio de consultas para recuperar notificaciones asociadas a un usuario específico.                | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | ca3a908   | feat: add NotificationQueryService interface for querying user notifications                          | Definición de la interfaz para el servicio de consultas de notificaciones de usuario.                              | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 7188a27   | feat: add NotificationController for managing user notifications                                      | Desarrollo del controlador REST responsable de gestionar las notificaciones del usuario.                           | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | e110e2e   | feat: implement NotificationCommandService for creating notifications                                 | Implementación del servicio encargado de crear nuevas notificaciones en el sistema.                                | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 699616e   | feat: add NotificationCommandService interface for handling notification commands                     | Creación de la interfaz para manejar comandos relacionados con la creación o actualización de notificaciones.      | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 2553403   | feat: add Notification entity for managing user notifications                                         | Adición de la entidad Notification dentro del dominio para representar las notificaciones de usuario.              | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 4453b4e   | feat: enable scheduling support in the application                                                    | Activación del soporte de tareas programadas (scheduling) en el backend.                                           | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 0ff7239   | feat: add GetNotificationsByUserIdQuery for user notification retrieval                               | Creación de una consulta (query) específica para recuperar las notificaciones por ID de usuario.                   | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | a545c37   | feat: implement due date notification scheduler                                                       | Implementación del programador que genera notificaciones automáticas por fechas de vencimiento.                    | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 55cbc20   | feat: add notification command and resource classes                                                   | Incorporación de clases base para manejar comandos y recursos de notificaciones.                                   | Nov 7, 2025  |
+| Backend-TaskMaster | develop            | 6771422   | fix: api configuration                                                                                | Corrección de la configuración de la API para asegurar su correcto despliegue en el entorno de desarrollo.         | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | c053329   | Merge pull request #1 from CC238-Aplicaciones-Movies/develop                                          | Integración de cambios previos de la rama develop en el backend de TaskMaster.                                     | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | 9d010da   | Merge branch 'master' into develop                                                                    | Sincronización de la rama master con develop para mantener consistencia de versiones.                              | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | 916959e   | feat: fix backend service                                                                             | Ajustes y refactorización de servicios del backend para mejorar su estabilidad.                                    | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | 6f56fd1   | Update database configuration to use environment variables                                            | Actualización de la configuración de la base de datos para usar variables de entorno.                              | Oct 10, 2025 |
+
 
 
 
@@ -4227,6 +4260,103 @@ Authorization: Bearer <JWT>
 }
 ```
 
+# Sección Notification Management
+
+## b3
+
+Se desarrolló e implementó la documentación y despliegue de los servicios web correspondientes al módulo **Notification Management**, encargado de la gestión y recuperación de notificaciones personalizadas dentro de la plataforma **ManageWise Horizon**.  
+Este módulo garantiza que los usuarios autenticados reciban y consulten sus notificaciones de acuerdo con los eventos del sistema (asignación de tareas, cambios de estado, recordatorios, entre otros).
+
+El controlador **`NotificationController`** fue construido bajo los principios de **arquitectura limpia (Clean Architecture)** y el patrón **CQRS (Command Query Responsibility Segregation)**, separando las operaciones de lectura (*Query*) y escritura (*Command*) en servicios de dominio especializados, promoviendo la escalabilidad y mantenibilidad del módulo.
+
+Toda la documentación de los endpoints fue generada utilizando **OpenAPI (Swagger 3.0)**, lo que permite describir con precisión las rutas, verbos HTTP, parámetros de entrada y ejemplos de respuesta esperados.
+
+---
+
+## Tabla de Endpoints – NotificationController
+
+| Endpoint | Descripción / Acción | Verbo HTTP | Parámetros / Body | Ejemplo de Respuesta (Resumen) | Documentación |
+|-----------|----------------------|-------------|-------------------|--------------------------------|----------------|
+| `/api/v1/notifications/me` | Obtiene todas las notificaciones del usuario autenticado. | `GET` | — | `[{"id":1,"message":"Nueva tarea asignada","status":"UNREAD"}]` | Swagger |
+| `/api/v1/notifications` | Crea una nueva notificación dentro del sistema (evento interno o acción automatizada). | `POST` | `{"userId":5,"message":"Tu tarea fue completada"}` | `{"id":10,"userId":5,"message":"Tu tarea fue completada","status":"UNREAD"}` | Swagger |
+
+---
+
+## Arquitectura y Diseño
+
+El **`NotificationController`** se apoya en los siguientes servicios de dominio para manejar las operaciones de negocio:
+
+- **`NotificationCommandService`**: Gestiona los comandos relacionados con la creación y registro de nuevas notificaciones.  
+- **`NotificationQueryService`**: Procesa las consultas y recupera las notificaciones asociadas a un usuario en particular.
+
+El diseño del módulo sigue los principios del **Command Pattern**, asegurando la trazabilidad y consistencia de las operaciones de notificación, y garantizando que las acciones del dominio sean independientes de la capa de presentación.
+
+### Clases y ensambladores utilizados:
+
+- **`CreateNotificationCommandFromResourceAssembler`**  
+- **`NotificationResourceFromEntityAssembler`**
+
+Estos ensambladores son responsables de transformar objetos *Resource* en *Comandos* o *Entidades de dominio*, desacoplando la capa REST de la lógica interna del sistema y promoviendo la reutilización del código.
+
+---
+
+## Ejemplo de Interacción
+
+### Obtener Notificaciones del Usuario Autenticado
+
+**Request:**
+
+```http
+GET /api/v1/notifications/me
+Content-Type: application/json
+Authorization: Bearer <JWT>
+```
+
+**Response**
+
+```json
+[
+  {
+    "id": 5,
+    "message": "Se te asignó una nueva tarea: Diseño del Dashboard",
+    "status": "UNREAD",
+    "timestamp": "2025-11-07T14:30:00Z"
+  },
+  {
+    "id": 6,
+    "message": "Tu tarea 'API Integration' fue marcada como COMPLETED",
+    "status": "READ",
+    "timestamp": "2025-11-07T15:00:00Z"
+  }
+]
+```
+
+### **Crear una Nueva Notificación (Evento Interno)**
+
+**Request:**
+
+```http
+POST /api/v1/notifications
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "userId": 5,
+  "message": "Tu reunión comienza en 10 minutos"
+}
+```
+**Response:**
+
+```json
+{
+  "id": 12,
+  "userId": 5,
+  "message": "Tu reunión comienza en 10 minutos",
+  "status": "UNREAD",
+  "timestamp": "2025-11-07T16:20:00Z"
+}
+
+```
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 
