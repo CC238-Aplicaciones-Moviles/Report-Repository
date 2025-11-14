@@ -3815,8 +3815,11 @@ Ademas, para este segundo sprint se logro terminar las vistas de nuestra aplicac
 ![a1](Assets/TP1/d7.png)
 ![a1](Assets/TP1/d8.png)
 
-![a1](Assets/TB2/F5.jpg)
-![a1](Assets/TB2/F6.jpg)
+<div style="display: flex; gap: 10px;">
+  <img src="Assets/TB2/F5.jpg" width="250">
+  <img src="Assets/TB2/F6.jpg" width="250">
+</div>
+
 ![a1](Assets/TB2/F3.png)
 
 ![a1](Assets/TB2/F1.png)
@@ -3830,8 +3833,11 @@ Ademas, para este segundo sprint se logro terminar las vistas de nuestra aplicac
 
 Finalment, para este sprint avanzamos con algunas vistas o la primera versión de nuestra aplicación móvil del **Miembro de equipo** - flutter: 
 
-![a1](Assets/TB2/FLUTTER2.jpg)
-![a1](Assets/TB2/FLUTTER1.jpg)
+<div style="display: flex; gap: 10px;">
+  <img src="Assets/TB2/FLUTTER2.jpg" width="250">
+  <img src="Assets/TB2/FLUTTER1.jpg" width="250">
+</div>
+
 ![a1](Assets/TB2/FLUTTER5.jpg)
 ![a1](Assets/TB2/FLUTTER4.jpg)
 ![a1](Assets/TB2/FLUTTER3.jpg)
@@ -4318,7 +4324,7 @@ Authorization: Bearer <JWT>
 
 # Sección Notification Management
 
-## b3
+![b2](Assets/TB2/notifications.png)
 
 Se desarrolló e implementó la documentación y despliegue de los servicios web correspondientes al módulo **Notification Management**, encargado de la gestión y recuperación de notificaciones personalizadas dentro de la plataforma **ManageWise Horizon**.  
 Este módulo garantiza que los usuarios autenticados reciban y consulten sus notificaciones de acuerdo con los eventos del sistema (asignación de tareas, cambios de estado, recordatorios, entre otros).
