@@ -84,7 +84,14 @@ REPORT:
 - Olivera Barzola Eric Marlon: 32
 - Sandoval Paiva Valentino: 11
 - Sarmiento Medina Lorele: 86
-- 
+
+TB2:
+
+REPORT:
+
+![c1](Assets/TP1/c14.png)
+
+
 ## Contenido
 
 - [Student Outcome](#student-outcome)
@@ -203,15 +210,24 @@ REPORT:
     - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
     - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
   - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
-    - [4.2.1. Sprint n](#421-sprint-n)
-      - [4.2.1.1. Sprint Planning n](#4211-sprint-planning-n)
-      - [4.2.1.2. Sprint Backlog n](#4212-sprint-backlog-n)
+    - [4.2.1. Sprint 1](#421-sprint-1)
+      - [4.2.1.1. Sprint Planning 1](#4211-sprint-planning-1)
+      - [4.2.1.2. Sprint Backlog 1](#4212-sprint-backlog-1)
       - [4.2.1.3. Development Evidence for Sprint Review](#4213-development-evidence-for-sprint-review)
       - [4.2.1.4. Testing Suite Evidence for Sprint Review](#4214-testing-suite-evidence-for-sprint-review)
       - [4.2.1.5. Execution Evidence for Sprint Review](#4215-execution-evidence-for-sprint-review)
       - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
       - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
       - [4.2.1.8. Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+    - [4.2.2. Sprint 2](#422-sprint-2)
+      - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
+      - [4.2.2.2. Sprint Backlog 2](#4222-sprint-backlog-2)
+      - [4.2.2.3. Development Evidence for Sprint Review](#4223-development-evidence-for-sprint-review)
+      - [4.2.2.4. Testing Suite Evidence for Sprint Review](#4224-testing-suite-evidence-for-sprint-review)
+      - [4.2.2.5. Execution Evidence for Sprint Review](#4225-execution-evidence-for-sprint-review)
+      - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
+      - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
+      - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -1136,56 +1152,57 @@ En esta sección se definen los requisitos del producto digital a partir del an�
 | **EP01**     | **Landing Page**                        | Como visitante, quiero acceder a una página de inicio clara que explique los beneficios de TaskMaster, para evaluar si es adecuado para mis necesidades.               |
 | **EP02**     | **Registro y autentificacion de usuario** | Como trabajador, quiero registrarme y verificar mi identidad para acceder a TaskMaster, garantizando que solo personal autorizado pueda acceder a las funcionalidades. |
 | **EP03**     | **Gestión de Proyectos y Tareas**       | Como líder de equipo, quiero gestionar proyectos y asignar tareas a los miembros del equipo para distribuir el trabajo de manera organizada.                           |
-| **EP05**     | **Notificaciones**                      | Como miembro del equipo, quiero recibir notificaciones sobre tareas asignadas, actualizaciones y fechas límite, para mantenerme informado y priorizar mi trabajo.      |
-| **EP06**     | **Visualización y Seguimiento**         | Como miembro del equipo, quiero poder ver el progreso de mis tareas en tiempo real para estar al tanto de mis responsabilidades.                                       |
-| **EP07**     | **Analítica y Reportes**                | Como líder de equipo, quiero generar y visualizar reportes de desempeño del equipo para mejorar la productividad y tomar decisiones basadas en datos.                  |
-| **EP08**     | **Integraciones Técnicas**              | Como desarrollador, quiero implementar un backend con servicios CRUD (crear, leer, actualizar y eliminar) para proyectos, tareas, usuarios y reportes, de modo que la lógica central de TaskMaster esté estructurada y mantenible  |
-| **EP09**     | **Investigación y Validación Técnica**  | Como miembro del equipo de desarrollo, quiero validar la seguridad de TaskMaster mediante pruebas técnicas para garantizar la protección de los datos de los usuarios. |
+| **EP04**     | **Visualización y Seguimiento**         | Como miembro del equipo, quiero poder ver el progreso de mis tareas en tiempo real para estar al tanto de mis responsabilidades.                                       |
+| **EP05**     | **Analítica y Reportes**                | Como líder de equipo, quiero generar y visualizar reportes de desempeño del equipo para mejorar la productividad y tomar decisiones basadas en datos.                  |
+| **EP06**     | **Notificaciones**                      | Como miembro del equipo, quiero recibir notificaciones sobre tareas asignadas, actualizaciones y fechas límite, para mantenerme informado y priorizar mi trabajo.      |
+| **EP07**     | **Integraciones Técnicas**              | Como desarrollador, quiero implementar un backend con servicios CRUD (crear, leer, actualizar y eliminar) para proyectos, tareas, usuarios y reportes, de modo que la lógica central de TaskMaster esté estructurada y mantenible  |
+| **EP08**     | **Investigación y Validación Técnica**  | Como miembro del equipo de desarrollo, quiero validar la seguridad de TaskMaster mediante pruebas técnicas para garantizar la protección de los datos de los usuarios. |
 
 
-| Story ID | User      | Priority | Epic | Title                                            | Description                                                                                                                                                               | Acceptance Criteria                                                                                                                                                                                                                                                                                      |
-| -------- | --------- | -------- | ---- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| US01     | Visitante | High     | EP01 | Información general sobre TaskMaster             | Como visitante, quiero entender rápidamente los beneficios y características de TaskMaster, para evaluar si se ajusta a mis necesidades.                                  | Escenario: Dado que el visitante accede a la página principal, cuando hace scroll hasta la sección Características clave, entonces el sistema muestra una lista visual destacada con las funciones principales de la aplicación.                                                                         |
-| US02     | Visitante | High     | EP01 | Llamado a la acción para descargar la aplicación | Como visitante, quiero tener un botón de registro claro y accesible para descargar la aplicación.                                                                         | Escenario: Dado que un visitante accede a la landing page, cuando visualiza el botón de registro en la parte superior o en el pie de página y hace clic en él, entonces el sistema lo redirige a la app store.                                                                                           |
-| US03     | Visitante | Medium   | EP01 | Testimonios de usuarios                          | Como visitante, quiero ver testimonios de usuarios reales de TaskMaster para confiar en su efectividad.                                                                   | Escenario: Dado que el visitante está en la página de inicio, cuando baja hasta la sección de testimonios, el sistema debe mostrar testimonios con texto y fotos de usuarios que han tenido éxito con la app.                                                                                            |
-| US04     | Visitante | Medium   | EP01 | Muestra de planes y precios                      | Como visitante, quiero ver las opciones de planes y precios de TaskMaster para poder elegir el más adecuado.                                                              | Escenario: Dado que el visitante accede a la página principal, cuando navega hasta la sección de planes de suscripción, entonces el sistema muestra los distintos planes con sus características y un botón de comparar.                                                                                 |
-| US05     | Visitante | Low      | EP01 | Adaptabilidad móvil                              | Como usuario móvil, quiero navegar la landing page sin problemas, para acceder a la información desde cualquier dispositivo.                                              | Escenario 1: Dado que el usuario accede desde el móvil, cuando hace clic en el ícono de menú, entonces se despliegan las opciones principales y el fondo se oscurece para mejor contraste.                                                                                                               |
-| US06     | Visitante | Low      | EP01 | Navegación mediante Encabezado                   | Como usuario, quiero un menú de navegación claro en el encabezado, para acceder fácilmente a las diferentes secciones de la página.                                       | Escenario 1: Acceso a secciones desde el encabezado. Dado que un visitante explora la plataforma informativa cuando utiliza las opciones de navegación en el encabezado entonces puede desplazarse a las diferentes secciones informativas. El encabezado permanece accesible durante el desplazamiento. |
-| US07     | Visitante | Medium   | EP01 | Misión y visión                                  | Como visitante interesado, quiero conocer la visión y misión de la empresa, para entender sus objetivos a largo plazo y su proyección de futuro.                          | Escenario 1: Visibilidad de la declaración de visión. Dado que un visitante navega por la sección sobre la empresa, cuando busca información sobre las metas futuras y actuales de la empresa entonces debe encontrar claramente destacada la declaración de visión y misión.                            |
-| US08     | Visitante | High     | EP01 | About the team                                   | Como visitante quiero acceder a la sección About the Team para conocer quiénes son los integrantes y su rol en el proyecto.                                               | Dado que el visitante accede a la landing page, cuando hace scroll o selecciona el enlace "About the Team", entonces el sistema muestra la sección con nombres, fotos, roles y una breve descripción de cada integrante.                                                                                 |
-| US09     | Visitante | Low      | EP01 | Pie de página                                    | Como visitante quiero visualizar un pie de página con enlaces a secciones clave para encontrar fácilmente información adicional y mantenerme conectado con la plataforma. | Dado que el visitante llega al final de la landing page, cuando visualiza el pie de página, entonces el sistema muestra enlaces a Contacto, Políticas, Términos y redes sociales, y al hacer clic en cada enlace redirige a la sección o recurso correspondiente.                                        |
-| US10     | Visitante                 | High     | EP02 | Registro de usuario        | Como visitante quiero registrarme en la plataforma proporcionando mis datos básicos para crear una cuenta y acceder a las funcionalidades de TaskMaster. | Escenario 1: Dado que un visitante proporciona datos válidos, cuando completa el registro, entonces el sistema crea una nueva cuenta y permite el acceso. <br> Escenario 2: Dado que un visitante intenta registrarse con un correo ya existente, cuando completa el registro, entonces el sistema rechaza la acción e informa que el correo ya está en uso.                                           |
-| US11     | Team Member / Team Leader | High     | EP02 | Inicio de sesión           | Como usuario registrado quiero autenticarme con mis credenciales para acceder a mi cuenta y gestionar mis proyectos.                                     | Escenario 1: Dado que un usuario proporciona credenciales válidas, cuando solicita autenticación, entonces el sistema valida los datos y concede acceso. <br> Escenario 2: Dado que un usuario proporciona credenciales inválidas, cuando solicita autenticación, entonces el sistema rechaza la acción e informa que los datos no son correctos.                                                      |
-| US12     | Team Member / Team Leader | Medium   | EP02 | Recuperación de contraseña | Como usuario registrado quiero restablecer mi contraseña en caso de olvido para poder acceder nuevamente a la plataforma.                                | Escenario 1: Dado que un usuario solicita restablecer su contraseña con un correo válido, cuando el sistema verifica que está registrado, entonces envía un método de recuperación. <br> Escenario 2: Dado que un usuario solicita restablecer su contraseña con un correo no registrado, cuando el sistema valida la información, entonces rechaza la acción e informa que no existe cuenta asociada. |
-| US13     | Team Member / Team Leader | Low      | EP02 | Cierre de sesión           | Como usuario registrado quiero finalizar mi sesión para garantizar la seguridad de mi cuenta en cualquier dispositivo.                                   | Escenario 1: Dado que un usuario tiene una sesión activa, cuando solicita cerrarla, entonces el sistema invalida las credenciales y finaliza la sesión. <br> Escenario 2: Dado que un usuario no tiene una sesión activa, cuando solicita cerrar sesión, entonces el sistema rechaza la acción e informa que no hay sesión activa.                                                                     |
-| US14     | Team Leader| High     | EP02 | Invitación de usuarios con código de acceso       | Como Team Leader, quiero invitar a los usuarios a través de un código de acceso para que se registren y luego puedan ser asignados a tareas dentro de los proyectos, asegurando que solo los usuarios autorizados puedan colaborar. | **Escenario 1**: Dado que el Team Leader genera un código de acceso único, cuando el usuario recibe el código e ingresa a la plataforma, entonces el sistema permite que el usuario se registre y se una al proyecto. <br> **Escenario 2**: Dado que el usuario se ha unido al proyecto mediante el código, cuando el Team Leader desea asignar tareas, entonces solo puede seleccionar a los usuarios que han ingresado con el código para ser asignados a las tareas. <br> **Escenario 3**: Dado que el Team Leader intenta invitar a un usuario mediante un código, cuando el código es inválido o caduca, el sistema notifica que el código no es válido y evita el registro del usuario. |
-| US015    | Team Leader | High     | EP03 | Registro de nuevos proyectos            | Como líder de equipo quiero crear un nuevo proyecto para organizar las tareas y asignar responsables de manera estructurada.                         | Escenario 1: Dado que el líder accede a la opción crear proyecto, cuando completa los campos requeridos (nombre, descripción y fechas) y confirma, entonces el sistema guarda el nuevo proyecto y lo muestra en su tablero. <br> Escenario 2: Dado que el líder intenta crear un proyecto sin nombre, cuando hace clic en guardar, entonces el sistema muestra un mensaje de error indicando que el nombre es obligatorio. |
-| US016    | Team Leader | High     | EP03 | Asignación de usuarios a proyectos      | Como líder de equipo quiero asignar usuarios a un proyecto para que puedan colaborar en sus tareas y actividades.                                    | Escenario 1: Dado que el administrador abre la opción asignar usuarios, cuando selecciona varios usuarios y guarda, entonces el sistema asigna a esos usuarios al proyecto y los notifica. <br> Escenario 2: Dado que el administrador intenta asignar un usuario ya agregado, cuando guarda los cambios, entonces el sistema evita duplicados y mantiene la lista correcta.                                               |
-| US017    | Team Leader | High     | EP03 | Asignar Tareas para los usuarios        | Como líder de equipo quiero asignar tareas específicas a los miembros para distribuir la carga de trabajo de forma clara.                            | Escenario 1: Dado que el líder selecciona una tarea, cuando asigna un usuario responsable y guarda, entonces el sistema registra la asignación y muestra el nombre del responsable en el tablero. <br> Escenario 2: Dado que el líder intenta asignar una tarea a un usuario inexistente, cuando confirma la acción, entonces el sistema muestra un mensaje de error y no guarda la asignación.                            |
-| US018    | Team Leader | Medium   | EP03 | Establecer prioridad de tareas          | Como líder de equipo, quiero asignar prioridades a las tareas dentro de un proyecto para garantizar que las tareas más importantes se hagan primero. | Escenario: Dado que el usuario agrega una nueva tarea, cuando selecciona una prioridad entre alta, media o baja, entonces el sistema ordena las tareas en el tablero según su nivel de prioridad.                                                                                                                                                                                                                          |
-| US019    | Team Member | High     | EP03 | Notificaciones de tareas asignadas      | Como miembro del equipo, quiero recibir una notificación cuando se me asigna una nueva tarea, para estar al tanto de mis responsabilidades.          | Escenario: Dado que el administrador asigna una tarea a un miembro del equipo, cuando la asignación se confirma, entonces el sistema envía una notificación en la aplicación y un correo electrónico al miembro correspondiente.                                                                                                                                                                                           |
-| US020    | Team Leader | Medium   | EP03 | Modificación de fechas límite de tareas | Como líder de equipo quiero modificar la fecha límite de las tareas para ajustar los plazos según las necesidades del proyecto.                      | Escenario 1: Dado que el líder de equipo accede a una tarea existente, cuando modifica la fecha límite y guarda los cambios, entonces el sistema actualiza la fecha y notifica al usuario asignado. <br> Escenario 2: Dado que el líder intenta establecer una fecha límite anterior a la fecha actual, cuando confirma el cambio, entonces el sistema muestra un mensaje de error indicando que la fecha no es válida.    |
-| US021    | Team Member | Medium   | EP03 | Modificación de la prioridad de tareas  | Como miembro del equipo quiero modificar la prioridad de una tarea para organizar mejor el trabajo según su urgencia e importancia.                  | Escenario 1: Dado que el usuario accede a la configuración de una tarea, cuando cambia la prioridad a alta, media o baja, entonces el sistema actualiza la prioridad y reordena las tareas en el tablero según este criterio. <br> Escenario 2: Dado que el usuario intenta guardar una tarea sin seleccionar prioridad, cuando confirma la acción, entonces el sistema asigna por defecto la prioridad “media”.           |
-| US022    | Team Member | Medium   | EP03 | Actualización de estado de tareas       | Como miembro del equipo quiero actualizar el estado de una tarea a completada o pendiente para reflejar con precisión su progreso.                   | Escenario 1: Dado que un miembro del equipo accede a una tarea asignada, cuando marca la tarea como completada, entonces el sistema cambia su estado a “Completada” y lo refleja en el tablero. <br> Escenario 2: Dado que un miembro del equipo accede a una tarea, cuando la desmarca como completada, entonces el sistema cambia su estado a “Pendiente” y lo refleja en el tablero.                                    |
-| US023    | Team Member | High     | EP04 | Ver progreso de tareas en tiempo real | Como miembro del equipo, quiero ver el progreso de las tareas asignadas en tiempo real para tener una visión clara del estado de los proyectos. | Escenario 1: Dado que el usuario accede al tablero de tareas, cuando consulta las tareas listadas, entonces el sistema muestra indicadores de estado (Pendiente, En progreso, Completada) y actualiza los avances de forma automática. <br> Escenario 2: Dado que un miembro del equipo cambia el estado de una tarea (por ejemplo, de "En progreso" a "Completada"), entonces el sistema actualiza el progreso en tiempo real para reflejar el cambio.     |
-| US024    | Team Leader | High     | EP04 | Ver métricas de rendimiento           | Como líder de equipo, quiero ver métricas de rendimiento de cada tarea y miembro para evaluar el progreso y la productividad.                   | Escenario 1: Dado que el gerente de proyectos accede a la sección de métricas, cuando solicita un reporte de desempeño, entonces el sistema genera un gráfico o reporte con tareas completadas, retrasadas y porcentaje de avance de cada miembro y proyecto. <br> Escenario 2: Dado que el líder de equipo selecciona un periodo específico (por ejemplo, mensual), entonces el sistema genera métricas de rendimiento solo para ese período seleccionado. |
-| US025    | Team Member | Medium   | EP04 | Visualizar calendario de tareas       | Como miembro del equipo, quiero ver un calendario con mis tareas y sus fechas límite, para organizar mejor mis entregas.                        | Escenario 1: Dado que un miembro tiene tareas con fechas límite, cuando consulta el calendario del proyecto, entonces el sistema muestra las tareas distribuidas según sus plazos. <br> Escenario 2: Dado que el miembro del equipo consulta el calendario, cuando pasa el ratón sobre una tarea, entonces el sistema muestra un resumen rápido de la tarea, incluyendo su nombre y fecha límite.                                                                      |
-| US026    | Team Leader | High     | EP05 | Generar reporte de desempeño por miembro | Como líder de equipo, quiero generar un reporte de desempeño por cada miembro de equipo para identificar áreas de mejora.                     | **Escenario 1**: El usuario selecciona "Generar reporte de desempeño" y el sistema debe permitir visualizar las métricas de cada miembro, como tareas completadas, en progreso y retrasadas. <br> **Escenario 2**: Dado que el líder solicita el reporte de desempeño, cuando el reporte se genera, entonces el sistema permite exportarlo en formato PDF o Excel.                                                            |
-| US027    | Team Leader | High     | EP05 | Reporte de tareas cumplidas y retrasadas | Como líder de equipo, quiero recibir un reporte de tareas cumplidas y retrasadas para saber qué aspectos del proyecto necesitan más atención. | **Escenario 1**: El sistema debe generar un reporte con un desglose de tareas cumplidas y retrasadas. <br> **Escenario 2**: El sistema debe permitir exportar el reporte en formato PDF o Excel para su distribución.                                                                                                                                                                                                         |
-| US028    | Team Member | Medium   | EP05 | Visualizar resumen semanal de avances    | Como miembro del equipo, quiero ver un resumen semanal de mis avances para tener claridad sobre mi progreso en las tareas.                    | **Escenario 1**: Dado que el usuario accede a la sección de reportes, cuando selecciona "Resumen semanal", entonces el sistema muestra un reporte con el número de tareas completadas, en progreso y pendientes durante la última semana. <br> **Escenario 2**: Dado que el usuario selecciona un periodo específico (por ejemplo, de lunes a viernes), entonces el sistema ajusta el reporte según las fechas seleccionadas. |
-| US29     | Team Member | High     | EP06 | Notificación de tarea asignada            | Como miembro del equipo, quiero recibir una notificación cuando se me asigne una nueva tarea para estar al tanto de mis responsabilidades.                                    | **Escenario 1**: Dado que un Team Leader asigna una nueva tarea, cuando la asignación se confirma, el sistema envía una notificación en la app y por correo electrónico al miembro. <br> **Escenario 2**: Dado que un Team Leader asigna una tarea, cuando revisa la bandeja de notificaciones, entonces el sistema muestra la tarea asignada y el nombre del miembro asignado.                                              |
-| US30     | Team Member | High     | EP06 | Notificación de fecha límite cercana      | Como miembro del equipo, quiero recibir una notificación cuando la fecha límite de una tarea esté cerca para poder priorizarla.                                               | **Escenario 1**: Dado que una tarea tiene una fecha límite próxima, cuando la fecha límite se acerque a 24 horas, el sistema envía una notificación en la app y por correo. <br> **Escenario 2**: Dado que una tarea está cerca de su fecha límite, cuando el Team Leader ingresa al tablero de tareas, el sistema resalta las tareas cercanas a la fecha límite y envía una notificación.                                   |
-| US31     | Team Leader | High     | EP06 | Notificación de tarea completada          | Como líder de equipo, quiero recibir una notificación cuando un miembro complete una tarea asignada para hacer un seguimiento del progreso.                                   | **Escenario 1**: Dado que un Team Member marca una tarea como completada, el sistema envía una notificación en la app y por correo electrónico al líder de equipo. <br> **Escenario 2**: Dado que un Team Member ha completado una tarea, cuando ingresa al tablero, el sistema marca la tarea como completada y envía una notificación de progreso.                                                                         |
-| US32     | Team Member | Medium   | EP06 | Notificación de nuevo mensaje en proyecto | Como miembro del equipo, quiero recibir notificaciones cuando se agregue un nuevo mensaje en un proyecto para mantenerme actualizado.                                         | **Escenario 1**: Dado que un mensaje es agregado en el proyecto, cuando el Team Leader o otro miembro envía el mensaje, el sistema envía una notificación dentro de la app y por correo electrónico a los miembros. <br> **Escenario 2**: Dado que el Team Leader envía un mensaje, cuando el Team Member ingresa a la plataforma, el sistema marca el mensaje como leído y muestra una notificación de "nuevo mensaje".     |
-| US33     | Team Member | Medium   | EP06 | Notificación de actualización de tareas   | Como miembro del equipo, quiero recibir notificaciones cuando se actualice una tarea asignada (como cambio de fecha, prioridad o estado) para estar informado de los cambios. | **Escenario 1**: Dado que el Team Leader actualiza una tarea, cuando el Team Member accede al proyecto, el sistema envía una notificación dentro de la app y por correo electrónico. <br> **Escenario 2**: Dado que el Team Leader actualiza una tarea (por ejemplo, cambia la fecha o la prioridad), cuando el Team Leader revisa el tablero, el sistema resalta las tareas actualizadas y muestra una notificación visual. |
-| TS01     | Developer | High     | EP08 | Validación de seguridad en la API                | Como desarrollador, quiero verificar que la API de TaskMaster esté segura para proteger los datos de los usuarios.              | **Escenario**: El equipo de desarrollo realiza pruebas de seguridad para asegurarse de que las credenciales y datos sensibles de los usuarios están correctamente encriptados. |
-| TS02     | Developer | High     | EP08 Optimización del rendimiento de la base de datos | Como desarrollador, quiero mejorar el rendimiento de las consultas en la base de datos para que TaskMaster funcione más rápido. | **Escenario**: El sistema realiza pruebas de carga y optimiza las consultas de la base de datos para garantizar tiempos de respuesta más rápidos.                              |
-| TS03     | Developer   | Alta     | EP08  | Gestión de Proyectos     | Como desarrollador, quiero implementar la creación, modificación y eliminación de proyectos, para mantener la información organizada y coherente.       | Escenario: Dado que un usuario envía una solicitud válida para crear un proyecto, cuando la API procesa la petición, entonces el sistema registra el nuevo proyecto y lo devuelve en la respuesta.                                                     |
-| TS04     | Developer   | Alta     | EP08  | Gestión de Tareas        | Como desarrollador, quiero implementar operaciones para registrar, actualizar estados o prioridades, y eliminar tareas, para reflejar el flujo de trabajo. | Escenario: Dado que un usuario actualiza el estado de una tarea, cuando la API procesa la solicitud, entonces el sistema guarda el cambio y refleja el nuevo estado en la base de datos.                                                                |
-| TS05     | Developer   | Media    | EP08  | Administración de Usuarios | Como desarrollador, quiero implementar el manejo de alta, edición y baja de usuarios, para que roles y permisos se mantengan alineados con los proyectos. | Escenario: Dado que un administrador elimina un usuario, cuando la API procesa la solicitud, entonces el sistema desactiva el usuario y asegura que no tenga acceso a futuros proyectos.                                                               |
-| TS06     | Developer   | Media    | EP08  | Manejo de Reportes       | Como desarrollador, quiero implementar la generación, actualización y almacenamiento de reportes, para que los líderes accedan a información consistente. | Escenario: Dado que un líder solicita un reporte de desempeño, cuando la API procesa la petición, entonces el sistema genera el documento con métricas actualizadas y lo devuelve en formato descargable (PDF o Excel).                               |
-| SS1      | Team Member | High     | EP09 | Integración con herramientas de comunicación | Como miembro del equipo, quiero que TaskMaster se integre con Gmail para recibir actualizaciones sobre mis tareas, para mantenerme al tanto de los cambios importantes sin tener que acceder continuamente a la plataforma. | **Escenario**: El usuario vincula su cuenta de Slack con TaskMaster. Cuando una tarea se asigna o actualiza, el sistema debe enviar una notificación en el canal de Slack correspondiente. |
-| SS2      | Team Member | High     | EP09 | Integración con Google Calendar              | Como miembro del equipo, quiero que TaskMaster sincronice mis tareas con Google Calendar para no olvidar mis plazos.                                                                                                        | **Escenario**: El usuario conecta su cuenta de Google Calendar. Las tareas con fechas establecidas se sincronizan automáticamente en su calendario.                                        |
+| **Story ID** | **User**  | **Priority** | **Epic** | **Title**                                        | **Description**                                                                                                                                                           | **Acceptance Criteria**                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------ | --------- | ------------ | -------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **US01**     | Visitante | High         | EP01     | Información general sobre TaskMaster             | Como visitante, quiero entender rápidamente los beneficios y características de TaskMaster, para evaluar si se ajusta a mis necesidades.                                  | **ESCENARIO 01:** **DADO** que el visitante accede a la página principal, **CUANDO** hace scroll hacia la sección **Características clave**, **Y** el sistema carga la información correspondiente, **Y** las animaciones se activan al entrar en pantalla, **ENTONCES** el sistema muestra una lista visual destacada con las funciones principales de la aplicación, **Y** el visitante puede identificar fácilmente los beneficios del producto. |
+| **US02**     | Visitante | High         | EP01     | Llamado a la acción para descargar la aplicación | Como visitante, quiero tener un botón de registro claro y accesible para descargar la aplicación.                                                                         | **ESCENARIO 01:** **DADO** que el visitante accede a la landing page, **CUANDO** visualiza el botón de registro ubicado en la parte superior o inferior, **Y** el botón está resaltado visualmente, **Y** hace clic sobre él, **ENTONCES** el sistema redirige al visitante a la tienda de aplicaciones correspondiente, **Y** se abre la página de descarga de TaskMaster.                                                                         |
+| **US03**     | Visitante | Medium       | EP01     | Testimonios de usuarios                          | Como visitante, quiero ver testimonios de usuarios reales de TaskMaster para confiar en su efectividad.                                                                   | **ESCENARIO 01:** **DADO** que el visitante se encuentra en la página de inicio, **CUANDO** baja hasta la sección de **Testimonios**, **Y** el sistema carga las reseñas de usuarios, **Y** las imágenes y textos se muestran correctamente, **ENTONCES** el sistema presenta los testimonios con texto y fotos de usuarios reales, **Y** genera confianza en la efectividad de la aplicación.                                                      |
+| **US04**     | Visitante | Medium       | EP01     | Muestra de planes y precios                      | Como visitante, quiero ver las opciones de planes y precios de TaskMaster para poder elegir el más adecuado.                                                              | **ESCENARIO 01:** **DADO** que el visitante accede a la página principal, **CUANDO** navega hasta la sección de **Planes de suscripción**, **Y** los datos de los planes están disponibles, **Y** el usuario visualiza la comparación entre ellos, **ENTONCES** el sistema muestra los distintos planes con sus características, **Y** cada plan incluye un botón para comparar o seleccionar.                                                      |
+| **US05**     | Visitante | Low          | EP01     | Adaptabilidad móvil                              | Como usuario móvil, quiero navegar la landing page sin problemas, para acceder a la información desde cualquier dispositivo.                                              | **ESCENARIO 01:** **DADO** que el usuario accede desde un dispositivo móvil, **CUANDO** hace clic en el ícono del menú principal, **Y** el sistema detecta el tamaño de pantalla reducido, **Y** activa la versión responsive, **ENTONCES** se despliegan las opciones principales en un panel lateral, **Y** el fondo se oscurece para mejorar el contraste.                                                                                       |
+| **US06**     | Visitante | Low          | EP01     | Navegación mediante encabezado                   | Como usuario, quiero un menú de navegación claro en el encabezado, para acceder fácilmente a las diferentes secciones de la página.                                       | **ESCENARIO 01:** **DADO** que el visitante explora la plataforma informativa, **CUANDO** utiliza las opciones de navegación del encabezado, **Y** selecciona una sección, **Y** el encabezado permanece visible durante el desplazamiento, **ENTONCES** el sistema redirige al usuario a la sección seleccionada, **Y** mantiene accesible el menú para navegación continua.                                                                       |
+| **US07**     | Visitante | Medium       | EP01     | Misión y visión                                  | Como visitante interesado, quiero conocer la visión y misión de la empresa, para entender sus objetivos a largo plazo y su proyección de futuro.                          | **ESCENARIO 01:** **DADO** que el visitante navega por la sección **Sobre la empresa**, **CUANDO** busca información sobre las metas futuras y actuales, **Y** la sección se despliega correctamente, **Y** el contenido es legible, **ENTONCES** el sistema muestra claramente la declaración de **Misión y Visión**, **Y** permite al visitante comprender los objetivos de la empresa.                                                           |
+| **US08**     | Visitante | High         | EP01     | About the Team                                   | Como visitante quiero acceder a la sección About the Team para conocer quiénes son los integrantes y su rol en el proyecto.                                               | **ESCENARIO 01:** **DADO** que el visitante accede a la landing page, **CUANDO** hace scroll o selecciona el enlace **About the Team**, **Y** el sistema carga la información del equipo, **Y** las imágenes y textos se renderizan correctamente, **ENTONCES** se muestra una sección con nombres, fotos, roles y una breve descripción de cada integrante, **Y** el visitante puede conocer quiénes conforman el equipo.                          |
+| **US09**     | Visitante | Low          | EP01     | Pie de página                                    | Como visitante quiero visualizar un pie de página con enlaces a secciones clave para encontrar fácilmente información adicional y mantenerme conectado con la plataforma. | **ESCENARIO 01:** **DADO** que el visitante llega al final de la landing page, **CUANDO** visualiza el pie de página, **Y** el sistema carga los enlaces de contacto, políticas y redes sociales, **Y** el visitante hace clic sobre uno de ellos, **ENTONCES** el sistema redirige a la sección o recurso correspondiente, **Y** mantiene visible el pie de página en futuras visitas.                                                             |
+| **US10**     | Visitante                 | High         | EP02     | Registro de usuario                         | Como visitante quiero registrarme en la plataforma proporcionando mis datos básicos para crear una cuenta y acceder a las funcionalidades de TaskMaster.                                                                            | **ESCENARIO 01:** **DADO** que un visitante proporciona datos válidos en el formulario de registro, **CUANDO** completa todos los campos requeridos, **Y** presiona el botón de registro, **Y** el sistema valida que la información sea correcta, **ENTONCES** se crea una nueva cuenta en la plataforma, **Y** el usuario obtiene acceso a las funcionalidades básicas. <br><br> **ESCENARIO 02:** **DADO** que un visitante intenta registrarse con un correo ya existente, **CUANDO** completa el formulario de registro, **Y** el sistema detecta la duplicidad del correo, **Y** valida los datos ingresados, **ENTONCES** el sistema rechaza la acción, **Y** muestra un mensaje informando que el correo ya está en uso.                                                                                                                                                                                                                                                             |
+| **US11**     | Team Member / Team Leader | High         | EP02     | Inicio de sesión                            | Como usuario registrado quiero autenticarme con mis credenciales para acceder a mi cuenta y gestionar mis proyectos.                                                                                                                | **ESCENARIO 01:** **DADO** que un usuario proporciona credenciales válidas, **CUANDO** solicita autenticación, **Y** el sistema valida correctamente los datos, **Y** verifica que la cuenta esté activa, **ENTONCES** se concede el acceso al sistema, **Y** el usuario puede gestionar sus proyectos. <br><br> **ESCENARIO 02:** **DADO** que un usuario proporciona credenciales inválidas, **CUANDO** solicita autenticación, **Y** el sistema verifica los datos, **Y** detecta inconsistencias, **ENTONCES** el sistema rechaza la acción, **Y** muestra un mensaje informando que los datos no son correctos.                                                                                                                                                                                                                                                                                                                                                                         |
+| **US12**     | Team Member / Team Leader | Medium       | EP02     | Recuperación de contraseña                  | Como usuario registrado quiero restablecer mi contraseña en caso de olvido para poder acceder nuevamente a la plataforma.                                                                                                           | **ESCENARIO 01:** **DADO** que un usuario solicita restablecer su contraseña con un correo válido, **CUANDO** ingresa su correo electrónico en la sección de recuperación, **Y** el sistema valida que esté registrado, **Y** genera un enlace o código de recuperación, **ENTONCES** el sistema envía el método de restablecimiento, **Y** el usuario puede actualizar su contraseña. <br><br> **ESCENARIO 02:** **DADO** que un usuario solicita restablecer su contraseña con un correo no registrado, **CUANDO** el sistema valida la información ingresada, **Y** no encuentra coincidencias, **Y** verifica la inexistencia de la cuenta, **ENTONCES** el sistema rechaza la acción, **Y** muestra un mensaje informando que no existe cuenta asociada.                                                                                                                                                                                                                                |
+| **US13**     | Team Member / Team Leader | Low          | EP02     | Cierre de sesión                            | Como usuario registrado quiero finalizar mi sesión para garantizar la seguridad de mi cuenta en cualquier dispositivo.                                                                                                              | **ESCENARIO 01:** **DADO** que un usuario tiene una sesión activa, **CUANDO** solicita cerrar sesión, **Y** el sistema recibe la solicitud, **Y** verifica las credenciales activas, **ENTONCES** invalida el token de autenticación, **Y** finaliza la sesión correctamente. <br><br> **ESCENARIO 02:** **DADO** que un usuario no tiene una sesión activa, **CUANDO** solicita cerrar sesión, **Y** el sistema valida el estado de autenticación, **Y** detecta la ausencia de sesión, **ENTONCES** el sistema rechaza la acción, **Y** muestra un mensaje indicando que no hay sesión activa.                                                                                                                                                                                                                                                                                                                                                                                             |
+| **US14**     | Team Leader               | High         | EP02     | Invitación de usuarios con código de acceso | Como Team Leader, quiero invitar a los usuarios a través de un código de acceso para que se registren y luego puedan ser asignados a tareas dentro de los proyectos, asegurando que solo los usuarios autorizados puedan colaborar. | **ESCENARIO 01:** **DADO** que el Team Leader genera un código de acceso único, **CUANDO** el usuario recibe el código, **Y** ingresa a la plataforma, **Y** lo introduce durante el registro, **ENTONCES** el sistema valida el código, **Y** permite que el usuario se una al proyecto. <br><br> **ESCENARIO 02:** **DADO** que el usuario se ha unido al proyecto mediante el código, **CUANDO** el Team Leader desea asignar tareas, **Y** selecciona participantes del proyecto, **Y** revisa la lista de usuarios válidos, **ENTONCES** el sistema solo muestra a los usuarios que ingresaron con un código de invitación, **Y** permite asignarles tareas. <br><br> **ESCENARIO 03:** **DADO** que el Team Leader intenta invitar a un usuario mediante un código, **CUANDO** el código es inválido o ha caducado, **Y** el sistema verifica su estado, **Y** detecta la invalidez, **ENTONCES** el sistema notifica que el código no es válido, **Y** evita el registro del usuario. |
+| **US015**    | Team Leader | High         | EP03     | Registro de nuevos proyectos            | Como líder de equipo quiero crear un nuevo proyecto para organizar las tareas y asignar responsables de manera estructurada.                        | **ESCENARIO 01:** **DADO** que el líder accede a la opción *Crear Proyecto*, **CUANDO** completa los campos requeridos (nombre, descripción y fechas), **Y** revisa que toda la información esté correcta, **Y** presiona el botón *Guardar*, **ENTONCES** el sistema registra el nuevo proyecto en la base de datos, **Y** lo muestra automáticamente en el tablero del líder. <br><br> **ESCENARIO 02:** **DADO** que el líder intenta crear un proyecto sin nombre, **CUANDO** hace clic en *Guardar*, **Y** el sistema valida los campos obligatorios, **Y** detecta que el campo nombre está vacío, **ENTONCES** el sistema muestra un mensaje de error, **Y** no permite continuar con el registro. |
+| **US016**    | Team Leader | High         | EP03     | Asignación de usuarios a proyectos      | Como líder de equipo quiero asignar usuarios a un proyecto para que puedan colaborar en sus tareas y actividades.                                   | **ESCENARIO 01:** **DADO** que el líder abre la opción *Asignar Usuarios*, **CUANDO** selecciona varios usuarios del listado, **Y** confirma la acción, **Y** guarda los cambios, **ENTONCES** el sistema asocia a los usuarios seleccionados con el proyecto, **Y** les envía una notificación de incorporación. <br><br> **ESCENARIO 02:** **DADO** que el líder intenta asignar a un usuario que ya pertenece al proyecto, **CUANDO** guarda los cambios, **Y** el sistema valida duplicados, **Y** detecta coincidencia, **ENTONCES** el sistema evita la duplicación, **Y** mantiene la lista correcta de participantes.                                                                             |
+| **US017**    | Team Leader | High         | EP03     | Asignar tareas para los usuarios        | Como líder de equipo quiero asignar tareas específicas a los miembros para distribuir la carga de trabajo de forma clara.                           | **ESCENARIO 01:** **DADO** que el líder selecciona una tarea en el tablero, **CUANDO** asigna un usuario responsable, **Y** guarda los cambios, **Y** el sistema valida la existencia del usuario, **ENTONCES** el sistema registra la asignación, **Y** muestra el nombre del responsable en el tablero. <br><br> **ESCENARIO 02:** **DADO** que el líder intenta asignar una tarea a un usuario inexistente, **CUANDO** confirma la acción, **Y** el sistema busca el usuario, **Y** no encuentra coincidencias, **ENTONCES** el sistema muestra un mensaje de error, **Y** no guarda la asignación.                                                                                                    |
+| **US018**    | Team Leader | Medium       | EP03     | Establecer prioridad de tareas          | Como líder de equipo quiero asignar prioridades a las tareas dentro de un proyecto para garantizar que las tareas más importantes se hagan primero. | **ESCENARIO 01:** **DADO** que el usuario agrega una nueva tarea, **CUANDO** selecciona una prioridad entre alta, media o baja, **Y** guarda la tarea, **Y** el sistema valida la selección, **ENTONCES** el sistema ordena las tareas del tablero según su nivel de prioridad, **Y** mantiene la organización visual según el valor asignado.                                                                                                                                                                                                                                                                                                                                                            |
+| **US019**    | Team Member | High         | EP03     | Notificaciones de tareas asignadas      | Como miembro del equipo, quiero recibir una notificación cuando se me asigna una nueva tarea, para estar al tanto de mis responsabilidades.         | **ESCENARIO 01:** **DADO** que el líder asigna una tarea a un miembro del equipo, **CUANDO** la asignación se confirma, **Y** el sistema registra la tarea, **Y** asocia al responsable, **ENTONCES** el sistema envía una notificación dentro de la aplicación, **Y** también un correo electrónico informando la nueva asignación.                                                                                                                                                                                                                                                                                                                                                                      |
+| **US020**    | Team Leader | Medium       | EP03     | Modificación de fechas límite de tareas | Como líder de equipo quiero modificar la fecha límite de las tareas para ajustar los plazos según las necesidades del proyecto.                     | **ESCENARIO 01:** **DADO** que el líder accede a una tarea existente, **CUANDO** modifica la fecha límite, **Y** guarda los cambios, **Y** el sistema valida que la nueva fecha sea posterior a la actual, **ENTONCES** el sistema actualiza la fecha límite de la tarea, **Y** notifica al usuario asignado. <br><br> **ESCENARIO 02:** **DADO** que el líder intenta establecer una fecha límite anterior a la fecha actual, **CUANDO** confirma el cambio, **Y** el sistema compara ambas fechas, **Y** detecta que la nueva es inválida, **ENTONCES** el sistema muestra un mensaje de error, **Y** mantiene la fecha original sin cambios.                                                           |
+| **US021**    | Team Leader | Medium       | EP03     | Modificación de la prioridad de tareas  | Como Lider del equipo quiero modificar la prioridad de una tarea para organizar mejor el trabajo según su urgencia e importancia.                 | **ESCENARIO 01:** **DADO** que el usuario accede a la configuración de una tarea, **CUANDO** cambia la prioridad a alta, media o baja, **Y** confirma la acción, **Y** el sistema valida la modificación, **ENTONCES** el sistema actualiza la prioridad de la tarea, **Y** reordena el tablero según el nuevo criterio. <br><br> **ESCENARIO 02:** **DADO** que el usuario intenta guardar una tarea sin seleccionar prioridad, **CUANDO** confirma la acción, **Y** el sistema valida los campos, **Y** detecta ausencia de selección, **ENTONCES** el sistema asigna por defecto la prioridad “Media”, **Y** guarda la tarea exitosamente.                                                             |
+| **US022**    | Team Member | Medium       | EP03     | Actualización de estado de tareas       | Como miembro del equipo quiero actualizar el estado de una tarea a completada o pendiente para reflejar con precisión su progreso.                  | **ESCENARIO 01:** **DADO** que un miembro del equipo accede a una tarea asignada, **CUANDO** marca la tarea como completada, **Y** el sistema guarda el cambio, **Y** actualiza el estado, **ENTONCES** el sistema cambia el estado de la tarea a “Completada”, **Y** refleja el cambio visualmente en el tablero. <br><br> **ESCENARIO 02:** **DADO** que un miembro del equipo accede a una tarea, **CUANDO** la desmarca como completada, **Y** el sistema procesa la acción, **Y** actualiza el registro, **ENTONCES** el sistema cambia su estado a “Pendiente”, **Y** lo muestra actualizado en el tablero.                                                                                         |
+| **US023**    | Team Member | High         | EP04     | Ver progreso de tareas en tiempo real | Como miembro del equipo, quiero ver el progreso de las tareas asignadas en tiempo real para tener una visión clara del estado de los proyectos. | **ESCENARIO 01:** DADO que el usuario accede al tablero de tareas, **CUANDO** consulta las tareas listadas, **Y** visualiza sus estados actuales, **Y** hay cambios en tiempo real, **ENTONCES** el sistema muestra los indicadores de estado (Pendiente, En progreso, Completada) **Y** actualiza los avances automáticamente.<br><br>**ESCENARIO 02:** DADO que un miembro del equipo cambia el estado de una tarea (por ejemplo, de “En progreso” a “Completada”), **CUANDO** guarda el cambio, **Y** el sistema procesa la actualización, **Y** el tablero está visible, **ENTONCES** el progreso se refleja en tiempo real **Y** todos los usuarios visualizan el cambio inmediatamente. |
+| **US024**    | Team Leader | High         | EP04     | Ver métricas de rendimiento           | Como líder de equipo, quiero ver métricas de rendimiento de cada tarea y miembro para evaluar el progreso y la productividad.                   | **ESCENARIO 01:** DADO que el líder accede a la sección de métricas, **CUANDO** solicita un reporte de desempeño, **Y** selecciona un proyecto, **Y** el sistema recopila los datos, **ENTONCES** se genera un gráfico o reporte con tareas completadas, retrasadas y porcentaje de avance **Y** se muestran los resultados en pantalla.<br><br>**ESCENARIO 02:** DADO que el líder selecciona un periodo específico (por ejemplo, mensual), **CUANDO** el sistema filtra los datos, **Y** recalcula las métricas, **Y** prepara el reporte, **ENTONCES** se muestran las métricas de rendimiento correspondientes **Y** se actualiza la vista con el nuevo rango temporal.                   |
+| **US025**    | Team Member | Medium       | EP04     | Visualizar calendario de tareas       | Como miembro del equipo, quiero ver un calendario con mis tareas y sus fechas límite, para organizar mejor mis entregas.                        | **ESCENARIO 01:** DADO que el miembro tiene tareas con fechas límite, **CUANDO** consulta el calendario del proyecto, **Y** el sistema carga las tareas, **Y** existen plazos definidos, **ENTONCES** se muestran las tareas distribuidas en el calendario **Y** se visualizan sus fechas correctamente.<br><br>**ESCENARIO 02:** DADO que el miembro del equipo consulta el calendario, **CUANDO** pasa el cursor sobre una tarea, **Y** el sistema detecta la interacción, **Y** carga la información asociada, **ENTONCES** se muestra un resumen rápido de la tarea (nombre y fecha límite) **Y** se mantiene visible mientras el cursor permanezca sobre el evento.                      |
+| **US026**    | Team Leader | High         | EP05     | Generar reporte de desempeño por miembro | Como líder de equipo, quiero generar un reporte de desempeño por cada miembro del equipo para identificar áreas de mejora.                    | **ESCENARIO 01:** DADO que el líder selecciona la opción **“Generar reporte de desempeño”**, **CUANDO** el sistema procesa la solicitud, **Y** recopila las métricas de cada miembro, **Y** calcula el estado de sus tareas (completadas, en progreso y retrasadas), **ENTONCES** el sistema muestra un reporte detallado **Y** permite visualizar los resultados por integrante.<br><br>**ESCENARIO 02:** DADO que el líder solicita el reporte de desempeño, **CUANDO** el sistema finaliza la generación del documento, **Y** valida los datos, **Y** presenta las opciones de exportación, **ENTONCES** el sistema permite exportar el reporte en formato **PDF o Excel** **Y** mantiene la integridad de los datos.                                    |
+| **US027**    | Team Leader | High         | EP05     | Reporte de tareas cumplidas y retrasadas | Como líder de equipo, quiero recibir un reporte de tareas cumplidas y retrasadas para saber qué aspectos del proyecto necesitan más atención. | **ESCENARIO 01:** DADO que el líder accede a la sección de reportes, **CUANDO** selecciona **“Reporte de tareas cumplidas y retrasadas”**, **Y** el sistema filtra la información de los proyectos activos, **Y** organiza los datos por estado, **ENTONCES** se genera un reporte con el desglose de tareas cumplidas y retrasadas **Y** se muestra en pantalla para su análisis.<br><br>**ESCENARIO 02:** DADO que el reporte se encuentra generado, **CUANDO** el líder selecciona la opción de exportar, **Y** el sistema prepara el archivo, **Y** verifica el formato seleccionado, **ENTONCES** el sistema permite exportar el reporte en **PDF o Excel** **Y** conserva la estructura visual del documento.                                         |
+| **US028**    | Team Member | Medium       | EP05     | Visualizar resumen semanal de avances    | Como miembro del equipo, quiero ver un resumen semanal de mis avances para tener claridad sobre mi progreso en las tareas.                    | **ESCENARIO 01:** DADO que el usuario accede a la **sección de reportes**, **CUANDO** selecciona la opción **“Resumen semanal”**, **Y** el sistema obtiene las tareas completadas, en progreso y pendientes, **Y** calcula los resultados del periodo, **ENTONCES** el sistema muestra un resumen con las métricas semanales **Y** refleja visualmente el progreso del usuario.<br><br>**ESCENARIO 02:** DADO que el usuario selecciona un periodo específico (por ejemplo, de lunes a viernes), **CUANDO** el sistema ajusta el rango de fechas, **Y** filtra las tareas correspondientes, **Y** recalcula las métricas, **ENTONCES** el sistema actualiza el reporte con los datos del periodo elegido **Y** muestra la información ajustada en pantalla. |
+| **US029**    | Team Member | High         | EP06     | Notificación de tarea asignada            | Como miembro del equipo, quiero recibir una notificación cuando se me asigne una nueva tarea para estar al tanto de mis responsabilidades.                                    | **ESCENARIO 01:** DADO que un **Team Leader asigna una nueva tarea**, **CUANDO** la asignación se confirma, **Y** el sistema valida al usuario destinatario, **Y** la tarea se registra correctamente, **ENTONCES** el sistema envía una **notificación dentro de la app y por correo electrónico** al miembro asignado **Y** actualiza su bandeja de notificaciones.<br><br>**ESCENARIO 02:** DADO que un **Team Leader asigna una tarea**, **CUANDO** revisa la **bandeja de notificaciones**, **Y** el sistema sincroniza la información, **Y** carga los datos más recientes, **ENTONCES** se muestra la tarea asignada **Y** el nombre del miembro responsable.                                                                |
+| **US030**    | Team Member | High         | EP06     | Notificación de fecha límite cercana      | Como miembro del equipo, quiero recibir una notificación cuando la fecha límite de una tarea esté cerca para poder priorizarla.                                               | **ESCENARIO 01:** DADO que una **tarea tiene una fecha límite próxima**, **CUANDO** la fecha límite esté a **menos de 24 horas**, **Y** el sistema verifique la programación activa, **Y** detecte la proximidad temporal, **ENTONCES** el sistema envía una **notificación dentro de la app y por correo electrónico** **Y** marca la tarea como “próxima a vencer”.<br><br>**ESCENARIO 02:** DADO que una **tarea está cerca de su fecha límite**, **CUANDO** el **Team Leader ingresa al tablero de tareas**, **Y** el sistema sincroniza los plazos, **Y** filtra las tareas urgentes, **ENTONCES** el sistema **resalta las tareas próximas a vencer** **Y** envía una notificación de recordatorio.                           |
+| **US031**    | Team Leader | High         | EP06     | Notificación de tarea completada          | Como líder de equipo, quiero recibir una notificación cuando un miembro complete una tarea asignada para hacer un seguimiento del progreso.                                   | **ESCENARIO 01:** DADO que un **Team Member marca una tarea como completada**, **CUANDO** el sistema procesa el cambio de estado, **Y** actualiza la base de datos, **Y** registra la acción del usuario, **ENTONCES** el sistema **envía una notificación dentro de la app y por correo electrónico** al **Team Leader** **Y** muestra la tarea como completada.<br><br>**ESCENARIO 02:** DADO que un **Team Member ha completado una tarea**, **CUANDO** el **Team Leader ingresa al tablero**, **Y** el sistema actualiza el estado de las tareas, **Y** valida el progreso, **ENTONCES** el tablero **refleja la tarea como completada** **Y** el líder recibe una **notificación de progreso**.                                |
+| **US032**    | Team Member | Medium       | EP06     | Notificación de nuevo mensaje en proyecto | Como miembro del equipo, quiero recibir notificaciones cuando se agregue un nuevo mensaje en un proyecto para mantenerme actualizado.                                         | **ESCENARIO 01:** DADO que **un nuevo mensaje es agregado en el proyecto**, **CUANDO** el **Team Leader o un miembro** lo envía, **Y** el sistema procesa la comunicación, **Y** la guarda en el canal del proyecto, **ENTONCES** el sistema **envía una notificación dentro de la app y por correo electrónico** **Y** actualiza el historial de mensajes.<br><br>**ESCENARIO 02:** DADO que el **Team Leader envía un mensaje**, **CUANDO** el **Team Member ingresa a la plataforma**, **Y** el sistema carga las notificaciones pendientes, **Y** marca los mensajes recientes, **ENTONCES** el sistema muestra una **notificación de “nuevo mensaje”** **Y** cambia su estado a “leído” al visualizarlo.                       |
+| **US033**    | Team Member | Medium       | EP06     | Notificación de actualización de tareas   | Como miembro del equipo, quiero recibir notificaciones cuando se actualice una tarea asignada (como cambio de fecha, prioridad o estado) para estar informado de los cambios. | **ESCENARIO 01:** DADO que el **Team Leader actualiza una tarea**, **CUANDO** el **Team Member accede al proyecto**, **Y** el sistema verifica las modificaciones, **Y** registra el cambio, **ENTONCES** el sistema **envía una notificación dentro de la app y por correo electrónico** **Y** resalta las tareas actualizadas en la interfaz.<br><br>**ESCENARIO 02:** DADO que el **Team Leader actualiza una tarea** (por ejemplo, cambia la fecha o la prioridad), **CUANDO** el líder **revisa el tablero**, **Y** el sistema sincroniza las actualizaciones, **Y** genera indicadores visuales, **ENTONCES** las tareas modificadas se **resaltan automáticamente** **Y** se muestra una **notificación visual** al usuario. |
+| **TS01** | Developer | High      | EP08  | Validación de seguridad en la API                | Como desarrollador, quiero verificar que la API de TaskMaster esté segura para proteger los datos de los usuarios.                                         | **DADO** que el equipo de desarrollo realiza pruebas de seguridad sobre la API, **CUANDO** se envían solicitudes con credenciales y datos sensibles, **Y** el sistema procesa dichas solicitudes, **Y** aplica protocolos de encriptación, **ENTONCES** las credenciales deben mantenerse protegidas, **Y** no debe haber filtraciones de información. |
+| **TS02** | Developer | High      | EP08  | Optimización del rendimiento de la base de datos | Como desarrollador, quiero mejorar el rendimiento de las consultas en la base de datos para que TaskMaster funcione más rápido.                            | **DADO** que el sistema tiene múltiples consultas activas, **CUANDO** se ejecutan pruebas de carga, **Y** se aplican optimizaciones en los índices y consultas SQL, **Y** se eliminan cuellos de botella, **ENTONCES** el tiempo de respuesta de la base de datos disminuye, **Y** la aplicación responde de manera más eficiente.                     |
+| **TS03** | Developer | Alta      | EP08  | Gestión de Proyectos                             | Como desarrollador, quiero implementar la creación, modificación y eliminación de proyectos, para mantener la información organizada y coherente.          | **DADO** que un usuario envía una solicitud válida para crear un proyecto, **CUANDO** la API procesa la petición, **Y** valida los datos, **Y** registra el proyecto en la base de datos, **ENTONCES** el sistema devuelve la información del nuevo proyecto, **Y** confirma su creación exitosa.                                                      |
+| **TS04** | Developer | Alta      | EP08  | Gestión de Tareas                                | Como desarrollador, quiero implementar operaciones para registrar, actualizar estados o prioridades, y eliminar tareas, para reflejar el flujo de trabajo. | **DADO** que un usuario modifica el estado o prioridad de una tarea, **CUANDO** la API recibe y procesa la solicitud, **Y** actualiza la información en la base de datos, **Y** mantiene la integridad de los datos, **ENTONCES** el sistema refleja el nuevo estado en la interfaz, **Y** confirma la actualización al usuario.                       |
+| **TS05** | Developer | Media     | EP08  | Administración de Usuarios                       | Como desarrollador, quiero implementar el manejo de alta, edición y baja de usuarios, para que roles y permisos se mantengan alineados con los proyectos.  | **DADO** que un administrador solicita eliminar un usuario, **CUANDO** la API procesa la petición, **Y** verifica que el usuario no tenga proyectos activos, **Y** actualiza su estado a inactivo, **ENTONCES** el usuario pierde acceso al sistema, **Y** sus permisos quedan deshabilitados.                                                         |
+| **TS06** | Developer | Media     | EP08  | Manejo de Reportes                               | Como desarrollador, quiero implementar la generación, actualización y almacenamiento de reportes, para que los líderes accedan a información consistente.  | **DADO** que un líder solicita un reporte de desempeño, **CUANDO** la API procesa la petición, **Y** consulta las métricas más recientes, **Y** genera el archivo en formato descargable, **ENTONCES** el sistema devuelve el reporte actualizado, **Y** lo almacena para futuras referencias.                                                         |
+| **SS1** | Team Member | High      | EP09  | Integración con herramientas de comunicación | Como miembro del equipo, quiero que TaskMaster se integre con Slack para recibir actualizaciones sobre mis tareas, para mantenerme al tanto de los cambios importantes sin tener que acceder continuamente a la plataforma. | **DADO** que el usuario vincula su cuenta de Slack con TaskMaster, **CUANDO** una tarea es asignada o actualizada, **Y** el sistema detecta el cambio, **Y** envía la notificación correspondiente, **ENTONCES** Slack muestra la alerta en el canal indicado, **Y** el usuario se mantiene informado sin ingresar al sistema.             |
+| **SS2** | Team Member | High      | EP09  | Integración con Google Calendar              | Como miembro del equipo, quiero que TaskMaster sincronice mis tareas con Google Calendar para no olvidar mis plazos.                                                                                                        | **DADO** que el usuario conecta su cuenta de Google Calendar con TaskMaster, **CUANDO** se crean o modifican tareas con fechas límite, **Y** el sistema valida la autenticación con Google, **Y** ejecuta la sincronización, **ENTONCES** las tareas aparecen en su calendario, **Y** se actualizan automáticamente ante cualquier cambioo. |
+
 
 #### 2.4.2. Impact Mapping
 Segmento Team leader
@@ -3618,6 +3635,820 @@ Lanzamos el web Services
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
 
 ![c1](Assets/TP1/c14.png)
+
+#### 4.2.2. Sprint 2  
+Esta sección presenta los detalles de la segunda reunión de planificación de Sprint del equipo para continuar con el desarrollo de **Task Master**.
+Durante esta sesión se establecieron los objetivos técnicos y funcionales del segundo sprint, orientados a culminar la implementación del backend y avanzar con las interfaces móviles.
+El enfoque principal fue finalizar el backend al 100%, desplegarlo en un entorno público y desarrollar las interfaces del Team Leader y Team Member en sus respectivas tecnologías.
+
+El enfoque principal fue desarrollar la Landing Page informativa y estructurar los primeros módulos del backend.
+
+
+##### 4.2.2.1. Sprint Planning 2  
+
+| **Elemento** | **Detalle** |
+|---------------|-------------|
+| **Sprint #** | Sprint 2 |
+| **Fecha** | 31 de octubre de 2025 |
+| **Hora** | 3:00 p.m. |
+| **Lugar** | Virtual – Google Meet |
+| **Elaborado por** | Bejarano Martínez Álvaro Leandro |
+| **Participantes (Reunión de planificación)** | Bejarano Martínez Álvaro Leandro, Luquillas Asto Omar, Olivera Barzola Eric Marlon, Sandoval Paiva Valentino, Sarmiento Medina Loreley |
+| **Resumen de la revisión anterior** | Durante el Sprint 1 se completó exitosamente la landing page y se estableció la estructura base del backend, cumpliendo con los objetivos iniciales del proyecto. |
+| **Resumen de la retrospectiva anterior** | Se identificó la necesidad de mejorar la comunicación entre los subgrupos de trabajo y optimizar la gestión del tiempo en el desarrollo paralelo de frontend y backend. |
+| **Objetivo del Sprint** | El objetivo de este sprint es culminar al 100% el desarrollo del backend y desplegarlo en un sitio público para pruebas externas. En paralelo, se busca finalizar completamente la interfaz del **Team Leader**, desarrollada en **Kotlin (lógica)** y **XML (diseño)**, así como iniciar el primer avance de la interfaz del **Team Member**, desarrollada en **Flutter y Dart**.<br><br>**Resultado esperado:** Backend funcional y desplegado públicamente, con las interfaces móviles del Team Leader listas y el primer prototipo del Team Member operativo.<br><br>**Impacto:** Garantizar la integración entre backend y aplicación móvil, habilitando las primeras pruebas de usabilidad.<br><br>**Usuarios objetivo:** Líderes y miembros de equipos que gestionan tareas colaborativas dentro de la plataforma.<br><br>**Evento clave:** Acceso estable al backend en entorno público y visualización de la interfaz móvil funcional. |
+| **Velocidad del Sprint** | El equipo puede atender hasta **32 Story Points**. |
+| **Suma de Story Points** | La suma de Story Points planificados para este sprint es de **32 Story Points**. |
+
+##### 4.2.2.2. Sprint Backlog 2  
+
+Durante este sprint, el equipo concentró sus esfuerzos en la culminación del backend y el desarrollo de las interfaces móviles para los perfiles de Team Leader (en Kotlin/XML) y Team Member (en Flutter/Dart).
+Las historias de usuario priorizadas estuvieron centradas en mejorar la experiencia visual, la interacción con los módulos principales y la conexión con los servicios backend ya desplegados.
+
+| Código US / TS | Título                                       | Id de Tarea | Título de la Tarea                        | Descripción                                                                | Estimación (hrs) | Asignado a                       | Estado      |
+| -------------- | -------------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------------------------------------- | ---------------- | -------------------------------- | ----------- |
+| **US10**       | **Registro de usuarios**                     | T10-1       | Diseñar interfaz de registro              | Crear la pantalla de registro con validaciones de entrada en Kotlin/XML.   | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T10-2       | Implementar validaciones visuales         | Mostrar mensajes de error cuando los campos sean inválidos o estén vacíos. | 2                | Sandoval Paiva Valentino         | Done        |
+| **US11**       | **Inicio de sesión**                         | T11-1       | Crear pantalla de inicio de sesión        | Diseñar la interfaz del login con campos y botones funcionales.            | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T11-2       | Implementar transición al panel principal | Añadir animación y navegación fluida al ingresar correctamente.            | 2                | Sarmiento Medina Loreley         | Done        |
+| **US13**       | **Cierre de sesión**                         | T13-1       | Agregar botón de cierre                   | Colocar botón visible en menú principal y limpiar sesión activa.           | 2                | Bejarano Martínez Álvaro Leandro | Done        |
+| **US14**       | **Ingreso mediante código de invitación**    | T14-1       | Crear campo de código de acceso           | Permitir ingresar un código para unirse a un proyecto.                     | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T14-2       | Validar código visualmente                | Mostrar mensaje de error si el código no es válido.                        | 2                | Sarmiento Medina Loreley         | Done        |
+| **US15**       | **Registro de proyectos**                    | T15-1       | Diseñar formulario visual                 | Crear formulario con campos: nombre, descripción y equipo.                 | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T15-2       | Añadir botón de guardar                   | Implementar botón con retroalimentación visual.                            | 2                | Bejarano Martínez Álvaro Leandro | Done        |
+| **US17**       | **Asignación de tareas**                     | T17-1       | Diseñar vista de tareas asignadas         | Mostrar tareas pendientes y completadas del Team Member.                   | 3                | Sandoval Paiva Valentino         | Done        |
+|                |                                              | T17-2       | Añadir opción de asignar nueva tarea      | Crear botón que permita agregar tareas nuevas visualmente.                 | 3                | Luquillas Asto Omar              | Done        |
+| **US18**       | **Prioridad de tareas**                      | T18-1       | Implementar selector de prioridad         | Agregar opción de prioridad alta, media o baja con colores distintivos.    | 2                | Sarmiento Medina Loreley         | Done        |
+| **US19**       | **Notificaciones de tareas asignadas**       | T19-1       | Crear panel de notificaciones             | Mostrar alertas visuales de tareas nuevas o actualizadas.                  | 3                | Bejarano Martínez Álvaro Leandro | Done        |
+|                |                                              | T19-2       | Diseñar icono dinámico de notificaciones  | Actualizar contador visual en la barra superior.                           | 2                | Sandoval Paiva Valentino         | Done        |
+| **US20**       | **Modificación de fechas límite**            | T20-1       | Agregar campo editable de fecha           | Permitir que el usuario cambie la fecha límite visualmente.                | 3                | Luquillas Asto Omar              | Done        |
+| **US21**       | **Modificar prioridad de tareas**            | T21-1       | Crear botón de cambio de prioridad        | Cambiar prioridad directamente desde la lista de tareas.                   | 2                | Sandoval Paiva Valentino         | Done        |
+| **US22**       | **Actualización de estado de tareas**        | T22-1       | Implementar control de estado             | Permitir marcar tareas como completadas o pendientes.                      | 3                | Sandoval Paiva Valentino         | Done        |
+| **US23**       | **Ver progreso de tareas en tiempo real**    | T23-1       | Crear barra de progreso dinámica          | Mostrar avance en tiempo real del porcentaje de tareas completadas.        | 4                | Sarmiento Medina Loreley         | Done |
+|                |                                              | T23-2       | Actualizar datos en tiempo real           | Refrescar la vista automáticamente al cambiar estados.                     | 3                | Bejarano Martínez Álvaro Leandro | Done |
+| **US24**       | **Métricas de rendimiento**                  | T24-1       | Diseñar pantalla de métricas              | Mostrar estadísticas de productividad con gráficos.                        | 4                | Luquillas Asto Omar              | Done        |
+| **US25**       | **Visualizar calendario de tareas**          | T25-1       | Implementar calendario interactivo        | Mostrar tareas según fecha límite mediante vista mensual.                  | 4                | Sandoval Paiva Valentino         | Done        |
+| **US26**       | **Reporte de desempeño**                     | T26-1       | Crear pantalla de resumen                 | Mostrar tabla con desempeño individual y general.                          | 3                | Luquillas Asto Omar              | Done        |
+|                |                                              | T26-2       | Diseñar exportación visual                | Generar visualización en PDF o pantalla resumen.                           | 2                | Sandoval Paiva Valentino         | Done        |
+| **US27**       | **Reporte de tareas cumplidas y retrasadas** | T27-1       | Diseñar gráfico comparativo               | Mostrar gráfico de barras de tareas cumplidas vs retrasadas.               | 3                | Bejarano Martínez Álvaro Leandro | Done        |
+| **US28**       | **Resumen semanal de avances**               | T28-1       | Crear tarjeta de resumen semanal          | Mostrar porcentaje de avance semanal por usuario.                          | 2                | Sandoval Paiva Valentino         | Done        |
+| **US29**       | **Notificación de tarea asignada**           | T29-1       | Diseñar vista emergente de notificación   | Mostrar ventana emergente cuando se asigne una nueva tarea.                | 3                | Sarmiento Medina Loreley         | Done        |
+| **US30**       | **Revisión de tareas completadas**           | T30-1       | Crear sección de revisión                 | Mostrar lista de tareas completadas con opción de comentarios.             | 3                | Sandoval Paiva Valentino         | Done        |
+| **US31**       | **Historial de actividades**                 | T31-1       | Implementar registro visual de cambios    | Mostrar histórico de tareas editadas o eliminadas.                         | 3                | Luquillas Asto Omar              | Done        |
+| **US33**       | **Notificación de cambios importantes**      | T33-1       | Crear notificación global                 | Mostrar alerta visual cuando se edite o elimine un proyecto.               | 3                | Bejarano Martínez Álvaro Leandro | Done        |
+
+
+##### 4.2.2.3. Development Evidence for Sprint Review  
+
+**Frontend-flutter**
+
+**Frontend-jetpack compose**
+
+| Repository           | Branch | Commit Id | Commit Message                                                      | Commit Message Body                                                                                           | Date         |
+| -------------------- | ------ | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ |
+| AppMobile-TaskMaster | main   | 9fd31ac   | Task_Commit_update                                                  | Actualización del historial de commits relacionados con tareas para mantener consistencia en el módulo móvil. | Nov 13, 2025 |
+| AppMobile-TaskMaster | main   | c3a8d11   | Task_Commit_update                                                  | Ajustes menores en la lógica de sincronización de tareas y actualización de registros internos.               | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | e12b77f   | Task_Commit                                                         | Creación del commit base para la gestión de tareas dentro de la aplicación móvil.                             | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 5bb92de   | Merge remote-tracking branch 'origin/main'                          | Fusión con origin/main para mantener alineados los cambios antes de agregar nuevas funcionalidades.           | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | a91f3d2   | feat add: calendar.kt                                               | Se añadió el archivo `calendar.kt` para introducir soporte de calendario dentro del flujo de tareas.          | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 7ce11ab   | Merge remote-tracking branch 'origin/main'                          | Sincronización del código con origin/main para resolver conflictos menores.                                   | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 33ac8e1   | xml                                                                 | Actualización de layouts XML para mejorar la interfaz visual y optimizar componentes en Android.              | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | d2e5b77   | Merge pull request #1 from CC238-Aplicaciones-Moviles/feature/stats | Integración de la vista de estadísticas proveniente de feature/stats.                                         | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 8ae3d00   | feat(stats): Add statistics view                                    | Implementación de la pantalla de estadísticas con métricas básicas y soporte visual inicial.                  | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 61fbb09   | primera version android                                             | Primer commit significativo de la versión Android, agregando estructura principal del proyecto.               | Oct 10, 2025 |
+
+
+**Backend**
+
+| Repository         | Branch             | Commit Id | Commit Message                                                                                        | Commit Message Body                                                                                                | Date         |
+| ------------------ | ------------------ | --------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------ |
+| Backend-TaskMaster | feat/notifications | a0b8da7   | Merge remote-tracking branch 'origin/master'                                                          | Sincronización con la rama principal para mantener el código actualizado antes del despliegue.                     | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 35b0d28   | fix: update base image to eclipse-temurin:17-jdk                                                      | Actualización de la imagen base de Docker a la versión Eclipse Temurin JDK 17 para compatibilidad con Spring Boot. | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | e1a1786   | Merge pull request #3 from CC238-Aplicaciones-Movies/feat/notifications                               | Integración de la rama de desarrollo de notificaciones al backend principal.                                       | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 12e177a   | Merge pull request #2 from CC238-Aplicaciones-Movies/feat/notifications                               | Fusión de la rama de funcionalidades de notificaciones con la rama base del backend.                               | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 0cc2dc7   | feat: add UpdateNotificationCommand for updating notification details                                 | Implementación del comando para actualizar los detalles de las notificaciones desde el dominio.                    | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 3526f9e   | feat: add method to TaskRepository for finding tasks by end date range                                | Se añadió un método al repositorio de tareas para obtener tareas filtradas por rango de fechas.                    | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 495dc07   | feat: enhance TaskCommandServiceImpl to send notifications on task assignment and updates             | Mejora del servicio de comandos de tareas para enviar notificaciones al asignar o actualizar tareas.               | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | dec6475   | feat: integrate NotificationCommandService to send notifications when a user joins a project          | Integración del servicio de comandos de notificaciones para enviar alertas cuando un usuario se une a un proyecto. | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | c3998cb   | feat: add NotificationResourceFromEntityAssembler for transforming Notification entities to resources | Creación de un ensamblador para mapear entidades de notificación a recursos REST.                                  | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 2386022   | feat: add NotificationResource for representing notification data                                     | Adición de una clase recurso para representar la información de las notificaciones en las respuestas HTTP.         | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 633e854   | feat: add NotificationRepository for accessing notifications by user ID                               | Implementación del repositorio para consultar notificaciones filtradas por identificador de usuario.               | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 6b619f6   | feat: implement NotificationQueryService for retrieving notifications by user ID                      | Creación del servicio de consultas para recuperar notificaciones asociadas a un usuario específico.                | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | ca3a908   | feat: add NotificationQueryService interface for querying user notifications                          | Definición de la interfaz para el servicio de consultas de notificaciones de usuario.                              | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 7188a27   | feat: add NotificationController for managing user notifications                                      | Desarrollo del controlador REST responsable de gestionar las notificaciones del usuario.                           | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | e110e2e   | feat: implement NotificationCommandService for creating notifications                                 | Implementación del servicio encargado de crear nuevas notificaciones en el sistema.                                | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 699616e   | feat: add NotificationCommandService interface for handling notification commands                     | Creación de la interfaz para manejar comandos relacionados con la creación o actualización de notificaciones.      | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 2553403   | feat: add Notification entity for managing user notifications                                         | Adición de la entidad Notification dentro del dominio para representar las notificaciones de usuario.              | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 4453b4e   | feat: enable scheduling support in the application                                                    | Activación del soporte de tareas programadas (scheduling) en el backend.                                           | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 0ff7239   | feat: add GetNotificationsByUserIdQuery for user notification retrieval                               | Creación de una consulta (query) específica para recuperar las notificaciones por ID de usuario.                   | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | a545c37   | feat: implement due date notification scheduler                                                       | Implementación del programador que genera notificaciones automáticas por fechas de vencimiento.                    | Nov 7, 2025  |
+| Backend-TaskMaster | feat/notifications | 55cbc20   | feat: add notification command and resource classes                                                   | Incorporación de clases base para manejar comandos y recursos de notificaciones.                                   | Nov 7, 2025  |
+| Backend-TaskMaster | develop            | 6771422   | fix: api configuration                                                                                | Corrección de la configuración de la API para asegurar su correcto despliegue en el entorno de desarrollo.         | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | c053329   | Merge pull request #1 from CC238-Aplicaciones-Movies/develop                                          | Integración de cambios previos de la rama develop en el backend de TaskMaster.                                     | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | 9d010da   | Merge branch 'master' into develop                                                                    | Sincronización de la rama master con develop para mantener consistencia de versiones.                              | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | 916959e   | feat: fix backend service                                                                             | Ajustes y refactorización de servicios del backend para mejorar su estabilidad.                                    | Oct 10, 2025 |
+| Backend-TaskMaster | develop            | 6f56fd1   | Update database configuration to use environment variables                                            | Actualización de la configuración de la base de datos para usar variables de entorno.                              | Oct 10, 2025 |
+
+
+
+
+##### 4.2.2.4. Testing Suite Evidence for Sprint Review 
+
+**Unit Tests**
+
+Durante el desarrollo del sprint se implementaron pruebas unitarias orientadas a validar el correcto funcionamiento de las clases principales del backend. Estas pruebas se enfocaron en verificar los métodos responsables de la creación, actualización y eliminación de entidades dentro del sistema, garantizando que la lógica de negocio se ejecute de manera consistente. Además, se utilizaron frameworks de testing como JUnit y Mockito para simular dependencias y asegurar la cobertura individual de cada componente.
+
+Prueba de las Test de creación de tareas:
+              
+![a1](Assets/TP1/e1.png)
+              
+Prueba de Test de creación de usuarios (IAM)
+              
+![a1](Assets/TP1/e2.png)
+
+**Integration Tests**
+
+En cuanto a las pruebas de integración, se realizaron con el objetivo de comprobar la correcta interacción entre los distintos módulos del sistema. Se validó el flujo completo desde el controlador hasta las capas de servicio y repositorio, asegurando la comunicación adecuada con la base de datos y los servicios REST. Estas pruebas permitieron detectar posibles fallos en la configuración de dependencias y en la transferencia de datos entre componentes.
+
+![integration_test](Assets/TP1/integration_test.png)
+
+**BDD Tests**
+
+Finalmente, se desarrollaron pruebas de aceptación bajo el enfoque BDD (Behavior Driven Development), utilizando archivos .feature escritos en lenguaje Gherkin. Estas pruebas reflejan los escenarios definidos en las historias de usuario, permitiendo validar el comportamiento del sistema desde la perspectiva del usuario final. Cada escenario fue automatizado mediante pasos (Steps) programados, comprobando que las funcionalidades entregadas cumplen con los criterios de aceptación definidos en el sprint.
+
+![bdd_test](Assets/TP1/bdd_test.png)
+
+![bdd_test2](Assets/TP1/bdd_test2.png)
+
+![bdd_test3](Assets/TP1/bdd_test3.png)
+
+![bdd_test4](Assets/TP1/bdd_test4.png)
+
+![bdd_test5](Assets/TP1/bdd_test5.png)
+
+##### 4.2.2.5. Execution Evidence for Sprint Review  
+
+En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
+Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMaster-LandingPage 
+
+![a1](Assets/TP1/a1.png)
+![a1](Assets/TP1/a2.png)
+![a1](Assets/TP1/a3.png)
+![a1](Assets/TP1/a5.png)
+![a1](Assets/TP1/a6.png)
+![a1](Assets/TP1/a7.png)
+![a1](Assets/TP1/a8.png)
+
+Ademas, para este segundo sprint se logro terminar las vistas de nuestra aplicación móvil del **Lider de equipo** - jetpack compose: 
+
+![a1](Assets/TP1/d1.png)
+![a1](Assets/TP1/d2.png)
+![a1](Assets/TP1/d3.png)
+![a1](Assets/TP1/d5.png)
+![a1](Assets/TP1/d6.png)
+![a1](Assets/TP1/d7.png)
+![a1](Assets/TP1/d8.png)
+
+![a1](Assets/TB2/F5.jpg)
+![a1](Assets/TB2/F6.jpg)
+![a1](Assets/TB2/F3.png)
+
+![a1](Assets/TB2/F1.png)
+![a1](Assets/TB2/F2.png)
+![a1](Assets/TB2/F4.png)
+
+![a1](Assets/TB2/FLUTT1.png)
+![a1](Assets/TB2/FLUTT2.png)
+![a1](Assets/TB2/FLUTT3.png)
+![a1](Assets/TB2/FLUTT4.png)
+
+Finalment, para este sprint avanzamos con algunas vistas o la primera versión de nuestra aplicación móvil del **Miembro de equipo** - flutter: 
+
+![a1](Assets/TB2/FLUTTER2.jpg)
+![a1](Assets/TB2/FLUTTER1.jpg)
+![a1](Assets/TB2/FLUTTER5.jpg)
+![a1](Assets/TB2/FLUTTER4.jpg)
+![a1](Assets/TB2/FLUTTER3.jpg)
+
+![a1](Assets/TB2/FLU2.jpg)
+![a1](Assets/TB2/FLU3.jpg)
+![a1](Assets/TB2/FLU4.jpg)
+![a1](Assets/TB2/FLU5.jpg)
+
+##### 4.2.2.6. Services Documentation Evidence for Sprint Review  
+
+En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
+Enlance del Backend: https://backend-taskmaster-1.onrender.com/swagger-ui/index.html
+
+### **Sección IAM (Identity and Access Management)**
+
+![b1](Assets/TP1/B1.png)
+
+![b1](Assets/TP1/B3.png)
+
+El módulo **IAM (Identity and Access Management)** de **TaskMaster** proporciona una gestión centralizada y segura de usuarios, roles y autenticación, asegurando el control de acceso a los distintos recursos del sistema.
+Durante este *Sprint*, se implementaron los controladores principales para autenticación, usuarios y roles, siguiendo los principios de **arquitectura limpia** y **Domain-Driven Design (DDD)**.
+
+A continuación, se detallan los **endpoints desarrollados**, sus funcionalidades principales y la documentación técnica generada mediante **Swagger (OpenAPI 3.0)**.
+
+---
+
+## Tabla de Endpoints IAM
+
+| **Bounded Context** | **Endpoint**                     | **Acción**                     | **Verbo HTTP** | **Parámetros**                                                                        | **Ejemplo de Respuesta**                                          | **Documentación** |
+| ------------------- | -------------------------------- | ------------------------------ | -------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------- |
+| **Autenticación**   | `/api/v1/authentication/sign-in` | Iniciar sesión                 | POST           | `{"email": "string", "password": "string"}`                                           | `{"id": 1, "email": "user@mail.com", "token": "jwt_token"}`       | Swagger           |
+|                     | `/api/v1/authentication/sign-up` | Registrar usuario              | POST           | `{"email": "string","password": "string","firstName": "string","lastName": "string"}` | `{"id": 1,"email": "user@mail.com","fullName": "string"}`         | Swagger           |
+| **Usuarios**        | `/api/v1/users`                  | Listar todos los usuarios      | GET            | -                                                                                     | `[{"id": 1,"email": "user@mail.com","roles": ["ROLE_USER"]}]`     | Swagger           |
+|                     | `/api/v1/users/{userId}`         | Obtener usuario por ID         | GET            | `userId: Long`                                                                        | `{"id": 1,"email": "user@mail.com","roles": ["ROLE_USER"]}`       | Swagger           |
+|                     | `/api/v1/users/email/{email}`    | Buscar usuario por email       | GET            | `email: String`                                                                       | `{"id": 1,"email": "user@mail.com","roles": ["ROLE_ADMIN"]}`      | Swagger           |
+|                     | `/api/v1/users`                  | Actualizar usuario autenticado | PUT            | `{"firstName": "string","lastName": "string"}`                                        | `{"message": "User updated successfully"}`                        | Swagger           |
+|                     | `/api/v1/users/{userId}`         | Eliminar usuario por ID        | DELETE         | `userId: Long`                                                                        | `204 No Content`                                                  | Swagger           |
+| **Roles**           | `/api/v1/roles`                  | Listar roles disponibles       | GET            | -                                                                                     | `[{"id": 1,"name": "ROLE_USER"}, {"id": 2,"name": "ROLE_ADMIN"}]` | Swagger           |
+
+---
+
+## Ejemplos de Uso
+
+### 1. Autenticación (JWT)
+
+**Request:**
+
+```http
+POST /api/v1/authentication/sign-in
+Content-Type: application/json
+```
+
+**Body:**
+
+```json
+{
+  "email": "admin@taskmaster.com",
+  "password": "123456"
+}
+```
+
+**Response (200 OK):**
+
+```json
+{
+  "id": 1,
+  "email": "admin@taskmaster.com",
+  "token": "eyJhbGciOiJIUzI1NiIsInR..."
+}
+```
+
+---
+
+### 2. Registro de Usuario
+
+**Request:**
+
+```http
+POST /api/v1/authentication/sign-up
+```
+
+**Body:**
+
+```json
+{
+  "email": "newuser@taskmaster.com",
+  "password": "password123",
+  "firstName": "Valentino",
+  "lastName": "Sandoval"
+}
+```
+
+**Response (201 Created):**
+
+```json
+{
+  "id": 2,
+  "email": "newuser@taskmaster.com",
+  "fullName": "Valentino Sandoval"
+}
+```
+
+---
+
+### 3. Gestión de Usuarios
+
+#### Actualizar Usuario Autenticado
+
+**Request:**
+
+```http
+PUT /api/v1/users
+```
+
+**Body:**
+
+```json
+{
+  "firstName": "Valentino",
+  "lastName": "Sandoval Paiva"
+}
+```
+
+**Response (200 OK):**
+
+```json
+{
+  "message": "User updated successfully"
+}
+```
+
+#### Eliminar Usuario
+
+**Request:**
+
+```http
+DELETE /api/v1/users/2
+```
+
+**Response (204 No Content)**
+
+---
+
+## Arquitectura y Patrones
+
+### CQRS (Command Query Responsibility Segregation)
+
+Separación clara entre operaciones de lectura y escritura:
+
+* **UserCommandService:** Manejo de comandos como `sign-up`, `updateUser`, `deleteUser`.
+* **UserQueryService:** Consultas como `getAllUsers`, `getUserById`, `getUserByEmail`.
+
+---
+
+### DTO Pattern (Data Transfer Object)
+
+Uso de *Resource* y *Command* para desacoplar las entidades del dominio y las representaciones REST:
+
+```java
+public record UserResource(Long id, String email, String firstName, String lastName) {}
+public record SignInResource(String email, String password) {}
+```
+
+---
+
+### Swagger Integration
+
+Documentación automática generada mediante anotaciones `@Tag`, `@Operation`, y `@ApiResponses` en cada endpoint.
+
+La interfaz **Swagger UI** se encuentra disponible en:
+🔗 [https://managewise-api.onrender.com/swagger-ui/index.html](https://managewise-api.onrender.com/swagger-ui/index.html)
+
+---
+
+## Seguridad
+
+### Autenticación JWT
+
+Implementada en `AuthenticationController`, garantizando la validación segura de credenciales y la emisión de tokens firmados.
+
+### Validaciones
+
+* Validación de entrada con `@Valid`.
+* Respuestas de error estandarizadas (400, 404, 401).
+* Control de acceso basado en roles (`ROLE_USER`, `ROLE_ADMIN`).
+
+### Manejo de Sesión Segura
+
+Se utiliza `SecurityContextHolder` para obtener el contexto de autenticación actual dentro de `UsersController`.
+
+**Ejemplo:**
+
+```java
+var auth = SecurityContextHolder.getContext().getAuthentication();
+var userDetails = (UserDetailsImpl) auth.getPrincipal();
+Long userId = userDetails.getId();
+```
+
+---
+
+## Conclusión
+
+El módulo **IAM** constituye el núcleo de la **seguridad y gestión de identidades** en *TaskMaster*, proporcionando:
+
+- Autenticación segura mediante JWT.
+- Gestión estructurada de usuarios y roles.
+- Desacoplamiento mediante CQRS y DTO Pattern.
+- Documentación automatizada con Swagger (OpenAPI 3.0).
+
+### **Sección Project Management**
+
+
+![b1](Assets/TP1/B4.png)
+
+Durante este Sprint, se completó la **documentación y despliegue de los servicios web asociados al módulo de Project Management**, encargados de la **gestión integral de proyectos, miembros y códigos de acceso** dentro de la plataforma **TaskMaster**.
+
+El controlador `ProjectsController` fue implementado siguiendo los principios de **arquitectura limpia (Clean Architecture)** y **CQRS (Command Query Responsibility Segregation)**, separando claramente las operaciones de lectura (Query) y escritura (Command).
+
+Toda la documentación fue generada utilizando **OpenAPI (Swagger 3.0)** para describir la estructura, los verbos HTTP, parámetros y ejemplos de respuesta de cada endpoint.
+A continuación, se detalla la relación completa de los endpoints desarrollados.
+
+---
+
+## Tabla de Endpoints – `ProjectsController`
+
+| **Endpoint**                                      | **Descripción / Acción**                                                       | **Verbo HTTP** | **Parámetros / Body**                                                                | **Ejemplo de Respuesta (Resumen)**                                 | **Documentación** |
+| ------------------------------------------------- | ------------------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------- |
+| `/api/v1/projects`                                | Crea un nuevo proyecto asociado al usuario autenticado (rol Leader).           | **POST**       | `{"name": "Project Alpha", "description": "Test project", "deadline": "2025-12-31"}` | `{"id":1,"name":"Project Alpha","leaderId":5}`                     | Swagger                         |
+| `/api/v1/projects/{id}`                           | Actualiza un proyecto existente.                                               | **PUT**        | `id: Long`, `{"name": "Updated name", "description": "New desc"}`                    | `{"id":1,"name":"Updated name","description":"New desc"}`          | Swagger                         |
+| `/api/v1/projects/{id}`                           | Elimina un proyecto por ID.                                                    | **DELETE**     | `id: Long`                                                                           | `204 No Content`                                                   | Swagger                         |
+| `/api/v1/projects/join/{key}`                     | Permite a un miembro unirse a un proyecto mediante un código único.            | **GET**        | `key: String`                                                                        | `{"id":2,"name":"Project Beta","members":[...]}`                   | Swagger                         |
+| `/api/v1/projects/{projectId}/members/{memberId}` | Elimina un usuario del proyecto (solo el líder del proyecto puede hacerlo).    | **DELETE**     | `projectId: Long`, `memberId: Long`                                                  | `204 No Content`                                                   | Swagger                         |
+| `/api/v1/projects/{projectId}/code`               | Asigna un código único de acceso al proyecto.                                  | **PUT**        | `{"keycode": "ABC123", "expiration": "2025-12-31"}`                                  | `{"keycode":"ABC123","expiration":"2025-12-31"}`                   | Swagger                         |
+| `/api/v1/projects`                                | Obtiene la lista completa de proyectos existentes.                             | **GET**        | —                                                                                    | `[{"id":1,"name":"Project Alpha"},{"id":2,"name":"Project Beta"}]` | Swagger                         |
+| `/api/v1/projects/{projectId}`                    | Obtiene la información detallada de un proyecto por su ID.                     | **GET**        | `projectId: Long`                                                                    | `{"id":1,"name":"Project Alpha","description":"Details"}`          | Swagger                         |
+| `/api/v1/projects/member`                         | Devuelve los proyectos a los que pertenece el usuario autenticado (según JWT). | **GET**        | —                                                                                    | `[{"id":3,"name":"Project Gamma"}]`                                | Swagger                         |
+| `/api/v1/projects/leader`                         | Devuelve los proyectos donde el usuario autenticado es líder.                  | **GET**        | —                                                                                    | `[{"id":4,"name":"Project Delta"}]`                                | Swagger                         |
+
+---
+
+## Arquitectura y Diseño
+
+El `ProjectsController` utiliza los siguientes **servicios internos** para la gestión de datos:
+
+* `ProjectCommandService`: Maneja comandos del dominio (Create, Update, Delete, AddUser, RemoveUser, SetCode).
+* `ProjectQueryService`: Ejecuta consultas del dominio (GetAll, GetById, GetByLeader, GetByMember).
+
+Cada comando y consulta se define como un objeto inmutable, siguiendo el patrón **Command Pattern** para operaciones seguras y predecibles.
+
+### Clases y ensambladores utilizados:
+
+* `CreateProjectCommandFromResourceAssembler`
+* `UpdateProjectCommandFromResourceAssembler`
+* `ProjectResourceFromEntityAssembler`
+* `SetCodeCommandFromResourceAssembler`
+
+Estos ensambladores garantizan la correcta transformación entre **DTOs (recursos REST)** y **entidades de dominio**, manteniendo la separación de capas.
+
+---
+
+## Ejemplo de Interacción
+
+### Crear un Proyecto
+
+**Request:**
+
+```http
+POST /api/v1/projects
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "name": "Project Alpha",
+  "description": "Initial testing project",
+  "deadline": "2025-12-31"
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 1,
+  "name": "Project Alpha",
+  "description": "Initial testing project",
+  "leaderId": 5,
+  "members": []
+}
+```
+
+---
+
+### Unirse a un Proyecto
+
+**Request:**
+
+```http
+GET /api/v1/projects/join/ABC123
+Authorization: Bearer <JWT>
+```
+
+**Response:**
+
+```json
+{
+  "id": 2,
+  "name": "Project Beta",
+  "members": [
+    { "id": 5, "username": "jdoe" },
+    { "id": 7, "username": "vpaiva" }
+  ]
+}
+```
+
+---
+
+### Asignar Código de Proyecto
+
+**Request:**
+
+```http
+PUT /api/v1/projects/1/code
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "keycode": "NEW123",
+  "expiration": "2026-01-01"
+}
+```
+
+**Response:**
+
+```json
+{
+  "keycode": "NEW123",
+  "expiration": "2026-01-01"
+}
+```
+
+
+### **Sección Task Management**
+
+![b2](Assets/TP1/B2.png)
+
+Se desarrolló e implementó la **documentación y despliegue de los servicios web correspondientes al módulo de Task Management**, responsable de la **gestión integral de tareas, asignación de usuarios, actualización de estados y control de prioridades** dentro de la plataforma **TaskMaster**.
+
+El controlador `TasksController` fue construido siguiendo los principios de **arquitectura limpia (Clean Architecture)** y **CQRS (Command Query Responsibility Segregation)**, separando las operaciones de lectura (Query) y escritura (Command) a través de servicios especializados.
+
+Toda la documentación fue generada utilizando **OpenAPI (Swagger 3.0)**, permitiendo describir con precisión los endpoints, verbos HTTP, parámetros requeridos y ejemplos de respuesta.
+
+---
+
+## Tabla de Endpoints – `TasksController`
+
+| **Endpoint**                                            | **Descripción / Acción**                                                        | **Verbo HTTP** | **Parámetros / Body**                                                                            | **Ejemplo de Respuesta (Resumen)**                                   | **Documentación** |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | ----------------- |
+| `/api/v1/tasks`                                         | Crea una nueva tarea dentro de un proyecto existente.                           | **POST**       | `{"title":"Design UI","description":"Create interface mockups","projectId":1,"priority":"HIGH"}` | `{"id":1,"title":"Design UI","status":"PENDING"}`                    | Swagger           |
+| `/api/v1/tasks`                                         | Obtiene la lista completa de tareas registradas.                                | **GET**        | —                                                                                                | `[{"id":1,"title":"Design UI"},{"id":2,"title":"Setup Database"}]`   | Swagger           |
+| `/api/v1/tasks/{taskId}`                                | Obtiene una tarea específica por su ID.                                         | **GET**        | `taskId: Long`                                                                                   | `{"id":3,"title":"Fix bugs","status":"IN_PROGRESS"}`                 | Swagger           |
+| `/api/v1/tasks/project/{projectId}`                     | Lista todas las tareas asociadas a un proyecto determinado.                     | **GET**        | `projectId: Long`                                                                                | `[{"id":1,"title":"Create API"},{"id":2,"title":"Frontend Layout"}]` | Swagger           |
+| `/api/v1/tasks/user/{userId}`                           | Muestra todas las tareas asignadas a un usuario específico.                     | **GET**        | `userId: Long`                                                                                   | `[{"id":1,"title":"Code Review","assignedTo":5}]`                    | Swagger           |
+| `/api/v1/tasks/project/{projectId}/user/{userId}`       | Obtiene las tareas asignadas a un usuario dentro de un proyecto.                | **GET**        | `projectId: Long`, `userId: Long`                                                                | `[{"id":1,"title":"Database Setup"}]`                                | Swagger           |
+| `/api/v1/tasks/project/{projectId}/status/{status}`     | Filtra tareas de un proyecto según su estado (PENDING, IN_PROGRESS, COMPLETED). | **GET**        | `projectId: Long`, `status: String`                                                              | `[{"id":4,"status":"IN_PROGRESS"}]`                                  | Swagger           |
+| `/api/v1/tasks/project/{projectId}/priority/{priority}` | Filtra tareas por prioridad (LOW, MEDIUM, HIGH).                                | **GET**        | `projectId: Long`, `priority: String`                                                            | `[{"id":3,"priority":"HIGH"}]`                                       | Swagger           |
+| `/api/v1/tasks/{taskId}`                                | Actualiza los datos de una tarea específica.                                    | **PUT**        | `taskId: Long`, `{"title":"Update UI","description":"New layout","priority":"MEDIUM"}`           | `{"id":1,"title":"Update UI","priority":"MEDIUM"}`                   | Swagger           |
+| `/api/v1/tasks/{taskId}/status`                         | Actualiza el estado de una tarea existente.                                     | **PUT**        | `{"status":"COMPLETED"}`                                                                         | `{"id":2,"title":"Design DB","status":"COMPLETED"}`                  | Swagger           |
+| `/api/v1/tasks/{taskId}/assign`                         | Asigna un usuario a una tarea.                                                  | **PUT**        | `{"userId":5}`                                                                                   | `{"id":1,"title":"API Integration","assignedTo":5}`                  | Swagger           |
+| `/api/v1/tasks/{taskId}/unassign`                       | Remueve un usuario asignado a una tarea.                                        | **PUT**        | `{"userId":5}`                                                                                   | `{"id":1,"title":"API Integration","assignedTo":null}`               | Swagger           |
+| `/api/v1/tasks/{taskId}`                                | Elimina una tarea específica del sistema.                                       | **DELETE**     | `taskId: Long`                                                                                   | `200 OK - "Task deleted successfully"`                               | Swagger           |
+
+---
+
+## Arquitectura y Diseño
+
+El `TasksController` se apoya en los siguientes **servicios de dominio** para ejecutar las operaciones de negocio:
+
+* **`TaskCommandService`**: maneja los comandos relacionados con la creación, actualización, asignación y eliminación de tareas.
+* **`TaskQueryService`**: ejecuta las consultas que permiten obtener información filtrada o detallada de las tareas.
+
+El diseño sigue el patrón **Command Pattern** para asegurar la consistencia de las operaciones y mantener la trazabilidad de las acciones dentro del dominio.
+
+### Clases y ensambladores utilizados:
+
+* `CreateTaskCommandFromResourceAssembler`
+* `UpdateTaskCommandFromResourceAssembler`
+* `UpdateTaskStatusCommandFromResourceAssembler`
+* `AssignUserToTaskCommandFromResourceAssembler`
+* `RemoveUserFromTaskCommandFromResourceAssembler`
+* `TaskResourceFromEntityAssembler`
+
+Estos ensambladores se encargan de transformar objetos de transporte (`Resource`) en comandos o entidades de dominio, garantizando una capa de comunicación desacoplada entre la API REST y la lógica del negocio.
+
+---
+
+## Ejemplo de Interacción
+
+### Crear una Nueva Tarea
+
+**Request:**
+
+```http
+POST /api/v1/tasks
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "title": "Implement Login",
+  "description": "Develop login page with Firebase auth",
+  "projectId": 1,
+  "priority": "HIGH"
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 7,
+  "title": "Implement Login",
+  "description": "Develop login page with Firebase auth",
+  "status": "PENDING",
+  "priority": "HIGH"
+}
+```
+
+---
+
+### Actualizar Estado de Tarea
+
+**Request:**
+
+```http
+PUT /api/v1/tasks/7/status
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "status": "COMPLETED"
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 7,
+  "title": "Implement Login",
+  "status": "COMPLETED",
+  "priority": "HIGH"
+}
+```
+
+---
+
+### Asignar Usuario a Tarea
+
+**Request:**
+
+```http
+PUT /api/v1/tasks/7/assign
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "userId": 5
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 7,
+  "title": "Implement Login",
+  "assignedTo": {
+    "id": 5,
+    "username": "vpaiva"
+  },
+  "status": "PENDING"
+}
+```
+
+# Sección Notification Management
+
+## b3
+
+Se desarrolló e implementó la documentación y despliegue de los servicios web correspondientes al módulo **Notification Management**, encargado de la gestión y recuperación de notificaciones personalizadas dentro de la plataforma **ManageWise Horizon**.  
+Este módulo garantiza que los usuarios autenticados reciban y consulten sus notificaciones de acuerdo con los eventos del sistema (asignación de tareas, cambios de estado, recordatorios, entre otros).
+
+El controlador **`NotificationController`** fue construido bajo los principios de **arquitectura limpia (Clean Architecture)** y el patrón **CQRS (Command Query Responsibility Segregation)**, separando las operaciones de lectura (*Query*) y escritura (*Command*) en servicios de dominio especializados, promoviendo la escalabilidad y mantenibilidad del módulo.
+
+Toda la documentación de los endpoints fue generada utilizando **OpenAPI (Swagger 3.0)**, lo que permite describir con precisión las rutas, verbos HTTP, parámetros de entrada y ejemplos de respuesta esperados.
+
+---
+
+## Tabla de Endpoints – NotificationController
+
+| Endpoint | Descripción / Acción | Verbo HTTP | Parámetros / Body | Ejemplo de Respuesta (Resumen) | Documentación |
+|-----------|----------------------|-------------|-------------------|--------------------------------|----------------|
+| `/api/v1/notifications/me` | Obtiene todas las notificaciones del usuario autenticado. | `GET` | — | `[{"id":1,"message":"Nueva tarea asignada","status":"UNREAD"}]` | Swagger |
+| `/api/v1/notifications` | Crea una nueva notificación dentro del sistema (evento interno o acción automatizada). | `POST` | `{"userId":5,"message":"Tu tarea fue completada"}` | `{"id":10,"userId":5,"message":"Tu tarea fue completada","status":"UNREAD"}` | Swagger |
+
+---
+
+## Arquitectura y Diseño
+
+El **`NotificationController`** se apoya en los siguientes servicios de dominio para manejar las operaciones de negocio:
+
+- **`NotificationCommandService`**: Gestiona los comandos relacionados con la creación y registro de nuevas notificaciones.  
+- **`NotificationQueryService`**: Procesa las consultas y recupera las notificaciones asociadas a un usuario en particular.
+
+El diseño del módulo sigue los principios del **Command Pattern**, asegurando la trazabilidad y consistencia de las operaciones de notificación, y garantizando que las acciones del dominio sean independientes de la capa de presentación.
+
+### Clases y ensambladores utilizados:
+
+- **`CreateNotificationCommandFromResourceAssembler`**  
+- **`NotificationResourceFromEntityAssembler`**
+
+Estos ensambladores son responsables de transformar objetos *Resource* en *Comandos* o *Entidades de dominio*, desacoplando la capa REST de la lógica interna del sistema y promoviendo la reutilización del código.
+
+---
+
+## Ejemplo de Interacción
+
+### Obtener Notificaciones del Usuario Autenticado
+
+**Request:**
+
+```http
+GET /api/v1/notifications/me
+Content-Type: application/json
+Authorization: Bearer <JWT>
+```
+
+**Response**
+
+```json
+[
+  {
+    "id": 5,
+    "message": "Se te asignó una nueva tarea: Diseño del Dashboard",
+    "status": "UNREAD",
+    "timestamp": "2025-11-07T14:30:00Z"
+  },
+  {
+    "id": 6,
+    "message": "Tu tarea 'API Integration' fue marcada como COMPLETED",
+    "status": "READ",
+    "timestamp": "2025-11-07T15:00:00Z"
+  }
+]
+```
+
+### **Crear una Nueva Notificación (Evento Interno)**
+
+**Request:**
+
+```http
+POST /api/v1/notifications
+Content-Type: application/json
+Authorization: Bearer <JWT>
+
+{
+  "userId": 5,
+  "message": "Tu reunión comienza en 10 minutos"
+}
+```
+**Response:**
+
+```json
+{
+  "id": 12,
+  "userId": 5,
+  "message": "Tu reunión comienza en 10 minutos",
+  "status": "UNREAD",
+  "timestamp": "2025-11-07T16:20:00Z"
+}
+
+```
+
+##### 4.2.2.7. Software Deployment Evidence for Sprint Review  
+
+Desing:
+
+Accedemos a Figma: https://www.figma.com/login
+![c1](Assets/TP1/c1.png)
+En el apartado o creamos un nuevo proyecto o nos unimos a un proyecto
+![c1](Assets/TP1/c2.png)
+![c1](Assets/TP1/c3.png)
+
+Deployment
+Ingresamos a Github: https://www.github.com
+![c1](Assets/TP1/c4.png)
+Nos registramos o ingresamos a una cuenta
+![c1](Assets/TP1/c5.png)
+Ingresamos al repositorio que queremos publicar
+![c1](Assets/TP1/c6.png)
+Ingresamos a "Settings" y luego a "Pages"
+![c1](Assets/TP1/c7.png)
+Desplegamos la página y ya tendremos un link
+![c1](Assets/TP1/c8.png)
+
+Accedamos a Render
+![c1](Assets/TP1/c9.png)
+Ponemos nuestro repositorio de Backend
+![c1](Assets/TP1/c11.png)
+Lanzamos el web Services
+![c1](Assets/TP1/c12.png)
+![c1](Assets/TP1/c13.png)
+
+##### 4.2.2.8. Team Collaboration Insights during Sprint  
+
+**BACKEND**
+
+![c1](Assets/TB2/com.png)
+
+
+**Frontend-jetpack compose**
+
+![c1](Assets/TB2/com23.png)
+
 
 ### 4.3. Validation Interviews  
 #### 4.3.1. Diseño de Entrevistas  
