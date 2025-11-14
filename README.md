@@ -3693,6 +3693,20 @@ Las historias de usuario priorizadas estuvieron centradas en mejorar la experien
 
 **Frontend-jetpack compose**
 
+| Repository           | Branch | Commit Id | Commit Message                                                      | Commit Message Body                                                                                           | Date         |
+| -------------------- | ------ | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ |
+| AppMobile-TaskMaster | main   | 9fd31ac   | Task_Commit_update                                                  | Actualización del historial de commits relacionados con tareas para mantener consistencia en el módulo móvil. | Nov 13, 2025 |
+| AppMobile-TaskMaster | main   | c3a8d11   | Task_Commit_update                                                  | Ajustes menores en la lógica de sincronización de tareas y actualización de registros internos.               | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | e12b77f   | Task_Commit                                                         | Creación del commit base para la gestión de tareas dentro de la aplicación móvil.                             | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 5bb92de   | Merge remote-tracking branch 'origin/main'                          | Fusión con origin/main para mantener alineados los cambios antes de agregar nuevas funcionalidades.           | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | a91f3d2   | feat add: calendar.kt                                               | Se añadió el archivo `calendar.kt` para introducir soporte de calendario dentro del flujo de tareas.          | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 7ce11ab   | Merge remote-tracking branch 'origin/main'                          | Sincronización del código con origin/main para resolver conflictos menores.                                   | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 33ac8e1   | xml                                                                 | Actualización de layouts XML para mejorar la interfaz visual y optimizar componentes en Android.              | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | d2e5b77   | Merge pull request #1 from CC238-Aplicaciones-Moviles/feature/stats | Integración de la vista de estadísticas proveniente de feature/stats.                                         | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 8ae3d00   | feat(stats): Add statistics view                                    | Implementación de la pantalla de estadísticas con métricas básicas y soporte visual inicial.                  | Oct 10, 2025 |
+| AppMobile-TaskMaster | main   | 61fbb09   | primera version android                                             | Primer commit significativo de la versión Android, agregando estructura principal del proyecto.               | Oct 10, 2025 |
+
+
 **Backend**
 
 | Repository         | Branch             | Commit Id | Commit Message                                                                                        | Commit Message Body                                                                                                | Date         |
@@ -4390,6 +4404,18 @@ Lanzamos el web Services
 
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
 
+**BACKEND**
+
+![c1](Assets/TB2/com.png)
+
+
+**Frontend-jetpack compose**
+
+![c1](Assets/TB2/com23.png)
+
+**REPORTE**
+
+![c1](Assets/TP1/c14.png)
 
 ### 4.3. Validation Interviews  
 #### 4.3.1. Diseño de Entrevistas  
