@@ -61,9 +61,9 @@ Septiembre de 2025
 | :-----------------------------------: |
 | [https://github.com/CC238-Aplicaciones-Moviles/Report-Repository.git](https://github.com/CC238-Aplicaciones-Moviles/Report-Repository.git) |
 
-TB1:
+**TB1:**
 
-REPORT: 
+**REPORT:** 
 
 ![Imagen5](Assets/TB1/REPORT.png)
 
@@ -74,9 +74,9 @@ REPORT:
 - Sarmiento Medina Lorele: 81
 
   
-TP:
+**TP:**
 
-REPORT: 
+**REPORT:** 
 
 ![Imagen5](Assets/TP1/commits_tp.PNG)
 - Bejarano Martínez Alvaro Leandro: 58
@@ -85,11 +85,17 @@ REPORT:
 - Sandoval Paiva Valentino: 11
 - Sarmiento Medina Lorele: 86
 
-TB2:
+**TB2:**
 
-REPORT:
+**REPORT:**
 
-![c1](Assets/TP1/c14.png)
+![c1](Assets/TB2/imforme.png)
+
+- Bejarano Martínez Alvaro Leandro: 58
+- Luquillas Asto Omar: 16
+- Olivera Barzola Eric Marlon: 36
+- Sandoval Paiva Valentino: 21
+- Sarmiento Medina Lorele: 89
 
 
 ## Contenido
