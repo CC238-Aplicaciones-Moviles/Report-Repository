@@ -3790,7 +3790,7 @@ Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMast
 ![a1](Assets/TP1/a7.png)
 ![a1](Assets/TP1/a8.png)
 
-Vistas de nuestra aplicación móvil del **Lider de equipo** - jetpack compose: 
+Ademas, para este segundo sprint se logro terminar las vistas de nuestra aplicación móvil del **Lider de equipo** - jetpack compose: 
 
 ![a1](Assets/TP1/d1.png)
 ![a1](Assets/TP1/d2.png)
@@ -3800,7 +3800,26 @@ Vistas de nuestra aplicación móvil del **Lider de equipo** - jetpack compose:
 ![a1](Assets/TP1/d7.png)
 ![a1](Assets/TP1/d8.png)
 
-Vistas de nuestra aplicación móvil del **Miembro de equipo** - flutter: 
+![a1](Assets/TB2/F5.jpg)
+![a1](Assets/TB2/F6.jpg)
+![a1](Assets/TB2/F3.png)
+
+![a1](Assets/TB2/F1.png)
+![a1](Assets/TB2/F2.png)
+![a1](Assets/TB2/F4.png)
+
+![a1](Assets/TB2/FLUTT1.png)
+![a1](Assets/TB2/FLUTT2.png)
+![a1](Assets/TB2/FLUTT3.png)
+![a1](Assets/TB2/FLUTT4.png)
+
+Finalment, para este sprint avanzamos con algunas vistas o la primera versión de nuestra aplicación móvil del **Miembro de equipo** - flutter: 
+
+![a1](Assets/TB2/FLUTTER2.jpg)
+![a1](Assets/TB2/FLUTTER1.jpg)
+![a1](Assets/TB2/FLUTTER5.jpg)
+![a1](Assets/TB2/FLUTTER4.jpg)
+![a1](Assets/TB2/FLUTTER3.jpg)
 
 ![a1](Assets/TB2/FLU2.jpg)
 ![a1](Assets/TB2/FLU3.jpg)
