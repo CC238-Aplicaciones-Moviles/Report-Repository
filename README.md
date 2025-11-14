@@ -3825,7 +3825,7 @@ Ademas, para este segundo sprint se logro terminar las vistas de nuestra aplicac
 Finalment, para este sprint avanzamos con algunas vistas o la primera versión de nuestra aplicación móvil del **Miembro de equipo** - flutter: 
 
 <div style="display: flex; gap: 10px;">
-  <img src="ssets/TB2/FLUTTER2.jpg" width="250">
+  <img src="Assets/TB2/FLUTTER2.jpg" width="250">
   <img src="Assets/TB2/FLUTTER1.jpg" width="250">
 </div>
 
