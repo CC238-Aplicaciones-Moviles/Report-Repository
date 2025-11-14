@@ -4573,41 +4573,41 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 | **ENTREVISTA 1** | **Detalle** |
 |------------------|-------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
+| **Nombre entrevistado** | Aleida Esmeralda Becerra Estela |
+| **Edad** | 50 |
+| **Profesión** | Administradora y líder de proyectos |
+| **Departamento** | Callao |
 | **Inicio del video** | 0:00 |
 | **Fin del video** | 5:45 |
 | **Link del video** | https://goo.su/RXNO6sz |
 | **Foto entrevista** | ![ddd](Assets/TB2/entre1.png) |
-| **Resumen** |  |
+| **Resumen** | Aleida considera que Taskmaster es una plataforma práctica, clara y bien organizada para la gestión de proyectos. Destacó la facilidad para comprender el tablero, identificar tareas y estados, así como el buen uso de colores, íconos y distribución visual. Señaló que no encontró elementos confusos y que la aplicación le parece completa, aunque mencionó que en la práctica podrían surgir más observaciones. |
 
 | **ENTREVISTA 2** | **Detalle** |
 |------------------|-------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
+| **Nombre entrevistado** | Diego Alejandro Alvarado Tejeda |
+| **Edad** | 24 |
+| **Profesión** | Supervisor y Líder de Proyectos |
+| **Departamento** | San Miguel |
 | **Inicio del video** | 5:46 |
 | **Fin del video** | 10:54 |
 | **Link del video** | https://goo.su/RXNO6sz |
 | **Foto entrevista** | ![ddd](Assets/TB2/entre2.png) |
-| **Resumen** |  |
+| **Resumen** | Diego destacó que TaskMaster es una plataforma versátil, intuitiva y visualmente clara, ideal para capacitar rápidamente a su equipo. Señaló que la asignación de tareas por miembro, los indicadores de progreso y el dashboard facilitan comprender el estado del proyecto. Apreció la coherencia del uso de colores y la claridad de los iconos y botones. Describió la distribución visual como ordenada y agradable, sin elementos confusos, y no propuso mejoras adicionales.  |
 
 ### Segmento Objetivo: Miembros del Equipo (Team Members)
 
 | **ENTREVISTA 3** | **Detalle** |
 |------------------|-------------|
-| **Nombre entrevistado** |  |
-| **Edad** |  |
-| **Profesión** |  |
-| **Departamento** |  |
+| **Nombre entrevistado** |  Fabiana Mayte Cabanillas Meza  |
+| **Edad** | 19 |
+| **Profesión** | Administradora en Logística |
+| **Departamento** | San Miguel |
 | **Inicio del video** | 10:54 |
 | **Fin del video** | 15:18 |
 | **Link del video** | https://goo.su/RXNO6sz |
 | **Foto entrevista** | ![ddd](Assets/TB2/entre3.png) |
-| **Resumen** |  |
+| **Resumen** | Fabiana consideró que TaskMaster es una herramienta práctica, intuitiva y fácil de usar, con una navegación clara y una distribución visual que facilita comprender rápidamente las tareas y el avance del proyecto. Describió el diseño como innovador y llamativo, sin elementos confusos, y afirmó que la plataforma permite identificar fácilmente las secciones principales, el calendario y las estadísticas. Aunque no observó dificultades ni cambios necesarios, sugirió incluir más botones que orienten acciones para mejorar la experiencia. |
 
 
 
