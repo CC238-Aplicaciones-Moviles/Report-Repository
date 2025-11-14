@@ -4525,9 +4525,6 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 #### 4.3.2. Registro de Entrevistas  
 
-
-### Segmento Objetivo #1: Miembros del Equipo (Team Members)
-
 ### Segmento Objetivo #1: Miembros del Equipo (Team Members)
 
 | Entrevista 1: Segmento Líder | |
@@ -4545,8 +4542,6 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 
 ### Segmento Objetivo #2: Líderes de Equipo (Team Leaders)
-
-
 
 | Entrevista 1: Segmento Líder | |
 |----------------------------------------------|---------------------------------------------|
@@ -4572,6 +4567,47 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 ![ddd](Assets/TP1/entrevistaRaul.jpeg)
 
+**Entrevistas actualizadas para la última version de nuestra app en la vista del Lider y la primera versión de la vista del Miembro**
+
+### Segmento Objetivo: Líderes de Equipo (Team Leaders)
+
+| **ENTREVISTA 1** | **Detalle** |
+|------------------|-------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** | 0:00 |
+| **Fin del video** | 5:45 |
+| **Link del video** | https://goo.su/RXNO6sz |
+| **Foto entrevista** | ![ddd](Assets/TB2/entre1.png) |
+| **Resumen** |  |
+
+| **ENTREVISTA 2** | **Detalle** |
+|------------------|-------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** | 5:46 |
+| **Fin del video** | 10:54 |
+| **Link del video** | https://goo.su/RXNO6sz |
+| **Foto entrevista** | ![ddd](Assets/TB2/entre2.png) |
+| **Resumen** |  |
+
+### Segmento Objetivo: Miembros del Equipo (Team Members)
+
+| **ENTREVISTA 3** | **Detalle** |
+|------------------|-------------|
+| **Nombre entrevistado** |  |
+| **Edad** |  |
+| **Profesión** |  |
+| **Departamento** |  |
+| **Inicio del video** | 10:54 |
+| **Fin del video** | 15:18 |
+| **Link del video** | https://goo.su/RXNO6sz |
+| **Foto entrevista** | ![ddd](Assets/TB2/entre3.png) |
+| **Resumen** |  |
 
 
 
