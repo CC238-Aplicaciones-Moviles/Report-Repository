@@ -84,7 +84,14 @@ REPORT:
 - Olivera Barzola Eric Marlon: 32
 - Sandoval Paiva Valentino: 11
 - Sarmiento Medina Lorele: 86
-- 
+
+TB2:
+
+REPORT:
+
+![c1](Assets/TP1/c14.png)
+
+
 ## Contenido
 
 - [Student Outcome](#student-outcome)
@@ -3783,7 +3790,7 @@ Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMast
 ![a1](Assets/TP1/a7.png)
 ![a1](Assets/TP1/a8.png)
 
-Vistas de nuestra aplicación móvil: 
+Vistas de nuestra aplicación móvil del **Lider de equipo** - jetpack compose: 
 
 ![a1](Assets/TP1/d1.png)
 ![a1](Assets/TP1/d2.png)
@@ -3793,6 +3800,12 @@ Vistas de nuestra aplicación móvil:
 ![a1](Assets/TP1/d7.png)
 ![a1](Assets/TP1/d8.png)
 
+Vistas de nuestra aplicación móvil del **Miembro de equipo** - flutter: 
+
+![a1](Assets/TB2/FLU2.jpg)
+![a1](Assets/TB2/FLU3.jpg)
+![a1](Assets/TB2/FLU4.jpg)
+![a1](Assets/TB2/FLU5.jpg)
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
 
@@ -4408,9 +4421,6 @@ Lanzamos el web Services
 
 ![c1](Assets/TB2/com23.png)
 
-**REPORTE**
-
-![c1](Assets/TP1/c14.png)
 
 ### 4.3. Validation Interviews  
 #### 4.3.1. Diseño de Entrevistas  
