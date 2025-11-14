@@ -1,40 +1,46 @@
 
-<h3 align ="center">
-Universidad Peruana de Ciencias Aplicadas
-</h3>
 <p align="center">
   <img src="Assets/upc_logo.png" alt="logo" width="200"/>
 </p>
 
+<h3 align="center">
+Universidad Peruana de Ciencias Aplicadas
+</h3>
 
 <h3 align="center">
-Nombre del curso: Aplicaciones para Dispositivos Móviles
-  <br> <br>
 Carrera: Ingeniería de Software
-  <br> <br>
-Nombre del profesor: Eduardo Martin Reyes Rodriguez
-  <br> <br>
+<br><br>
+Periodo : 2025 - 2
+<br><br>
+Código y Nombre del curso: 1ACC0238 - Aplicaciones para Dispositivos Móviles
+<br><br>
 NRC: 1813
-  <br> <br>
+<br><br>
+Docente: Eduardo Martin Reyes Rodriguez
+<br><br>
 "Informe de Trabajo Final"
-  <br> <br>
-Nombre de la Startup: WorkHub
-  <br> <br>
-Nombre del Producto: TaskMaster
-  <br> <br>
-<div align="center">
- <br> <br> --Integrantes--
+<br><br>
+Startup: WorkHub
+<br><br>
+Producto: TaskMaster
+<br><br>
 
-| <div style="width:300px">Alumno</div> | <div style="width:125px">Código</div> |
+<div align="center">
+<br><br> <strong>Integrantes</strong> <br><br>
+
+| <div style="width:300px">Código</div> | <div style="width:300px">Apellidos y Nombres</div> |
 |:-------------------------------------------:|:-------------------------------------------:|
-|Bejarano Martínez Alvaro Leandro| U202311640|
-|Luquillas Asto Omar| U20211G641|
-|Olivera Barzola Eric Marlon |U202315032|
-|Sandoval Paiva Valentino |U20211a962|
-|Sarmiento Medina Loreley |U202310005|
+|U202311640|Bejarano Martínez Alvaro Leandro|
+|U202315032|Olivera Barzola Eric Marlon|
+|U20211a962|Sandoval Paiva Valentino|
+|U202310005|Sarmiento Medina Loreley|
+|U20211G641|Luquillas Asto Omar|
+
+<br>
 Septiembre de 2025
-</h3>
 </div>
+</h3>
+
 
 ## Registro de Versiones del Informe
 
