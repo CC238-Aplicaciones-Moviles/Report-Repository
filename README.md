@@ -210,15 +210,24 @@ REPORT:
     - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
     - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
   - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
-    - [4.2.1. Sprint n](#421-sprint-n)
-      - [4.2.1.1. Sprint Planning n](#4211-sprint-planning-n)
-      - [4.2.1.2. Sprint Backlog n](#4212-sprint-backlog-n)
+    - [4.2.1. Sprint 1](#421-sprint-1)
+      - [4.2.1.1. Sprint Planning 1](#4211-sprint-planning-1)
+      - [4.2.1.2. Sprint Backlog 1](#4212-sprint-backlog-1)
       - [4.2.1.3. Development Evidence for Sprint Review](#4213-development-evidence-for-sprint-review)
       - [4.2.1.4. Testing Suite Evidence for Sprint Review](#4214-testing-suite-evidence-for-sprint-review)
       - [4.2.1.5. Execution Evidence for Sprint Review](#4215-execution-evidence-for-sprint-review)
       - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
       - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
       - [4.2.1.8. Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+    - [4.2.2. Sprint 2](#422-sprint-2)
+      - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
+      - [4.2.2.2. Sprint Backlog 2](#4222-sprint-backlog-2)
+      - [4.2.2.3. Development Evidence for Sprint Review](#4223-development-evidence-for-sprint-review)
+      - [4.2.2.4. Testing Suite Evidence for Sprint Review](#4224-testing-suite-evidence-for-sprint-review)
+      - [4.2.2.5. Execution Evidence for Sprint Review](#4225-execution-evidence-for-sprint-review)
+      - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
+      - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
+      - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -3651,7 +3660,7 @@ El enfoque principal fue desarrollar la Landing Page informativa y estructurar l
 | **Velocidad del Sprint** | El equipo puede atender hasta **32 Story Points**. |
 | **Suma de Story Points** | La suma de Story Points planificados para este sprint es de **32 Story Points**. |
 
-##### 4.2.2.1. Sprint Backlog 2  
+##### 4.2.2.2. Sprint Backlog 2  
 
 Durante este sprint, el equipo concentró sus esfuerzos en la culminación del backend y el desarrollo de las interfaces móviles para los perfiles de Team Leader (en Kotlin/XML) y Team Member (en Flutter/Dart).
 Las historias de usuario priorizadas estuvieron centradas en mejorar la experiencia visual, la interacción con los módulos principales y la conexión con los servicios backend ya desplegados.
@@ -3689,7 +3698,7 @@ Las historias de usuario priorizadas estuvieron centradas en mejorar la experien
 | **US33**       | **Notificación de cambios importantes**      | T33-1       | Crear notificación global                 | Mostrar alerta visual cuando se edite o elimine un proyecto.               | 3                | Bejarano Martínez Álvaro Leandro | Done        |
 
 
-##### 4.2.1.3. Development Evidence for Sprint Review  
+##### 4.2.2.3. Development Evidence for Sprint Review  
 
 **Frontend-flutter**
 
@@ -3743,7 +3752,7 @@ Las historias de usuario priorizadas estuvieron centradas en mejorar la experien
 
 
 
-##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
+##### 4.2.2.4. Testing Suite Evidence for Sprint Review 
 
 **Unit Tests**
 
@@ -3777,7 +3786,7 @@ Finalmente, se desarrollaron pruebas de aceptación bajo el enfoque BDD (Behavio
 
 ![bdd_test5](Assets/TP1/bdd_test5.png)
 
-##### 4.2.1.5. Execution Evidence for Sprint Review  
+##### 4.2.2.5. Execution Evidence for Sprint Review  
 
 En esta entrega, nuestro equipo ha desplegado con éxito la landing page. 
 Enlace de la Landing Page: https://cc238-aplicaciones-moviles.github.io/TaskMaster-LandingPage 
@@ -3807,7 +3816,7 @@ Vistas de nuestra aplicación móvil del **Miembro de equipo** - flutter:
 ![a1](Assets/TB2/FLU4.jpg)
 ![a1](Assets/TB2/FLU5.jpg)
 
-##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
+##### 4.2.2.6. Services Documentation Evidence for Sprint Review  
 
 En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
 Enlance del Backend: https://backend-taskmaster-1.onrender.com/swagger-ui/index.html
@@ -4380,7 +4389,7 @@ Authorization: Bearer <JWT>
 
 ```
 
-##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
+##### 4.2.2.7. Software Deployment Evidence for Sprint Review  
 
 Desing:
 
@@ -4410,7 +4419,7 @@ Lanzamos el web Services
 ![c1](Assets/TP1/c12.png)
 ![c1](Assets/TP1/c13.png)
 
-##### 4.2.1.8. Team Collaboration Insights during Sprint  
+##### 4.2.2.8. Team Collaboration Insights during Sprint  
 
 **BACKEND**
 
