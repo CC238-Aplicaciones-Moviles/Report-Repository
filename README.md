@@ -1,4 +1,6 @@
 
+<div align="center">
+
 <p align="center">
   <img src="Assets/upc_logo.png" alt="logo" width="200"/>
 </p>
@@ -8,40 +10,70 @@ Universidad Peruana de Ciencias Aplicadas
 </h3>
 
 <h3 align="center">
-Carrera: Ingeniería de Software
+Ingeniería de Software  
 <br><br>
-Periodo : 2025 - 2
+Periodo: 202520 
 <br><br>
-Código y Nombre del curso: 1ACC0238 - Aplicaciones para Dispositivos Móviles
+1ACC0238 - Aplicaciones para Dispositivos Móviles
 <br><br>
-NRC: 1813
+NRC: 1813  
 <br><br>
-Docente: Eduardo Martin Reyes Rodriguez
+Docente: Eduardo Martin Reyes Rodriguez  
 <br><br>
-"Informe de Trabajo Final"
+<strong>Informe de TB2</strong>  
 <br><br>
 Startup: WorkHub
 <br><br>
 Producto: TaskMaster
 <br><br>
+<br><br>
+<strong>Integrantes</strong>  
+<br><br>
+Bejarano Martínez Alvaro Leandro (U202311640)
+<br><br>
+Olivera Barzola Eric Marlon (U202315032)
+<br><br>
+Sandoval Paiva Valentino (U20211a962) 
+<br><br>
+Sarmiento Medina Loreley (U202310005) 
+<br><br>
+Luquillas Asto Omar (U20211G641)
+<br><br>
+2025
+</h3>
+</div>
 
-<div align="center">
-<br><br> <strong>Integrantes</strong> <br><br>
 
-| <div style="width:300px">Código</div> | <div style="width:300px">Apellidos y Nombres</div> |
-|:-------------------------------------------:|:-------------------------------------------:|
-|U202311640|Bejarano Martínez Alvaro Leandro|
-|U202315032|Olivera Barzola Eric Marlon|
-|U20211a962|Sandoval Paiva Valentino|
-|U202310005|Sarmiento Medina Loreley|
-|U20211G641|Luquillas Asto Omar|
 
 <br>
-Septiembre de 2025
-</div>
-</h3>
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ## Registro de Versiones del Informe
 
 | Versión | Fecha      | Autor                            | Descripción de modificación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -4743,12 +4775,12 @@ Recomendación: Aplicar una estructura tipográfica coherente, con tamaños y pe
 
 **- VIDEO APP VALIDATION**
 
-https://goo.su/O2Yrms
+Validation
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g641_upc_edu_pe/IQDmjCjZin84QqsPjzX73IswAUGRqqg0SydOsFd3-zp3_6U](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g641_upc_edu_pe/IQDmjCjZin84QqsPjzX73IswAUGRqqg0SydOsFd3-zp3_6U)
 
 **- VIDEO ABOUT THE TEAM**
 
-https://goo.su/PVti
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQBuwSR_gfpqQ4X-vptrFOjGAX_YFhvawDHoED2at_Tbrrw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQBuwSR_gfpqQ4X-vptrFOjGAX_YFhvawDHoED2at_Tbrrw)
 
 **- VIDEO ABOUT THE PRODUCT**
-
-https://goo.su/Wgn9
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQANRDcp-unfQbOWA8iTnh5aAfCBbNU5BYzlY-mG_6ETJuI](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQANRDcp-unfQbOWA8iTnh5aAfCBbNU5BYzlY-mG_6ETJuI)
