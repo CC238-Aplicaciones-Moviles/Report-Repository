@@ -4741,3 +4741,14 @@ Recomendación: Aplicar una estructura tipográfica coherente, con tamaños y pe
 
 # Anexos
 
+**- VIDEO APP VALIDATION**
+
+https://goo.su/O2Yrms
+
+**- VIDEO ABOUT THE TEAM**
+
+https://goo.su/PVti
+
+**- VIDEO ABOUT THE PRODUCT**
+
+https://goo.su/Wgn9
