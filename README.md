@@ -146,7 +146,13 @@ Luquillas Asto Omar (U20211G641)
 - Sandoval Paiva Valentino: 21
 - Sarmiento Medina Lorele: 89
 
+![c1](Assets/TF/commits_TF.PNG)
 
+- Bejarano Martínez Alvaro Leandro: 61
+- Luquillas Asto Omar: 16
+- Olivera Barzola Eric Marlon: 36
+- Sandoval Paiva Valentino: 37
+- Sarmiento Medina Lorele: 92
 ## Contenido
 
 - [Student Outcome](#student-outcome)
@@ -5601,6 +5607,8 @@ Validation
 **- VIDEO ABOUT THE TEAM**
 
 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQBuwSR_gfpqQ4X-vptrFOjGAX_YFhvawDHoED2at_Tbrrw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQBuwSR_gfpqQ4X-vptrFOjGAX_YFhvawDHoED2at_Tbrrw)
+
+
 
 **- VIDEO ABOUT THE PRODUCT**
 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQD8Uy2fAsh3QYpTfIjMg6iaAfScSxwRAIKEKE93NL_O3EI](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQD8Uy2fAsh3QYpTfIjMg6iaAfScSxwRAIKEKE93NL_O3EI)
