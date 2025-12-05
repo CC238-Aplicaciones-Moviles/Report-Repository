@@ -5367,7 +5367,7 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 ### Segmento Objetivo #1: Miembros del Equipo (Team Members)
 
-| Entrevista 1: Segmento Líder | |
+| Entrevista 1: Segmento Miembro | |
 |----------------------------------------------|---------------------------------------------|
 | **Nombre de Entrevistado**                   | Sebastian Calderon Real                     |
 | **Edad**                                     | 25 años                                     |
@@ -5377,6 +5377,31 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 | **Resumen**                   | En la entrevista Sebastian evidenció problemas visuales como bajo contraste, textos pequeños y botones poco visibles, además de una navegación confusa por el uso de colores y distribución de elementos|
 | **Url**                    | .[link](https://upcedupe-my.sharepoint.com/personal/u202315032_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202315032_upc_edu_pe%2FDocuments%2FEntrevistas%2FEntrevista-SegmentoObjetivo%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1ebbb400-a4d1-4878-b88b-3107bb2e342a)|
 ![g](Assets/TP1/g1.png)
+
+
+| **ENTREVISTA 2: Segmento Miembro* | **Detalle** |
+|------------------|-------------|
+| **Nombre entrevistado** |  Fabiana Mayte Cabanillas Meza  |
+| **Edad** | 19 |
+| **Profesión** | Administradora en Logística |
+| **Departamento** | San Miguel |
+| **Inicio del video** | 10:54 |
+| **Fin del video** | 15:18 |
+| **Link del video** | https://goo.su/RXNO6sz |
+| **Foto entrevista** | ![ddd](Assets/TB2/entre3.png) |
+| **Resumen** | Fabiana consideró que TaskMaster es una herramienta práctica, intuitiva y fácil de usar, con una navegación clara y una distribución visual que facilita comprender rápidamente las tareas y el avance del proyecto. Describió el diseño como innovador y llamativo, sin elementos confusos, y afirmó que la plataforma permite identificar fácilmente las secciones principales, el calendario y las estadísticas. Aunque no observó dificultades ni cambios necesarios, sugirió incluir más botones que orienten acciones para mejorar la experiencia. |
+
+
+| Entrevista 3: Segmento Miembro | |
+|----------------------------------------------|---------------------------------------------|
+| **Nombre de Entrevistado**                   | Mathias Medina Posito                     |
+| **Edad**                                     | 20 años                                     |
+| **Distrito**                                 | La Molina                                  |
+| **Duración de la Entrevista**                | 2:46                                        |
+| **Inicio de la Entrevista**                  | 0:07                                        |
+| **Resumen**                   | En la entrevista Mathias evidenció que la falta de informacion explicita en la aplicacion podria hacerla un poco confusa al usarla, ya que no sentia que era muy intuitiva, declaro que respecto al diseño era muy llamativo y agradable, afirmó que lo usaria si hay una informacion mas clara sobre como funciona cada apartado |
+| **Url**                    | .[link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a962_upc_edu_pe/IQB-5cJcb0e7RYVHdCrRbexnARSe3-dCT5BeGpJa6ZeEXBA)|
+![g](Assets/TF/entrevistamember3.PNG)
 
 
 
@@ -5395,7 +5420,7 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 ![ddd](Assets/TP1/entrevistaAleida.jpeg)
 
-| Entrevista 3: Segmento Líder | |
+| Entrevista 2: Segmento Líder | |
 |----------------------------------------------|---------------------------------------------|
 | **Nombre de Entrevistado**                   | Raúl Fernández López                        |
 | **Edad**                                     | 52 años                                     |
@@ -5411,7 +5436,7 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 
 ### Segmento Objetivo: Líderes de Equipo (Team Leaders)
 
-| **ENTREVISTA 1** | **Detalle** |
+| **ENTREVISTA 3** | **Detalle** |
 |------------------|-------------|
 | **Nombre entrevistado** | Aleida Esmeralda Becerra Estela |
 | **Edad** | 50 |
@@ -5423,7 +5448,7 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 | **Foto entrevista** | ![ddd](Assets/TB2/entre1.png) |
 | **Resumen** | Aleida considera que Taskmaster es una plataforma práctica, clara y bien organizada para la gestión de proyectos. Destacó la facilidad para comprender el tablero, identificar tareas y estados, así como el buen uso de colores, íconos y distribución visual. Señaló que no encontró elementos confusos y que la aplicación le parece completa, aunque mencionó que en la práctica podrían surgir más observaciones. |
 
-| **ENTREVISTA 2** | **Detalle** |
+| **ENTREVISTA 4** | **Detalle** |
 |------------------|-------------|
 | **Nombre entrevistado** | Diego Alejandro Alvarado Tejeda |
 | **Edad** | 24 |
@@ -5435,19 +5460,6 @@ Explorar la percepción visual y la facilidad de comprensión del diseño de Tas
 | **Foto entrevista** | ![ddd](Assets/TB2/entre2.png) |
 | **Resumen** | Diego destacó que TaskMaster es una plataforma versátil, intuitiva y visualmente clara, ideal para capacitar rápidamente a su equipo. Señaló que la asignación de tareas por miembro, los indicadores de progreso y el dashboard facilitan comprender el estado del proyecto. Apreció la coherencia del uso de colores y la claridad de los iconos y botones. Describió la distribución visual como ordenada y agradable, sin elementos confusos, y no propuso mejoras adicionales.  |
 
-### Segmento Objetivo: Miembros del Equipo (Team Members)
-
-| **ENTREVISTA 3** | **Detalle** |
-|------------------|-------------|
-| **Nombre entrevistado** |  Fabiana Mayte Cabanillas Meza  |
-| **Edad** | 19 |
-| **Profesión** | Administradora en Logística |
-| **Departamento** | San Miguel |
-| **Inicio del video** | 10:54 |
-| **Fin del video** | 15:18 |
-| **Link del video** | https://goo.su/RXNO6sz |
-| **Foto entrevista** | ![ddd](Assets/TB2/entre3.png) |
-| **Resumen** | Fabiana consideró que TaskMaster es una herramienta práctica, intuitiva y fácil de usar, con una navegación clara y una distribución visual que facilita comprender rápidamente las tareas y el avance del proyecto. Describió el diseño como innovador y llamativo, sin elementos confusos, y afirmó que la plataforma permite identificar fácilmente las secciones principales, el calendario y las estadísticas. Aunque no observó dificultades ni cambios necesarios, sugirió incluir más botones que orienten acciones para mejorar la experiencia. |
 
 
 
